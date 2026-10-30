@@ -1,0 +1,343 @@
+[
+ {
+  "id": "chatbot-harvesters",
+  "name": "Telegram and Discord credential harvesters",
+  "technique": "Credential phishing (stolen data sent to a chat bot)",
+  "targets": [
+   "Microsoft 365",
+   "Webmail",
+   "DocuSign",
+   "Meta"
+  ],
+  "active_since": null,
+  "summary": "Single-page fake sign-in forms with no server of their own. Whatever the victim types (email, password, sometimes MFA codes or personal details) is sent straight from their browser to a Telegram bot or Discord channel run by the attacker, along with the victim's IP address and location. Many first show a fake \"wrong password\" error to collect a second attempt, then send the victim to the real site.",
+  "victim_sees": [
+   "A link to a shared file, invoice, voicemail or mailbox notice.",
+   "A sign-in page for Microsoft/Outlook, a webmail provider, DocuSign or a bank, often pre-filled with the victim's email.",
+   "An error after the first password, then the real website."
+  ],
+  "infrastructure": [
+   "Phishing pages: free static hosting (Vercel, Netlify, GitHub Pages, Replit and similar), file-sharing and form services, and cheap domains."
+  ],
+  "defend": [
+   "Phishing-resistant MFA (FIDO2/passkeys) makes the stolen password useless on its own.",
+   "Block outbound requests to the Telegram and Discord bot APIs from browsers where they aren't needed.",
+   "Reset passwords and revoke sessions for anyone who entered credentials, and block the hosts listed below."
+  ],
+  "categories": [
+   "credential"
+  ],
+  "online": 10,
+  "total": 26
+ },
+ {
+  "id": "credential-other",
+  "name": "Other phishing kits",
+  "technique": "Credential phishing and malware lures",
+  "targets": [
+   "Microsoft 365",
+   "Google",
+   "DocuSign",
+   "Adobe",
+   "Banks"
+  ],
+  "active_since": null,
+  "summary": "Confirmed phishing pages from smaller or not-yet-named kits: fake Microsoft, Google, webmail and bank sign-in pages, document-share lures that deliver malware archives, and pages that relay credentials to an operator who decides in real time what the victim sees next. Each was confirmed as malicious, but isn't attributed to a named kit.",
+  "victim_sees": [
+   "A link to a shared document, voicemail, invoice or account notice.",
+   "A copy of a well-known sign-in page or document viewer, sometimes after a CAPTCHA.",
+   "An error or a redirect to the real site after credentials are entered, or a file download."
+  ],
+  "infrastructure": [
+   "Phishing pages: cheap domains, compromised websites, free static and serverless hosting, object storage and developer preview hosts."
+  ],
+  "defend": [
+   "Phishing-resistant MFA (FIDO2/passkeys) blocks most credential replay.",
+   "Reset credentials and revoke sessions for anyone who entered them.",
+   "Block the hosts listed below."
+  ],
+  "categories": [
+   "credential",
+   "device-code",
+   "clickfix",
+   "malware"
+  ],
+  "online": 151,
+  "total": 284
+ },
+ {
+  "id": "device-code-lab",
+  "name": "Device Code Lab",
+  "technique": "OAuth device-code phishing (phishing-as-a-service)",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": null,
+  "summary": "A professional device-code phishing platform (formerly known as AUTHOV) that sells landing pages and a token backend with post-compromise features. Its landing pages pose as document-sharing or e-signature notices and hand the victim a Microsoft device code; once the victim enters it on Microsoft's site, the operator holds valid tokens for their account.",
+  "victim_sees": [
+   "A document-share or e-signature notice (DocuSign, Adobe, Microsoft themes).",
+   "A page with a code to copy and a link to Microsoft's real device-login page.",
+   "A decoy or blank page after the code is entered."
+  ],
+  "infrastructure": [
+   "Phishing pages: serverless hosting such as *.workers.dev and cheap domains.",
+   "Operator infrastructure: the platform's token backends."
+  ],
+  "defend": [
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow).",
+   "Look for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them, and revoke the user's sessions and refresh tokens if one is found.",
+   "Block the hosts listed below."
+  ],
+  "categories": [
+   "device-code",
+   "clickfix",
+   "malware"
+  ],
+  "online": 21,
+  "total": 69
+ },
+ {
+  "id": "device-code-other",
+  "name": "Other device-code phishing kits",
+  "technique": "OAuth device-code phishing",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": null,
+  "summary": "Device-code phishing pages from smaller or not-yet-named kits. They all work the same way: the page shows the victim a real Microsoft device code and sends them to Microsoft's genuine sign-in page to enter it, which signs the attacker in as the victim. Common themes are shared documents, voicemail messages, Teams meetings and internal finance files. Pages here have been confirmed as malicious but are not attributed to a named kit.",
+  "victim_sees": [
+   "A shared document, voicemail, meeting invite or \"secure file\" notice.",
+   "Often a bot check first: a sum to solve, or a fake \"Just a moment…\" security check branded as OneDrive, Adobe, Teams or DocuSign.",
+   "A code with a copy button, sometimes branded with the victim's own company logo, and a link to microsoft.com/devicelogin."
+  ],
+  "infrastructure": [
+   "Phishing pages: bare IP addresses, cheap domains, compromised websites and serverless hosting."
+  ],
+  "defend": [
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow).",
+   "Look for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them, and revoke the user's sessions and refresh tokens if one is found.",
+   "Block the hosts listed below."
+  ],
+  "categories": [
+   "device-code",
+   "clickfix"
+  ],
+  "online": 220,
+  "total": 381
+ },
+ {
+  "id": "eviltokens",
+  "name": "EvilTokens",
+  "technique": "OAuth device-code phishing (phishing-as-a-service)",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": null,
+  "summary": "A device-code phishing service rented to many affiliates, some of whom run their own branded panels on top of it (one is known as ARToken). A lure page shows a document, voicemail or e-signature theme, gets a real Microsoft device code from the operator's backend, and asks the victim to enter it on Microsoft's own sign-in page. Entering the code signs the attacker's session in as the victim, so the attacker receives tokens without ever seeing a password, and MFA does not stop it. Lure pages filter out visitors that look like security tools and are rotated quickly across free hosting platforms.",
+  "victim_sees": [
+   "An email or shared link to a document, voicemail, invoice or e-signature request (Microsoft, DocuSign, Adobe themes are common).",
+   "A short \"verifying you're human\" step, then a page showing a code and a button to copy it.",
+   "Microsoft's real microsoft.com/devicelogin page, often in a popup. After the code is entered, a decoy document or a real site."
+  ],
+  "infrastructure": [
+   "Phishing pages: mostly serverless and free hosting (Cloudflare Workers *.workers.dev, Vercel, GitHub Pages and similar) plus cheap domains.",
+   "Operator infrastructure: backend servers that issue codes and collect tokens."
+  ],
+  "defend": [
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow).",
+   "Look for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them, and revoke the user's sessions and refresh tokens if one is found.",
+   "Block the hosts listed below.",
+   "After a confirmed sign-in, check for new inbox rules, app consents, and registered devices or MFA methods."
+  ],
+  "categories": [
+   "device-code"
+  ],
+  "online": 117,
+  "total": 705
+ },
+ {
+  "id": "flowerstorm",
+  "name": "FlowerStorm",
+  "technique": "Adversary-in-the-middle (AiTM) credential and MFA relay (phishing-as-a-service)",
+  "targets": [
+   "Microsoft 365",
+   "Hotmail",
+   "GoDaddy"
+  ],
+  "active_since": "2024-11",
+  "summary": "A phishing-as-a-service kit that steals Microsoft 365, Hotmail and GoDaddy credentials and relays MFA prompts in real time so the attacker can complete the sign-in. The fake login is drawn by a script hosted in cloud storage buckets and reports to operator servers on throwaway domains. Since 2026 some lures arrive as HTML attachments wrapped in a JavaScript virtual machine, so the email itself looks harmless to scanners.",
+  "victim_sees": [
+   "An email with an HTML attachment (often a \"voice message\") or a link to a hosted page.",
+   "A Microsoft, Outlook or GoDaddy sign-in, sometimes with the company's name in the address.",
+   "An MFA prompt or code request that the attacker is relaying live."
+  ],
+  "infrastructure": [
+   "Kit script: cloud object-storage buckets.",
+   "Operator infrastructure: servers on random-word .de and similar domains.",
+   "Lure pages: object storage, IPFS gateways and free page builders."
+  ],
+  "defend": [
+   "Phishing-resistant MFA (FIDO2/passkeys, Windows Hello for Business) defeats real-time relay.",
+   "Block HTML attachments from external senders, or open them in isolation.",
+   "Look for sign-ins followed by session use from unfamiliar IPs, and block the hosts listed below."
+  ],
+  "categories": [
+   "credential"
+  ],
+  "online": 91,
+  "total": 599
+ },
+ {
+  "id": "forgemailer",
+  "name": "ForgeMailer",
+  "technique": "Microsoft 365 account takeover and business email compromise (operator panel)",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": "2026-10",
+  "summary": "An all-in-one operator console for taking over Microsoft 365 accounts and using them for business email compromise. From one panel an operator sends phishing campaigns, captures access (device-code phishing, adversary-in-the-middle session theft, malicious OAuth app consent, and fake webmail logins), and then works inside the stolen mailbox: refreshing tokens, reading mail, replying inside real conversations with external contacts to spread the attack, and adding their own MFA methods to keep access.",
+  "victim_sees": [
+   "A voicemail, document-share, SharePoint, calendar or security-alert lure, sometimes sent from a real, already-compromised mailbox.",
+   "A themed page with a code to enter on Microsoft's site, a fake sign-in, or an app permission prompt.",
+   "Later, contacts may receive replies in genuine email threads that contain a new link."
+  ],
+  "infrastructure": [
+   "Operator infrastructure: the panel itself, behind Cloudflare.",
+   "Phishing pages and gates generated by the panel, on subdomains of operator-owned domains."
+  ],
+  "defend": [
+   "Block the device-code flow with Conditional Access where it isn't needed, and turn off or restrict user consent to apps.",
+   "Alert on new MFA methods (phone, email, authenticator, security key) added soon after a risky or device-code sign-in.",
+   "In Exchange Online, reject unauthenticated Direct Send, and look for replies on existing external threads that suddenly add a link.",
+   "Block the hosts listed below."
+  ],
+  "categories": [
+   "device-code"
+  ],
+  "online": 1,
+  "total": 1
+ },
+ {
+  "id": "ghost-panel",
+  "name": "GHOST_PANEL",
+  "technique": "OAuth device-code phishing (phishing-as-a-service)",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": "2026-06",
+  "summary": "A device-code phishing kit sold to many customers. It is likely phishing-as-a-service: more than 100 separate customer deployments share a common pool of backends. A lure page asks the victim to verify themselves or open a shared document, shows a real Microsoft device code, and opens microsoft.com/devicelogin in a popup. When the victim signs in, the operator receives their tokens and the victim is sent to a decoy document. Lures are encrypted in the browser to hide them from scanners. Some deployments add a second, fake \"additional verification\" step after sign-in.",
+  "victim_sees": [
+   "A link from an email marketing service, a Google share link, a QR code or a compromised website.",
+   "A OneDrive, SharePoint, Adobe, Teams, voicemail or \"Document Share Verification\" page with a \"Generate code\" button.",
+   "Microsoft's real device-login page in a popup, then a decoy document. A few deployments push a remote-management (RMM) installer instead."
+  ],
+  "infrastructure": [
+   "Phishing hosts: Cloudflare Workers (*.workers.dev), BunnyCDN storage, Vercel, Netlify, Firebase and custom or compromised domains.",
+   "Operator infrastructure: backend servers that issue codes and collect tokens, mostly behind Cloudflare."
+  ],
+  "defend": [
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow).",
+   "Look for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them.",
+   "Block the backend servers listed below as operator infrastructure. They outlive individual lures."
+  ],
+  "categories": [
+   "device-code",
+   "malware"
+  ],
+  "online": 86,
+  "total": 323
+ },
+ {
+  "id": "operator-panels",
+  "name": "Unattributed operator panels",
+  "technique": "Phishing operator infrastructure",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": null,
+  "summary": "Login panels and backend servers that phishing operators use to run campaigns and collect stolen credentials or tokens, where we haven't tied the panel to a named kit. Victims never see these servers directly: lure pages report to them, and operators log in to them to manage campaigns and use what was stolen.",
+  "victim_sees": [
+   "Nothing directly. Victims interact with lure pages, which send what they enter to these servers."
+  ],
+  "infrastructure": [
+   "Operator panels and backends on VPS and cloud hosting, often on bare IP addresses or throwaway domains."
+  ],
+  "defend": [
+   "Block these addresses at the network edge: outbound connections to them from your network suggest a compromised browser session or an insider test.",
+   "Search proxy and DNS logs for past connections to them."
+  ],
+  "categories": [
+   "credential"
+  ],
+  "online": 35,
+  "total": 45
+ },
+ {
+  "id": "wazza",
+  "name": "Wazza",
+  "technique": "OAuth device-code phishing (multi-stage, bot-protected)",
+  "targets": [
+   "Microsoft 365"
+  ],
+  "active_since": "2026-10",
+  "summary": "A phishing kit named publicly in October 2026 that targets banking, manufacturing and government organisations in the US, Europe and Australia. Victims pass through several hops: a Google Sites page, a branded \"access\" loading page on random subdomains of aged European domains, and a bot-protected gate, before an Adobe-themed Microsoft device-code page. The apex domains show fake European company websites to anyone who visits them directly.",
+  "victim_sees": [
+   "A Google Sites link in an email.",
+   "A short branded \"loading\"/\"access\" screen, then a verification step.",
+   "An Adobe-style document page that asks for a Microsoft device code."
+  ],
+  "infrastructure": [
+   "Phishing pages: random subdomains of aged .eu domains, plus some .com.",
+   "Gates on Vercel, and decoy company websites on the apex domains."
+  ],
+  "defend": [
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow).",
+   "Look for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them, and revoke the user's sessions and refresh tokens if one is found.",
+   "Block the hosts listed below."
+  ],
+  "categories": [
+   "credential",
+   "device-code",
+   "malware"
+  ],
+  "online": 22,
+  "total": 70
+ },
+ {
+  "id": "whisker-purr",
+  "name": "Whisker & Purr",
+  "technique": "Adversary-in-the-middle (AiTM) and OAuth device-code phishing",
+  "targets": [
+   "Microsoft 365",
+   "Google Workspace"
+  ],
+  "active_since": "2025-02",
+  "summary": "A custom phishing kit run by one operator, in two builds. The adversary-in-the-middle build sits between the victim and the real Google or Microsoft sign-in, relaying the login and stealing the session cookie, which gets past MFA. The device-code build (since 2026-07) instead sends the victim to Microsoft's real microsoft.com/devicelogin page to enter a code that signs the attacker's device in as them. Both builds share hosting and gate code, and both show scanners a decoy website: a cat café (\"Whisker & Purr — Cat Lounge & Adoption Center\") or a cat-food shop (\"PurrFect Bites\"). We also track login panels (\"GeorgeGinx\") on the same hosting ranges, which we assess with moderate-high confidence belong to the same operator.",
+  "victim_sees": [
+   "A shared document (often Dropbox Paper or an Adobe Acrobat cloud share titled like a SharePoint file) or a tracked email link.",
+   "A short bot check, sometimes a Microsoft-branded \"Help us secure your account\" CAPTCHA.",
+   "Either a pixel-perfect Google or Microsoft sign-in on a lookalike subdomain (login., accounts., myaccount.), or a \"SharePoint — Secure document\" page that opens Microsoft's real device-login page and asks for a code.",
+   "Afterwards, the real service. Nothing looks wrong."
+  ],
+  "infrastructure": [
+   "Phishing hosts: cheap domains whose origins sit on Evoxt (AS149440), mostly behind Cloudflare.",
+   "Redirectors: throwaway AWS S3 and Azure Blob static sites (*.web.core.windows.net), cPanel sites and compromised small-business websites.",
+   "Operator infrastructure: login panels on the same Evoxt ranges."
+  ],
+  "defend": [
+   "Phishing-resistant MFA (FIDO2/passkeys, Windows Hello for Business) defeats the adversary-in-the-middle build.",
+   "If your users don't need it, block the device-code flow with Conditional Access (Authentication flows → Device code flow); this defeats the device-code build.",
+   "Look for sign-ins followed by session reuse from an unfamiliar IP or ASN, and for device-code sign-ins (authentication protocol \"deviceCode\") from users who don't normally use them.",
+   "Block the whole domain of a phishing host, including every subdomain. The decoy page is the same server."
+  ],
+  "notable": [
+   "Some lure pages also loaded a third-party iframe serving an iOS Safari exploit chain aimed at iOS 18.4.0–18.7.2. Keep iPhones up to date."
+  ],
+  "categories": [
+   "credential",
+   "device-code"
+  ],
+  "online": 185,
+  "total": 411
+ }
+]

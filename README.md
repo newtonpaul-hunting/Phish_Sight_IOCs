@@ -1,13 +1,13 @@
 # PhishSight IOCs
 
 Phishing and malware-delivery indicators confirmed as malicious by [PhishSight](https://newtonpaul.com). Updated
-automatically when new indicators are confirmed. Last change: **2026-10-30 23:40 UTC**.
+automatically when new indicators are confirmed. Last change: **2026-10-31 00:40 UTC**.
 
 | Folder | Indicators |
 |---|---|
 | [`credential-phishing/`](credential-phishing/) | 1,652 |
-| [`device-code-phishing/`](device-code-phishing/) | 2,012 |
-| [`clickfix/`](clickfix/) | 3,741 |
+| [`device-code-phishing/`](device-code-phishing/) | 2,013 |
+| [`clickfix/`](clickfix/) | 3,742 |
 | [`malware/`](malware/) | 29 |
 | [`payloads/`](payloads/) | 133 files |
 

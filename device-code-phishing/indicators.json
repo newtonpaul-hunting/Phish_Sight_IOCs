@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2378,
+ "count": 2380,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -3767,11 +3767,11 @@
    "category": "device-code",
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-24",
-   "last_online": "2026-10-27",
-   "offline_since": "2026-10-27",
+   "last_online": "2026-11-07",
+   "offline_since": null,
    "url": "http://162.35.173.148:5000/",
    "brand": "Microsoft",
    "product": "OneDrive",
@@ -3785,7 +3785,7 @@
    "hosts": [
     {
      "host": "162.35.173.148",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-24",
      "last_seen": "2026-10-24"
     }
@@ -13053,6 +13053,70 @@
      "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-11-04"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "5o4m-1qsc-gqkd.kadove5324-slotbeer-com-s-account.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "last_online": "2026-11-07",
+   "offline_since": null,
+   "url": "https://5o4m-1qsc-gqkd.kadove5324-slotbeer-com-s-account.workers.dev/",
+   "brand": "DocuSign",
+   "product": "E-signature",
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "104.21.5.158",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.21.5.158",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    },
+    {
+     "ip": "172.67.133.154",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    },
+    {
+     "ip": "2606:4700:3035::6815:59e",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    },
+    {
+     "ip": "2606:4700:3036::ac43:859a",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "5o4m-1qsc-gqkd.kadove5324-slotbeer-com-s-account.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -25875,7 +25939,7 @@
    "hosts": [
     {
      "host": "baswepolgasry.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-04",
      "last_seen": "2026-11-06"
     },
@@ -32799,6 +32863,49 @@
    "lure_from": []
   },
   {
+   "indicator": "compensation-rewardguide.cloud-storage-l30598.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "campaign": "ghost-panel",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-07",
+   "last_online": "2026-11-07",
+   "offline_since": null,
+   "url": "https://compensation-rewardguide.cloud-storage-l30598.workers.dev/",
+   "brand": "Microsoft",
+   "product": null,
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "2606:4700:3033::6815:516d",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "2606:4700:3033::6815:516d",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "compensation-rewardguide.cloud-storage-l30598.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "completeworkdata.com",
    "type": "domain",
    "category": "device-code",
@@ -37457,20 +37564,20 @@
    "product": null,
    "hosting": "Google Cloud",
    "dns": "Cloudflare",
-   "ip": "104.21.19.212",
+   "ip": "172.67.190.55",
    "asn": "AS13335",
    "org": null,
    "country": null,
    "ips": [
     {
-     "ip": "104.21.19.212",
+     "ip": "172.67.190.55",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
      "last_seen": "2026-11-07"
     },
     {
-     "ip": "172.67.190.55",
+     "ip": "104.21.19.212",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
@@ -37551,23 +37658,23 @@
    "product": "Acrobat / Document Cloud",
    "hosting": "Google Cloud",
    "dns": "Cloudflare",
-   "ip": "104.21.4.35",
+   "ip": "172.67.131.156",
    "asn": "AS13335",
    "org": null,
    "country": null,
    "ips": [
     {
-     "ip": "104.21.4.35",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-07"
-    },
-    {
      "ip": "172.67.131.156",
      "asn": null,
      "org": null,
      "first_seen": "2026-11-07",
+     "last_seen": "2026-11-07"
+    },
+    {
+     "ip": "104.21.4.35",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-04",
      "last_seen": "2026-11-07"
     },
     {
@@ -44576,7 +44683,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-10",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-10-11",
    "offline_since": "2026-10-11",
    "url": "https://secure-file-wntidmhg.enerqytransfer.com/",
@@ -44594,7 +44701,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "ip": "104.21.51.212",
@@ -44635,7 +44742,7 @@
      "host": "secure-file-wntidmhg.enerqytransfer.com",
      "status": "offline",
      "first_seen": "2026-10-10",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "host": "www.enerqytransfer.com",
@@ -48210,7 +48317,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-11-05",
    "offline_since": "2026-11-05",
    "url": "https://fritcherscs.com/workers/template/docusign2",
@@ -48228,7 +48335,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "hosts": [
@@ -48236,7 +48343,7 @@
      "host": "fritcherscs.com",
      "status": "offline",
      "first_seen": "2026-10-14",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -48660,7 +48767,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": null,
    "offline_since": "2026-11-04",
    "url": "https://gamingextol.pw/",
@@ -48678,14 +48785,14 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "ip": "172.67.174.39",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "hosts": [
@@ -48693,13 +48800,13 @@
      "host": "gamingextol.pw",
      "status": "offline",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "host": "r3.gamingextol.pw",
      "status": "offline",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -61280,7 +61387,7 @@
    "brand": "DocuSign",
    "product": "E-signature",
    "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
+   "dns": null,
    "ip": "172.67.184.153",
    "asn": "AS13335",
    "org": "Cloudflare, Inc.",
@@ -62893,7 +63000,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-11-07",
    "offline_since": null,
    "url": "https://securedsmartpdfdocument-viewdocsm6bx42eg.keepmydocssafe.com/",
@@ -62901,7 +63008,7 @@
    "product": null,
    "hosting": "Google Cloud",
    "dns": "Cloudflare",
-   "ip": "172.67.139.9",
+   "ip": "104.21.40.216",
    "asn": null,
    "org": null,
    "country": null,
@@ -62911,7 +63018,7 @@
      "asn": null,
      "org": null,
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "ip": "172.67.139.9",
@@ -62926,13 +63033,13 @@
      "host": "securedsmartpdfdocument-viewdocm5x2ax.keepmydocssafe.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "host": "securedsmartpdfdocument-viewdocsm6bx42eg.keepmydocssafe.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -72735,7 +72842,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": null,
    "offline_since": "2026-11-04",
    "url": "https://meazonwaves.org/",
@@ -72753,7 +72860,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "hosts": [
@@ -72761,7 +72868,7 @@
      "host": "meazonwaves.org",
      "status": "offline",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -89100,7 +89207,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": null,
    "offline_since": "2026-11-05",
    "url": "https://v1.quikrq.com/",
@@ -89118,14 +89225,14 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "ip": "172.67.136.224",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "hosts": [
@@ -89133,13 +89240,13 @@
      "host": "quikrq.com",
      "status": "offline",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     },
     {
      "host": "v1.quikrq.com",
      "status": "offline",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -92530,11 +92637,11 @@
    "category": "device-code",
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-03",
    "last_seen": "2026-11-05",
    "last_online": "2026-11-07",
-   "offline_since": null,
+   "offline_since": "2026-11-07",
    "url": "https://www.savantfile.com/",
    "brand": "Microsoft",
    "product": "Microsoft 365",
@@ -92556,7 +92663,7 @@
    "hosts": [
     {
      "host": "www.savantfile.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-03",
      "last_seen": "2026-11-05"
     }
@@ -109835,7 +109942,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-11-07",
    "offline_since": null,
    "url": "https://devicecode.werkaccount.nl/",
@@ -109843,24 +109950,24 @@
    "product": null,
    "hosting": "Google Cloud",
    "dns": "Cloudflare",
-   "ip": "172.67.158.83",
+   "ip": "104.21.66.90",
    "asn": null,
    "org": null,
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.66.90",
+     "asn": null,
+     "org": null,
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-07"
+    },
     {
      "ip": "172.67.158.83",
      "asn": null,
      "org": null,
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-06"
-    },
-    {
-     "ip": "104.21.66.90",
-     "asn": null,
-     "org": null,
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-05"
     }
    ],
    "hosts": [
@@ -109868,7 +109975,7 @@
      "host": "devicecode.werkaccount.nl",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,

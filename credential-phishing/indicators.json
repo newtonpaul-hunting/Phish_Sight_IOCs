@@ -5,7 +5,7 @@
   "short": "Fake sign-in pages that steal passwords and sessions",
   "summary": "Pages that imitate a sign-in or document-sharing service to collect a username and password. Many relay the login to the real service as it happens (adversary-in-the-middle), so they also steal the session and get past most multi-factor prompts."
  },
- "count": 2594,
+ "count": 2597,
  "indicators": [
   {
    "indicator": "008109-dp8kymf8s3mw.edgeone.dev",
@@ -52339,6 +52339,49 @@
    "lure_from": []
   },
   {
+   "indicator": "exchangezipp.digital",
+   "type": "domain",
+   "category": "credential",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "unknown",
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
+   "last_online": null,
+   "offline_since": null,
+   "url": "https://exchangezipp.digital/adobe/",
+   "brand": null,
+   "product": null,
+   "hosting": null,
+   "dns": null,
+   "ip": "129.121.77.56",
+   "asn": null,
+   "org": null,
+   "country": null,
+   "ips": [
+    {
+     "ip": "129.121.77.56",
+     "asn": null,
+     "org": null,
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "exchangezipp.digital",
+     "status": "unknown",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "expected-lime-zajgibtf-dp52dhychbec.edgeone.dev",
    "type": "domain",
    "category": "credential",
@@ -85714,28 +85757,35 @@
    "last_seen": "2026-11-08",
    "last_online": null,
    "offline_since": "2026-11-02",
-   "url": "https://microwindow-e9fvg7ahe0cxf6a6.z02.azurefd.net/",
+   "url": "https://microwindow-e9fvg7ahe0cxf6a6.z02.azurefd.net/[redacted]/VLMl7xZ6KLCS",
    "brand": "Microsoft",
    "product": null,
    "hosting": "Azure Front Door",
    "dns": null,
-   "ip": "2603:1061:14:62::1",
+   "ip": "150.171.109.106",
    "asn": "AS8075",
    "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
    "country": "US",
    "ips": [
     {
-     "ip": "150.171.109.105",
-     "asn": "AS8075",
-     "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-08"
-    },
-    {
      "ip": "150.171.109.106",
      "asn": "AS8075",
      "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-08"
+    },
+    {
+     "ip": "2603:1061:14:67::1",
+     "asn": "AS8075",
+     "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+     "first_seen": "2026-11-02",
+     "last_seen": "2026-11-08"
+    },
+    {
+     "ip": "150.171.109.105",
+     "asn": "AS8075",
+     "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+     "first_seen": "2026-11-04",
      "last_seen": "2026-11-08"
     },
     {
@@ -85757,13 +85807,6 @@
      "asn": "AS8075",
      "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-08"
-    },
-    {
-     "ip": "2603:1061:14:67::1",
-     "asn": "AS8075",
-     "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-     "first_seen": "2026-11-02",
      "last_seen": "2026-11-08"
     },
     {
@@ -96501,6 +96544,47 @@
      "status": "online",
      "first_seen": "2026-10-19",
      "last_seen": "2026-11-07"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "onedrivedocs.xn--q9jyb4c",
+   "type": "domain",
+   "category": "credential",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
+   "last_online": "2026-11-08",
+   "offline_since": null,
+   "url": "http://smusxath.onedrivedocs.xn--q9jyb4c/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "DigitalOcean",
+   "dns": "Cloudflare",
+   "ip": null,
+   "asn": null,
+   "org": null,
+   "country": null,
+   "ips": [],
+   "hosts": [
+    {
+     "host": "advath.onedrivedocs.xn--q9jyb4c",
+     "status": "online",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
+    },
+    {
+     "host": "smusxath.onedrivedocs.xn--q9jyb4c",
+     "status": "offline",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
     }
    ],
    "actor": null,
@@ -108006,6 +108090,55 @@
      "status": "offline",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "rexlifs.digital",
+   "type": "domain",
+   "category": "credential",
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "unknown",
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
+   "last_online": null,
+   "offline_since": null,
+   "url": "https://www.rexlifs.digital/exchangezipp.digital/adobe/",
+   "brand": null,
+   "product": null,
+   "hosting": null,
+   "dns": null,
+   "ip": "129.121.77.56",
+   "asn": null,
+   "org": "open directory https://www.rexlifs.digital/exchangezipp.digital/adobe/",
+   "country": null,
+   "ips": [
+    {
+     "ip": "129.121.77.56",
+     "asn": null,
+     "org": null,
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "rexlifs.digital",
+     "status": "unknown",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
+    },
+    {
+     "host": "www.rexlifs.digital",
+     "status": "unknown",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-08"
     }
    ],
    "actor": null,

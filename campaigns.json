@@ -60,10 +60,11 @@
    "credential",
    "device-code",
    "clickfix",
-   "malware"
+   "malware",
+   "backends"
   ],
-  "online": 210,
-  "total": 348
+  "online": 211,
+  "total": 349
  },
  {
   "id": "device-code-lab",
@@ -91,7 +92,8 @@
   "categories": [
    "device-code",
    "clickfix",
-   "malware"
+   "malware",
+   "backends"
   ],
   "online": 34,
   "total": 88
@@ -120,7 +122,8 @@
   ],
   "categories": [
    "device-code",
-   "clickfix"
+   "clickfix",
+   "backends"
   ],
   "online": 294,
   "total": 524
@@ -150,7 +153,8 @@
    "After a confirmed sign-in, check for new inbox rules, app consents, and registered devices or MFA methods."
   ],
   "categories": [
-   "device-code"
+   "device-code",
+   "backends"
   ],
   "online": 115,
   "total": 716
@@ -182,7 +186,8 @@
    "Look for sign-ins followed by session use from unfamiliar IPs, and block the hosts listed below."
   ],
   "categories": [
-   "credential"
+   "credential",
+   "backends"
   ],
   "online": 98,
   "total": 599
@@ -212,7 +217,7 @@
    "Block the hosts listed below."
   ],
   "categories": [
-   "device-code"
+   "credential"
   ],
   "online": 1,
   "total": 1
@@ -242,10 +247,48 @@
   ],
   "categories": [
    "device-code",
-   "malware"
+   "malware",
+   "backends"
   ],
   "online": 102,
   "total": 444
+ },
+ {
+  "id": "ios-exploit-kits",
+  "name": "DarkSword / Coruna iPhone exploit delivery",
+  "technique": "Mobile exploit kit: drive-by iOS exploit chains delivered from web pages",
+  "targets": [
+   "iPhone (iOS 13 to 18.7)",
+   "Crypto wallets",
+   "OKX users"
+  ],
+  "active_since": "2026-03",
+  "summary": "Web pages that compromise iPhones simply by being opened. The pages carry a hidden frame that checks the visitor's iOS version and, on a vulnerable iPhone, runs one of two leaked exploit kits: DarkSword (iOS 18.4 to 18.7) or Coruna (iOS 13 to 17.2.1). Once the phone is compromised, the kit copies the keychain (saved passwords and tokens) and crypto-wallet files to the operator's server. The most common lure is a fake Cloudflare \"verify you are human\" page that shows desktop visitors a QR code to open it on a phone, pushes in-app browsers to Safari, and finally redirects to a real crypto exchange so nothing looks wrong. The same exploit frame is also pasted into scam, smishing, gambling and video sites, and sold as a one-line script service. Operators run the kit from Chinese-language admin panels that are themselves resold.",
+  "notable": [
+   "This is not phishing: the victim types nothing. Opening the page on an unpatched iPhone is enough."
+  ],
+  "victim_sees": [
+   "A link in a text message, social post or ad, often crypto- or investment-themed.",
+   "A \"verify you are human\" check; on a computer, a QR code saying the site only works on a phone.",
+   "On an iPhone, a short \"verifying\" screen and then the real OKX (or another brand) website."
+  ],
+  "infrastructure": [
+   "Lure pages: cheap domains and bare IP addresses, many reusing the same fake check page.",
+   "Exploit servers that host the exploit chain and receive the stolen keychain and wallet files (listed under Kit backends).",
+   "Operator panels on VPS hosting, often on bare IP addresses (listed under Kit backends)."
+  ],
+  "defend": [
+   "Update iPhones to the latest iOS: these kits target older versions.",
+   "Turn on Lockdown Mode for people likely to be targeted (crypto holders, executives).",
+   "Block the lure pages and the backends at DNS or in the MDM web filter.",
+   "If an iPhone opened one of these pages: update it, change the passwords saved on it, revoke sessions, and move crypto funds to a new wallet."
+  ],
+  "categories": [
+   "malware",
+   "backends"
+  ],
+  "online": 90,
+  "total": 110
  },
  {
   "id": "operator-panels",
@@ -267,7 +310,7 @@
    "Search proxy and DNS logs for past connections to them."
   ],
   "categories": [
-   "credential"
+   "backends"
   ],
   "online": 66,
   "total": 85
@@ -335,7 +378,8 @@
   ],
   "categories": [
    "credential",
-   "device-code"
+   "device-code",
+   "backends"
   ],
   "online": 197,
   "total": 458

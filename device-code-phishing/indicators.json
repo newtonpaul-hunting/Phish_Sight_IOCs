@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2332,
+ "count": 2343,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -22503,7 +22503,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://white.artguid.com/[redacted]",
@@ -22521,7 +22521,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-22",
-     "last_seen": "2026-11-10"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -22529,7 +22529,7 @@
      "host": "white.artguid.com",
      "status": "online",
      "first_seen": "2026-10-22",
-     "last_seen": "2026-11-10"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -25181,10 +25181,10 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-10-29",
    "offline_since": "2026-10-30",
-   "url": "http://blifertlumber.com/Example/[redacted]",
+   "url": "https://blifertlumber.com/Example/[redacted]",
    "brand": "Microsoft",
    "product": null,
    "hosting": "DigitalOcean",
@@ -25199,7 +25199,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -25207,7 +25207,7 @@
      "host": "blifertlumber.com",
      "status": "offline",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -30113,6 +30113,135 @@
      "status": "online",
      "first_seen": "2026-10-24",
      "last_seen": "2026-11-11"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "claudeevents.app",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "offline",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": null,
+   "offline_since": "2026-11-12",
+   "url": "https://app.claudeevents.app/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.26.13.93",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.13.93",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "app.claudeevents.app",
+     "status": "offline",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "claudewebinnar.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://continue-to-event.claudewebinnar.com/mt/LAbfbl/fabGMdZDVh",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "2606:4700:20::681a:fa6",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.14.166",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.15.166",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.72.33",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:ea6",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:fa6",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::ac43:4821",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "claudewebinnar.com",
+     "status": "offline",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "continue-to-event.claudewebinnar.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -43617,6 +43746,288 @@
    "lure_from": []
   },
   {
+   "indicator": "eventjoinrsvp.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://claude.eventjoinrsvp.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "2606:4700:20::681a:3c",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.0.60",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.1.60",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.69.153",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:13c",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:3c",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::ac43:4599",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "app.eventjoinrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "claude.eventjoinrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "eventjoinrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "tiktok.eventjoinrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "webex.eventjoinrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "eventrsvp-authenticate.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "http://eventrsvp-authenticate.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.74.196",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.26.11.49",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.74.196",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:a31",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "eventrsvp-authenticate.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "www.eventrsvp-authenticate.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "eventrsvp.app",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "http://eventrsvp.app/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.26.10.30",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.26.10.30",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.11.30",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.72.50",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:a1e",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:b1e",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::ac43:4832",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "claude.eventrsvp.app",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "eventrsvp.app",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "google.eventrsvp.app",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "meta.eventrsvp.app",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "openai.eventrsvp.app",
+     "status": "unknown",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "www.eventrsvp.app",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "zoom.eventrsvp.app",
+     "status": "unknown",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "excellcoatings.ca",
    "type": "domain",
    "category": "device-code",
@@ -46250,7 +46661,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": null,
    "offline_since": "2026-10-28",
    "url": "https://flow505.mooo.com/accessible/[redacted]",
@@ -46276,7 +46687,7 @@
      "host": "flow505.mooo.com",
      "status": "offline",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -47876,6 +48287,57 @@
      "status": "offline",
      "first_seen": "2026-10-11",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "ggleventapi.icu",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "offline",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": null,
+   "offline_since": "2026-11-12",
+   "url": "https://continue-to-office-.ggleventapi.icu/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.26.9.24",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.8.24",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.9.24",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "continue-to-office-.ggleventapi.icu",
+     "status": "offline",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -64287,7 +64749,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-08",
    "offline_since": "2026-11-09",
    "url": "https://liyuda.com/docx/[redacted]",
@@ -64305,14 +64767,14 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "172.67.212.21",
@@ -64334,7 +64796,7 @@
      "host": "liyuda.com",
      "status": "offline",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -72406,6 +72868,50 @@
    "lure_from": []
   },
   {
+   "indicator": "mhwilson1988.org",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://mhwilson1988.org/wp-content/klelkejkr/adobe.html",
+   "brand": "Adobe",
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "microsoftonline.com",
+   "ip": "192.185.186.184",
+   "asn": "AS31898",
+   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "192.185.186.184",
+     "asn": "AS31898",
+     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "mhwilson1988.org",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "micdrownsinc.cloud",
    "type": "domain",
    "category": "device-code",
@@ -73274,7 +73780,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-10-29",
    "offline_since": "2026-10-30",
    "url": "https://millergranatndco.com/commands/[redacted]",
@@ -73292,7 +73798,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -73300,7 +73806,7 @@
      "host": "millergranatndco.com",
      "status": "offline",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -73717,7 +74223,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://mkmann.com/lock/[redacted]",
@@ -73735,7 +74241,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -73743,7 +74249,7 @@
      "host": "mkmann.com",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -77304,7 +77810,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://noxband.com/[redacted]",
@@ -77322,7 +77828,7 @@
      "asn": "AS16509",
      "org": "AMAZON-02 - Amazon.com, Inc., US",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -77330,7 +77836,7 @@
      "host": "noxband.com",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -82182,7 +82688,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://sheet.pc-jets.com/[redacted]",
@@ -82200,7 +82706,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-10"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "172.67.182.131",
@@ -82215,7 +82721,7 @@
      "host": "sheet.pc-jets.com",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-10"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -82277,7 +82783,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://pcfpsquniton.com/login",
@@ -82295,7 +82801,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -82303,7 +82809,7 @@
      "host": "pcfpsquniton.com",
      "status": "online",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -89463,6 +89969,156 @@
    "lure_from": []
   },
   {
+   "indicator": "register-eventrsvp.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://claude.register-eventrsvp.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.26.0.66",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.0.66",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.1.66",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.73.212",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:142",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:42",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "claude.register-eventrsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "register-rsvp.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://claude.register-rsvp.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "2606:4700:20::ac43:4775",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": "GB",
+   "ips": [
+    {
+     "ip": "104.26.1.216",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.71.117",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "185.7.214.42",
+     "asn": "AS55286",
+     "org": "SERVER-MANIA - B2 Net Solutions Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:d8",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::ac43:4775",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "1ecln41v.register-rsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "claude.register-rsvp.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "reguushiu020909109010010808108081080810.cloud-storage-0935784.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -91175,6 +91831,97 @@
    "lure_from": []
   },
   {
+   "indicator": "rsvpconnect-events.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://anthropic.rsvpconnect-events.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.73.44",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.26.2.73",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "104.26.3.73",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "172.67.73.44",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:249",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::681a:349",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "ip": "2606:4700:20::ac43:492c",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "anthropic.rsvpconnect-events.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "register.rsvpconnect-events.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    },
+    {
+     "host": "rsvpconnect-events.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "rtpx-g9y7-jzs2.lki8765hgf.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -92100,7 +92847,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://scheffresconstruction.help/COPILOT/[redacted]",
@@ -92118,7 +92865,7 @@
      "asn": "AS22612",
      "org": "NAMECHEAP-NET - Namecheap, Inc., US",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -92126,7 +92873,7 @@
      "host": "scheffresconstruction.help",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -101466,6 +102213,50 @@
    "lure_from": []
   },
   {
+   "indicator": "tesbihhanevip.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "last_online": "2026-11-12",
+   "offline_since": null,
+   "url": "https://tesbihhanevip.com/others/adobefile.html",
+   "brand": "Adobe",
+   "product": null,
+   "hosting": "VERIMEK Verimek Telekomunikasyon San Ve Tic. Ltd. Sti.",
+   "dns": "tesbihane.biz",
+   "ip": "185.205.19.26",
+   "asn": "AS200002",
+   "org": "VERIMEK Verimek Telekomunikasyon San Ve Tic. Ltd. Sti., TR",
+   "country": "TR",
+   "ips": [
+    {
+     "ip": "185.205.19.26",
+     "asn": "AS200002",
+     "org": "VERIMEK Verimek Telekomunikasyon San Ve Tic. Ltd. Sti., TR",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "tesbihhanevip.com",
+     "status": "online",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "tescoccontrols.com",
    "type": "domain",
    "category": "device-code",
@@ -103033,7 +103824,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-10",
    "offline_since": "2026-11-11",
    "url": "https://torvion.life/ofulium/[redacted]",
@@ -103051,7 +103842,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "104.21.12.112",
@@ -103080,7 +103871,7 @@
      "host": "torvion.life",
      "status": "offline",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -108046,7 +108837,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": null,
    "offline_since": "2026-11-05",
    "url": "https://statements.outlook.office365.microsoftcopilots.vigilantlnc.com/paymoderinvoice/[redacted]",
@@ -108064,7 +108855,7 @@
      "host": "statements.outlook.office365.microsoftcopilots.vigilantlnc.com",
      "status": "offline",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -111111,7 +111902,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-03",
    "offline_since": "2026-11-08",
    "url": "https://windsurfinc.com/[redacted]",
@@ -111129,7 +111920,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -111137,7 +111928,7 @@
      "host": "windsurfinc.com",
      "status": "offline",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,
@@ -111461,7 +112252,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
    "last_online": "2026-11-11",
    "offline_since": null,
    "url": "https://wonderhermes.com/jhvjh/[redacted]",
@@ -111479,28 +112270,28 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "hosts": [
@@ -111508,13 +112299,13 @@
      "host": "wonderhermes.com",
      "status": "online",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     },
     {
      "host": "www.wonderhermes.com",
      "status": "online",
      "first_seen": "2026-11-05",
-     "last_seen": "2026-11-11"
+     "last_seen": "2026-11-12"
     }
    ],
    "actor": null,

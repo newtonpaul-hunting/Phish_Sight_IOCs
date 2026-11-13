@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2353,
+ "count": 2361,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -1781,42 +1781,6 @@
      "status": "offline",
      "first_seen": "2026-10-14",
      "last_seen": "2026-11-07"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [],
-   "connects_to": [],
-   "lure_from": []
-  },
-  {
-   "indicator": "144.172.110.59",
-   "type": "ip",
-   "category": "device-code",
-   "backend_for": null,
-   "campaign": "device-code-other",
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-14",
-   "last_seen": "2026-10-14",
-   "last_online": "2026-11-13",
-   "offline_since": null,
-   "url": "https://144.172.110.59/",
-   "brand": "Microsoft",
-   "product": "OneDrive",
-   "hosting": "RouterHosting LLC",
-   "dns": null,
-   "ip": null,
-   "asn": "AS14956",
-   "org": "RouterHosting LLC",
-   "country": "US",
-   "ips": [],
-   "hosts": [
-    {
-     "host": "144.172.110.59",
-     "status": "online",
-     "first_seen": "2026-10-14",
-     "last_seen": "2026-10-14"
     }
    ],
    "actor": null,
@@ -24362,6 +24326,63 @@
    "lure_from": []
   },
   {
+   "indicator": "benetllc.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://benetllc.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.169.47",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.87.89",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.169.47",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "benetllc.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.benetllc.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "beornotbe.com",
    "type": "domain",
    "category": "device-code",
@@ -30453,6 +30474,63 @@
    "lure_from": []
   },
   {
+   "indicator": "clearpinkys.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "http://clearpinkys.com/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.31.154",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.31.154",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.178.57",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "clearpinkys.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.clearpinkys.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "click-today-share.click-document-m365.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -33706,6 +33784,56 @@
      "status": "offline",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-30"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "dbnfilesharing.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "http://dbnfilesharing.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.177.15",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "172.67.177.15",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "dbnfilesharing.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.dbnfilesharing.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -41705,6 +41833,50 @@
    "lure_from": []
   },
   {
+   "indicator": "dunefilesharing.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://dunefilesharing.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.67.238",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.67.238",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "dunefilesharing.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "dunnhumby.a.ssl.fastly.net",
    "type": "domain",
    "category": "device-code",
@@ -43959,12 +44131,12 @@
    "last_seen": "2026-11-13",
    "last_online": "2026-11-13",
    "offline_since": null,
-   "url": "https://webex.eventjoinrsvp.com/",
+   "url": "https://claude.eventjoinrsvp.com/",
    "brand": "Microsoft",
    "product": "Microsoft 365",
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:20::ac43:4599",
+   "ip": "104.26.0.60",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -44023,7 +44195,7 @@
      "host": "claude.eventjoinrsvp.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-12"
+     "last_seen": "2026-11-13"
     },
     {
      "host": "eventjoinrsvp.com",
@@ -44035,7 +44207,7 @@
      "host": "tiktok.eventjoinrsvp.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-12"
+     "last_seen": "2026-11-13"
     },
     {
      "host": "webex.eventjoinrsvp.com",
@@ -76639,6 +76811,63 @@
    "lure_from": []
   },
   {
+   "indicator": "nbonefileshare.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://nbonefileshare.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.70.36",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.70.36",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.219.31",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "nbonefileshare.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.nbonefileshare.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "ncclouds.co",
    "type": "domain",
    "category": "device-code",
@@ -96213,6 +96442,63 @@
    "lure_from": []
   },
   {
+   "indicator": "sharehomedrlvepdf.homes",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "http://sharehomedrlvepdf.homes/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.190.58",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.19.215",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.190.58",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "sharehomedrlvepdf.homes",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.sharehomedrlvepdf.homes",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "sharepoint-0tk.b-martinpaintirng.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -102639,6 +102925,63 @@
      "status": "offline",
      "first_seen": "2026-10-24",
      "last_seen": "2026-10-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "ter-proposal.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://ter-proposal.com/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.153.50",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.32.179",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.153.50",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "ter-proposal.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.ter-proposal.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -110200,7 +110543,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-12",
+   "last_seen": "2026-11-13",
    "last_online": "2026-11-13",
    "offline_since": null,
    "url": "https://volker-middendorf.info/join/cliqjekd",
@@ -110218,7 +110561,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-12"
+     "last_seen": "2026-11-13"
     }
    ],
    "hosts": [
@@ -110226,7 +110569,7 @@
      "host": "volker-middendorf.info",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-12"
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -111162,6 +111505,63 @@
      "status": "online",
      "first_seen": "2026-10-30",
      "last_seen": "2026-10-30"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "walthamlumbers.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://www.walthamlumbers.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.221.88",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.75.106",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "172.67.221.88",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "walthamlumbers.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "host": "www.walthamlumbers.com",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -114913,6 +115313,57 @@
      "status": "offline",
      "first_seen": "2026-11-03",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "ysk-ktaoxhjz-09a624.smansur-surman-com-s-account.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-13",
+   "offline_since": null,
+   "url": "https://ysk-ktaoxhjz-09a624.smansur-surman-com-s-account.workers.dev/",
+   "brand": "Microsoft",
+   "product": null,
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "188.114.96.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "ysk-ktaoxhjz-09a624.smansur-surman-com-s-account.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,

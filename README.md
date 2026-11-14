@@ -2,7 +2,7 @@
 
 Phishing and malware-delivery indicators, and the kit backends behind them (phishing panels, C2 and mobile exploit
 servers), confirmed as malicious by [PhishSight](https://newtonpaul.com). Updated automatically when new indicators
-are confirmed. Last change: **2026-11-14 09:46 UTC**.
+are confirmed. Last change: **2026-11-14 10:48 UTC**.
 
 | Folder | Indicators |
 |---|---|

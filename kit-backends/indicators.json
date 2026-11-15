@@ -5,7 +5,7 @@
   "short": "Panels, C2 and exploit servers behind phishing kits and mobile exploit kits",
   "summary": "The servers behind the lures, not the lures themselves, and not only phishing. This covers the operator panels where phishing campaigns are run and stolen logins land, the backends that issue device codes or relay sign-ins, command-and-control servers for malware, and the servers that run mobile exploit kits: iPhone exploit chains (such as DarkSword and Coruna) that take over a phone from a web page and copy its saved passwords, keychain and crypto-wallet files, along with the panels their operators use. Victims rarely see these hosts, but they outlive the individual lure pages, so they are the most durable thing to block."
  },
- "count": 766,
+ "count": 778,
  "indicators": [
   {
    "indicator": "011pump.fun",
@@ -16,7 +16,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-10",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-10-16",
    "offline_since": "2026-10-17",
    "url": "https://011pump.fun/",
@@ -34,7 +34,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-10",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -42,7 +42,7 @@
      "host": "011pump.fun",
      "status": "offline",
      "first_seen": "2026-10-10",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -60,7 +60,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://101.33.76.147/",
@@ -78,7 +78,7 @@
      "host": "101.33.76.147",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1749,6 +1749,42 @@
    "lure_from": []
   },
   {
+   "indicator": "142.86.0.199",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://142.86.0.199/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "142.86.0.199",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "142.86.0.95",
    "type": "ip",
    "category": "backends",
@@ -1992,6 +2028,78 @@
      "status": "online",
      "first_seen": "2026-11-06",
      "last_seen": "2026-11-07"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "142.86.119.119",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://142.86.119.119/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "142.86.119.119",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "142.86.119.29",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://142.86.119.29/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "142.86.119.29",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
     }
    ],
    "actor": null,
@@ -3078,7 +3186,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://157.254.234.55/",
@@ -3096,7 +3204,7 @@
      "host": "157.254.234.55",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -4269,6 +4377,42 @@
    "lure_from": []
   },
   {
+   "indicator": "170.106.170.123",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://170.106.170.123/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "170.106.170.123",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "170.106.35.20",
    "type": "ip",
    "category": "backends",
@@ -5325,7 +5469,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "http://198.199.82.231:8443/login",
@@ -5343,7 +5487,7 @@
      "host": "198.199.82.231",
      "status": "online",
      "first_seen": "2026-10-22",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8106,6 +8250,42 @@
    "lure_from": []
   },
   {
+   "indicator": "43.135.181.25",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.135.181.25/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.135.181.25",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "43.152.72.65",
    "type": "ip",
    "category": "backends",
@@ -8169,6 +8349,114 @@
      "status": "offline",
      "first_seen": "2026-10-24",
      "last_seen": "2026-11-03"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.153.50.25",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.153.50.25/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.153.50.25",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.153.62.186",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.153.62.186/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.153.62.186",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.153.83.186",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.153.83.186/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.153.83.186",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
     }
    ],
    "actor": null,
@@ -8970,6 +9258,42 @@
    "lure_from": []
   },
   {
+   "indicator": "43.166.205.102",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.166.205.102/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.166.205.102",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "43.166.209.19",
    "type": "ip",
    "category": "backends",
@@ -9105,6 +9429,42 @@
      "status": "online",
      "first_seen": "2026-11-06",
      "last_seen": "2026-11-07"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.166.218.229",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": "operator-panels",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.166.218.229/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.166.218.229",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
     }
    ],
    "actor": null,
@@ -9626,7 +9986,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://43.98.165.114/admin",
@@ -9644,7 +10004,7 @@
      "host": "43.98.165.114",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -10357,7 +10717,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://51.79.170.187/",
@@ -10375,7 +10735,7 @@
      "host": "51.79.170.187",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -18712,7 +19072,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://82.147.84.124/admin",
@@ -18730,7 +19090,7 @@
      "host": "82.147.84.124",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -19656,7 +20016,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://92haoyun.icu/admin",
@@ -19674,7 +20034,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -19682,13 +20042,13 @@
      "host": "92haoyun.icu",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "admin.92haoyun.icu",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -20173,7 +20533,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://lunar64.ancientrooftops.de/panel/",
@@ -20191,14 +20551,14 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "2a06:98c1:3121::3",
@@ -20272,6 +20632,12 @@
      "last_seen": "2026-11-05"
     },
     {
+     "host": "alldocsec.ancientrooftops.de",
+     "status": "unknown",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    },
+    {
      "host": "filelock.ancientrooftops.de",
      "status": "offline",
      "first_seen": "2026-10-20",
@@ -20287,13 +20653,13 @@
      "host": "fileviewall.ancientrooftops.de",
      "status": "offline",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "lunar64.ancientrooftops.de",
      "status": "offline",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "newdocs.ancientrooftops.de",
@@ -20323,7 +20689,7 @@
      "host": "viewdocum.ancientrooftops.de",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "viewdocumen.ancientrooftops.de",
@@ -20336,6 +20702,12 @@
      "status": "unknown",
      "first_seen": "2026-10-20",
      "last_seen": "2026-11-05"
+    },
+    {
+     "host": "viewfilenow.ancientrooftops.de",
+     "status": "unknown",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
     },
     {
      "host": "visadokumen.ancientrooftops.de",
@@ -20416,7 +20788,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://app.appapple.store/admin/login",
@@ -20434,7 +20806,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -20442,7 +20814,7 @@
      "host": "app.appapple.store",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -20850,11 +21222,11 @@
    "backend_for": "mobile-exploit",
    "campaign": "ios-exploit-kits",
    "role": "Operator infrastructure",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-11",
    "last_seen": "2026-11-11",
-   "last_online": null,
-   "offline_since": "2026-11-11",
+   "last_online": "2026-11-14",
+   "offline_since": null,
    "url": "https://br5u2rncyz2795bnjo-hr.com/",
    "brand": "OKX",
    "product": null,
@@ -20876,7 +21248,7 @@
    "hosts": [
     {
      "host": "br5u2rncyz2795bnjo-hr.com",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-11-11",
      "last_seen": "2026-11-11"
     }
@@ -21305,7 +21677,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://tundra30.chairoftime.de/panel/",
@@ -21323,7 +21695,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -21331,7 +21703,7 @@
      "host": "tundra30.chairoftime.de",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -21443,7 +21815,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "http://60127agent.cicc-co88.cc/",
@@ -21461,7 +21833,7 @@
      "asn": "AS979",
      "org": "NETLAB-SDN - NetLab Global, US",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -21469,13 +21841,13 @@
      "host": "5112fm.cicc-co88.cc",
      "status": "offline",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "60127agent.cicc-co88.cc",
      "status": "online",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -21537,7 +21909,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": null,
    "offline_since": "2026-11-04",
    "url": "https://bookings.cloud.microsoft/bookwithme/",
@@ -21555,7 +21927,7 @@
      "asn": "AS8075",
      "org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -21563,7 +21935,7 @@
      "host": "bookings.cloud.microsoft",
      "status": "offline",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -21814,7 +22186,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://sj.czbtgh.top/",
@@ -21832,7 +22204,7 @@
      "asn": "AS400619",
      "org": "AROSSCLOUD INC.",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -21840,7 +22212,7 @@
      "host": "sj.czbtgh.top",
      "status": "online",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -21902,7 +22274,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://darkswordlab.xyz/",
@@ -21920,7 +22292,7 @@
      "asn": "AS154177",
      "org": "LIGHT4-AS-AP - LIGHT NODE LIMITED, HK",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -21934,7 +22306,7 @@
      "host": "darkswordlab.xyz",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -22900,7 +23272,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-10",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://document-drive.work/login",
@@ -22918,7 +23290,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "104.21.96.65",
@@ -22940,7 +23312,7 @@
      "host": "document-drive.work",
      "status": "online",
      "first_seen": "2026-10-10",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -23884,7 +24256,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-10",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-10-11",
    "offline_since": "2026-10-11",
    "url": "https://secure-file-wntidmhg.enerqytransfer.com/",
@@ -23902,7 +24274,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "104.21.51.212",
@@ -23943,7 +24315,7 @@
      "host": "secure-file-wntidmhg.enerqytransfer.com",
      "status": "offline",
      "first_seen": "2026-10-10",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "www.enerqytransfer.com",
@@ -24011,7 +24383,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-11",
    "offline_since": "2026-11-12",
    "url": "https://pierce99.essentialdocstorage.de/panel/",
@@ -24029,7 +24401,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -24037,7 +24409,7 @@
      "host": "pierce99.essentialdocstorage.de",
      "status": "offline",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -25174,7 +25546,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-05",
    "offline_since": "2026-11-05",
    "url": "https://fritcherscs.com/workers/template/docusign2",
@@ -25192,7 +25564,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-04",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -25200,7 +25572,7 @@
      "host": "fritcherscs.com",
      "status": "offline",
      "first_seen": "2026-10-14",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -25539,32 +25911,32 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
-   "url": "https://beta.gentlesunrise.de/panel/",
+   "url": "https://beta.gentlesunrise.de/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.142.119",
+   "ip": "104.21.95.6",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.142.119",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
-    },
-    {
      "ip": "104.21.95.6",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
+    },
+    {
+     "ip": "172.67.142.119",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-20",
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -25572,7 +25944,7 @@
      "host": "beta.gentlesunrise.de",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -26358,7 +26730,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://granite10.goldenvisionsforest.de/panel/",
@@ -26376,7 +26748,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -26384,7 +26756,7 @@
      "host": "granite10.goldenvisionsforest.de",
      "status": "online",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -26402,7 +26774,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://www.google.com/",
@@ -26420,7 +26792,7 @@
      "asn": "AS15169",
      "org": "GOOGLE - Google LLC, US",
      "first_seen": "2026-11-07",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "142.251.152.119",
@@ -26462,7 +26834,7 @@
      "host": "www.google.com",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -27819,7 +28191,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://jdaram.com/",
@@ -27833,32 +28205,32 @@
    "country": "US",
    "ips": [
     {
-     "ip": "172.67.135.50",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
-    },
-    {
      "ip": "104.21.6.192",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
+    },
+    {
+     "ip": "172.67.135.50",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-09",
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "2606:4700:3030::6815:6c0",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "2606:4700:3036::ac43:8732",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -27878,7 +28250,7 @@
      "host": "jdaram.com",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -28980,7 +29352,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://vault53.morningbreezeflowers.de/panel/",
@@ -28998,7 +29370,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "2606:4700:3032::ac43:865a",
@@ -29013,7 +29385,7 @@
      "host": "vault53.morningbreezeflowers.de",
      "status": "online",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -29133,7 +29505,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": "2026-11-14",
    "url": "https://darksword.msxfweb.net/admin/login",
@@ -29151,7 +29523,7 @@
      "asn": "AS16509",
      "org": "AMAZON-02 - Amazon.com, Inc., US",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -29159,13 +29531,13 @@
      "host": "coruna.msxfweb.net",
      "status": "offline",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "darksword.msxfweb.net",
      "status": "offline",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -29524,6 +29896,50 @@
    "lure_from": []
   },
   {
+   "indicator": "mysharedocxdriveview.com",
+   "type": "domain",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": null,
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://mysharedocxdriveview.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.180.6",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "172.67.180.6",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "mysharedocxdriveview.com",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "nadadouro.bar",
    "type": "domain",
    "category": "backends",
@@ -29582,7 +29998,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-13",
    "offline_since": "2026-11-13",
    "url": "https://nfshgu.top/",
@@ -29600,7 +30016,7 @@
      "asn": "AS400619",
      "org": "AROSSCLOUD INC.",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -29608,7 +30024,7 @@
      "host": "nfshgu.top",
      "status": "offline",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "ss.nfshgu.top",
@@ -29928,7 +30344,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://admin.plnscan.com/",
@@ -29946,7 +30362,7 @@
      "asn": "AS3214",
      "org": "XTOM xTom GmbH, DE",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -29954,7 +30370,7 @@
      "host": "admin.plnscan.com",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -31329,7 +31745,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://zephyr71.silverstreetmoon.de/panel/",
@@ -31347,7 +31763,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "ip": "104.21.79.122",
@@ -31381,7 +31797,7 @@
      "host": "zephyr71.silverstreetmoon.de",
      "status": "offline",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -31493,7 +31909,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-12",
    "offline_since": null,
    "url": "https://jasper67.sleepingforestmystery.de/panel/",
@@ -31511,7 +31927,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -31519,7 +31935,51 @@
      "host": "jasper67.sleepingforestmystery.de",
      "status": "online",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "smokingpussy.store",
+   "type": "domain",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": null,
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://smokingpussy.store/login",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "ReadyDedis",
+   "dns": "GoDaddy",
+   "ip": "170.205.52.199",
+   "asn": "AS397966",
+   "org": "READYDEDISLLC - ReadyDedis, LLC, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "170.205.52.199",
+     "asn": "AS397966",
+     "org": "READYDEDISLLC - ReadyDedis, LLC, US",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "smokingpussy.store",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,

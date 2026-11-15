@@ -5,7 +5,7 @@
   "short": "Panels, C2 and exploit servers behind phishing kits and mobile exploit kits",
   "summary": "The servers behind the lures, not the lures themselves, and not only phishing. This covers the operator panels where phishing campaigns are run and stolen logins land, the backends that issue device codes or relay sign-ins, command-and-control servers for malware, and the servers that run mobile exploit kits: iPhone exploit chains (such as DarkSword and Coruna) that take over a phone from a web page and copy its saved passwords, keychain and crypto-wallet files, along with the panels their operators use. Victims rarely see these hosts, but they outlive the individual lure pages, so they are the most durable thing to block."
  },
- "count": 807,
+ "count": 808,
  "indicators": [
   {
    "indicator": "011pump.fun",
@@ -24263,6 +24263,50 @@
      "status": "offline",
      "first_seen": "2026-10-10",
      "last_seen": "2026-10-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "docu-securefiles.icu",
+   "type": "domain",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": null,
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
+   "offline_since": null,
+   "url": "http://docu-securefiles.icu/",
+   "brand": null,
+   "product": null,
+   "hosting": "Node Host Limited",
+   "dns": "Cloudflare",
+   "ip": "150.241.87.144",
+   "asn": "AS198550",
+   "org": "Node Host Limited",
+   "country": "PL",
+   "ips": [
+    {
+     "ip": "150.241.87.144",
+     "asn": "AS198550",
+     "org": "Node Host Limited",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "docu-securefiles.icu",
+     "status": "online",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,

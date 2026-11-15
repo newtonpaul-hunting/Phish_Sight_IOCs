@@ -5,7 +5,7 @@
   "short": "Panels, C2 and exploit servers behind phishing kits and mobile exploit kits",
   "summary": "The servers behind the lures, not the lures themselves, and not only phishing. This covers the operator panels where phishing campaigns are run and stolen logins land, the backends that issue device codes or relay sign-ins, command-and-control servers for malware, and the servers that run mobile exploit kits: iPhone exploit chains (such as DarkSword and Coruna) that take over a phone from a web page and copy its saved passwords, keychain and crypto-wallet files, along with the panels their operators use. Victims rarely see these hosts, but they outlive the individual lure pages, so they are the most durable thing to block."
  },
- "count": 778,
+ "count": 807,
  "indicators": [
   {
    "indicator": "011pump.fun",
@@ -88,6 +88,42 @@
    "lure_from": []
   },
   {
+   "indicator": "103.106.191.133",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://103.106.191.133:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "cognetcloud INC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS401696",
+   "org": "cognetcloud INC",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "103.106.191.133",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "103.114.162.72",
    "type": "ip",
    "category": "backends",
@@ -97,7 +133,7 @@
    "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://103.114.162.72/",
    "brand": "Microsoft",
@@ -132,7 +168,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://103.121.95.23/",
@@ -150,7 +186,7 @@
      "host": "103.121.95.23",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -187,6 +223,114 @@
      "status": "online",
      "first_seen": "2026-11-09",
      "last_seen": "2026-11-09"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "103.74.193.100",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://103.74.193.100:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "SonderCloud Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS133199",
+   "org": "SonderCloud Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "103.74.193.100",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "103.74.193.101",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://103.74.193.101:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "SonderCloud Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS133199",
+   "org": "SonderCloud Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "103.74.193.101",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "103.74.193.103",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://103.74.193.103:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "SonderCloud Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS133199",
+   "org": "SonderCloud Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "103.74.193.103",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -349,8 +493,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://104.249.10.199/",
    "brand": null,
@@ -367,7 +511,7 @@
      "host": "104.249.10.199",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -457,7 +601,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-13",
    "offline_since": null,
    "url": "https://107.173.37.52/",
@@ -475,7 +619,7 @@
      "host": "107.173.37.52",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -651,6 +795,78 @@
      "status": "unknown",
      "first_seen": "2026-10-13",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "122.10.18.194",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://122.10.18.194:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "DXTL Tseung Kwan O Service",
+   "dns": null,
+   "ip": null,
+   "asn": "AS134548",
+   "org": "DXTL Tseung Kwan O Service",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "122.10.18.194",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "122.10.18.205",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://122.10.18.205:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "DXTL Tseung Kwan O Service",
+   "dns": null,
+   "ip": null,
+   "asn": "AS134548",
+   "org": "DXTL Tseung Kwan O Service",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "122.10.18.205",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -967,6 +1183,42 @@
    "lure_from": []
   },
   {
+   "indicator": "134.122.169.32",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "https://134.122.169.32/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "CTG Server Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS152194",
+   "org": "CTG Server Limited",
+   "country": "JP",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "134.122.169.32",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "1347598142-1317754460.cos.ap-bangkok.myqcloud.com",
    "type": "domain",
    "category": "backends",
@@ -1244,7 +1496,7 @@
    "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-04",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://136.0.7.68:8080/login",
    "brand": null,
@@ -1757,8 +2009,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.0.199/",
    "brand": null,
@@ -1775,7 +2027,7 @@
      "host": "142.86.0.199",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1793,8 +2045,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.0.95/",
    "brand": null,
@@ -1811,7 +2063,7 @@
      "host": "142.86.0.95",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1829,8 +2081,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.1.52/",
    "brand": null,
@@ -1847,7 +2099,7 @@
      "host": "142.86.1.52",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1865,8 +2117,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.110.27/",
    "brand": null,
@@ -1883,7 +2135,7 @@
      "host": "142.86.110.27",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1902,7 +2154,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.112.153/",
    "brand": null,
@@ -1937,8 +2189,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.112.8/",
    "brand": null,
@@ -1955,7 +2207,7 @@
      "host": "142.86.112.8",
      "status": "online",
      "first_seen": "2026-10-29",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -1973,8 +2225,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.114.189/",
    "brand": "Microsoft",
@@ -1991,7 +2243,7 @@
      "host": "142.86.114.189",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2010,7 +2262,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.114.58/",
    "brand": null,
@@ -2045,8 +2297,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.119.119/",
    "brand": null,
@@ -2063,7 +2315,7 @@
      "host": "142.86.119.119",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2081,8 +2333,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.119.29/",
    "brand": null,
@@ -2099,7 +2351,7 @@
      "host": "142.86.119.29",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2118,7 +2370,7 @@
    "status": "online",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-19",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.120.205/",
    "brand": "Microsoft",
@@ -2153,8 +2405,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.120.241/",
    "brand": null,
@@ -2171,7 +2423,7 @@
      "host": "142.86.120.241",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2190,7 +2442,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.120.91/",
    "brand": null,
@@ -2225,8 +2477,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.121.179/",
    "brand": null,
@@ -2243,7 +2495,7 @@
      "host": "142.86.121.179",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2261,8 +2513,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.2.83/",
    "brand": null,
@@ -2279,7 +2531,7 @@
      "host": "142.86.2.83",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2297,8 +2549,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.3.107/",
    "brand": null,
@@ -2315,7 +2567,7 @@
      "host": "142.86.3.107",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -2334,7 +2586,7 @@
    "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://142.86.3.224/",
    "brand": null,
@@ -2370,7 +2622,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://143.198.64.120/",
    "brand": null,
@@ -2594,7 +2846,7 @@
    "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://150.241.230.84/hiddenbin/boatnet.arc",
    "brand": "Microsoft",
@@ -2897,6 +3149,42 @@
    "lure_from": []
   },
   {
+   "indicator": "154.198.50.86",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://154.198.50.86:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Antbox Networks Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS138995",
+   "org": "Antbox Networks Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "154.198.50.86",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "154.219.127.6",
    "type": "ip",
    "category": "backends",
@@ -2933,6 +3221,42 @@
    "lure_from": []
   },
   {
+   "indicator": "154.36.188.45",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://154.36.188.45/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "NetLab Global",
+   "dns": null,
+   "ip": null,
+   "asn": "AS979",
+   "org": "NetLab Global",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "154.36.188.45",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "154.94.233.253",
    "type": "ip",
    "category": "backends",
@@ -2960,6 +3284,42 @@
      "status": "offline",
      "first_seen": "2026-11-09",
      "last_seen": "2026-11-09"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "154.94.233.254",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://154.94.233.254:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "cognetcloud INC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS401701",
+   "org": "cognetcloud INC",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "154.94.233.254",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -3178,6 +3538,42 @@
    "lure_from": []
   },
   {
+   "indicator": "157.119.103.204",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://157.119.103.204:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "xTom",
+   "dns": null,
+   "ip": null,
+   "asn": "AS9312",
+   "org": "xTom",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "157.119.103.204",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "157.254.234.55",
    "type": "ip",
    "category": "backends",
@@ -3258,6 +3654,42 @@
    "lure_from": []
   },
   {
+   "indicator": "158.51.108.182",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://158.51.108.182:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "DDPS Networks",
+   "dns": null,
+   "ip": null,
+   "asn": "AS18526",
+   "org": "DDPS Networks, LLC",
+   "country": "JP",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "158.51.108.182",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "159.65.36.134",
    "type": "ip",
    "category": "backends",
@@ -3267,7 +3699,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://159.65.36.134/",
    "brand": null,
@@ -3427,7 +3859,7 @@
    "status": "online",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.214.242/",
    "brand": null,
@@ -3463,7 +3895,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.214.64/",
    "brand": null,
@@ -3534,8 +3966,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.216.170/",
    "brand": null,
@@ -3552,7 +3984,7 @@
      "host": "161.120.216.170",
      "status": "online",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -3570,8 +4002,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.220.205/",
    "brand": null,
@@ -3588,7 +4020,7 @@
      "host": "161.120.220.205",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -3643,7 +4075,7 @@
    "status": "online",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.223.33/",
    "brand": null,
@@ -3679,7 +4111,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://161.120.223.4/",
    "brand": null,
@@ -3786,8 +4218,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://162.62.213.91/",
    "brand": null,
@@ -3804,7 +4236,7 @@
      "host": "162.62.213.91",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -3823,7 +4255,7 @@
    "status": "online",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://162.62.214.66/",
    "brand": null,
@@ -3894,8 +4326,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://162.62.232.51/",
    "brand": null,
@@ -3912,7 +4344,43 @@
      "host": "162.62.232.51",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "163.8.216.21",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://163.8.216.21:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "OWGELS INTERNATIONAL CO.",
+   "dns": null,
+   "ip": null,
+   "asn": "AS153656",
+   "org": "OWGELS INTERNATIONAL CO., LIMITED",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "163.8.216.21",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -4385,8 +4853,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://170.106.170.123/",
    "brand": null,
@@ -4403,7 +4871,7 @@
      "host": "170.106.170.123",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -4422,7 +4890,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://170.106.35.20/",
    "brand": null,
@@ -4458,7 +4926,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://170.106.52.77/",
    "brand": null,
@@ -4645,7 +5113,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://173.254.201.67/",
@@ -4663,7 +5131,7 @@
      "host": "173.254.201.67",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -4743,6 +5211,42 @@
      "host": "177.3.32.67",
      "status": "online",
      "first_seen": "2026-11-12",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "177.3.43.62",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://177.3.43.62:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Hong Kong Communications International Co.",
+   "dns": null,
+   "ip": null,
+   "asn": "AS140227",
+   "org": "Hong Kong Communications International Co., Limited",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "177.3.43.62",
+     "status": "online",
+     "first_seen": "2026-11-13",
      "last_seen": "2026-11-13"
     }
    ],
@@ -4888,6 +5392,150 @@
      "status": "online",
      "first_seen": "2026-11-09",
      "last_seen": "2026-11-09"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "185.34.145.173",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://185.34.145.173:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "CNServer LLC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS7488",
+   "org": "CNServer LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "185.34.145.173",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "185.34.145.174",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://185.34.145.174:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "CNServer LLC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS7488",
+   "org": "CNServer LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "185.34.145.174",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "185.34.145.175",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://185.34.145.175:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "CNServer LLC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS7488",
+   "org": "CNServer LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "185.34.145.175",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "185.34.145.177",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://185.34.145.177:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "CNServer LLC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS7488",
+   "org": "CNServer LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "185.34.145.177",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -5245,7 +5893,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://192.253.229.191/",
@@ -5255,7 +5903,7 @@
    "dns": null,
    "ip": null,
    "asn": "AS152194",
-   "org": "CTGSERVERLIMITED-AS-AP - CTG Server Limited, HK",
+   "org": "CTG Server Limited",
    "country": "US",
    "ips": [],
    "hosts": [
@@ -5263,7 +5911,7 @@
      "host": "192.253.229.191",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -5282,7 +5930,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-30",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://192.3.225.100/",
    "brand": "Microsoft",
@@ -5354,7 +6002,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-03",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://193.149.176.151/",
    "brand": null,
@@ -5470,7 +6118,7 @@
    "status": "online",
    "first_seen": "2026-10-22",
    "last_seen": "2026-11-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://198.199.82.231:8443/login",
    "brand": "Microsoft",
@@ -5549,10 +6197,10 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
-   "url": "http://202.146.222.253:2000/",
+   "url": "https://202.146.222.253/",
    "brand": "OKX",
    "product": null,
    "hosting": "CTG Server Limited",
@@ -5567,7 +6215,7 @@
      "host": "202.146.222.253",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-09"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -5855,10 +6503,10 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
-   "url": "https://203.91.72.101/",
+   "url": "http://203.91.72.101/",
    "brand": "OKX",
    "product": null,
    "hosting": "AROSSCLOUD INC.",
@@ -5873,7 +6521,7 @@
      "host": "203.91.72.101",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-09"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -6034,6 +6682,42 @@
      "status": "online",
      "first_seen": "2026-10-13",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "208.87.200.68",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://208.87.200.68:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "SonderCloud Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS133199",
+   "org": "SonderCloud Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "208.87.200.68",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -7632,8 +8316,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://24.144.85.33/",
    "brand": null,
@@ -7650,7 +8334,7 @@
      "host": "24.144.85.33",
      "status": "online",
      "first_seen": "2026-10-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -7705,7 +8389,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-28",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://3.231.33.242/",
    "brand": "Microsoft",
@@ -7723,6 +8407,42 @@
      "status": "online",
      "first_seen": "2026-10-11",
      "last_seen": "2026-10-28"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "31.77.116.89",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://31.77.116.89:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Ace Data Centers II",
+   "dns": null,
+   "ip": null,
+   "asn": "AS401152",
+   "org": "Ace Data Centers II, L.L.C.",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "31.77.116.89",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
     }
    ],
    "actor": null,
@@ -7848,6 +8568,78 @@
    "lure_from": []
   },
   {
+   "indicator": "38.22.92.200",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://38.22.92.200:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "NetLab Global",
+   "dns": null,
+   "ip": null,
+   "asn": "AS1014",
+   "org": "NetLab Global",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "38.22.92.200",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "38.246.237.163",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://38.246.237.163:8899/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Cogent",
+   "dns": null,
+   "ip": null,
+   "asn": "AS174",
+   "org": "Cogent Communications, LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "38.246.237.163",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "38.55.215.55",
    "type": "ip",
    "category": "backends",
@@ -7884,6 +8676,42 @@
    "lure_from": []
   },
   {
+   "indicator": "38.60.125.123",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://38.60.125.123:8000/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Turing Group Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS140869",
+   "org": "Turing Group Limited",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "38.60.125.123",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "38.60.136.111",
    "type": "ip",
    "category": "backends",
@@ -7892,10 +8720,10 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
-   "url": "http://38.60.136.111:8888/",
+   "url": "http://38.60.136.111/",
    "brand": "OKX",
    "product": null,
    "hosting": "LIGHT NODE LIMITED",
@@ -7910,7 +8738,7 @@
      "host": "38.60.136.111",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -7928,10 +8756,10 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
-   "url": "http://38.76.183.230:2000/",
+   "url": "https://38.76.183.230/",
    "brand": "OKX",
    "product": null,
    "hosting": "cognetcloud INC",
@@ -7946,7 +8774,7 @@
      "host": "38.76.183.230",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -7965,7 +8793,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.130.101.83/",
    "brand": null,
@@ -8001,7 +8829,7 @@
    "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-03",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.130.108.220/",
    "brand": null,
@@ -8037,7 +8865,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.130.157.54/",
    "brand": null,
@@ -8079,7 +8907,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.130.75.238/",
    "brand": null,
@@ -8114,8 +8942,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.130.79.27/",
    "brand": null,
@@ -8132,7 +8960,7 @@
      "host": "43.130.79.27",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8186,8 +9014,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.131.16.111/",
    "brand": null,
@@ -8204,7 +9032,7 @@
      "host": "43.131.16.111",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8258,8 +9086,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.135.181.25/",
    "brand": null,
@@ -8276,7 +9104,7 @@
      "host": "43.135.181.25",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8366,8 +9194,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.153.50.25/",
    "brand": null,
@@ -8384,7 +9212,7 @@
      "host": "43.153.50.25",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8402,8 +9230,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.153.62.186/",
    "brand": null,
@@ -8420,7 +9248,7 @@
      "host": "43.153.62.186",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8438,8 +9266,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.153.83.186/",
    "brand": null,
@@ -8456,7 +9284,7 @@
      "host": "43.153.83.186",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8510,8 +9338,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.153.94.40/",
    "brand": null,
@@ -8528,7 +9356,7 @@
      "host": "43.153.94.40",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8583,7 +9411,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.105.14/",
    "brand": null,
@@ -8619,7 +9447,7 @@
    "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.114.127/",
    "brand": null,
@@ -8654,8 +9482,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.121.165/",
    "brand": null,
@@ -8672,7 +9500,7 @@
      "host": "43.157.121.165",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8691,7 +9519,7 @@
    "status": "online",
    "first_seen": "2026-10-30",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.13.238/",
    "brand": null,
@@ -8726,8 +9554,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.32.143/",
    "brand": null,
@@ -8744,7 +9572,7 @@
      "host": "43.157.32.143",
      "status": "online",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8762,8 +9590,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.157.59.242/",
    "brand": null,
@@ -8780,7 +9608,7 @@
      "host": "43.157.59.242",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8835,7 +9663,7 @@
    "status": "online",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.158.91.193/",
    "brand": null,
@@ -8870,8 +9698,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.162.106.228/",
    "brand": null,
@@ -8888,7 +9716,7 @@
      "host": "43.162.106.228",
      "status": "online",
      "first_seen": "2026-10-15",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -8906,8 +9734,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.131.173/",
    "brand": null,
@@ -8924,7 +9752,7 @@
      "host": "43.166.131.173",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9014,8 +9842,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.164.180/",
    "brand": null,
@@ -9032,7 +9860,7 @@
      "host": "43.166.164.180",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9086,8 +9914,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.172.218/",
    "brand": null,
@@ -9104,7 +9932,7 @@
      "host": "43.166.172.218",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9122,8 +9950,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.174.148/",
    "brand": null,
@@ -9140,7 +9968,7 @@
      "host": "43.166.174.148",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9158,8 +9986,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.203.23/",
    "brand": null,
@@ -9176,7 +10004,7 @@
      "host": "43.166.203.23",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9230,8 +10058,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.204.138/",
    "brand": null,
@@ -9248,7 +10076,7 @@
      "host": "43.166.204.138",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9266,8 +10094,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.205.102/",
    "brand": null,
@@ -9284,7 +10112,7 @@
      "host": "43.166.205.102",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9303,7 +10131,7 @@
    "status": "online",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.209.19/",
    "brand": null,
@@ -9339,7 +10167,7 @@
    "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.210.77/",
    "brand": null,
@@ -9372,11 +10200,11 @@
    "backend_for": "phishing",
    "campaign": "operator-panels",
    "role": "Operator infrastructure",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-10-29",
-   "offline_since": "2026-10-29",
+   "last_online": "2026-11-15",
+   "offline_since": null,
    "url": "http://43.166.214.43/",
    "brand": null,
    "product": null,
@@ -9390,7 +10218,7 @@
    "hosts": [
     {
      "host": "43.166.214.43",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-11",
      "last_seen": "2026-10-14"
     }
@@ -9411,7 +10239,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.217.251/",
    "brand": null,
@@ -9446,8 +10274,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.166.218.229/",
    "brand": null,
@@ -9464,7 +10292,7 @@
      "host": "43.166.218.229",
      "status": "online",
      "first_seen": "2026-11-14",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9518,8 +10346,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.11.70/",
    "brand": null,
@@ -9536,7 +10364,7 @@
      "host": "43.172.11.70",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9554,8 +10382,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.114.4/",
    "brand": null,
@@ -9572,7 +10400,7 @@
      "host": "43.172.114.4",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9590,8 +10418,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.115.68/",
    "brand": "Microsoft",
@@ -9608,7 +10436,7 @@
      "host": "43.172.115.68",
      "status": "online",
      "first_seen": "2026-10-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9663,7 +10491,7 @@
    "status": "online",
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.12.216/",
    "brand": null,
@@ -9698,8 +10526,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.13.230/",
    "brand": null,
@@ -9716,7 +10544,7 @@
      "host": "43.172.13.230",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-07"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9734,8 +10562,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.29.179/",
    "brand": null,
@@ -9752,7 +10580,7 @@
      "host": "43.172.29.179",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9770,8 +10598,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.29.236/",
    "brand": null,
@@ -9788,7 +10616,7 @@
      "host": "43.172.29.236",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9806,8 +10634,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.43.103/",
    "brand": null,
@@ -9824,7 +10652,7 @@
      "host": "43.172.43.103",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -9843,7 +10671,7 @@
    "status": "online",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.52.46/",
    "brand": null,
@@ -9879,7 +10707,7 @@
    "status": "online",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-11",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://43.172.9.194/",
    "brand": null,
@@ -9968,6 +10796,42 @@
      "host": "43.229.112.250",
      "status": "offline",
      "first_seen": "2026-11-12",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.255.28.208",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://43.255.28.208:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "SonderCloud Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS133199",
+   "org": "SonderCloud Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.255.28.208",
+     "status": "online",
+     "first_seen": "2026-11-13",
      "last_seen": "2026-11-13"
     }
    ],
@@ -10086,6 +10950,78 @@
    "lure_from": []
   },
   {
+   "indicator": "45.207.222.144",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://45.207.222.144:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "cognetcloud INC",
+   "dns": null,
+   "ip": null,
+   "asn": "AS401701",
+   "org": "cognetcloud INC",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "45.207.222.144",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "45.207.228.36",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://45.207.228.36:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Zillion Network Inc.",
+   "dns": null,
+   "ip": null,
+   "asn": "AS54801",
+   "org": "Zillion Network Inc.",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "45.207.228.36",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "45.61.136.38",
    "type": "ip",
    "category": "backends",
@@ -10094,7 +11030,7 @@
    "role": "Operator infrastructure",
    "status": "offline",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-13",
    "offline_since": "2026-11-14",
    "url": "http://45.61.136.38/",
@@ -10112,7 +11048,7 @@
      "host": "45.61.136.38",
      "status": "offline",
      "first_seen": "2026-10-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -10166,6 +11102,42 @@
    "lure_from": []
   },
   {
+   "indicator": "47.254.120.61",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://47.254.120.61:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "Alibaba Cloud",
+   "dns": null,
+   "ip": null,
+   "asn": "AS45102",
+   "org": "Alibaba (US) Technology Co., Ltd.",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "47.254.120.61",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "47.76.162.49",
    "type": "ip",
    "category": "backends",
@@ -10210,10 +11182,10 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-09",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
-   "url": "http://47.84.136.217:2000/",
+   "url": "http://47.84.136.217/",
    "brand": "OKX",
    "product": null,
    "hosting": "Alibaba Cloud",
@@ -10228,7 +11200,7 @@
      "host": "47.84.136.217",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-09"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -10318,8 +11290,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://49.51.138.83/",
    "brand": null,
@@ -10336,7 +11308,7 @@
      "host": "49.51.138.83",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -10355,7 +11327,7 @@
    "status": "online",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-26",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://49.51.33.211/",
    "brand": null,
@@ -10391,7 +11363,7 @@
    "status": "online",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-07",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://49.51.40.74/",
    "brand": null,
@@ -10950,7 +11922,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "http://52.237.90.192:4001/",
@@ -10968,7 +11940,7 @@
      "host": "52.237.90.192",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -18896,6 +19868,42 @@
    "lure_from": []
   },
   {
+   "indicator": "80.251.213.212",
+   "type": "ip",
+   "category": "backends",
+   "backend_for": "mobile-exploit",
+   "campaign": "ios-exploit-kits",
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://80.251.213.212:8888/",
+   "brand": "OKX",
+   "product": null,
+   "hosting": "IT7 Networks Inc",
+   "dns": null,
+   "ip": null,
+   "asn": "AS25820",
+   "org": "IT7 Networks Inc",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "80.251.213.212",
+     "status": "online",
+     "first_seen": "2026-11-13",
+     "last_seen": "2026-11-13"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "8019467193-1368311421.cos.ap-singapore.myqcloud.com",
    "type": "domain",
    "category": "backends",
@@ -19252,7 +20260,7 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-14",
    "offline_since": null,
    "url": "https://84.32.64.28/",
@@ -19270,7 +20278,7 @@
      "host": "84.32.64.28",
      "status": "online",
      "first_seen": "2026-11-09",
-     "last_seen": "2026-11-13"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -21722,7 +22730,7 @@
    "status": "online",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-17",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://checklist-ready.com/",
    "brand": null,
@@ -23273,7 +24281,7 @@
    "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://document-drive.work/login",
    "brand": "Microsoft",
@@ -23419,7 +24427,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://driveironway.com/",
    "brand": null,
@@ -23675,7 +24683,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://duemineral.uk/",
    "brand": null,
@@ -24118,7 +25126,7 @@
    "status": "online",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://echoesinthechair.de/",
    "brand": null,
@@ -26775,7 +27783,7 @@
    "status": "online",
    "first_seen": "2026-10-27",
    "last_seen": "2026-11-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://www.google.com/",
    "brand": "Microsoft",
@@ -26969,7 +27977,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://lee-bryan-interior-design.grandcentr.al/",
    "brand": null,
@@ -28134,7 +29142,7 @@
    "status": "online",
    "first_seen": "2026-10-16",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://jacksoncontractorgroups.com/mail/[redacted]/attachment/[redacted]/preview",
    "brand": "Microsoft",
@@ -28199,9 +29207,9 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.135.50",
+   "ip": "104.21.6.192",
    "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "org": "Cloudflare, Inc.",
    "country": "US",
    "ips": [
     {
@@ -28675,7 +29683,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://kswpower.com/",
    "brand": "Microsoft",
@@ -28994,7 +30002,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-04",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://private.mayco-build.com/",
    "brand": null,
@@ -30049,7 +31057,7 @@
    "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://nomaerngineering.com/api/device/status/12409",
    "brand": "Microsoft",
@@ -30150,7 +31158,7 @@
    "status": "online",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://onceseatedagain.de/",
    "brand": null,
@@ -30194,7 +31202,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-04",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://blackrockai.outllerbuilt.com/",
    "brand": null,
@@ -31815,8 +32823,8 @@
    "role": "Operator infrastructure",
    "status": "online",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://api.skysharegroup.com/",
    "brand": "Microsoft",
@@ -31833,7 +32841,7 @@
      "asn": "AS36352",
      "org": "HostPapa",
      "first_seen": "2026-10-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -31841,7 +32849,7 @@
      "host": "api.skysharegroup.com",
      "status": "online",
      "first_seen": "2026-10-11",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     },
     {
      "host": "skysharegroup.com",
@@ -31866,7 +32874,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-06",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "https://skysharesgroup.org/",
    "brand": "Microsoft",
@@ -31954,7 +32962,7 @@
    "status": "online",
    "first_seen": "2026-11-13",
    "last_seen": "2026-11-15",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://smokingpussy.store/login",
    "brand": "Microsoft",
@@ -32605,6 +33613,50 @@
    "lure_from": []
   },
   {
+   "indicator": "tcelfertonseodti-uertlautcatuoteg-nekatevilaah-ffinsnirnip.sbs",
+   "type": "domain",
+   "category": "backends",
+   "backend_for": "phishing",
+   "campaign": null,
+   "role": "Operator infrastructure",
+   "status": "online",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
+   "last_online": "2026-11-14",
+   "offline_since": null,
+   "url": "http://tcelfertonseodti-uertlautcatuoteg-nekatevilaah-ffinsnirnip.sbs/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.95.242",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.95.242",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "tcelfertonseodti-uertlautcatuoteg-nekatevilaah-ffinsnirnip.sbs",
+     "status": "online",
+     "first_seen": "2026-11-14",
+     "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "terryplot101-1323985617.cos.eu-frankfurt.myqcloud.com",
    "type": "domain",
    "category": "backends",
@@ -32746,7 +33798,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-14",
-   "last_online": "2026-11-14",
+   "last_online": "2026-11-15",
    "offline_since": null,
    "url": "http://topiclifestyle.com/",
    "brand": null,

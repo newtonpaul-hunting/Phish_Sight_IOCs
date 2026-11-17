@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2439,
+ "count": 2441,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -3583,11 +3583,11 @@
    "backend_for": null,
    "campaign": "whisker-purr",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-23",
    "last_seen": "2026-11-07",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://166.88.134.174/",
    "brand": "Google",
    "product": null,
@@ -3601,7 +3601,7 @@
    "hosts": [
     {
      "host": "166.88.134.174",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-11-07"
     }
@@ -24143,7 +24143,7 @@
    "first_seen": "2026-10-11",
    "last_seen": "2026-11-05",
    "last_online": "2026-10-11",
-   "offline_since": "2026-10-11",
+   "offline_since": "2026-11-17",
    "url": "https://project.attachedfile.com/[redacted]",
    "brand": "Microsoft",
    "product": null,
@@ -27215,11 +27215,11 @@
    "backend_for": null,
    "campaign": "eviltokens",
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-12",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-13",
-   "offline_since": "2026-11-14",
+   "last_online": "2026-11-17",
+   "offline_since": null,
    "url": "https://bojan-4c151511782f-muv41gqs.b-cdn.net/",
    "brand": "Microsoft",
    "product": null,
@@ -27241,7 +27241,7 @@
    "hosts": [
     {
      "host": "bojan-4c151511782f-muv41gqs.b-cdn.net",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-12",
      "last_seen": "2026-11-05"
     }
@@ -37198,11 +37198,11 @@
    "backend_for": null,
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-04",
    "last_seen": "2026-11-04",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://doc-base-h8yd.p-c0qwemmo.workers.dev/",
    "brand": "Microsoft",
    "product": null,
@@ -37231,7 +37231,7 @@
    "hosts": [
     {
      "host": "doc-base-h8yd.p-c0qwemmo.workers.dev",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-04",
      "last_seen": "2026-11-04"
     }
@@ -37397,7 +37397,7 @@
    "first_seen": "2026-11-14",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-16",
-   "offline_since": "2026-11-16",
+   "offline_since": "2026-11-17",
    "url": "https://doc-sign.cc/",
    "brand": "DocuSign",
    "product": "E-signature",
@@ -37880,11 +37880,11 @@
    "backend_for": null,
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-30",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "http://docs-signs.org/",
    "brand": "DocuSign",
    "product": "E-signature",
@@ -37906,13 +37906,13 @@
    "hosts": [
     {
      "host": "docs-signs.org",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-30"
     },
     {
      "host": "www.docs-signs.org",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-28",
      "last_seen": "2026-10-30"
     }
@@ -61506,7 +61506,7 @@
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-14",
    "last_online": "2026-11-16",
-   "offline_since": "2026-11-16",
+   "offline_since": "2026-11-17",
    "url": "http://mail.connectamicrosoftwy.ine-auth.com/",
    "brand": "Microsoft",
    "product": null,
@@ -66507,6 +66507,50 @@
      "status": "offline",
      "first_seen": "2026-11-06",
      "last_seen": "2026-11-16"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "lambministries.net",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "last_online": "2026-11-17",
+   "offline_since": null,
+   "url": "https://lambministries.net/join/omul6vxt",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.139.149",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "172.67.139.149",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-17"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "lambministries.net",
+     "status": "online",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-17"
     }
    ],
    "actor": null,
@@ -73681,11 +73725,11 @@
    "backend_for": null,
    "campaign": "ghost-panel",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-17",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://m64677856-shared-document-review-sign.live-document-m1208900.workers.dev/",
    "brand": null,
    "product": null,
@@ -73707,7 +73751,7 @@
    "hosts": [
     {
      "host": "m64677856-shared-document-review-sign.live-document-m1208900.workers.dev",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-17",
      "last_seen": "2026-11-17"
     }
@@ -73857,11 +73901,11 @@
    "backend_for": null,
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-07",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://macedocastro.com.br/serfprfq/secure793630971334.html",
    "brand": "Microsoft",
    "product": "OneDrive",
@@ -73883,7 +73927,7 @@
    "hosts": [
     {
      "host": "macedocastro.com.br",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-07",
      "last_seen": "2026-11-17"
     }
@@ -83432,7 +83476,7 @@
    "type": "domain",
    "category": "device-code",
    "backend_for": null,
-   "campaign": "eviltokens",
+   "campaign": "device-code-other",
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-11",
@@ -86151,8 +86195,8 @@
    "last_online": "2026-11-17",
    "offline_since": null,
    "url": "http://pattwhitney.com/",
-   "brand": "Microsoft",
-   "product": "Teams",
+   "brand": "Adobe",
+   "product": "Acrobat / Document Cloud",
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
    "ip": "172.67.133.188",
@@ -86707,11 +86751,11 @@
    "backend_for": null,
    "campaign": "whisker-purr",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-10-17",
    "last_seen": "2026-11-05",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://clientservices.petssmithstore.com/",
    "brand": null,
    "product": null,
@@ -86733,7 +86777,7 @@
    "hosts": [
     {
      "host": "accountcapabilities-pa.petssmithstore.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-10-24"
     },
@@ -86757,13 +86801,13 @@
     },
     {
      "host": "clientservices.petssmithstore.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-17",
      "last_seen": "2026-11-05"
     },
     {
      "host": "content.petssmithstore.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-10-24"
     },
@@ -86775,7 +86819,7 @@
     },
     {
      "host": "drive.petssmithstore.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-23",
      "last_seen": "2026-10-24"
     },
@@ -86817,7 +86861,7 @@
     },
     {
      "host": "petssmithstore.com",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-10-24",
      "last_seen": "2026-10-24"
     },
@@ -93802,22 +93846,22 @@
    "product": "Microsoft 365",
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:20::ac43:4775",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "ip": "185.7.214.42",
+   "asn": "AS55286",
+   "org": "SERVER-MANIA - B2 Net Solutions Inc., US",
    "country": "GB",
    "ips": [
-    {
-     "ip": "172.67.71.117",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-17"
-    },
     {
      "ip": "185.7.214.42",
      "asn": "AS55286",
      "org": "SERVER-MANIA - B2 Net Solutions Inc., US",
+     "first_seen": "2026-11-12",
+     "last_seen": "2026-11-17"
+    },
+    {
+     "ip": "172.67.71.117",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-12",
      "last_seen": "2026-11-17"
     },
@@ -94382,11 +94426,11 @@
    "backend_for": null,
    "campaign": "device-code-other",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-04",
    "last_seen": "2026-11-04",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://resource-page-mmfe44a.m365cloud.workers.dev/_layouts/15/sharepoint.aspx",
    "brand": "Microsoft",
    "product": "SharePoint",
@@ -94408,7 +94452,7 @@
    "hosts": [
     {
      "host": "resource-page-mmfe44a.m365cloud.workers.dev",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-04",
      "last_seen": "2026-11-04"
     }
@@ -106117,7 +106161,7 @@
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-16",
-   "offline_since": "2026-11-16",
+   "offline_since": "2026-11-17",
    "url": "https://tearns-invite.cc/",
    "brand": "Microsoft",
    "product": null,
@@ -116033,6 +116077,50 @@
      "host": "devicecode.werkaccount.nl",
      "status": "online",
      "first_seen": "2026-11-01",
+     "last_seen": "2026-11-17"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "wernersmaskinab-micro-do-list.pdfile-document-sign365005.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "ghost-panel",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "last_online": "2026-11-17",
+   "offline_since": null,
+   "url": "https://wernersmaskinab-micro-do-list.pdfile-document-sign365005.workers.dev/",
+   "brand": "Microsoft",
+   "product": null,
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "104.21.33.206",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.21.33.206",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-17"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "wernersmaskinab-micro-do-list.pdfile-document-sign365005.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-17",
      "last_seen": "2026-11-17"
     }
    ],

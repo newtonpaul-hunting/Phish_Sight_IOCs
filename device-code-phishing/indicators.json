@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2437,
+ "count": 2438,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -34266,11 +34266,11 @@
    "backend_for": null,
    "campaign": null,
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-16",
-   "last_online": "2026-11-11",
-   "offline_since": "2026-11-11",
+   "last_online": "2026-11-17",
+   "offline_since": null,
    "url": "https://crmibvn.org/dwi/revised_quote.html",
    "brand": "Adobe",
    "product": null,
@@ -50678,11 +50678,11 @@
    "backend_for": null,
    "campaign": "ghost-panel",
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-17",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://gerancecasa-ch-portail.cloud-storage-id03953.workers.dev/",
    "brand": "Microsoft",
    "product": null,
@@ -50704,7 +50704,7 @@
    "hosts": [
     {
      "host": "gerancecasa-ch-portail.cloud-storage-id03953.workers.dev",
-     "status": "online",
+     "status": "offline",
      "first_seen": "2026-11-17",
      "last_seen": "2026-11-17"
     }
@@ -73675,6 +73675,50 @@
    "lure_from": []
   },
   {
+   "indicator": "m64677856-shared-document-review-sign.live-document-m1208900.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "ghost-panel",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "last_online": "2026-11-17",
+   "offline_since": null,
+   "url": "https://m64677856-shared-document-review-sign.live-document-m1208900.workers.dev/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "172.67.149.154",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "172.67.149.154",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-17"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "m64677856-shared-document-review-sign.live-document-m1208900.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-17"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "m67t7687877-voicemail-service.shared-folder-object08743.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -84089,29 +84133,29 @@
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
    "offline_since": null,
-   "url": "https://play.onlineloans.click/[redacted]/init",
+   "url": "https://clientservices.onlineloans.click/",
    "brand": null,
    "product": null,
    "hosting": "Evoxt",
    "dns": "Cloudflare",
-   "ip": "193.247.144.249",
+   "ip": "142.111.135.101",
    "asn": "AS149440",
    "org": "EVOXTSDNBHD-AS-AP - Evoxt Sdn. Bhd., MY",
-   "country": "GB",
+   "country": "US",
    "ips": [
+    {
+     "ip": "142.111.135.101",
+     "asn": "AS149440",
+     "org": "EVOXTSDNBHD-AS-AP - Evoxt Sdn. Bhd., MY",
+     "first_seen": "2026-11-11",
+     "last_seen": "2026-11-17"
+    },
     {
      "ip": "193.247.144.249",
      "asn": "AS149440",
      "org": "Evoxt Sdn. Bhd.",
      "first_seen": "2026-10-23",
      "last_seen": "2026-11-17"
-    },
-    {
-     "ip": "142.111.135.101",
-     "asn": "AS149440",
-     "org": "EVOXTSDNBHD-AS-AP - Evoxt Sdn. Bhd., MY",
-     "first_seen": "2026-11-11",
-     "last_seen": "2026-11-16"
     }
    ],
    "hosts": [
@@ -84125,7 +84169,7 @@
      "host": "accounts-youtube.onlineloans.click",
      "status": "online",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-16"
+     "last_seen": "2026-11-17"
     },
     {
      "host": "apis.onlineloans.click",
@@ -84149,7 +84193,7 @@
      "host": "clientservices.onlineloans.click",
      "status": "online",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-16"
+     "last_seen": "2026-11-17"
     },
     {
      "host": "content.onlineloans.click",
@@ -92648,7 +92692,7 @@
    "hosts": [
     {
      "host": "intult-m-09.quikrq.com",
-     "status": "unknown",
+     "status": "offline",
      "first_seen": "2026-11-17",
      "last_seen": "2026-11-17"
     },
@@ -95387,11 +95431,11 @@
    "backend_for": null,
    "campaign": null,
    "role": "Phishing page",
-   "status": "online",
+   "status": "offline",
    "first_seen": "2026-11-17",
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
-   "offline_since": null,
+   "offline_since": "2026-11-17",
    "url": "https://roma-sanfelice.de/yonsc/",
    "brand": "Adobe",
    "product": null,
@@ -103549,11 +103593,11 @@
    "backend_for": null,
    "campaign": "ghost-panel",
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-15",
    "last_online": "2026-11-17",
-   "offline_since": "2026-11-17",
+   "offline_since": null,
    "url": "https://static-auth-b-cdn-net-818711.live-document-m365928501.workers.dev/",
    "brand": "Microsoft",
    "product": null,
@@ -103582,7 +103626,7 @@
    "hosts": [
     {
      "host": "static-auth-b-cdn-net-818711.live-document-m365928501.workers.dev",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-12",
      "last_seen": "2026-10-15"
     }
@@ -105146,11 +105190,11 @@
    "backend_for": null,
    "campaign": "ghost-panel",
    "role": "Phishing page",
-   "status": "offline",
+   "status": "online",
    "first_seen": "2026-10-10",
    "last_seen": "2026-11-04",
    "last_online": "2026-11-17",
-   "offline_since": "2026-11-17",
+   "offline_since": null,
    "url": "https://swissflex-eyewear-eyesystem-gmbh-live-document.cloudportal-safedrive-id53678.workers.dev/",
    "brand": "Microsoft",
    "product": null,
@@ -105193,7 +105237,7 @@
    "hosts": [
     {
      "host": "swissflex-eyewear-eyesystem-gmbh-live-document.cloudportal-safedrive-id53678.workers.dev",
-     "status": "offline",
+     "status": "online",
      "first_seen": "2026-10-10",
      "last_seen": "2026-11-04"
     }
@@ -106463,7 +106507,7 @@
    "first_seen": "2026-11-12",
    "last_seen": "2026-11-16",
    "last_online": "2026-11-14",
-   "offline_since": "2026-11-15",
+   "offline_since": "2026-11-17",
    "url": "https://tesbihhanevip.com/others/adobefile.html",
    "brand": "Adobe",
    "product": null,
@@ -107558,7 +107602,7 @@
    "last_seen": "2026-11-17",
    "last_online": "2026-11-17",
    "offline_since": null,
-   "url": "https://thinkpotfilms.com/meggxedtedbih/epiccalifornia%20(1).html",
+   "url": "https://thinkpotfilms.com/meggxedtedbih/epiccalifornia%20%281%29.html",
    "brand": "Microsoft",
    "product": "OneDrive",
    "hosting": "PDR",

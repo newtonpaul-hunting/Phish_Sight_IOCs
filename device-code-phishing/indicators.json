@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2494,
+ "count": 2503,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -624,6 +624,42 @@
    "lure_from": []
   },
   {
+   "indicator": "104.248.232.9",
+   "type": "ip",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "http://104.248.232.9/",
+   "brand": "Google",
+   "product": null,
+   "hosting": "DigitalOcean",
+   "dns": null,
+   "ip": null,
+   "asn": "AS14061",
+   "org": "DigitalOcean, LLC",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "104.248.232.9",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "104.45.217.200",
    "type": "ip",
    "category": "device-code",
@@ -1141,6 +1177,42 @@
      "status": "online",
      "first_seen": "2026-11-06",
      "last_seen": "2026-11-17"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "130.94.64.31",
+   "type": "ip",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://130.94.64.31/",
+   "brand": "Google",
+   "product": null,
+   "hosting": "LIGHT NODE LIMITED",
+   "dns": null,
+   "ip": null,
+   "asn": "AS154177",
+   "org": "LIGHT NODE LIMITED",
+   "country": "DE",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "130.94.64.31",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -17651,6 +17723,12 @@
      "status": "offline",
      "first_seen": "2026-10-11",
      "last_seen": "2026-11-05"
+    },
+    {
+     "host": "adobe-cloud-document-review-request.acrobatsadobe.com",
+     "status": "online",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -22731,7 +22809,7 @@
    "status": "online",
    "first_seen": "2026-10-13",
    "last_seen": "2026-11-05",
-   "last_online": "2026-11-18",
+   "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://americanairpowermuseum.com/ufg/",
    "brand": null,
@@ -24034,7 +24112,7 @@
    "status": "online",
    "first_seen": "2026-10-22",
    "last_seen": "2026-11-17",
-   "last_online": "2026-11-18",
+   "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://white.artguid.com/[redacted]",
    "brand": null,
@@ -44173,6 +44251,56 @@
    "lure_from": []
   },
   {
+   "indicator": "dropbox-signin.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://www.dropbox-signin.com/",
+   "brand": "Google",
+   "product": null,
+   "hosting": "DigitalOcean",
+   "dns": "Cloudflare",
+   "ip": "104.248.232.9",
+   "asn": "AS14061",
+   "org": "DigitalOcean, LLC",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.248.232.9",
+     "asn": "AS14061",
+     "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "dropbox-signin.com",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    },
+    {
+     "host": "www.dropbox-signin.com",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "dropboxfolder.docusignfile.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -52789,6 +52917,94 @@
      "status": "offline",
      "first_seen": "2026-10-31",
      "last_seen": "2026-11-15"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "googleo.org",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://account.googleo.org/",
+   "brand": "Google",
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.165.241",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "172.67.165.241",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "account.googleo.org",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "googlesignin.net",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "http://googlesignin.net/",
+   "brand": "Dropbox",
+   "product": "File sharing",
+   "hosting": "DigitalOcean",
+   "dns": "GoDaddy",
+   "ip": "104.248.232.9",
+   "asn": "AS14061",
+   "org": "DigitalOcean, LLC",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.248.232.9",
+     "asn": "AS14061",
+     "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "googlesignin.net",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -88359,7 +88575,7 @@
    "status": "online",
    "first_seen": "2026-10-20",
    "last_seen": "2026-11-17",
-   "last_online": "2026-11-18",
+   "last_online": "2026-11-19",
    "offline_since": null,
    "url": "https://sheet.pc-jets.com/[redacted]",
    "brand": null,
@@ -93658,6 +93874,50 @@
      "status": "offline",
      "first_seen": "2026-10-14",
      "last_seen": "2026-10-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "puberts.org",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "ghost-panel",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "last_online": "2026-11-19",
+   "offline_since": null,
+   "url": "https://m36503976279-office-document-review-sign.puberts.org/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.137.214",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "172.67.137.214",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "m36503976279-office-document-review-sign.puberts.org",
+     "status": "online",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-19"
     }
    ],
    "actor": null,
@@ -105234,6 +105494,63 @@
    "lure_from": []
   },
   {
+   "indicator": "smilefuturei.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "last_online": "2026-11-18",
+   "offline_since": null,
+   "url": "https://login.smilefuturei.com/",
+   "brand": "Microsoft",
+   "product": "Microsoft 365",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.164.63",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.15.211",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "ip": "172.67.164.63",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "login.smilefuturei.com",
+     "status": "online",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "host": "www.smilefuturei.com",
+     "status": "online",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "smolichlawcom.live-document-secure.workers.dev",
    "type": "domain",
    "category": "device-code",
@@ -108153,6 +108470,63 @@
    "lure_from": []
   },
   {
+   "indicator": "tangsengservice.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-18",
+   "last_online": "2026-11-18",
+   "offline_since": null,
+   "url": "https://tangsengservice.com/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "172.67.138.75",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.46.116",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "ip": "172.67.138.75",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-18"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "tangsengservice.com",
+     "status": "online",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "host": "www.tangsengservice.com",
+     "status": "online",
+     "first_seen": "2026-11-17",
+     "last_seen": "2026-11-18"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "targoiwisko.net",
    "type": "domain",
    "category": "device-code",
@@ -109021,6 +109395,63 @@
      "status": "offline",
      "first_seen": "2026-11-14",
      "last_seen": "2026-11-14"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "terumomedicel.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "last_online": "2026-11-18",
+   "offline_since": null,
+   "url": "https://www.terumomedicel.com/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.78.201",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.78.201",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "ip": "172.67.137.112",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "terumomedicel.com",
+     "status": "online",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
+    },
+    {
+     "host": "www.terumomedicel.com",
+     "status": "online",
+     "first_seen": "2026-11-18",
+     "last_seen": "2026-11-18"
     }
    ],
    "actor": null,

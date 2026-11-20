@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2512,
+ "count": 2513,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -53029,7 +53029,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-19",
    "offline_since": null,
    "url": "http://googlesignin.net/",
@@ -53047,7 +53047,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-19",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -53055,7 +53055,7 @@
      "host": "googlesignin.net",
      "status": "online",
      "first_seen": "2026-11-19",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -86893,6 +86893,50 @@
      "status": "offline",
      "first_seen": "2026-10-28",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "openfiledocumenttitanproject.site",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "ghost-panel",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "last_online": "2026-11-20",
+   "offline_since": null,
+   "url": "https://titancore-project-overview26.openfiledocumenttitanproject.site/",
+   "brand": "DocuSign",
+   "product": "E-signature",
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "188.114.97.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-20",
+     "last_seen": "2026-11-20"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "titancore-project-overview26.openfiledocumenttitanproject.site",
+     "status": "online",
+     "first_seen": "2026-11-20",
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,

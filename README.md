@@ -2,16 +2,16 @@
 
 Phishing and malware-delivery indicators, and the kit backends behind them (phishing panels, C2 and mobile exploit
 servers), confirmed as malicious by [PhishSight](https://newtonpaul.com). Updated automatically when new indicators
-are confirmed. Last change: **2026-11-23 02:06 UTC**.
+are confirmed. Last change: **2026-11-23 03:27 UTC**.
 
 | Folder | Indicators |
 |---|---|
 | [`credential-phishing/`](credential-phishing/) | 2,457 |
-| [`device-code-phishing/`](device-code-phishing/) | 2,448 |
-| [`clickfix/`](clickfix/) | 5,771 |
+| [`device-code-phishing/`](device-code-phishing/) | 2,454 |
+| [`clickfix/`](clickfix/) | 5,774 |
 | [`malware/`](malware/) | 338 |
 | [`kit-backends/`](kit-backends/) | 945 |
-| [`payloads/`](payloads/) | 259 files |
+| [`payloads/`](payloads/) | 260 files |
 
 ## Files in each threat folder
 

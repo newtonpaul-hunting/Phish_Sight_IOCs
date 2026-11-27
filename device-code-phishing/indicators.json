@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2526,
+ "count": 2528,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -5664,6 +5664,42 @@
      "status": "offline",
      "first_seen": "2026-10-19",
      "last_seen": "2026-11-25"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "185.158.138.61",
+   "type": "ip",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://185.158.138.61:9443/",
+   "brand": "Microsoft",
+   "product": "SharePoint",
+   "hosting": "SpeedyPage Ltd",
+   "dns": null,
+   "ip": null,
+   "asn": "AS142594",
+   "org": "SpeedyPage Ltd",
+   "country": "US",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "185.158.138.61",
+     "status": "online",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -18622,7 +18658,7 @@
      "host": "adobe-cloud-document-review-request.acrobatsadobe.com",
      "status": "offline",
      "first_seen": "2026-11-18",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -67140,7 +67176,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://securedsmartpdfdocument-viewdocsm6bx42eg.keepmydocssafe.com/",
@@ -67158,7 +67194,7 @@
      "asn": null,
      "org": null,
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     },
     {
      "ip": "172.67.139.9",
@@ -67173,13 +67209,13 @@
      "host": "securedsmartpdfdocument-viewdocm5x2ax.keepmydocssafe.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     },
     {
      "host": "securedsmartpdfdocument-viewdocsm6bx42eg.keepmydocssafe.com",
      "status": "online",
      "first_seen": "2026-10-31",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -92521,7 +92557,7 @@
    "role": "Phishing page",
    "status": "offline",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-21",
    "offline_since": "2026-11-26",
    "url": "https://m36507367353-shared-live-document-review-sign-reag.productmerchanismdocumentsettlementprovideparadise.rest/",
@@ -92554,7 +92590,7 @@
      "host": "m36507367353-shared-live-document-review-sign-reag.productmerchanismdocumentsettlementprovideparadise.rest",
      "status": "offline",
      "first_seen": "2026-11-20",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -97283,7 +97319,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-10-18",
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://aquaterrawatermgtshareddocumentstatement.rnillersheetmetal.com/",
@@ -97301,7 +97337,7 @@
      "asn": null,
      "org": null,
      "first_seen": "2026-10-18",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     },
     {
      "ip": "172.67.177.28",
@@ -97316,7 +97352,7 @@
      "host": "aquaterrawatermgtshareddocumentstatement.rnillersheetmetal.com",
      "status": "online",
      "first_seen": "2026-10-22",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     },
     {
      "host": "m36502849553-shared-document-inv-statement-review.rnillersheetmetal.com",
@@ -107879,6 +107915,50 @@
      "host": "sycomch-portail.cloud-storage-id0356.workers.dev",
      "status": "offline",
      "first_seen": "2026-11-25",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "sync-base-fj2h.p-g2zybebb.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://sync-base-fj2h.p-g2zybebb.workers.dev/",
+   "brand": "Microsoft",
+   "product": "OneDrive",
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "188.114.97.3",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "sync-base-fj2h.p-g2zybebb.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     }
    ],
@@ -119060,7 +119140,7 @@
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://devicecode.werkaccount.nl/",
@@ -119078,7 +119158,7 @@
      "asn": null,
      "org": null,
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     },
     {
      "ip": "104.21.66.90",
@@ -119093,7 +119173,7 @@
      "host": "devicecode.werkaccount.nl",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,

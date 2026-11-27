@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2529,
+ "count": 2530,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -38378,6 +38378,50 @@
    "lure_from": []
   },
   {
+   "indicator": "digitalsphere-llc.com",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://digitalsphere-llc.com/ssrrf/10017772392.html",
+   "brand": "Microsoft",
+   "product": null,
+   "hosting": "Contabo",
+   "dns": "Cloudflare",
+   "ip": "167.86.85.197",
+   "asn": "AS51167",
+   "org": "CONTABO Contabo GmbH, DE",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "167.86.85.197",
+     "asn": "AS51167",
+     "org": "CONTABO Contabo GmbH, DE",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "digitalsphere-llc.com",
+     "status": "online",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "dinomarksautobody.com",
    "type": "domain",
    "category": "device-code",
@@ -56181,7 +56225,7 @@
      "host": "hent.pro",
      "status": "online",
      "first_seen": "2026-10-27",
-     "last_seen": "2026-11-10"
+     "last_seen": "2026-11-27"
     },
     {
      "host": "www.hent.pro",

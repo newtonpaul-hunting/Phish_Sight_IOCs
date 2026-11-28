@@ -5,7 +5,7 @@
   "short": "Fake sign-in pages that steal passwords and sessions",
   "summary": "Pages that imitate a sign-in or document-sharing service to collect a username and password. Many relay the login to the real service as it happens (adversary-in-the-middle), so they also steal the session and get past most multi-factor prompts."
  },
- "count": 2514,
+ "count": 2516,
  "indicators": [
   {
    "indicator": "008109-dp8kymf8s3mw.edgeone.dev",
@@ -7318,6 +7318,42 @@
      "status": "offline",
      "first_seen": "2026-11-02",
      "last_seen": "2026-11-05"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "43.243.73.166",
+   "type": "ip",
+   "category": "credential",
+   "backend_for": null,
+   "campaign": "credential-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-28",
+   "last_online": "2026-11-27",
+   "offline_since": null,
+   "url": "http://43.243.73.166:8080/",
+   "brand": "Microsoft",
+   "product": null,
+   "hosting": "CTG Server Limited",
+   "dns": null,
+   "ip": null,
+   "asn": "AS152194",
+   "org": "CTG Server Limited",
+   "country": "CN",
+   "ips": [],
+   "hosts": [
+    {
+     "host": "43.243.73.166",
+     "status": "online",
+     "first_seen": "2026-11-26",
+     "last_seen": "2026-11-28"
     }
    ],
    "actor": null,
@@ -114357,6 +114393,50 @@
    "lure_from": []
   },
   {
+   "indicator": "sentivo.cc",
+   "type": "domain",
+   "category": "credential",
+   "backend_for": null,
+   "campaign": "credential-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-28",
+   "last_online": "2026-11-28",
+   "offline_since": null,
+   "url": "https://login.sentivo.cc/",
+   "brand": null,
+   "product": null,
+   "hosting": "Tencent Cloud",
+   "dns": "Spaceship",
+   "ip": "43.161.238.39",
+   "asn": "AS132203",
+   "org": "Tencent Building, Kejizhongyi Avenue",
+   "country": "CN",
+   "ips": [
+    {
+     "ip": "43.161.238.39",
+     "asn": "AS132203",
+     "org": "Tencent Building, Kejizhongyi Avenue",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-28"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "login.sentivo.cc",
+     "status": "online",
+     "first_seen": "2026-11-27",
+     "last_seen": "2026-11-28"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
    "indicator": "serlnocoyne.com",
    "type": "domain",
    "category": "credential",
@@ -134863,7 +134943,7 @@
    "type": "domain",
    "category": "credential",
    "backend_for": null,
-   "campaign": null,
+   "campaign": "credential-other",
    "role": "Phishing page",
    "status": "online",
    "first_seen": "2026-11-26",

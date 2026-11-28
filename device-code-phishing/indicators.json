@@ -5,7 +5,7 @@
   "short": "Lures that trick victims into signing the attacker in with a device code",
   "summary": "The victim is sent to Microsoft's (or another provider's) real device-login page and asked to type a short code. Entering it signs the attacker's device in as the victim, with no password stolen and no MFA prompt the victim can refuse, because the victim completes MFA themselves."
  },
- "count": 2550,
+ "count": 2551,
  "indicators": [
   {
    "indicator": "00i0o0i0i-gamui9-500.cana-invation-smart-adobe-s-payapp.workers.dev",
@@ -37507,6 +37507,57 @@
      "status": "online",
      "first_seen": "2026-11-04",
      "last_seen": "2026-11-12"
+    }
+   ],
+   "actor": null,
+   "actor_link": null,
+   "commands": [],
+   "connects_to": [],
+   "lure_from": []
+  },
+  {
+   "indicator": "data-net-1obi.medatafor2.workers.dev",
+   "type": "domain",
+   "category": "device-code",
+   "backend_for": null,
+   "campaign": "device-code-other",
+   "role": "Phishing page",
+   "status": "online",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-04",
+   "last_online": "2026-11-28",
+   "offline_since": null,
+   "url": "https://data-net-1obi.medatafor2.workers.dev/l/LlpBFlIl_OU",
+   "brand": "DocuSign",
+   "product": "E-signature",
+   "hosting": "Cloudflare Workers",
+   "dns": null,
+   "ip": "172.67.189.39",
+   "asn": "AS13335",
+   "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+   "country": null,
+   "ips": [
+    {
+     "ip": "104.21.65.73",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-04",
+     "last_seen": "2026-11-04"
+    },
+    {
+     "ip": "172.67.189.39",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-04",
+     "last_seen": "2026-11-04"
+    }
+   ],
+   "hosts": [
+    {
+     "host": "data-net-1obi.medatafor2.workers.dev",
+     "status": "online",
+     "first_seen": "2026-11-04",
+     "last_seen": "2026-11-04"
     }
    ],
    "actor": null,
@@ -108761,7 +108812,7 @@
    "product": null,
    "hosting": "Cloudflare Workers",
    "dns": null,
-   "ip": "2a06:98c1:3120::3",
+   "ip": "188.114.97.3",
    "asn": "AS13335",
    "org": "CLOUDFLARENET - Cloudflare, Inc., US",
    "country": null,
@@ -108774,17 +108825,17 @@
      "last_seen": "2026-11-28"
     },
     {
-     "ip": "2a06:98c1:3120::3",
-     "asn": "AS13335",
-     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
-     "first_seen": "2026-11-25",
-     "last_seen": "2026-11-28"
-    },
-    {
      "ip": "2a06:98c1:3121::3",
      "asn": "AS13335",
      "org": "CLOUDFLARENET - Cloudflare, Inc., US",
      "first_seen": "2026-11-27",
+     "last_seen": "2026-11-28"
+    },
+    {
+     "ip": "2a06:98c1:3120::3",
+     "asn": "AS13335",
+     "org": "CLOUDFLARENET - Cloudflare, Inc., US",
+     "first_seen": "2026-11-25",
      "last_seen": "2026-11-28"
     }
    ],
